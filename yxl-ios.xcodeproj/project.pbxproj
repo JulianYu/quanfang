@@ -15,6 +15,9 @@
 		041241AD1DE81BA30028E618 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041241AB1DE81BA30028E618 /* LaunchScreen.storyboard */; };
 		041241B81DE81BA30028E618 /* yxl_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041241B71DE81BA30028E618 /* yxl_iosTests.swift */; };
 		041241C31DE81BA30028E618 /* yxl_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041241C21DE81BA30028E618 /* yxl_iosUITests.swift */; };
+		BD2B7B27CBF8BDA084572862 /* Pods_yxl_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9036F1D24FCE624311E14D9C /* Pods_yxl_ios.framework */; };
+		CAF43ECFAD83ED5ED08CE36E /* Pods_yxl_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADC00B8EB8163BA629E2E0F /* Pods_yxl_iosUITests.framework */; };
+		EBF862CE3238F1B5DD6A0480 /* Pods_yxl_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8AB1628B46CFEA295C146F /* Pods_yxl_iosTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,15 @@
 		041241BE1DE81BA30028E618 /* yxl-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "yxl-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		041241C21DE81BA30028E618 /* yxl_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yxl_iosUITests.swift; sourceTree = "<group>"; };
 		041241C41DE81BA30028E618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59BFD627CC917C916AA13AAC /* Pods-yxl-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yxl-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yxl-ios/Pods-yxl-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		63225FD24D572E7B9882A15D /* Pods-yxl-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yxl-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-yxl-ios/Pods-yxl-ios.release.xcconfig"; sourceTree = "<group>"; };
+		9036F1D24FCE624311E14D9C /* Pods_yxl_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yxl_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA70F8AC591D63580217C364 /* Pods-yxl-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yxl-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yxl-iosTests/Pods-yxl-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C04F36A9F9077E68A0FBC8C7 /* Pods-yxl-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yxl-iosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-yxl-iosUITests/Pods-yxl-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D43156601C9F16E7185F0151 /* Pods-yxl-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yxl-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yxl-iosUITests/Pods-yxl-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA8AB1628B46CFEA295C146F /* Pods_yxl_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yxl_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADC00B8EB8163BA629E2E0F /* Pods_yxl_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yxl_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCF8FE3F3AD418A4883E487A /* Pods-yxl-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yxl-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-yxl-iosTests/Pods-yxl-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD2B7B27CBF8BDA084572862 /* Pods_yxl_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBF862CE3238F1B5DD6A0480 /* Pods_yxl_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAF43ECFAD83ED5ED08CE36E /* Pods_yxl_iosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				041241B61DE81BA30028E618 /* yxl-iosTests */,
 				041241C11DE81BA30028E618 /* yxl-iosUITests */,
 				0412419D1DE81BA30028E618 /* Products */,
+				678FF30335021FFEFF857288 /* Pods */,
+				1C4674FE3D3A4D160799EC27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,29 @@
 			path = "yxl-iosUITests";
 			sourceTree = "<group>";
 		};
+		1C4674FE3D3A4D160799EC27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9036F1D24FCE624311E14D9C /* Pods_yxl_ios.framework */,
+				FA8AB1628B46CFEA295C146F /* Pods_yxl_iosTests.framework */,
+				FADC00B8EB8163BA629E2E0F /* Pods_yxl_iosUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		678FF30335021FFEFF857288 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59BFD627CC917C916AA13AAC /* Pods-yxl-ios.debug.xcconfig */,
+				63225FD24D572E7B9882A15D /* Pods-yxl-ios.release.xcconfig */,
+				AA70F8AC591D63580217C364 /* Pods-yxl-iosTests.debug.xcconfig */,
+				FCF8FE3F3AD418A4883E487A /* Pods-yxl-iosTests.release.xcconfig */,
+				D43156601C9F16E7185F0151 /* Pods-yxl-iosUITests.debug.xcconfig */,
+				C04F36A9F9077E68A0FBC8C7 /* Pods-yxl-iosUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 041241C71DE81BA30028E618 /* Build configuration list for PBXNativeTarget "yxl-ios" */;
 			buildPhases = (
+				C5EA2A7BD54EBB218B5F645D /* [CP] Check Pods Manifest.lock */,
 				041241981DE81BA30028E618 /* Sources */,
 				041241991DE81BA30028E618 /* Frameworks */,
 				0412419A1DE81BA30028E618 /* Resources */,
+				DC557ED118DA25EDD40B0425 /* [CP] Embed Pods Frameworks */,
+				80B10C39A584E65786A64DFC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 041241CA1DE81BA30028E618 /* Build configuration list for PBXNativeTarget "yxl-iosTests" */;
 			buildPhases = (
+				1E349323C1B7BAA250D662B9 /* [CP] Check Pods Manifest.lock */,
 				041241AF1DE81BA30028E618 /* Sources */,
 				041241B01DE81BA30028E618 /* Frameworks */,
 				041241B11DE81BA30028E618 /* Resources */,
+				A23E4A006A8DC11C30B8856C /* [CP] Embed Pods Frameworks */,
+				0759A0326463B1E86AAB9318 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 041241CD1DE81BA30028E618 /* Build configuration list for PBXNativeTarget "yxl-iosUITests" */;
 			buildPhases = (
+				4A93691A1BFF3F3B7FFCA089 /* [CP] Check Pods Manifest.lock */,
 				041241BA1DE81BA30028E618 /* Sources */,
 				041241BB1DE81BA30028E618 /* Frameworks */,
 				041241BC1DE81BA30028E618 /* Resources */,
+				4462C9C233A17DF6D48EC01A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +301,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0759A0326463B1E86AAB9318 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yxl-iosTests/Pods-yxl-iosTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E349323C1B7BAA250D662B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4462C9C233A17DF6D48EC01A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yxl-iosUITests/Pods-yxl-iosUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A93691A1BFF3F3B7FFCA089 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		80B10C39A584E65786A64DFC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yxl-ios/Pods-yxl-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A23E4A006A8DC11C30B8856C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yxl-iosTests/Pods-yxl-iosTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5EA2A7BD54EBB218B5F645D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DC557ED118DA25EDD40B0425 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yxl-ios/Pods-yxl-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		041241981DE81BA30028E618 /* Sources */ = {
@@ -401,6 +572,7 @@
 		};
 		041241C81DE81BA30028E618 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59BFD627CC917C916AA13AAC /* Pods-yxl-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "yxl-ios/Info.plist";
@@ -412,6 +584,7 @@
 		};
 		041241C91DE81BA30028E618 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63225FD24D572E7B9882A15D /* Pods-yxl-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "yxl-ios/Info.plist";
@@ -423,6 +596,7 @@
 		};
 		041241CB1DE81BA30028E618 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA70F8AC591D63580217C364 /* Pods-yxl-iosTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "yxl-iosTests/Info.plist";
@@ -435,6 +609,7 @@
 		};
 		041241CC1DE81BA30028E618 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCF8FE3F3AD418A4883E487A /* Pods-yxl-iosTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "yxl-iosTests/Info.plist";
@@ -447,6 +622,7 @@
 		};
 		041241CE1DE81BA30028E618 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D43156601C9F16E7185F0151 /* Pods-yxl-iosUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "yxl-iosUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -458,6 +634,7 @@
 		};
 		041241CF1DE81BA30028E618 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C04F36A9F9077E68A0FBC8C7 /* Pods-yxl-iosUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "yxl-iosUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -486,6 +663,7 @@
 				041241C91DE81BA30028E618 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		041241CA1DE81BA30028E618 /* Build configuration list for PBXNativeTarget "yxl-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +672,7 @@
 				041241CC1DE81BA30028E618 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		041241CD1DE81BA30028E618 /* Build configuration list for PBXNativeTarget "yxl-iosUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +681,7 @@
 				041241CF1DE81BA30028E618 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
