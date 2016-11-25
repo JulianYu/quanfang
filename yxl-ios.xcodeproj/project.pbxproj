@@ -8,11 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		041241A01DE81BA30028E618 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0412419F1DE81BA30028E618 /* AppDelegate.swift */; };
-		041241A21DE81BA30028E618 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041241A11DE81BA30028E618 /* ViewController.swift */; };
-		041241A51DE81BA30028E618 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041241A31DE81BA30028E618 /* Main.storyboard */; };
 		041241A81DE81BA30028E618 /* yxl_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 041241A61DE81BA30028E618 /* yxl_ios.xcdatamodeld */; };
 		041241AA1DE81BA30028E618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041241A91DE81BA30028E618 /* Assets.xcassets */; };
-		041241AD1DE81BA30028E618 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041241AB1DE81BA30028E618 /* LaunchScreen.storyboard */; };
 		041241B81DE81BA30028E618 /* yxl_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041241B71DE81BA30028E618 /* yxl_iosTests.swift */; };
 		041241C31DE81BA30028E618 /* yxl_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041241C21DE81BA30028E618 /* yxl_iosUITests.swift */; };
 		BD2B7B27CBF8BDA084572862 /* Pods_yxl_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9036F1D24FCE624311E14D9C /* Pods_yxl_ios.framework */; };
@@ -40,11 +37,8 @@
 /* Begin PBXFileReference section */
 		0412419C1DE81BA30028E618 /* yxl-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "yxl-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0412419F1DE81BA30028E618 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		041241A11DE81BA30028E618 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		041241A41DE81BA30028E618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		041241A71DE81BA30028E618 /* yxl_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = yxl_ios.xcdatamodel; sourceTree = "<group>"; };
 		041241A91DE81BA30028E618 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		041241AC1DE81BA30028E618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041241AE1DE81BA30028E618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		041241B31DE81BA30028E618 /* yxl-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "yxl-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		041241B71DE81BA30028E618 /* yxl_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yxl_iosTests.swift; sourceTree = "<group>"; };
@@ -116,11 +110,9 @@
 		0412419E1DE81BA30028E618 /* yxl-ios */ = {
 			isa = PBXGroup;
 			children = (
+				0481CEBA1DE82F7600C68218 /* Class */,
 				0412419F1DE81BA30028E618 /* AppDelegate.swift */,
-				041241A11DE81BA30028E618 /* ViewController.swift */,
-				041241A31DE81BA30028E618 /* Main.storyboard */,
 				041241A91DE81BA30028E618 /* Assets.xcassets */,
-				041241AB1DE81BA30028E618 /* LaunchScreen.storyboard */,
 				041241AE1DE81BA30028E618 /* Info.plist */,
 				041241A61DE81BA30028E618 /* yxl_ios.xcdatamodeld */,
 			);
@@ -143,6 +135,117 @@
 				041241C41DE81BA30028E618 /* Info.plist */,
 			);
 			path = "yxl-iosUITests";
+			sourceTree = "<group>";
+		};
+		0481CEBA1DE82F7600C68218 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				0481CEC41DE82F7600C68218 /* YXLBase */,
+				0481CEBB1DE82F7600C68218 /* Home */,
+				0481CEC11DE82F7600C68218 /* SuperMarket */,
+				0481CEBC1DE82F7600C68218 /* Message */,
+				0481CEBD1DE82F7600C68218 /* Mine */,
+				0481CEBE1DE82F7600C68218 /* Other */,
+				0481CEBF1DE82F7600C68218 /* Resouce */,
+				0481CEC21DE82F7600C68218 /* Tools */,
+				0481CEC31DE82F7600C68218 /* Vender */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		0481CEBB1DE82F7600C68218 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0481CEBC1DE82F7600C68218 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		0481CEBD1DE82F7600C68218 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		0481CEBE1DE82F7600C68218 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		0481CEBF1DE82F7600C68218 /* Resouce */ = {
+			isa = PBXGroup;
+			children = (
+				0481CEC01DE82F7600C68218 /* Images */,
+			);
+			path = Resouce;
+			sourceTree = "<group>";
+		};
+		0481CEC01DE82F7600C68218 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		0481CEC11DE82F7600C68218 /* SuperMarket */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SuperMarket;
+			sourceTree = "<group>";
+		};
+		0481CEC21DE82F7600C68218 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		0481CEC31DE82F7600C68218 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		0481CEC41DE82F7600C68218 /* YXLBase */ = {
+			isa = PBXGroup;
+			children = (
+				0481CEC51DE82F7600C68218 /* Common */,
+				0481CEC61DE82F7600C68218 /* Extension */,
+				0481CEC71DE82F7600C68218 /* YXLRefresh */,
+			);
+			path = YXLBase;
+			sourceTree = "<group>";
+		};
+		0481CEC51DE82F7600C68218 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0481CEC61DE82F7600C68218 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0481CEC71DE82F7600C68218 /* YXLRefresh */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = YXLRefresh;
 			sourceTree = "<group>";
 		};
 		1C4674FE3D3A4D160799EC27 /* Frameworks */ = {
@@ -221,6 +324,7 @@
 				041241BB1DE81BA30028E618 /* Frameworks */,
 				041241BC1DE81BA30028E618 /* Resources */,
 				4462C9C233A17DF6D48EC01A /* [CP] Copy Pods Resources */,
+				AB04260C66502F561ABED5AE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,18 +343,22 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "孙若淮";
 				TargetAttributes = {
 					0412419B1DE81BA30028E618 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = UEE2H52CTA;
+						LastSwiftMigration = 0810;
 					};
 					041241B21DE81BA30028E618 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = 0412419B1DE81BA30028E618;
 					};
 					041241BD1DE81BA30028E618 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = 0412419B1DE81BA30028E618;
 					};
 				};
@@ -280,9 +388,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				041241AD1DE81BA30028E618 /* LaunchScreen.storyboard in Resources */,
 				041241AA1DE81BA30028E618 /* Assets.xcassets in Resources */,
-				041241A51DE81BA30028E618 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +436,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		4462C9C233A17DF6D48EC01A /* [CP] Copy Pods Resources */ = {
@@ -360,7 +466,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		80B10C39A584E65786A64DFC /* [CP] Copy Pods Resources */ = {
@@ -393,6 +499,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yxl-iosTests/Pods-yxl-iosTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AB04260C66502F561ABED5AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yxl-iosUITests/Pods-yxl-iosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C5EA2A7BD54EBB218B5F645D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -405,7 +526,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		DC557ED118DA25EDD40B0425 /* [CP] Embed Pods Frameworks */ = {
@@ -430,7 +551,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				041241A21DE81BA30028E618 /* ViewController.swift in Sources */,
 				041241A81DE81BA30028E618 /* yxl_ios.xcdatamodeld in Sources */,
 				041241A01DE81BA30028E618 /* AppDelegate.swift in Sources */,
 			);
@@ -467,25 +587,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		041241A31DE81BA30028E618 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				041241A41DE81BA30028E618 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		041241AB1DE81BA30028E618 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				041241AC1DE81BA30028E618 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		041241C51DE81BA30028E618 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -501,8 +602,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -546,8 +649,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -565,7 +670,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -574,11 +681,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 59BFD627CC917C916AA13AAC /* Pods-yxl-ios.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UEE2H52CTA;
 				INFOPLIST_FILE = "yxl-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.erongchuang.yxl-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -586,11 +696,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 63225FD24D572E7B9882A15D /* Pods-yxl-ios.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UEE2H52CTA;
 				INFOPLIST_FILE = "yxl-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.erongchuang.yxl-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -603,6 +716,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.erongchuang.yxl-iosTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yxl-ios.app/yxl-ios";
 			};
 			name = Debug;
@@ -616,6 +730,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.erongchuang.yxl-iosTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yxl-ios.app/yxl-ios";
 			};
 			name = Release;
@@ -628,6 +743,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.erongchuang.yxl-iosUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = "yxl-ios";
 			};
 			name = Debug;
@@ -640,6 +756,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.erongchuang.yxl-iosUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = "yxl-ios";
 			};
 			name = Release;
