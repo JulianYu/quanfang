@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		041241A01DE81BA30028E618 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0412419F1DE81BA30028E618 /* AppDelegate.swift */; };
+		041241A21DE81BA30028E618 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041241A11DE81BA30028E618 /* ViewController.swift */; };
+		041241A51DE81BA30028E618 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041241A31DE81BA30028E618 /* Main.storyboard */; };
+		041241A81DE81BA30028E618 /* yxl_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 041241A61DE81BA30028E618 /* yxl_ios.xcdatamodeld */; };
+		041241AA1DE81BA30028E618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041241A91DE81BA30028E618 /* Assets.xcassets */; };
+		041241AD1DE81BA30028E618 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041241AB1DE81BA30028E618 /* LaunchScreen.storyboard */; };
+		041241B81DE81BA30028E618 /* yxl_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041241B71DE81BA30028E618 /* yxl_iosTests.swift */; };
+		041241C31DE81BA30028E618 /* yxl_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041241C21DE81BA30028E618 /* yxl_iosUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		041241B41DE81BA30028E618 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 041241941DE81BA30028E618 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0412419B1DE81BA30028E618;
+			remoteInfo = "yxl-ios";
+		};
+		041241BF1DE81BA30028E618 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 041241941DE81BA30028E618 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0412419B1DE81BA30028E618;
+			remoteInfo = "yxl-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0412419C1DE81BA30028E618 /* yxl-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "yxl-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0412419F1DE81BA30028E618 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		041241A11DE81BA30028E618 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		041241A41DE81BA30028E618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		041241A71DE81BA30028E618 /* yxl_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = yxl_ios.xcdatamodel; sourceTree = "<group>"; };
+		041241A91DE81BA30028E618 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		041241AC1DE81BA30028E618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		041241AE1DE81BA30028E618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041241B31DE81BA30028E618 /* yxl-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "yxl-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		041241B71DE81BA30028E618 /* yxl_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yxl_iosTests.swift; sourceTree = "<group>"; };
+		041241B91DE81BA30028E618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041241BE1DE81BA30028E618 /* yxl-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "yxl-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		041241C21DE81BA30028E618 /* yxl_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yxl_iosUITests.swift; sourceTree = "<group>"; };
+		041241C41DE81BA30028E618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		041241991DE81BA30028E618 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041241B01DE81BA30028E618 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041241BB1DE81BA30028E618 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041241931DE81BA30028E618 = {
+			isa = PBXGroup;
+			children = (
+				0412419E1DE81BA30028E618 /* yxl-ios */,
+				041241B61DE81BA30028E618 /* yxl-iosTests */,
+				041241C11DE81BA30028E618 /* yxl-iosUITests */,
+				0412419D1DE81BA30028E618 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0412419D1DE81BA30028E618 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0412419C1DE81BA30028E618 /* yxl-ios.app */,
+				041241B31DE81BA30028E618 /* yxl-iosTests.xctest */,
+				041241BE1DE81BA30028E618 /* yxl-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0412419E1DE81BA30028E618 /* yxl-ios */ = {
+			isa = PBXGroup;
+			children = (
+				0412419F1DE81BA30028E618 /* AppDelegate.swift */,
+				041241A11DE81BA30028E618 /* ViewController.swift */,
+				041241A31DE81BA30028E618 /* Main.storyboard */,
+				041241A91DE81BA30028E618 /* Assets.xcassets */,
+				041241AB1DE81BA30028E618 /* LaunchScreen.storyboard */,
+				041241AE1DE81BA30028E618 /* Info.plist */,
+				041241A61DE81BA30028E618 /* yxl_ios.xcdatamodeld */,
+			);
+			path = "yxl-ios";
+			sourceTree = "<group>";
+		};
+		041241B61DE81BA30028E618 /* yxl-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				041241B71DE81BA30028E618 /* yxl_iosTests.swift */,
+				041241B91DE81BA30028E618 /* Info.plist */,
+			);
+			path = "yxl-iosTests";
+			sourceTree = "<group>";
+		};
+		041241C11DE81BA30028E618 /* yxl-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				041241C21DE81BA30028E618 /* yxl_iosUITests.swift */,
+				041241C41DE81BA30028E618 /* Info.plist */,
+			);
+			path = "yxl-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0412419B1DE81BA30028E618 /* yxl-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041241C71DE81BA30028E618 /* Build configuration list for PBXNativeTarget "yxl-ios" */;
+			buildPhases = (
+				041241981DE81BA30028E618 /* Sources */,
+				041241991DE81BA30028E618 /* Frameworks */,
+				0412419A1DE81BA30028E618 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "yxl-ios";
+			productName = "yxl-ios";
+			productReference = 0412419C1DE81BA30028E618 /* yxl-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		041241B21DE81BA30028E618 /* yxl-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041241CA1DE81BA30028E618 /* Build configuration list for PBXNativeTarget "yxl-iosTests" */;
+			buildPhases = (
+				041241AF1DE81BA30028E618 /* Sources */,
+				041241B01DE81BA30028E618 /* Frameworks */,
+				041241B11DE81BA30028E618 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				041241B51DE81BA30028E618 /* PBXTargetDependency */,
+			);
+			name = "yxl-iosTests";
+			productName = "yxl-iosTests";
+			productReference = 041241B31DE81BA30028E618 /* yxl-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		041241BD1DE81BA30028E618 /* yxl-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041241CD1DE81BA30028E618 /* Build configuration list for PBXNativeTarget "yxl-iosUITests" */;
+			buildPhases = (
+				041241BA1DE81BA30028E618 /* Sources */,
+				041241BB1DE81BA30028E618 /* Frameworks */,
+				041241BC1DE81BA30028E618 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				041241C01DE81BA30028E618 /* PBXTargetDependency */,
+			);
+			name = "yxl-iosUITests";
+			productName = "yxl-iosUITests";
+			productReference = 041241BE1DE81BA30028E618 /* yxl-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		041241941DE81BA30028E618 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "孙若淮";
+				TargetAttributes = {
+					0412419B1DE81BA30028E618 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					041241B21DE81BA30028E618 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 0412419B1DE81BA30028E618;
+					};
+					041241BD1DE81BA30028E618 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 0412419B1DE81BA30028E618;
+					};
+				};
+			};
+			buildConfigurationList = 041241971DE81BA30028E618 /* Build configuration list for PBXProject "yxl-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 041241931DE81BA30028E618;
+			productRefGroup = 0412419D1DE81BA30028E618 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0412419B1DE81BA30028E618 /* yxl-ios */,
+				041241B21DE81BA30028E618 /* yxl-iosTests */,
+				041241BD1DE81BA30028E618 /* yxl-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0412419A1DE81BA30028E618 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041241AD1DE81BA30028E618 /* LaunchScreen.storyboard in Resources */,
+				041241AA1DE81BA30028E618 /* Assets.xcassets in Resources */,
+				041241A51DE81BA30028E618 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041241B11DE81BA30028E618 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041241BC1DE81BA30028E618 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		041241981DE81BA30028E618 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041241A21DE81BA30028E618 /* ViewController.swift in Sources */,
+				041241A81DE81BA30028E618 /* yxl_ios.xcdatamodeld in Sources */,
+				041241A01DE81BA30028E618 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041241AF1DE81BA30028E618 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041241B81DE81BA30028E618 /* yxl_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041241BA1DE81BA30028E618 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041241C31DE81BA30028E618 /* yxl_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		041241B51DE81BA30028E618 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0412419B1DE81BA30028E618 /* yxl-ios */;
+			targetProxy = 041241B41DE81BA30028E618 /* PBXContainerItemProxy */;
+		};
+		041241C01DE81BA30028E618 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0412419B1DE81BA30028E618 /* yxl-ios */;
+			targetProxy = 041241BF1DE81BA30028E618 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		041241A31DE81BA30028E618 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041241A41DE81BA30028E618 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		041241AB1DE81BA30028E618 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041241AC1DE81BA30028E618 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		041241C51DE81BA30028E618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		041241C61DE81BA30028E618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		041241C81DE81BA30028E618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "yxl-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.erongchuang.yxl-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		041241C91DE81BA30028E618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "yxl-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.erongchuang.yxl-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		041241CB1DE81BA30028E618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "yxl-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.erongchuang.yxl-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yxl-ios.app/yxl-ios";
+			};
+			name = Debug;
+		};
+		041241CC1DE81BA30028E618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "yxl-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.erongchuang.yxl-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yxl-ios.app/yxl-ios";
+			};
+			name = Release;
+		};
+		041241CE1DE81BA30028E618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "yxl-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.erongchuang.yxl-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "yxl-ios";
+			};
+			name = Debug;
+		};
+		041241CF1DE81BA30028E618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "yxl-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.erongchuang.yxl-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "yxl-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		041241971DE81BA30028E618 /* Build configuration list for PBXProject "yxl-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041241C51DE81BA30028E618 /* Debug */,
+				041241C61DE81BA30028E618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		041241C71DE81BA30028E618 /* Build configuration list for PBXNativeTarget "yxl-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041241C81DE81BA30028E618 /* Debug */,
+				041241C91DE81BA30028E618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		041241CA1DE81BA30028E618 /* Build configuration list for PBXNativeTarget "yxl-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041241CB1DE81BA30028E618 /* Debug */,
+				041241CC1DE81BA30028E618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		041241CD1DE81BA30028E618 /* Build configuration list for PBXNativeTarget "yxl-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041241CE1DE81BA30028E618 /* Debug */,
+				041241CF1DE81BA30028E618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		041241A61DE81BA30028E618 /* yxl_ios.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				041241A71DE81BA30028E618 /* yxl_ios.xcdatamodel */,
+			);
+			currentVersion = 041241A71DE81BA30028E618 /* yxl_ios.xcdatamodel */;
+			path = yxl_ios.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 041241941DE81BA30028E618 /* Project object */;
+}
