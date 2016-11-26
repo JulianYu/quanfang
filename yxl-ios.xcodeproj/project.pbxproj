@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		041241A01DE81BA30028E618 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0412419F1DE81BA30028E618 /* AppDelegate.swift */; };
 		041241A81DE81BA30028E618 /* yxl_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 041241A61DE81BA30028E618 /* yxl_ios.xcdatamodeld */; };
 		041241AA1DE81BA30028E618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041241A91DE81BA30028E618 /* Assets.xcassets */; };
 		041241B81DE81BA30028E618 /* yxl_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041241B71DE81BA30028E618 /* yxl_iosTests.swift */; };
 		041241C31DE81BA30028E618 /* yxl_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041241C21DE81BA30028E618 /* yxl_iosUITests.swift */; };
-		BD2B7B27CBF8BDA084572862 /* Pods_yxl_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9036F1D24FCE624311E14D9C /* Pods_yxl_ios.framework */; };
-		CAF43ECFAD83ED5ED08CE36E /* Pods_yxl_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADC00B8EB8163BA629E2E0F /* Pods_yxl_iosUITests.framework */; };
-		EBF862CE3238F1B5DD6A0480 /* Pods_yxl_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8AB1628B46CFEA295C146F /* Pods_yxl_iosTests.framework */; };
+		0463D5DD1DE93238003EA7C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463D5DC1DE93238003EA7C3 /* AppDelegate.m */; };
+		0463D5E01DE932D0003EA7C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463D5DF1DE932D0003EA7C3 /* main.m */; };
+		4C9A86DC3D41D4F2485F249B /* libPods-yxl-iosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD78A8FEE562BB01538F5BEC /* libPods-yxl-iosTests.a */; };
+		52C355C3245583E839E93B81 /* libPods-yxl-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B499EDEB2C58287A1EA67EC /* libPods-yxl-ios.a */; };
+		F0CE3A3953C5AAEB125F5888 /* libPods-yxl-iosUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 144AA37CCEAEE63E567F6598 /* libPods-yxl-iosUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		0412419C1DE81BA30028E618 /* yxl-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "yxl-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0412419F1DE81BA30028E618 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		041241A71DE81BA30028E618 /* yxl_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = yxl_ios.xcdatamodel; sourceTree = "<group>"; };
 		041241A91DE81BA30028E618 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		041241AE1DE81BA30028E618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,14 +46,17 @@
 		041241BE1DE81BA30028E618 /* yxl-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "yxl-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		041241C21DE81BA30028E618 /* yxl_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yxl_iosUITests.swift; sourceTree = "<group>"; };
 		041241C41DE81BA30028E618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0463D5DB1DE93238003EA7C3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0463D5DC1DE93238003EA7C3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0463D5DF1DE932D0003EA7C3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		144AA37CCEAEE63E567F6598 /* libPods-yxl-iosUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-yxl-iosUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59BFD627CC917C916AA13AAC /* Pods-yxl-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yxl-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yxl-ios/Pods-yxl-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		5B499EDEB2C58287A1EA67EC /* libPods-yxl-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-yxl-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63225FD24D572E7B9882A15D /* Pods-yxl-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yxl-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-yxl-ios/Pods-yxl-ios.release.xcconfig"; sourceTree = "<group>"; };
-		9036F1D24FCE624311E14D9C /* Pods_yxl_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yxl_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA70F8AC591D63580217C364 /* Pods-yxl-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yxl-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yxl-iosTests/Pods-yxl-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C04F36A9F9077E68A0FBC8C7 /* Pods-yxl-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yxl-iosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-yxl-iosUITests/Pods-yxl-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D43156601C9F16E7185F0151 /* Pods-yxl-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yxl-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yxl-iosUITests/Pods-yxl-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		FA8AB1628B46CFEA295C146F /* Pods_yxl_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yxl_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FADC00B8EB8163BA629E2E0F /* Pods_yxl_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yxl_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD78A8FEE562BB01538F5BEC /* libPods-yxl-iosTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-yxl-iosTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF8FE3F3AD418A4883E487A /* Pods-yxl-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yxl-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-yxl-iosTests/Pods-yxl-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD2B7B27CBF8BDA084572862 /* Pods_yxl_ios.framework in Frameworks */,
+				52C355C3245583E839E93B81 /* libPods-yxl-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBF862CE3238F1B5DD6A0480 /* Pods_yxl_iosTests.framework in Frameworks */,
+				4C9A86DC3D41D4F2485F249B /* libPods-yxl-iosTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAF43ECFAD83ED5ED08CE36E /* Pods_yxl_iosUITests.framework in Frameworks */,
+				F0CE3A3953C5AAEB125F5888 /* libPods-yxl-iosUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,8 +113,10 @@
 		0412419E1DE81BA30028E618 /* yxl-ios */ = {
 			isa = PBXGroup;
 			children = (
+				0463D5DE1DE932C7003EA7C3 /* Supporting Files */,
+				0463D5DB1DE93238003EA7C3 /* AppDelegate.h */,
+				0463D5DC1DE93238003EA7C3 /* AppDelegate.m */,
 				0481CEBA1DE82F7600C68218 /* Class */,
-				0412419F1DE81BA30028E618 /* AppDelegate.swift */,
 				041241A91DE81BA30028E618 /* Assets.xcassets */,
 				041241AE1DE81BA30028E618 /* Info.plist */,
 				041241A61DE81BA30028E618 /* yxl_ios.xcdatamodeld */,
@@ -135,6 +140,14 @@
 				041241C41DE81BA30028E618 /* Info.plist */,
 			);
 			path = "yxl-iosUITests";
+			sourceTree = "<group>";
+		};
+		0463D5DE1DE932C7003EA7C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0463D5DF1DE932D0003EA7C3 /* main.m */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		0481CEBA1DE82F7600C68218 /* Class */ = {
@@ -251,9 +264,9 @@
 		1C4674FE3D3A4D160799EC27 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9036F1D24FCE624311E14D9C /* Pods_yxl_ios.framework */,
-				FA8AB1628B46CFEA295C146F /* Pods_yxl_iosTests.framework */,
-				FADC00B8EB8163BA629E2E0F /* Pods_yxl_iosUITests.framework */,
+				5B499EDEB2C58287A1EA67EC /* libPods-yxl-ios.a */,
+				DD78A8FEE562BB01538F5BEC /* libPods-yxl-iosTests.a */,
+				144AA37CCEAEE63E567F6598 /* libPods-yxl-iosUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -551,8 +564,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0463D5DD1DE93238003EA7C3 /* AppDelegate.m in Sources */,
+				0463D5E01DE932D0003EA7C3 /* main.m in Sources */,
 				041241A81DE81BA30028E618 /* yxl_ios.xcdatamodeld in Sources */,
-				041241A01DE81BA30028E618 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
