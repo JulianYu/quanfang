@@ -11,8 +11,7 @@
 		041241AA1DE81BA30028E618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041241A91DE81BA30028E618 /* Assets.xcassets */; };
 		041241B81DE81BA30028E618 /* yxl_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041241B71DE81BA30028E618 /* yxl_iosTests.swift */; };
 		041241C31DE81BA30028E618 /* yxl_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041241C21DE81BA30028E618 /* yxl_iosUITests.swift */; };
-		0463D5DD1DE93238003EA7C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463D5DC1DE93238003EA7C3 /* AppDelegate.m */; };
-		0463D5E01DE932D0003EA7C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463D5DF1DE932D0003EA7C3 /* main.m */; };
+		046269FE1DFB922A00B4DE7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046269FD1DFB922A00B4DE7C /* AppDelegate.swift */; };
 		4C9A86DC3D41D4F2485F249B /* libPods-yxl-iosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD78A8FEE562BB01538F5BEC /* libPods-yxl-iosTests.a */; };
 		52C355C3245583E839E93B81 /* libPods-yxl-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B499EDEB2C58287A1EA67EC /* libPods-yxl-ios.a */; };
 		F0CE3A3953C5AAEB125F5888 /* libPods-yxl-iosUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 144AA37CCEAEE63E567F6598 /* libPods-yxl-iosUITests.a */; };
@@ -46,9 +45,7 @@
 		041241BE1DE81BA30028E618 /* yxl-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "yxl-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		041241C21DE81BA30028E618 /* yxl_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yxl_iosUITests.swift; sourceTree = "<group>"; };
 		041241C41DE81BA30028E618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0463D5DB1DE93238003EA7C3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		0463D5DC1DE93238003EA7C3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0463D5DF1DE932D0003EA7C3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		046269FD1DFB922A00B4DE7C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		144AA37CCEAEE63E567F6598 /* libPods-yxl-iosUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-yxl-iosUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59BFD627CC917C916AA13AAC /* Pods-yxl-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yxl-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yxl-ios/Pods-yxl-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		5B499EDEB2C58287A1EA67EC /* libPods-yxl-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-yxl-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,9 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				0412419E1DE81BA30028E618 /* yxl-ios */,
-				041241B61DE81BA30028E618 /* yxl-iosTests */,
-				041241C11DE81BA30028E618 /* yxl-iosUITests */,
 				0412419D1DE81BA30028E618 /* Products */,
+				0463D5DE1DE932C7003EA7C3 /* Supporting Files */,
 				678FF30335021FFEFF857288 /* Pods */,
 				1C4674FE3D3A4D160799EC27 /* Frameworks */,
 			);
@@ -113,13 +109,13 @@
 		0412419E1DE81BA30028E618 /* yxl-ios */ = {
 			isa = PBXGroup;
 			children = (
-				0463D5DE1DE932C7003EA7C3 /* Supporting Files */,
-				0463D5DB1DE93238003EA7C3 /* AppDelegate.h */,
-				0463D5DC1DE93238003EA7C3 /* AppDelegate.m */,
-				0481CEBA1DE82F7600C68218 /* Class */,
+				046269FF1DFB93DA00B4DE7C /* Class */,
 				041241A91DE81BA30028E618 /* Assets.xcassets */,
 				041241AE1DE81BA30028E618 /* Info.plist */,
+				046269FD1DFB922A00B4DE7C /* AppDelegate.swift */,
 				041241A61DE81BA30028E618 /* yxl_ios.xcdatamodeld */,
+				041241B61DE81BA30028E618 /* yxl-iosTests */,
+				041241C11DE81BA30028E618 /* yxl-iosUITests */,
 			);
 			path = "yxl-ios";
 			sourceTree = "<group>";
@@ -131,7 +127,7 @@
 				041241B91DE81BA30028E618 /* Info.plist */,
 			);
 			path = "yxl-iosTests";
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		041241C11DE81BA30028E618 /* yxl-iosUITests */ = {
 			isa = PBXGroup;
@@ -140,125 +136,197 @@
 				041241C41DE81BA30028E618 /* Info.plist */,
 			);
 			path = "yxl-iosUITests";
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
-		0463D5DE1DE932C7003EA7C3 /* Supporting Files */ = {
+		046269FF1DFB93DA00B4DE7C /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				0463D5DF1DE932D0003EA7C3 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0481CEBA1DE82F7600C68218 /* Class */ = {
-			isa = PBXGroup;
-			children = (
-				0481CEC41DE82F7600C68218 /* YXLBase */,
-				0481CEBB1DE82F7600C68218 /* Home */,
-				0481CEC11DE82F7600C68218 /* SuperMarket */,
-				0481CEBC1DE82F7600C68218 /* Message */,
-				0481CEBD1DE82F7600C68218 /* Mine */,
-				0481CEBE1DE82F7600C68218 /* Other */,
-				0481CEBF1DE82F7600C68218 /* Resouce */,
-				0481CEC21DE82F7600C68218 /* Tools */,
-				0481CEC31DE82F7600C68218 /* Vender */,
+				04626A001DFB93DA00B4DE7C /* Resource */,
+				04626A011DFB93DA00B4DE7C /* Tools */,
+				04626A031DFB93DA00B4DE7C /* Vender */,
+				04626A041DFB93DA00B4DE7C /* YXLBase */,
+				04626A081DFB93DA00B4DE7C /* YXLMain */,
 			);
 			path = Class;
 			sourceTree = "<group>";
 		};
-		0481CEBB1DE82F7600C68218 /* Home */ = {
+		04626A001DFB93DA00B4DE7C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Home;
+			path = Resource;
 			sourceTree = "<group>";
 		};
-		0481CEBC1DE82F7600C68218 /* Message */ = {
+		04626A011DFB93DA00B4DE7C /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Message;
-			sourceTree = "<group>";
-		};
-		0481CEBD1DE82F7600C68218 /* Mine */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Mine;
-			sourceTree = "<group>";
-		};
-		0481CEBE1DE82F7600C68218 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
-		0481CEBF1DE82F7600C68218 /* Resouce */ = {
-			isa = PBXGroup;
-			children = (
-				0481CEC01DE82F7600C68218 /* Images */,
-			);
-			path = Resouce;
-			sourceTree = "<group>";
-		};
-		0481CEC01DE82F7600C68218 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
-		0481CEC11DE82F7600C68218 /* SuperMarket */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SuperMarket;
-			sourceTree = "<group>";
-		};
-		0481CEC21DE82F7600C68218 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
+				04626A021DFB93DA00B4DE7C /* Network */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		0481CEC31DE82F7600C68218 /* Vender */ = {
+		04626A021DFB93DA00B4DE7C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		04626A031DFB93DA00B4DE7C /* Vender */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Vender;
 			sourceTree = "<group>";
 		};
-		0481CEC41DE82F7600C68218 /* YXLBase */ = {
+		04626A041DFB93DA00B4DE7C /* YXLBase */ = {
 			isa = PBXGroup;
 			children = (
-				0481CEC51DE82F7600C68218 /* Common */,
-				0481CEC61DE82F7600C68218 /* Extension */,
-				0481CEC71DE82F7600C68218 /* YXLRefresh */,
+				04626A051DFB93DA00B4DE7C /* Category */,
+				04626A061DFB93DA00B4DE7C /* Common */,
+				04626A071DFB93DA00B4DE7C /* Extension */,
 			);
 			path = YXLBase;
 			sourceTree = "<group>";
 		};
-		0481CEC51DE82F7600C68218 /* Common */ = {
+		04626A051DFB93DA00B4DE7C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		04626A061DFB93DA00B4DE7C /* Common */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Common;
 			sourceTree = "<group>";
 		};
-		0481CEC61DE82F7600C68218 /* Extension */ = {
+		04626A071DFB93DA00B4DE7C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		0481CEC71DE82F7600C68218 /* YXLRefresh */ = {
+		04626A081DFB93DA00B4DE7C /* YXLMain */ = {
+			isa = PBXGroup;
+			children = (
+				04626A091DFB93DA00B4DE7C /* Home */,
+				04626A0C1DFB93DA00B4DE7C /* Message */,
+				04626A0F1DFB93DA00B4DE7C /* Mine */,
+				04626A121DFB93DA00B4DE7C /* Other */,
+				04626A131DFB93DA00B4DE7C /* SuperMarket */,
+			);
+			path = YXLMain;
+			sourceTree = "<group>";
+		};
+		04626A091DFB93DA00B4DE7C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				04626A0A1DFB93DA00B4DE7C /* Model */,
+				04626A0B1DFB93DA00B4DE7C /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		04626A0A1DFB93DA00B4DE7C /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = YXLRefresh;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04626A0B1DFB93DA00B4DE7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04626A0C1DFB93DA00B4DE7C /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				04626A0D1DFB93DA00B4DE7C /* Model */,
+				04626A0E1DFB93DA00B4DE7C /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		04626A0D1DFB93DA00B4DE7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04626A0E1DFB93DA00B4DE7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04626A0F1DFB93DA00B4DE7C /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				04626A101DFB93DA00B4DE7C /* Model */,
+				04626A111DFB93DA00B4DE7C /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		04626A101DFB93DA00B4DE7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04626A111DFB93DA00B4DE7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04626A121DFB93DA00B4DE7C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		04626A131DFB93DA00B4DE7C /* SuperMarket */ = {
+			isa = PBXGroup;
+			children = (
+				04626A141DFB93DA00B4DE7C /* Model */,
+				04626A151DFB93DA00B4DE7C /* View */,
+			);
+			path = SuperMarket;
+			sourceTree = "<group>";
+		};
+		04626A141DFB93DA00B4DE7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04626A151DFB93DA00B4DE7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0463D5DE1DE932C7003EA7C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			path = "yxl-ios";
 			sourceTree = "<group>";
 		};
 		1C4674FE3D3A4D160799EC27 /* Frameworks */ = {
@@ -564,8 +632,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0463D5DD1DE93238003EA7C3 /* AppDelegate.m in Sources */,
-				0463D5E01DE932D0003EA7C3 /* main.m in Sources */,
+				046269FE1DFB922A00B4DE7C /* AppDelegate.swift in Sources */,
 				041241A81DE81BA30028E618 /* yxl_ios.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -641,7 +708,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -682,7 +749,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -697,12 +764,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = UEE2H52CTA;
 				INFOPLIST_FILE = "yxl-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.erongchuang.yxl-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -712,12 +782,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = UEE2H52CTA;
 				INFOPLIST_FILE = "yxl-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.erongchuang.yxl-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -725,12 +797,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AA70F8AC591D63580217C364 /* Pods-yxl-iosTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "yxl-iosTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.erongchuang.yxl-iosTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yxl-ios.app/yxl-ios";
 			};
 			name = Debug;
@@ -739,12 +812,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FCF8FE3F3AD418A4883E487A /* Pods-yxl-iosTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "yxl-iosTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.erongchuang.yxl-iosTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yxl-ios.app/yxl-ios";
 			};
 			name = Release;
@@ -753,11 +827,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D43156601C9F16E7185F0151 /* Pods-yxl-iosUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "yxl-iosUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.erongchuang.yxl-iosUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "yxl-ios";
 			};
 			name = Debug;
@@ -766,11 +841,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C04F36A9F9077E68A0FBC8C7 /* Pods-yxl-iosUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "yxl-iosUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.erongchuang.yxl-iosUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "yxl-ios";
 			};
 			name = Release;
