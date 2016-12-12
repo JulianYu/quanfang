@@ -4,17 +4,10 @@
 use_frameworks!
 
 target 'yxl-ios' do
-    pod "Alamofire"
-    pod "RxSwift"
-#    pod 'SDWebImage', '~> 3.8.1'
-  target 'yxl-iosTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'yxl-iosUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+    
+    pod 'AFNetworking', '~> 3.0'
+    pod 'ReactiveCocoa', '5.0.0-alpha.3'
+    pod 'RongCloudIMKit', '~> 2.7.0'
+    pod 'pop', '~> 1.0'
 
 end

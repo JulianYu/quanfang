@@ -10,14 +10,6 @@
 		04108B1A537634AD51D332D0 /* Pods_yxl_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7F9367702B647B7973BF59 /* Pods_yxl_ios.framework */; };
 		041241A81DE81BA30028E618 /* yxl_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 041241A61DE81BA30028E618 /* yxl_ios.xcdatamodeld */; };
 		041241AA1DE81BA30028E618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041241A91DE81BA30028E618 /* Assets.xcassets */; };
-		041241B81DE81BA30028E618 /* yxl_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041241B71DE81BA30028E618 /* yxl_iosTests.swift */; };
-		041241C31DE81BA30028E618 /* yxl_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041241C21DE81BA30028E618 /* yxl_iosUITests.swift */; };
-		046269FE1DFB922A00B4DE7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046269FD1DFB922A00B4DE7C /* AppDelegate.swift */; };
-		04626A171DFB962E00B4DE7C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04626A161DFB962E00B4DE7C /* BaseViewController.swift */; };
-		04626A1B1DFB987E00B4DE7C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04626A1A1DFB987E00B4DE7C /* Theme.swift */; };
-		04626A1D1DFB9AF300B4DE7C /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04626A1C1DFB9AF300B4DE7C /* Color+Extension.swift */; };
-		04626A1F1DFB9B5500B4DE7C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04626A1E1DFB9B5500B4DE7C /* UIView+Extension.swift */; };
-		04626A251DFBA2BE00B4DE7C /* AnimationTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04626A241DFBA2BE00B4DE7C /* AnimationTabBarController.swift */; };
 		04626A2E1DFBA78900B4DE7C /* yxl_home_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04626A261DFBA78900B4DE7C /* yxl_home_s@2x.png */; };
 		04626A2F1DFBA78900B4DE7C /* yxl_home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04626A271DFBA78900B4DE7C /* yxl_home@2x.png */; };
 		04626A301DFBA78900B4DE7C /* yxl_message_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04626A281DFBA78900B4DE7C /* yxl_message_s@2x.png */; };
@@ -26,19 +18,19 @@
 		04626A331DFBA78900B4DE7C /* yxl_mine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04626A2B1DFBA78900B4DE7C /* yxl_mine@2x.png */; };
 		04626A341DFBA78900B4DE7C /* yxl_shop_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04626A2C1DFBA78900B4DE7C /* yxl_shop_s@2x.png */; };
 		04626A351DFBA78900B4DE7C /* yxl_shop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04626A2D1DFBA78900B4DE7C /* yxl_shop@2x.png */; };
-		04626A371DFBB32600B4DE7C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04626A361DFBB32600B4DE7C /* MainViewController.swift */; };
-		04626A391DFBB43100B4DE7C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04626A381DFBB43100B4DE7C /* HomeViewController.swift */; };
-		04626A3B1DFBB44000B4DE7C /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04626A3A1DFBB44000B4DE7C /* MessageViewController.swift */; };
-		04626A3D1DFBB45500B4DE7C /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04626A3C1DFBB45500B4DE7C /* MineViewController.swift */; };
-		04626A421DFBB48C00B4DE7C /* BusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04626A411DFBB48C00B4DE7C /* BusinessViewController.swift */; };
-		04626A441DFBB50900B4DE7C /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04626A431DFBB50900B4DE7C /* BaseNavigationController.swift */; };
-		04A058261DFBEF1D00250032 /* AppDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A058251DFBEF1D00250032 /* AppDelegate+Extension.swift */; };
-		04A058281DFBF01900250032 /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A058271DFBF01900250032 /* Macros.swift */; };
-		04A0582A1DFBF54A00250032 /* MainAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A058291DFBF54A00250032 /* MainAD.swift */; };
-		04A0582C1DFBF58600250032 /* SwiftDictModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0582B1DFBF58600250032 /* SwiftDictModel.swift */; };
-		04A0582E1DFBFA7C00250032 /* AD in Resources */ = {isa = PBXBuildFile; fileRef = 04A0582D1DFBFA7C00250032 /* AD */; };
-		04C8EF131DFBD63500A60305 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C8EF121DFBD63500A60305 /* UIDevice+Extension.swift */; };
-		04C8EF151DFBD7B000A60305 /* ADViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C8EF141DFBD7B000A60305 /* ADViewController.swift */; };
+		04D318F01DFE376D006C8016 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D318EF1DFE376D006C8016 /* AppDelegate.m */; };
+		04D319341DFE38EC006C8016 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D319331DFE38EC006C8016 /* main.m */; };
+		04D3198D1DFE3EBB006C8016 /* AppDelegate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3198C1DFE3EBB006C8016 /* AppDelegate+Category.m */; };
+		04D319911DFE3F23006C8016 /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D319901DFE3F23006C8016 /* UIColor+Category.m */; };
+		04D319971DFE3FE6006C8016 /* UITabBar+badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D319961DFE3FE6006C8016 /* UITabBar+badge.m */; };
+		04D3199A1DFE3FEC006C8016 /* HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D319991DFE3FEC006C8016 /* HUD.m */; };
+		04D3199D1DFE4024006C8016 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3199C1DFE4024006C8016 /* UIView+Category.m */; };
+		04D319C61DFE4300006C8016 /* ProgessHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D319BB1DFE4300006C8016 /* ProgessHUD.m */; };
+		04D319C71DFE4300006C8016 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D319BD1DFE4300006C8016 /* SVIndefiniteAnimatedView.m */; };
+		04D319C81DFE4300006C8016 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D319BF1DFE4300006C8016 /* SVProgressAnimatedView.m */; };
+		04D319C91DFE4300006C8016 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04D319C11DFE4300006C8016 /* SVProgressHUD.bundle */; };
+		04D319CA1DFE4300006C8016 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D319C31DFE4300006C8016 /* SVProgressHUD.m */; };
+		04D319CB1DFE4300006C8016 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D319C51DFE4300006C8016 /* SVRadialGradientLayer.m */; };
 		04E911D51DFC023900C84802 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E911B91DFC023900C84802 /* NSData+ImageContentType.m */; };
 		04E911D61DFC023900C84802 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E911BB1DFC023900C84802 /* SDImageCache.m */; };
 		04E911D71DFC023900C84802 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E911BD1DFC023900C84802 /* SDWebImageCompat.m */; };
@@ -53,26 +45,7 @@
 		04E911E01DFC023900C84802 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E911D01DFC023900C84802 /* UIImageView+HighlightedWebCache.m */; };
 		04E911E11DFC023900C84802 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E911D21DFC023900C84802 /* UIImageView+WebCache.m */; };
 		04E911E21DFC023900C84802 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E911D41DFC023900C84802 /* UIView+WebCacheOperation.m */; };
-		E3A2F1B2D579BA562A9CE4E2 /* Pods_yxl_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C74BB5F1A8D2E1E5338EA7 /* Pods_yxl_iosUITests.framework */; };
-		EFEC97A96F5B14EE6D73FDA3 /* Pods_yxl_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A54A766749EB6A31918A35 /* Pods_yxl_iosTests.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		041241B41DE81BA30028E618 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 041241941DE81BA30028E618 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0412419B1DE81BA30028E618;
-			remoteInfo = "yxl-ios";
-		};
-		041241BF1DE81BA30028E618 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 041241941DE81BA30028E618 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0412419B1DE81BA30028E618;
-			remoteInfo = "yxl-ios";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		02C74BB5F1A8D2E1E5338EA7 /* Pods_yxl_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yxl_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,18 +53,6 @@
 		041241A71DE81BA30028E618 /* yxl_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = yxl_ios.xcdatamodel; sourceTree = "<group>"; };
 		041241A91DE81BA30028E618 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		041241AE1DE81BA30028E618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		041241B31DE81BA30028E618 /* yxl-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "yxl-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		041241B71DE81BA30028E618 /* yxl_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yxl_iosTests.swift; sourceTree = "<group>"; };
-		041241B91DE81BA30028E618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		041241BE1DE81BA30028E618 /* yxl-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "yxl-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		041241C21DE81BA30028E618 /* yxl_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yxl_iosUITests.swift; sourceTree = "<group>"; };
-		041241C41DE81BA30028E618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		046269FD1DFB922A00B4DE7C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04626A161DFB962E00B4DE7C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		04626A1A1DFB987E00B4DE7C /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
-		04626A1C1DFB9AF300B4DE7C /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
-		04626A1E1DFB9B5500B4DE7C /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		04626A241DFBA2BE00B4DE7C /* AnimationTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationTabBarController.swift; sourceTree = "<group>"; };
 		04626A261DFBA78900B4DE7C /* yxl_home_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_home_s@2x.png"; sourceTree = "<group>"; };
 		04626A271DFBA78900B4DE7C /* yxl_home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_home@2x.png"; sourceTree = "<group>"; };
 		04626A281DFBA78900B4DE7C /* yxl_message_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_message_s@2x.png"; sourceTree = "<group>"; };
@@ -100,20 +61,35 @@
 		04626A2B1DFBA78900B4DE7C /* yxl_mine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_mine@2x.png"; sourceTree = "<group>"; };
 		04626A2C1DFBA78900B4DE7C /* yxl_shop_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_shop_s@2x.png"; sourceTree = "<group>"; };
 		04626A2D1DFBA78900B4DE7C /* yxl_shop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_shop@2x.png"; sourceTree = "<group>"; };
-		04626A361DFBB32600B4DE7C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		04626A381DFBB43100B4DE7C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		04626A3A1DFBB44000B4DE7C /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
-		04626A3C1DFBB45500B4DE7C /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
-		04626A411DFBB48C00B4DE7C /* BusinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessViewController.swift; sourceTree = "<group>"; };
-		04626A431DFBB50900B4DE7C /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
-		04A058251DFBEF1D00250032 /* AppDelegate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extension.swift"; sourceTree = "<group>"; };
-		04A058271DFBF01900250032 /* Macros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
-		04A058291DFBF54A00250032 /* MainAD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAD.swift; sourceTree = "<group>"; };
-		04A0582B1DFBF58600250032 /* SwiftDictModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDictModel.swift; sourceTree = "<group>"; };
-		04A0582D1DFBFA7C00250032 /* AD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AD; sourceTree = "<group>"; };
-		04C8EF121DFBD63500A60305 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
-		04C8EF141DFBD7B000A60305 /* ADViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADViewController.swift; sourceTree = "<group>"; };
-		04C8EF1D1DFBE0B900A60305 /* YXL-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YXL-Bridging-Header.h"; sourceTree = "<group>"; };
+		04D318EE1DFE376D006C8016 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04D318EF1DFE376D006C8016 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04D319331DFE38EC006C8016 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04D319871DFE3E2F006C8016 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		04D319881DFE3E3D006C8016 /* Theme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
+		04D319891DFE3E46006C8016 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		04D3198A1DFE3E6A006C8016 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		04D3198B1DFE3EBB006C8016 /* AppDelegate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Category.h"; sourceTree = "<group>"; };
+		04D3198C1DFE3EBB006C8016 /* AppDelegate+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Category.m"; sourceTree = "<group>"; };
+		04D3198F1DFE3F23006C8016 /* UIColor+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Category.h"; sourceTree = "<group>"; };
+		04D319901DFE3F23006C8016 /* UIColor+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Category.m"; sourceTree = "<group>"; };
+		04D319951DFE3FE6006C8016 /* UITabBar+badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+badge.h"; sourceTree = "<group>"; };
+		04D319961DFE3FE6006C8016 /* UITabBar+badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+badge.m"; sourceTree = "<group>"; };
+		04D319981DFE3FEC006C8016 /* HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUD.h; sourceTree = "<group>"; };
+		04D319991DFE3FEC006C8016 /* HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUD.m; sourceTree = "<group>"; };
+		04D3199B1DFE4024006C8016 /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		04D3199C1DFE4024006C8016 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
+		04D319BA1DFE4300006C8016 /* ProgessHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgessHUD.h; sourceTree = "<group>"; };
+		04D319BB1DFE4300006C8016 /* ProgessHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgessHUD.m; sourceTree = "<group>"; };
+		04D319BC1DFE4300006C8016 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		04D319BD1DFE4300006C8016 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		04D319BE1DFE4300006C8016 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		04D319BF1DFE4300006C8016 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		04D319C01DFE4300006C8016 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		04D319C11DFE4300006C8016 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		04D319C21DFE4300006C8016 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		04D319C31DFE4300006C8016 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		04D319C41DFE4300006C8016 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		04D319C51DFE4300006C8016 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
 		04E911B81DFC023900C84802 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
 		04E911B91DFC023900C84802 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
 		04E911BA1DFC023900C84802 /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
@@ -162,22 +138,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		041241B01DE81BA30028E618 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EFEC97A96F5B14EE6D73FDA3 /* Pods_yxl_iosTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		041241BB1DE81BA30028E618 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E3A2F1B2D579BA562A9CE4E2 /* Pods_yxl_iosUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -196,8 +156,6 @@
 			isa = PBXGroup;
 			children = (
 				0412419C1DE81BA30028E618 /* yxl-ios.app */,
-				041241B31DE81BA30028E618 /* yxl-iosTests.xctest */,
-				041241BE1DE81BA30028E618 /* yxl-iosUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,30 +163,12 @@
 		0412419E1DE81BA30028E618 /* yxl-ios */ = {
 			isa = PBXGroup;
 			children = (
-				046269FD1DFB922A00B4DE7C /* AppDelegate.swift */,
-				04C8EF1D1DFBE0B900A60305 /* YXL-Bridging-Header.h */,
+				04D318EE1DFE376D006C8016 /* AppDelegate.h */,
+				04D318EF1DFE376D006C8016 /* AppDelegate.m */,
 				046269FF1DFB93DA00B4DE7C /* Class */,
 			);
 			path = "yxl-ios";
 			sourceTree = "<group>";
-		};
-		041241B61DE81BA30028E618 /* yxl-iosTests */ = {
-			isa = PBXGroup;
-			children = (
-				041241B71DE81BA30028E618 /* yxl_iosTests.swift */,
-				041241B91DE81BA30028E618 /* Info.plist */,
-			);
-			path = "yxl-iosTests";
-			sourceTree = SOURCE_ROOT;
-		};
-		041241C11DE81BA30028E618 /* yxl-iosUITests */ = {
-			isa = PBXGroup;
-			children = (
-				041241C21DE81BA30028E618 /* yxl_iosUITests.swift */,
-				041241C41DE81BA30028E618 /* Info.plist */,
-			);
-			path = "yxl-iosUITests";
-			sourceTree = SOURCE_ROOT;
 		};
 		046269FF1DFB93DA00B4DE7C /* Class */ = {
 			isa = PBXGroup;
@@ -253,7 +193,6 @@
 				04626A2B1DFBA78900B4DE7C /* yxl_mine@2x.png */,
 				04626A2C1DFBA78900B4DE7C /* yxl_shop_s@2x.png */,
 				04626A2D1DFBA78900B4DE7C /* yxl_shop@2x.png */,
-				04A0582D1DFBFA7C00250032 /* AD */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -263,7 +202,6 @@
 			children = (
 				04626A191DFB986900B4DE7C /* Global */,
 				04626A021DFB93DA00B4DE7C /* Network */,
-				04A0582B1DFBF58600250032 /* SwiftDictModel.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -280,7 +218,6 @@
 			children = (
 				04626A051DFB93DA00B4DE7C /* Category */,
 				04626A061DFB93DA00B4DE7C /* Common */,
-				04626A071DFB93DA00B4DE7C /* Extension */,
 			);
 			path = YXLBase;
 			sourceTree = "<group>";
@@ -288,6 +225,16 @@
 		04626A051DFB93DA00B4DE7C /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				04D3198B1DFE3EBB006C8016 /* AppDelegate+Category.h */,
+				04D3198C1DFE3EBB006C8016 /* AppDelegate+Category.m */,
+				04D3198F1DFE3F23006C8016 /* UIColor+Category.h */,
+				04D319901DFE3F23006C8016 /* UIColor+Category.m */,
+				04D319951DFE3FE6006C8016 /* UITabBar+badge.h */,
+				04D319961DFE3FE6006C8016 /* UITabBar+badge.m */,
+				04D3199B1DFE4024006C8016 /* UIView+Category.h */,
+				04D3199C1DFE4024006C8016 /* UIView+Category.m */,
+				04D319981DFE3FEC006C8016 /* HUD.h */,
+				04D319991DFE3FEC006C8016 /* HUD.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -295,25 +242,8 @@
 		04626A061DFB93DA00B4DE7C /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				04626A161DFB962E00B4DE7C /* BaseViewController.swift */,
-				04626A431DFBB50900B4DE7C /* BaseNavigationController.swift */,
-				04626A241DFBA2BE00B4DE7C /* AnimationTabBarController.swift */,
-				04626A361DFBB32600B4DE7C /* MainViewController.swift */,
-				04C8EF141DFBD7B000A60305 /* ADViewController.swift */,
-				04A058291DFBF54A00250032 /* MainAD.swift */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		04626A071DFB93DA00B4DE7C /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				04626A1C1DFB9AF300B4DE7C /* Color+Extension.swift */,
-				04626A1E1DFB9B5500B4DE7C /* UIView+Extension.swift */,
-				04C8EF121DFBD63500A60305 /* UIDevice+Extension.swift */,
-				04A058251DFBEF1D00250032 /* AppDelegate+Extension.swift */,
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		04626A081DFB93DA00B4DE7C /* YXLMain */ = {
@@ -331,7 +261,6 @@
 		04626A091DFB93DA00B4DE7C /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				04626A381DFBB43100B4DE7C /* HomeViewController.swift */,
 				04626A0A1DFB93DA00B4DE7C /* Model */,
 				04626A0B1DFB93DA00B4DE7C /* View */,
 			);
@@ -355,7 +284,6 @@
 		04626A0C1DFB93DA00B4DE7C /* Message */ = {
 			isa = PBXGroup;
 			children = (
-				04626A3A1DFBB44000B4DE7C /* MessageViewController.swift */,
 				04626A0D1DFB93DA00B4DE7C /* Model */,
 				04626A0E1DFB93DA00B4DE7C /* View */,
 			);
@@ -381,7 +309,6 @@
 			children = (
 				04626A101DFB93DA00B4DE7C /* Model */,
 				04626A111DFB93DA00B4DE7C /* View */,
-				04626A3C1DFBB45500B4DE7C /* MineViewController.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -410,6 +337,7 @@
 		04626A181DFB97C400B4DE7C /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				04D319B91DFE4300006C8016 /* SVProgressHUD */,
 				04E911B71DFC023900C84802 /* SDWebImage */,
 			);
 			path = Vender;
@@ -418,8 +346,10 @@
 		04626A191DFB986900B4DE7C /* Global */ = {
 			isa = PBXGroup;
 			children = (
-				04626A1A1DFB987E00B4DE7C /* Theme.swift */,
-				04A058271DFBF01900250032 /* Macros.swift */,
+				04D319871DFE3E2F006C8016 /* PrefixHeader.pch */,
+				04D319881DFE3E3D006C8016 /* Theme.h */,
+				04D319891DFE3E46006C8016 /* Define.h */,
+				04D3198A1DFE3E6A006C8016 /* Singleton.h */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -429,7 +359,6 @@
 			children = (
 				04626A3F1DFBB47F00B4DE7C /* Model */,
 				04626A401DFBB47F00B4DE7C /* View */,
-				04626A411DFBB48C00B4DE7C /* BusinessViewController.swift */,
 			);
 			path = Business;
 			sourceTree = "<group>";
@@ -451,14 +380,32 @@
 		0463D5DE1DE932C7003EA7C3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04D319331DFE38EC006C8016 /* main.m */,
 				041241A91DE81BA30028E618 /* Assets.xcassets */,
 				041241AE1DE81BA30028E618 /* Info.plist */,
 				041241A61DE81BA30028E618 /* yxl_ios.xcdatamodeld */,
-				041241B61DE81BA30028E618 /* yxl-iosTests */,
-				041241C11DE81BA30028E618 /* yxl-iosUITests */,
 			);
 			name = "Supporting Files";
 			path = "yxl-ios";
+			sourceTree = "<group>";
+		};
+		04D319B91DFE4300006C8016 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				04D319BA1DFE4300006C8016 /* ProgessHUD.h */,
+				04D319BB1DFE4300006C8016 /* ProgessHUD.m */,
+				04D319BC1DFE4300006C8016 /* SVIndefiniteAnimatedView.h */,
+				04D319BD1DFE4300006C8016 /* SVIndefiniteAnimatedView.m */,
+				04D319BE1DFE4300006C8016 /* SVProgressAnimatedView.h */,
+				04D319BF1DFE4300006C8016 /* SVProgressAnimatedView.m */,
+				04D319C01DFE4300006C8016 /* SVProgressHUD-Prefix.pch */,
+				04D319C11DFE4300006C8016 /* SVProgressHUD.bundle */,
+				04D319C21DFE4300006C8016 /* SVProgressHUD.h */,
+				04D319C31DFE4300006C8016 /* SVProgressHUD.m */,
+				04D319C41DFE4300006C8016 /* SVRadialGradientLayer.h */,
+				04D319C51DFE4300006C8016 /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 		04E911B71DFC023900C84802 /* SDWebImage */ = {
@@ -543,48 +490,6 @@
 			productReference = 0412419C1DE81BA30028E618 /* yxl-ios.app */;
 			productType = "com.apple.product-type.application";
 		};
-		041241B21DE81BA30028E618 /* yxl-iosTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 041241CA1DE81BA30028E618 /* Build configuration list for PBXNativeTarget "yxl-iosTests" */;
-			buildPhases = (
-				1E349323C1B7BAA250D662B9 /* [CP] Check Pods Manifest.lock */,
-				041241AF1DE81BA30028E618 /* Sources */,
-				041241B01DE81BA30028E618 /* Frameworks */,
-				041241B11DE81BA30028E618 /* Resources */,
-				A23E4A006A8DC11C30B8856C /* [CP] Embed Pods Frameworks */,
-				0759A0326463B1E86AAB9318 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				041241B51DE81BA30028E618 /* PBXTargetDependency */,
-			);
-			name = "yxl-iosTests";
-			productName = "yxl-iosTests";
-			productReference = 041241B31DE81BA30028E618 /* yxl-iosTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		041241BD1DE81BA30028E618 /* yxl-iosUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 041241CD1DE81BA30028E618 /* Build configuration list for PBXNativeTarget "yxl-iosUITests" */;
-			buildPhases = (
-				4A93691A1BFF3F3B7FFCA089 /* [CP] Check Pods Manifest.lock */,
-				041241BA1DE81BA30028E618 /* Sources */,
-				041241BB1DE81BA30028E618 /* Frameworks */,
-				041241BC1DE81BA30028E618 /* Resources */,
-				4462C9C233A17DF6D48EC01A /* [CP] Copy Pods Resources */,
-				AB04260C66502F561ABED5AE /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				041241C01DE81BA30028E618 /* PBXTargetDependency */,
-			);
-			name = "yxl-iosUITests";
-			productName = "yxl-iosUITests";
-			productReference = 041241BE1DE81BA30028E618 /* yxl-iosUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -599,16 +504,6 @@
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = UEE2H52CTA;
 						LastSwiftMigration = 0810;
-					};
-					041241B21DE81BA30028E618 = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0810;
-						TestTargetID = 0412419B1DE81BA30028E618;
-					};
-					041241BD1DE81BA30028E618 = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0810;
-						TestTargetID = 0412419B1DE81BA30028E618;
 					};
 				};
 			};
@@ -626,8 +521,6 @@
 			projectRoot = "";
 			targets = (
 				0412419B1DE81BA30028E618 /* yxl-ios */,
-				041241B21DE81BA30028E618 /* yxl-iosTests */,
-				041241BD1DE81BA30028E618 /* yxl-iosUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -642,7 +535,7 @@
 				04626A2F1DFBA78900B4DE7C /* yxl_home@2x.png in Resources */,
 				04626A311DFBA78900B4DE7C /* yxl_message@2x.png in Resources */,
 				04626A321DFBA78900B4DE7C /* yxl_mine_s@2x.png in Resources */,
-				04A0582E1DFBFA7C00250032 /* AD in Resources */,
+				04D319C91DFE4300006C8016 /* SVProgressHUD.bundle in Resources */,
 				04626A331DFBA78900B4DE7C /* yxl_mine@2x.png in Resources */,
 				041241AA1DE81BA30028E618 /* Assets.xcassets in Resources */,
 				04626A341DFBA78900B4DE7C /* yxl_shop_s@2x.png in Resources */,
@@ -650,83 +543,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		041241B11DE81BA30028E618 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		041241BC1DE81BA30028E618 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0759A0326463B1E86AAB9318 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yxl-iosTests/Pods-yxl-iosTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1E349323C1B7BAA250D662B9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		4462C9C233A17DF6D48EC01A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yxl-iosUITests/Pods-yxl-iosUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4A93691A1BFF3F3B7FFCA089 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		80B10C39A584E65786A64DFC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -740,36 +559,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yxl-ios/Pods-yxl-ios-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A23E4A006A8DC11C30B8856C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yxl-iosTests/Pods-yxl-iosTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AB04260C66502F561ABED5AE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yxl-iosUITests/Pods-yxl-iosUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C5EA2A7BD54EBB218B5F645D /* [CP] Check Pods Manifest.lock */ = {
@@ -809,72 +598,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04626A441DFBB50900B4DE7C /* BaseNavigationController.swift in Sources */,
-				04C8EF151DFBD7B000A60305 /* ADViewController.swift in Sources */,
-				04C8EF131DFBD63500A60305 /* UIDevice+Extension.swift in Sources */,
-				04626A1F1DFB9B5500B4DE7C /* UIView+Extension.swift in Sources */,
 				04E911E21DFC023900C84802 /* UIView+WebCacheOperation.m in Sources */,
-				04626A3D1DFBB45500B4DE7C /* MineViewController.swift in Sources */,
+				04D319C81DFE4300006C8016 /* SVProgressAnimatedView.m in Sources */,
 				04E911DB1DFC023900C84802 /* SDWebImageManager.m in Sources */,
+				04D3199D1DFE4024006C8016 /* UIView+Category.m in Sources */,
 				04E911D81DFC023900C84802 /* SDWebImageDecoder.m in Sources */,
-				046269FE1DFB922A00B4DE7C /* AppDelegate.swift in Sources */,
-				04626A251DFBA2BE00B4DE7C /* AnimationTabBarController.swift in Sources */,
 				04E911DC1DFC023900C84802 /* SDWebImagePrefetcher.m in Sources */,
+				04D318F01DFE376D006C8016 /* AppDelegate.m in Sources */,
 				04E911E11DFC023900C84802 /* UIImageView+WebCache.m in Sources */,
-				04A058261DFBEF1D00250032 /* AppDelegate+Extension.swift in Sources */,
-				04626A1D1DFB9AF300B4DE7C /* Color+Extension.swift in Sources */,
-				04626A3B1DFBB44000B4DE7C /* MessageViewController.swift in Sources */,
+				04D319971DFE3FE6006C8016 /* UITabBar+badge.m in Sources */,
+				04D319CA1DFE4300006C8016 /* SVProgressHUD.m in Sources */,
+				04D3198D1DFE3EBB006C8016 /* AppDelegate+Category.m in Sources */,
 				04E911DE1DFC023900C84802 /* UIImage+GIF.m in Sources */,
+				04D319C61DFE4300006C8016 /* ProgessHUD.m in Sources */,
+				04D319C71DFE4300006C8016 /* SVIndefiniteAnimatedView.m in Sources */,
 				04E911D51DFC023900C84802 /* NSData+ImageContentType.m in Sources */,
+				04D3199A1DFE3FEC006C8016 /* HUD.m in Sources */,
 				04E911D71DFC023900C84802 /* SDWebImageCompat.m in Sources */,
-				04626A421DFBB48C00B4DE7C /* BusinessViewController.swift in Sources */,
-				04A0582A1DFBF54A00250032 /* MainAD.swift in Sources */,
 				04E911D61DFC023900C84802 /* SDImageCache.m in Sources */,
 				04E911D91DFC023900C84802 /* SDWebImageDownloader.m in Sources */,
-				04626A1B1DFB987E00B4DE7C /* Theme.swift in Sources */,
-				04A0582C1DFBF58600250032 /* SwiftDictModel.swift in Sources */,
+				04D319CB1DFE4300006C8016 /* SVRadialGradientLayer.m in Sources */,
 				04E911DF1DFC023900C84802 /* UIImage+MultiFormat.m in Sources */,
+				04D319911DFE3F23006C8016 /* UIColor+Category.m in Sources */,
+				04D319341DFE38EC006C8016 /* main.m in Sources */,
 				04E911DD1DFC023900C84802 /* UIButton+WebCache.m in Sources */,
-				04A058281DFBF01900250032 /* Macros.swift in Sources */,
-				04626A391DFBB43100B4DE7C /* HomeViewController.swift in Sources */,
 				04E911DA1DFC023900C84802 /* SDWebImageDownloaderOperation.m in Sources */,
 				041241A81DE81BA30028E618 /* yxl_ios.xcdatamodeld in Sources */,
 				04E911E01DFC023900C84802 /* UIImageView+HighlightedWebCache.m in Sources */,
-				04626A171DFB962E00B4DE7C /* BaseViewController.swift in Sources */,
-				04626A371DFBB32600B4DE7C /* MainViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		041241AF1DE81BA30028E618 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				041241B81DE81BA30028E618 /* yxl_iosTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		041241BA1DE81BA30028E618 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				041241C31DE81BA30028E618 /* yxl_iosUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		041241B51DE81BA30028E618 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0412419B1DE81BA30028E618 /* yxl-ios */;
-			targetProxy = 041241B41DE81BA30028E618 /* PBXContainerItemProxy */;
-		};
-		041241C01DE81BA30028E618 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0412419B1DE81BA30028E618 /* yxl-ios */;
-			targetProxy = 041241BF1DE81BA30028E618 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		041241C51DE81BA30028E618 /* Debug */ = {
@@ -1007,64 +761,6 @@
 			};
 			name = Release;
 		};
-		041241CB1DE81BA30028E618 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA70F8AC591D63580217C364 /* Pods-yxl-iosTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "yxl-iosTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.erongchuang.yxl-iosTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yxl-ios.app/yxl-ios";
-			};
-			name = Debug;
-		};
-		041241CC1DE81BA30028E618 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCF8FE3F3AD418A4883E487A /* Pods-yxl-iosTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "yxl-iosTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.erongchuang.yxl-iosTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yxl-ios.app/yxl-ios";
-			};
-			name = Release;
-		};
-		041241CE1DE81BA30028E618 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D43156601C9F16E7185F0151 /* Pods-yxl-iosUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = "yxl-iosUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.erongchuang.yxl-iosUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "yxl-ios";
-			};
-			name = Debug;
-		};
-		041241CF1DE81BA30028E618 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C04F36A9F9077E68A0FBC8C7 /* Pods-yxl-iosUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = "yxl-iosUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.erongchuang.yxl-iosUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "yxl-ios";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1082,24 +778,6 @@
 			buildConfigurations = (
 				041241C81DE81BA30028E618 /* Debug */,
 				041241C91DE81BA30028E618 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		041241CA1DE81BA30028E618 /* Build configuration list for PBXNativeTarget "yxl-iosTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				041241CB1DE81BA30028E618 /* Debug */,
-				041241CC1DE81BA30028E618 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		041241CD1DE81BA30028E618 /* Build configuration list for PBXNativeTarget "yxl-iosUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				041241CE1DE81BA30028E618 /* Debug */,
-				041241CF1DE81BA30028E618 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
