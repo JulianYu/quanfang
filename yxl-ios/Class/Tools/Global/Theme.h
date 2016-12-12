@@ -9,5 +9,17 @@
 #ifndef Theme_h
 #define Theme_h
 
+#import "UIColor+Category.h"
+#import "UIView+Category.h"
+
+#define SUN_NavigationH 64
+
+#define SUN_GlobalBackgroundColor [UIColor SUN_ColorWithHexString:@"#E6E6E6" alpha:1]
+
+#define SUN_GlobalNormalColor [UIColor SUN_ColorWithHexString:@"#D0005D" alpha:1]
+
+#define SUN_GlobalTextGreyColor [UIColor SUN_ColorWithHexString:@"#828282" alpha:1]
+
+#define SUN_GlobalTextBlackColor [UIColor SUN_ColorWithHexString:@"#323232" alpha:1]
 
 #endif /* Theme_h */

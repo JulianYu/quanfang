@@ -9,5 +9,7 @@
 #ifndef Define_h
 #define Define_h
 
+#import "UIDevice+Category.h"
+
 
 #endif /* Define_h */

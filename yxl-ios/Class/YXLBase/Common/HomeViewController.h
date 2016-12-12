@@ -1,14 +1,13 @@
 //
-//  AppDelegate+Category.h
+//  HomeViewController.h
 //  yxl-ios
 //
 //  Created by mac on 16/12/12.
 //  Copyright © 2016年 孙若淮. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "YXLBaseViewController.h"
 
-@interface AppDelegate (Category)
-- (void)isFirstLaunched;
+@interface HomeViewController : YXLBaseViewController
 
 @end

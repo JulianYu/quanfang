@@ -31,6 +31,18 @@
 		04D319C91DFE4300006C8016 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04D319C11DFE4300006C8016 /* SVProgressHUD.bundle */; };
 		04D319CA1DFE4300006C8016 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D319C31DFE4300006C8016 /* SVProgressHUD.m */; };
 		04D319CB1DFE4300006C8016 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D319C51DFE4300006C8016 /* SVRadialGradientLayer.m */; };
+		04D319D11DFE4FCD006C8016 /* YXLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D319D01DFE4FCD006C8016 /* YXLNavigationController.m */; };
+		04D319D71DFE509E006C8016 /* YXLAnimationTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D319D61DFE509E006C8016 /* YXLAnimationTabBarController.m */; };
+		04D319DA1DFE5137006C8016 /* YXLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D319D91DFE5137006C8016 /* YXLBaseViewController.m */; };
+		04D319DD1DFE564F006C8016 /* YXLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D319DC1DFE564F006C8016 /* YXLTabBarController.m */; };
+		04D319E01DFE5688006C8016 /* BusinessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D319DF1DFE5688006C8016 /* BusinessViewController.m */; };
+		04D319E31DFE5695006C8016 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D319E21DFE5695006C8016 /* HomeViewController.m */; };
+		04D319E61DFE56A6006C8016 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D319E51DFE56A6006C8016 /* MessageViewController.m */; };
+		04D319E91DFE56B1006C8016 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D319E81DFE56B1006C8016 /* MineViewController.m */; };
+		04D319EC1DFE6C37006C8016 /* UIDevice+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D319EB1DFE6C37006C8016 /* UIDevice+Category.m */; };
+		04D319F01DFE8946006C8016 /* yxl_nav_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D319EE1DFE8946006C8016 /* yxl_nav_bg@2x.png */; };
+		04D319F31DFE897E006C8016 /* yxl_nav_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D319F21DFE897E006C8016 /* yxl_nav_back@2x.png */; };
+		04D319F61DFE89E2006C8016 /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D319F51DFE89E2006C8016 /* UIBarButtonItem+Item.m */; };
 		04E911D51DFC023900C84802 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E911B91DFC023900C84802 /* NSData+ImageContentType.m */; };
 		04E911D61DFC023900C84802 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E911BB1DFC023900C84802 /* SDImageCache.m */; };
 		04E911D71DFC023900C84802 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E911BD1DFC023900C84802 /* SDWebImageCompat.m */; };
@@ -64,7 +76,6 @@
 		04D318EE1DFE376D006C8016 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04D318EF1DFE376D006C8016 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		04D319331DFE38EC006C8016 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		04D319871DFE3E2F006C8016 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		04D319881DFE3E3D006C8016 /* Theme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
 		04D319891DFE3E46006C8016 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		04D3198A1DFE3E6A006C8016 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
@@ -90,6 +101,29 @@
 		04D319C31DFE4300006C8016 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		04D319C41DFE4300006C8016 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
 		04D319C51DFE4300006C8016 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		04D319CF1DFE4FCD006C8016 /* YXLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXLNavigationController.h; sourceTree = "<group>"; };
+		04D319D01DFE4FCD006C8016 /* YXLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXLNavigationController.m; sourceTree = "<group>"; };
+		04D319D51DFE509E006C8016 /* YXLAnimationTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXLAnimationTabBarController.h; sourceTree = "<group>"; };
+		04D319D61DFE509E006C8016 /* YXLAnimationTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXLAnimationTabBarController.m; sourceTree = "<group>"; };
+		04D319D81DFE5137006C8016 /* YXLBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXLBaseViewController.h; sourceTree = "<group>"; };
+		04D319D91DFE5137006C8016 /* YXLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXLBaseViewController.m; sourceTree = "<group>"; };
+		04D319DB1DFE564F006C8016 /* YXLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXLTabBarController.h; sourceTree = "<group>"; };
+		04D319DC1DFE564F006C8016 /* YXLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXLTabBarController.m; sourceTree = "<group>"; };
+		04D319DE1DFE5688006C8016 /* BusinessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BusinessViewController.h; path = "yxl-ios/Class/YXLBase/Common/BusinessViewController.h"; sourceTree = SOURCE_ROOT; };
+		04D319DF1DFE5688006C8016 /* BusinessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BusinessViewController.m; path = "yxl-ios/Class/YXLBase/Common/BusinessViewController.m"; sourceTree = SOURCE_ROOT; };
+		04D319E11DFE5695006C8016 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = "yxl-ios/Class/YXLBase/Common/HomeViewController.h"; sourceTree = SOURCE_ROOT; };
+		04D319E21DFE5695006C8016 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = "yxl-ios/Class/YXLBase/Common/HomeViewController.m"; sourceTree = SOURCE_ROOT; };
+		04D319E41DFE56A6006C8016 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageViewController.h; path = "yxl-ios/Class/YXLBase/Common/MessageViewController.h"; sourceTree = SOURCE_ROOT; };
+		04D319E51DFE56A6006C8016 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageViewController.m; path = "yxl-ios/Class/YXLBase/Common/MessageViewController.m"; sourceTree = SOURCE_ROOT; };
+		04D319E71DFE56B1006C8016 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MineViewController.h; path = "yxl-ios/Class/YXLBase/Common/MineViewController.h"; sourceTree = SOURCE_ROOT; };
+		04D319E81DFE56B1006C8016 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MineViewController.m; path = "yxl-ios/Class/YXLBase/Common/MineViewController.m"; sourceTree = SOURCE_ROOT; };
+		04D319EA1DFE6C37006C8016 /* UIDevice+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Category.h"; sourceTree = "<group>"; };
+		04D319EB1DFE6C37006C8016 /* UIDevice+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Category.m"; sourceTree = "<group>"; };
+		04D319ED1DFE77AF006C8016 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../../../PrefixHeader.pch; sourceTree = "<group>"; };
+		04D319EE1DFE8946006C8016 /* yxl_nav_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_nav_bg@2x.png"; sourceTree = "<group>"; };
+		04D319F21DFE897E006C8016 /* yxl_nav_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_nav_back@2x.png"; sourceTree = "<group>"; };
+		04D319F41DFE89E2006C8016 /* UIBarButtonItem+Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Item.h"; sourceTree = "<group>"; };
+		04D319F51DFE89E2006C8016 /* UIBarButtonItem+Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Item.m"; sourceTree = "<group>"; };
 		04E911B81DFC023900C84802 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
 		04E911B91DFC023900C84802 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
 		04E911BA1DFC023900C84802 /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
@@ -185,6 +219,8 @@
 		04626A001DFB93DA00B4DE7C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				04D319EE1DFE8946006C8016 /* yxl_nav_bg@2x.png */,
+				04D319F21DFE897E006C8016 /* yxl_nav_back@2x.png */,
 				04626A261DFBA78900B4DE7C /* yxl_home_s@2x.png */,
 				04626A271DFBA78900B4DE7C /* yxl_home@2x.png */,
 				04626A281DFBA78900B4DE7C /* yxl_message_s@2x.png */,
@@ -233,6 +269,10 @@
 				04D319961DFE3FE6006C8016 /* UITabBar+badge.m */,
 				04D3199B1DFE4024006C8016 /* UIView+Category.h */,
 				04D3199C1DFE4024006C8016 /* UIView+Category.m */,
+				04D319EA1DFE6C37006C8016 /* UIDevice+Category.h */,
+				04D319EB1DFE6C37006C8016 /* UIDevice+Category.m */,
+				04D319F41DFE89E2006C8016 /* UIBarButtonItem+Item.h */,
+				04D319F51DFE89E2006C8016 /* UIBarButtonItem+Item.m */,
 				04D319981DFE3FEC006C8016 /* HUD.h */,
 				04D319991DFE3FEC006C8016 /* HUD.m */,
 			);
@@ -242,6 +282,14 @@
 		04626A061DFB93DA00B4DE7C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				04D319CF1DFE4FCD006C8016 /* YXLNavigationController.h */,
+				04D319D01DFE4FCD006C8016 /* YXLNavigationController.m */,
+				04D319D81DFE5137006C8016 /* YXLBaseViewController.h */,
+				04D319D91DFE5137006C8016 /* YXLBaseViewController.m */,
+				04D319D51DFE509E006C8016 /* YXLAnimationTabBarController.h */,
+				04D319D61DFE509E006C8016 /* YXLAnimationTabBarController.m */,
+				04D319DB1DFE564F006C8016 /* YXLTabBarController.h */,
+				04D319DC1DFE564F006C8016 /* YXLTabBarController.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -263,6 +311,8 @@
 			children = (
 				04626A0A1DFB93DA00B4DE7C /* Model */,
 				04626A0B1DFB93DA00B4DE7C /* View */,
+				04D319E11DFE5695006C8016 /* HomeViewController.h */,
+				04D319E21DFE5695006C8016 /* HomeViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -286,6 +336,8 @@
 			children = (
 				04626A0D1DFB93DA00B4DE7C /* Model */,
 				04626A0E1DFB93DA00B4DE7C /* View */,
+				04D319E41DFE56A6006C8016 /* MessageViewController.h */,
+				04D319E51DFE56A6006C8016 /* MessageViewController.m */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -309,6 +361,8 @@
 			children = (
 				04626A101DFB93DA00B4DE7C /* Model */,
 				04626A111DFB93DA00B4DE7C /* View */,
+				04D319E71DFE56B1006C8016 /* MineViewController.h */,
+				04D319E81DFE56B1006C8016 /* MineViewController.m */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -346,7 +400,7 @@
 		04626A191DFB986900B4DE7C /* Global */ = {
 			isa = PBXGroup;
 			children = (
-				04D319871DFE3E2F006C8016 /* PrefixHeader.pch */,
+				04D319ED1DFE77AF006C8016 /* PrefixHeader.pch */,
 				04D319881DFE3E3D006C8016 /* Theme.h */,
 				04D319891DFE3E46006C8016 /* Define.h */,
 				04D3198A1DFE3E6A006C8016 /* Singleton.h */,
@@ -359,6 +413,8 @@
 			children = (
 				04626A3F1DFBB47F00B4DE7C /* Model */,
 				04626A401DFBB47F00B4DE7C /* View */,
+				04D319DE1DFE5688006C8016 /* BusinessViewController.h */,
+				04D319DF1DFE5688006C8016 /* BusinessViewController.m */,
 			);
 			path = Business;
 			sourceTree = "<group>";
@@ -536,8 +592,10 @@
 				04626A311DFBA78900B4DE7C /* yxl_message@2x.png in Resources */,
 				04626A321DFBA78900B4DE7C /* yxl_mine_s@2x.png in Resources */,
 				04D319C91DFE4300006C8016 /* SVProgressHUD.bundle in Resources */,
+				04D319F01DFE8946006C8016 /* yxl_nav_bg@2x.png in Resources */,
 				04626A331DFBA78900B4DE7C /* yxl_mine@2x.png in Resources */,
 				041241AA1DE81BA30028E618 /* Assets.xcassets in Resources */,
+				04D319F31DFE897E006C8016 /* yxl_nav_back@2x.png in Resources */,
 				04626A341DFBA78900B4DE7C /* yxl_shop_s@2x.png in Resources */,
 				04626A2E1DFBA78900B4DE7C /* yxl_home_s@2x.png in Resources */,
 			);
@@ -607,23 +665,33 @@
 				04D318F01DFE376D006C8016 /* AppDelegate.m in Sources */,
 				04E911E11DFC023900C84802 /* UIImageView+WebCache.m in Sources */,
 				04D319971DFE3FE6006C8016 /* UITabBar+badge.m in Sources */,
+				04D319D11DFE4FCD006C8016 /* YXLNavigationController.m in Sources */,
+				04D319D71DFE509E006C8016 /* YXLAnimationTabBarController.m in Sources */,
 				04D319CA1DFE4300006C8016 /* SVProgressHUD.m in Sources */,
 				04D3198D1DFE3EBB006C8016 /* AppDelegate+Category.m in Sources */,
 				04E911DE1DFC023900C84802 /* UIImage+GIF.m in Sources */,
+				04D319E61DFE56A6006C8016 /* MessageViewController.m in Sources */,
 				04D319C61DFE4300006C8016 /* ProgessHUD.m in Sources */,
 				04D319C71DFE4300006C8016 /* SVIndefiniteAnimatedView.m in Sources */,
 				04E911D51DFC023900C84802 /* NSData+ImageContentType.m in Sources */,
+				04D319E31DFE5695006C8016 /* HomeViewController.m in Sources */,
 				04D3199A1DFE3FEC006C8016 /* HUD.m in Sources */,
 				04E911D71DFC023900C84802 /* SDWebImageCompat.m in Sources */,
 				04E911D61DFC023900C84802 /* SDImageCache.m in Sources */,
+				04D319E91DFE56B1006C8016 /* MineViewController.m in Sources */,
 				04E911D91DFC023900C84802 /* SDWebImageDownloader.m in Sources */,
+				04D319F61DFE89E2006C8016 /* UIBarButtonItem+Item.m in Sources */,
 				04D319CB1DFE4300006C8016 /* SVRadialGradientLayer.m in Sources */,
 				04E911DF1DFC023900C84802 /* UIImage+MultiFormat.m in Sources */,
 				04D319911DFE3F23006C8016 /* UIColor+Category.m in Sources */,
+				04D319DD1DFE564F006C8016 /* YXLTabBarController.m in Sources */,
 				04D319341DFE38EC006C8016 /* main.m in Sources */,
+				04D319EC1DFE6C37006C8016 /* UIDevice+Category.m in Sources */,
+				04D319DA1DFE5137006C8016 /* YXLBaseViewController.m in Sources */,
 				04E911DD1DFC023900C84802 /* UIButton+WebCache.m in Sources */,
 				04E911DA1DFC023900C84802 /* SDWebImageDownloaderOperation.m in Sources */,
 				041241A81DE81BA30028E618 /* yxl_ios.xcdatamodeld in Sources */,
+				04D319E01DFE5688006C8016 /* BusinessViewController.m in Sources */,
 				04E911E01DFC023900C84802 /* UIImageView+HighlightedWebCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -730,6 +798,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = UEE2H52CTA;
 				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/yxl-ios/PrefixHeader.pch";
 				INFOPLIST_FILE = "yxl-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -751,6 +821,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = UEE2H52CTA;
 				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/yxl-ios/PrefixHeader.pch";
 				INFOPLIST_FILE = "yxl-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

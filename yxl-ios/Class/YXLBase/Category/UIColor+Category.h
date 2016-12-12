@@ -10,11 +10,10 @@
 
 @interface UIColor (Category)
 
-/*  hex颜色转换 */
+/**  hex颜色转换 */
 + (UIColor *)SUN_ColorWithHexString:(NSString *)color alpha:(CGFloat)alpha;
     
-/* UIColor 转UIImage */
-
+/** UIColor 转UIImage */
 + (UIImage *)SUN_ImageWithColor:(UIColor *)color;
 
 
