@@ -11,12 +11,15 @@
 
 #import "UIColor+Category.h"
 #import "UIView+Category.h"
+#import "UILabel+Category.h"
 
 #define SUN_NavigationH 64
 
 #define SUN_GlobalBackgroundColor [UIColor SUN_ColorWithHexString:@"#E6E6E6" alpha:1]
 
-#define SUN_GlobalNormalColor [UIColor SUN_ColorWithHexString:@"#D0005D" alpha:1]
+#define SUN_GlobalNormalColor [UIColor SUN_ColorWithHexString:@"#E70050" alpha:1]
+
+#define SUN_GlobalTextWhiteColor [UIColor SUN_ColorWithHexString:@"#FFFFFF" alpha:1]
 
 #define SUN_GlobalTextGreyColor [UIColor SUN_ColorWithHexString:@"#828282" alpha:1]
 

@@ -17,7 +17,9 @@
 
 + (void)initialize {
     UINavigationBar *bar = [UINavigationBar appearanceWhenContainedIn:[self class], nil];
-    [bar setBackgroundImage:[UIImage imageNamed:@"yxl_nav_bg"] forBarMetrics:UIBarMetricsDefault];
+    
+    
+    [bar setBackgroundImage:[UIColor SUN_ImageWithColor:SUN_GlobalNormalColor] forBarMetrics:UIBarMetricsDefault];
     [bar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     
 }

@@ -228,7 +228,7 @@ return CGPointMake(CGRectGetWidth(self.bounds) / 2.f, CGRectGetHeight(self.bound
     return view;
 }
 
-/* 3.创建边框 */
+/* 3.设置边框 */
 - (void)SUN_SetBordersWithColor:(UIColor *)color
         andCornerRadius:(CGFloat)radius
                andWidth:(CGFloat)width
@@ -279,7 +279,7 @@ return CGPointMake(CGRectGetWidth(self.bounds) / 2.f, CGRectGetHeight(self.bound
     [roundedlayer setMasksToBounds:YES];
 }
 
-/* 7.创建阴影 */
+/* 7.设置阴影 */
 - (void)SUN_SetRectShadowWithOffset:(CGSize)offset
                     opacity:(CGFloat)opacity
                      radius:(CGFloat)radius
@@ -296,7 +296,7 @@ return CGPointMake(CGRectGetWidth(self.bounds) / 2.f, CGRectGetHeight(self.bound
     self.layer.masksToBounds = NO;
 }
 
-/* 8.创建圆角半径阴影 */
+/* 8.设置圆角半径阴影 */
 - (void)SUN_SetCornerRadiusShadowWithCornerRadius:(CGFloat)cornerRadius
                                    offset:(CGSize)offset
                                   opacity:(CGFloat)opacity

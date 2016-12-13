@@ -9,5 +9,6 @@ target 'yxl-ios' do
     pod 'ReactiveCocoa', '5.0.0-alpha.3'
     pod 'RongCloudIMKit', '~> 2.7.0'
     pod 'pop', '~> 1.0'
+    pod 'Masonry', '~> 1.0.1'
 
 end

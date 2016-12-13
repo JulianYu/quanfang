@@ -1,0 +1,109 @@
+//
+//  MineTrunkView.m
+//  yxl-ios
+//
+//  Created by mac on 16/12/13.
+//  Copyright © 2016年 孙若淮. All rights reserved.
+//
+
+#import "MineTrunkView.h"
+#import "MineModel.h"
+#import "MineSecondRowCell.h"
+@interface MineTrunkView()<UITableViewDelegate,UITableViewDataSource>
+
+@property( nonatomic, strong) UITableView        * tableView;
+@property( nonatomic, strong) MineModel          * model;
+@end
+
+@implementation MineTrunkView
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.backgroundColor = [UIColor whiteColor];
+        
+        [self buildUI];
+    }
+    return self;
+}
+-(void)buildUI{
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"MineList" ofType:@"plist"];
+    self.model = [MineModel mj_objectWithFile:plistPath];
+    
+    [self.tableView reloadData];
+    
+}
+-(UITableView *)tableView{
+    if (!_tableView) {
+        _tableView = [UITableView new];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        _tableView.showsVerticalScrollIndicator = NO;
+        _tableView.showsHorizontalScrollIndicator = NO;
+        _tableView.tableFooterView = [UIView new];
+        [_tableView registerNib:[UINib nibWithNibName:@"MineSecondRowCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"secondCell"];
+        [self addSubview:_tableView];
+        [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.mas_equalTo(UIEdgeInsetsMake(-10, 0, 0, 0));
+        }];
+        
+    }
+    return _tableView;
+}
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return self.model.dataArray.count;
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return 2;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 0) {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"firstCell"];
+        if (!cell) {
+            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"firstcell"];
+        }
+        cell.textLabel.text = self.model.dataArray[indexPath.section].title;
+        cell.textLabel.font = [UIFont systemFontOfSize:12];
+        cell.textLabel.textColor = SUN_GlobalTextGreyColor;
+        return cell;
+    }
+    else{
+        MineSecondRowCell *cell = [tableView dequeueReusableCellWithIdentifier:@"secondCell" forIndexPath:indexPath];
+        for (UIImageView * imageView in cell.imageArray) {
+            if (imageView.tag == self.model.dataArray[indexPath.section].data.count) {
+                break;
+            }
+            RowData *data = self.model.dataArray[indexPath.section].data[imageView.tag];
+            
+            [imageView setImage:[UIImage imageNamed:data.img]];
+            imageView.contentMode = UIViewContentModeScaleAspectFit;
+        }
+        for (UILabel *label in cell.labelArray) {
+            if (label.tag == self.model.dataArray[indexPath.section].data.count) {
+                break;
+            }
+            RowData *data = self.model.dataArray[indexPath.section].data[label.tag];
+            label.textColor = SUN_GlobalTextGreyColor;
+            label.text = data.text;
+        }
+        
+        return cell;
+    }
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 0) {
+        return 34;
+    }
+    return (SCREEN_HEIGHT-34-10)/8;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    if (section == 0) {
+        return 0;
+    }
+    return 10;
+}
+
+
+@end

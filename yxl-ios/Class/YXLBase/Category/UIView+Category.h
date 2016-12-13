@@ -140,7 +140,7 @@ typedef NS_ENUM(NSInteger, UIViewLinearGradientDirection)
 + (UIView *)SUN_ViewWithFrame:(CGRect)frame
           backgroundColor:(UIColor *)backgroundColor;
 
-/** 3.创建边框 */
+/** 3.设置边框 */
 - (void)SUN_SetBordersWithColor:(UIColor *)color
             andCornerRadius:(CGFloat)radius
                    andWidth:(CGFloat)width;
@@ -148,7 +148,7 @@ typedef NS_ENUM(NSInteger, UIViewLinearGradientDirection)
 /** 4.删除边框 */
 - (void)SUN_RemoveBorders;
 
-/** 5.创建阴影 */
+/** 5.设置阴影 */
 - (void)SUN_SetRectShadowWithOffset:(CGSize)offset
                         opacity:(CGFloat)opacity
                          radius:(CGFloat)radius;
@@ -156,7 +156,7 @@ typedef NS_ENUM(NSInteger, UIViewLinearGradientDirection)
 /** 6.删除阴影 */
 - (void)SUN_RemoveShadow;
 
-/** 7.创建圆角半径阴影 */
+/** 7.设置圆角半径阴影 */
 - (void)SUN_SetCornerRadiusShadowWithCornerRadius:(CGFloat)cornerRadius
            offset:(CGSize)offset
           opacity:(CGFloat)opacity

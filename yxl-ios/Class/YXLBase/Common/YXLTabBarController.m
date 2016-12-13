@@ -113,9 +113,6 @@
     vc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     YXLNavigationController *nav = [[YXLNavigationController alloc] initWithRootViewController:vc];
-    
-    
-    
     [self addChildViewController:nav];
 }
 
