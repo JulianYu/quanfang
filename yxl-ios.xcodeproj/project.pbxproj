@@ -10,6 +10,46 @@
 		04108B1A537634AD51D332D0 /* Pods_yxl_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7F9367702B647B7973BF59 /* Pods_yxl_ios.framework */; };
 		041241A81DE81BA30028E618 /* yxl_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 041241A61DE81BA30028E618 /* yxl_ios.xcdatamodeld */; };
 		041241AA1DE81BA30028E618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041241A91DE81BA30028E618 /* Assets.xcassets */; };
+		042B59EC1DFF812A002BB6A5 /* yxl_nav_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B59DE1DFF812A002BB6A5 /* yxl_nav_add@2x.png */; };
+		042B5A1B1DFF835F002BB6A5 /* yxl_home_cashier@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A021DFF835F002BB6A5 /* yxl_home_cashier@2x.png */; };
+		042B5A1C1DFF835F002BB6A5 /* yxl_home_convert@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A031DFF835F002BB6A5 /* yxl_home_convert@2x.png */; };
+		042B5A1D1DFF835F002BB6A5 /* yxl_home_join@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A041DFF835F002BB6A5 /* yxl_home_join@2x.png */; };
+		042B5A1E1DFF835F002BB6A5 /* yxl_home_notice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A051DFF835F002BB6A5 /* yxl_home_notice@2x.png */; };
+		042B5A1F1DFF835F002BB6A5 /* yxl_home_points@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A061DFF835F002BB6A5 /* yxl_home_points@2x.png */; };
+		042B5A201DFF835F002BB6A5 /* yxl_home_popularize@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A071DFF835F002BB6A5 /* yxl_home_popularize@2x.png */; };
+		042B5A211DFF835F002BB6A5 /* yxl_home_pyramid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A081DFF835F002BB6A5 /* yxl_home_pyramid@2x.png */; };
+		042B5A221DFF835F002BB6A5 /* yxl_home_recharge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A091DFF835F002BB6A5 /* yxl_home_recharge@2x.png */; };
+		042B5A231DFF835F002BB6A5 /* yxl_home_scan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A0A1DFF835F002BB6A5 /* yxl_home_scan@2x.png */; };
+		042B5A241DFF835F002BB6A5 /* yxl_home_statistics@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A0B1DFF835F002BB6A5 /* yxl_home_statistics@2x.png */; };
+		042B5A251DFF835F002BB6A5 /* yxl_home_stock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A0C1DFF835F002BB6A5 /* yxl_home_stock@2x.png */; };
+		042B5A261DFF835F002BB6A5 /* yxl_home_vip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A0D1DFF835F002BB6A5 /* yxl_home_vip@2x.png */; };
+		042B5A271DFF835F002BB6A5 /* yxl_home_withdraw@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A0E1DFF835F002BB6A5 /* yxl_home_withdraw@2x.png */; };
+		042B5A281DFF835F002BB6A5 /* yxl_shop_beauty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A111DFF835F002BB6A5 /* yxl_shop_beauty@2x.png */; };
+		042B5A291DFF835F002BB6A5 /* yxl_shop_building@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A121DFF835F002BB6A5 /* yxl_shop_building@2x.png */; };
+		042B5A2A1DFF835F002BB6A5 /* yxl_shop_clothes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A131DFF835F002BB6A5 /* yxl_shop_clothes@2x.png */; };
+		042B5A2B1DFF835F002BB6A5 /* yxl_shop_electrical@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A141DFF835F002BB6A5 /* yxl_shop_electrical@2x.png */; };
+		042B5A2C1DFF835F002BB6A5 /* yxl_shop_food@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A151DFF835F002BB6A5 /* yxl_shop_food@2x.png */; };
+		042B5A2D1DFF835F002BB6A5 /* yxl_shop_life@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A161DFF835F002BB6A5 /* yxl_shop_life@2x.png */; };
+		042B5A2E1DFF835F002BB6A5 /* yxl_shop_location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A171DFF835F002BB6A5 /* yxl_shop_location@2x.png */; };
+		042B5A2F1DFF835F002BB6A5 /* yxl_shop_ornament@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A181DFF835F002BB6A5 /* yxl_shop_ornament@2x.png */; };
+		042B5A301DFF835F002BB6A5 /* yxl_shop_search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A191DFF835F002BB6A5 /* yxl_shop_search@2x.png */; };
+		042B5A311DFF835F002BB6A5 /* yxl_shop_tea@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A1A1DFF835F002BB6A5 /* yxl_shop_tea@2x.png */; };
+		042B5A421DFF8791002BB6A5 /* yxl_mine_bankcard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A321DFF8791002BB6A5 /* yxl_mine_bankcard@2x.png */; };
+		042B5A431DFF8791002BB6A5 /* yxl_mine_capital@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A331DFF8791002BB6A5 /* yxl_mine_capital@2x.png */; };
+		042B5A441DFF8791002BB6A5 /* yxl_mine_collection@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A341DFF8791002BB6A5 /* yxl_mine_collection@2x.png */; };
+		042B5A451DFF8791002BB6A5 /* yxl_mine_convert@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A351DFF8791002BB6A5 /* yxl_mine_convert@2x.png */; };
+		042B5A461DFF8791002BB6A5 /* yxl_mine_detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A361DFF8791002BB6A5 /* yxl_mine_detail@2x.png */; };
+		042B5A471DFF8791002BB6A5 /* yxl_mine_first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A371DFF8791002BB6A5 /* yxl_mine_first@2x.png */; };
+		042B5A481DFF8791002BB6A5 /* yxl_mine_history@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A381DFF8791002BB6A5 /* yxl_mine_history@2x.png */; };
+		042B5A491DFF8791002BB6A5 /* yxl_mine_pendingConsignment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A391DFF8791002BB6A5 /* yxl_mine_pendingConsignment@2x.png */; };
+		042B5A4A1DFF8791002BB6A5 /* yxl_mine_pendingDispatch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A3A1DFF8791002BB6A5 /* yxl_mine_pendingDispatch@2x.png */; };
+		042B5A4B1DFF8791002BB6A5 /* yxl_mine_pendingPay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A3B1DFF8791002BB6A5 /* yxl_mine_pendingPay@2x.png */; };
+		042B5A4C1DFF8791002BB6A5 /* yxl_mine_points@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A3C1DFF8791002BB6A5 /* yxl_mine_points@2x.png */; };
+		042B5A4D1DFF8791002BB6A5 /* yxl_mine_QRCode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A3D1DFF8791002BB6A5 /* yxl_mine_QRCode@2x.png */; };
+		042B5A4E1DFF8791002BB6A5 /* yxl_mine_scan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A3E1DFF8791002BB6A5 /* yxl_mine_scan@2x.png */; };
+		042B5A4F1DFF8791002BB6A5 /* yxl_mine_second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A3F1DFF8791002BB6A5 /* yxl_mine_second@2x.png */; };
+		042B5A501DFF8791002BB6A5 /* yxl_mine_setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A401DFF8791002BB6A5 /* yxl_mine_setting@2x.png */; };
+		042B5A511DFF8791002BB6A5 /* yxl_mine_third@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A411DFF8791002BB6A5 /* yxl_mine_third@2x.png */; };
 		04626A2E1DFBA78900B4DE7C /* yxl_home_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04626A261DFBA78900B4DE7C /* yxl_home_s@2x.png */; };
 		04626A2F1DFBA78900B4DE7C /* yxl_home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04626A271DFBA78900B4DE7C /* yxl_home@2x.png */; };
 		04626A301DFBA78900B4DE7C /* yxl_message_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04626A281DFBA78900B4DE7C /* yxl_message_s@2x.png */; };
@@ -65,6 +105,46 @@
 		041241A71DE81BA30028E618 /* yxl_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = yxl_ios.xcdatamodel; sourceTree = "<group>"; };
 		041241A91DE81BA30028E618 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		041241AE1DE81BA30028E618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042B59DE1DFF812A002BB6A5 /* yxl_nav_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_nav_add@2x.png"; sourceTree = "<group>"; };
+		042B5A021DFF835F002BB6A5 /* yxl_home_cashier@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_home_cashier@2x.png"; sourceTree = "<group>"; };
+		042B5A031DFF835F002BB6A5 /* yxl_home_convert@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_home_convert@2x.png"; sourceTree = "<group>"; };
+		042B5A041DFF835F002BB6A5 /* yxl_home_join@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_home_join@2x.png"; sourceTree = "<group>"; };
+		042B5A051DFF835F002BB6A5 /* yxl_home_notice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_home_notice@2x.png"; sourceTree = "<group>"; };
+		042B5A061DFF835F002BB6A5 /* yxl_home_points@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_home_points@2x.png"; sourceTree = "<group>"; };
+		042B5A071DFF835F002BB6A5 /* yxl_home_popularize@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_home_popularize@2x.png"; sourceTree = "<group>"; };
+		042B5A081DFF835F002BB6A5 /* yxl_home_pyramid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_home_pyramid@2x.png"; sourceTree = "<group>"; };
+		042B5A091DFF835F002BB6A5 /* yxl_home_recharge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_home_recharge@2x.png"; sourceTree = "<group>"; };
+		042B5A0A1DFF835F002BB6A5 /* yxl_home_scan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_home_scan@2x.png"; sourceTree = "<group>"; };
+		042B5A0B1DFF835F002BB6A5 /* yxl_home_statistics@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_home_statistics@2x.png"; sourceTree = "<group>"; };
+		042B5A0C1DFF835F002BB6A5 /* yxl_home_stock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_home_stock@2x.png"; sourceTree = "<group>"; };
+		042B5A0D1DFF835F002BB6A5 /* yxl_home_vip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_home_vip@2x.png"; sourceTree = "<group>"; };
+		042B5A0E1DFF835F002BB6A5 /* yxl_home_withdraw@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_home_withdraw@2x.png"; sourceTree = "<group>"; };
+		042B5A111DFF835F002BB6A5 /* yxl_shop_beauty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_shop_beauty@2x.png"; sourceTree = "<group>"; };
+		042B5A121DFF835F002BB6A5 /* yxl_shop_building@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_shop_building@2x.png"; sourceTree = "<group>"; };
+		042B5A131DFF835F002BB6A5 /* yxl_shop_clothes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_shop_clothes@2x.png"; sourceTree = "<group>"; };
+		042B5A141DFF835F002BB6A5 /* yxl_shop_electrical@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_shop_electrical@2x.png"; sourceTree = "<group>"; };
+		042B5A151DFF835F002BB6A5 /* yxl_shop_food@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_shop_food@2x.png"; sourceTree = "<group>"; };
+		042B5A161DFF835F002BB6A5 /* yxl_shop_life@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_shop_life@2x.png"; sourceTree = "<group>"; };
+		042B5A171DFF835F002BB6A5 /* yxl_shop_location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_shop_location@2x.png"; sourceTree = "<group>"; };
+		042B5A181DFF835F002BB6A5 /* yxl_shop_ornament@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_shop_ornament@2x.png"; sourceTree = "<group>"; };
+		042B5A191DFF835F002BB6A5 /* yxl_shop_search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_shop_search@2x.png"; sourceTree = "<group>"; };
+		042B5A1A1DFF835F002BB6A5 /* yxl_shop_tea@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_shop_tea@2x.png"; sourceTree = "<group>"; };
+		042B5A321DFF8791002BB6A5 /* yxl_mine_bankcard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_mine_bankcard@2x.png"; sourceTree = "<group>"; };
+		042B5A331DFF8791002BB6A5 /* yxl_mine_capital@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_mine_capital@2x.png"; sourceTree = "<group>"; };
+		042B5A341DFF8791002BB6A5 /* yxl_mine_collection@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_mine_collection@2x.png"; sourceTree = "<group>"; };
+		042B5A351DFF8791002BB6A5 /* yxl_mine_convert@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_mine_convert@2x.png"; sourceTree = "<group>"; };
+		042B5A361DFF8791002BB6A5 /* yxl_mine_detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_mine_detail@2x.png"; sourceTree = "<group>"; };
+		042B5A371DFF8791002BB6A5 /* yxl_mine_first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_mine_first@2x.png"; sourceTree = "<group>"; };
+		042B5A381DFF8791002BB6A5 /* yxl_mine_history@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_mine_history@2x.png"; sourceTree = "<group>"; };
+		042B5A391DFF8791002BB6A5 /* yxl_mine_pendingConsignment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_mine_pendingConsignment@2x.png"; sourceTree = "<group>"; };
+		042B5A3A1DFF8791002BB6A5 /* yxl_mine_pendingDispatch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_mine_pendingDispatch@2x.png"; sourceTree = "<group>"; };
+		042B5A3B1DFF8791002BB6A5 /* yxl_mine_pendingPay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_mine_pendingPay@2x.png"; sourceTree = "<group>"; };
+		042B5A3C1DFF8791002BB6A5 /* yxl_mine_points@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_mine_points@2x.png"; sourceTree = "<group>"; };
+		042B5A3D1DFF8791002BB6A5 /* yxl_mine_QRCode@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_mine_QRCode@2x.png"; sourceTree = "<group>"; };
+		042B5A3E1DFF8791002BB6A5 /* yxl_mine_scan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_mine_scan@2x.png"; sourceTree = "<group>"; };
+		042B5A3F1DFF8791002BB6A5 /* yxl_mine_second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_mine_second@2x.png"; sourceTree = "<group>"; };
+		042B5A401DFF8791002BB6A5 /* yxl_mine_setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_mine_setting@2x.png"; sourceTree = "<group>"; };
+		042B5A411DFF8791002BB6A5 /* yxl_mine_third@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_mine_third@2x.png"; sourceTree = "<group>"; };
 		04626A261DFBA78900B4DE7C /* yxl_home_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_home_s@2x.png"; sourceTree = "<group>"; };
 		04626A271DFBA78900B4DE7C /* yxl_home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_home@2x.png"; sourceTree = "<group>"; };
 		04626A281DFBA78900B4DE7C /* yxl_message_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_message_s@2x.png"; sourceTree = "<group>"; };
@@ -109,14 +189,14 @@
 		04D319D91DFE5137006C8016 /* YXLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXLBaseViewController.m; sourceTree = "<group>"; };
 		04D319DB1DFE564F006C8016 /* YXLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXLTabBarController.h; sourceTree = "<group>"; };
 		04D319DC1DFE564F006C8016 /* YXLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXLTabBarController.m; sourceTree = "<group>"; };
-		04D319DE1DFE5688006C8016 /* BusinessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BusinessViewController.h; path = "yxl-ios/Class/YXLBase/Common/BusinessViewController.h"; sourceTree = SOURCE_ROOT; };
-		04D319DF1DFE5688006C8016 /* BusinessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BusinessViewController.m; path = "yxl-ios/Class/YXLBase/Common/BusinessViewController.m"; sourceTree = SOURCE_ROOT; };
-		04D319E11DFE5695006C8016 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = "yxl-ios/Class/YXLBase/Common/HomeViewController.h"; sourceTree = SOURCE_ROOT; };
-		04D319E21DFE5695006C8016 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = "yxl-ios/Class/YXLBase/Common/HomeViewController.m"; sourceTree = SOURCE_ROOT; };
-		04D319E41DFE56A6006C8016 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageViewController.h; path = "yxl-ios/Class/YXLBase/Common/MessageViewController.h"; sourceTree = SOURCE_ROOT; };
-		04D319E51DFE56A6006C8016 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageViewController.m; path = "yxl-ios/Class/YXLBase/Common/MessageViewController.m"; sourceTree = SOURCE_ROOT; };
-		04D319E71DFE56B1006C8016 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MineViewController.h; path = "yxl-ios/Class/YXLBase/Common/MineViewController.h"; sourceTree = SOURCE_ROOT; };
-		04D319E81DFE56B1006C8016 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MineViewController.m; path = "yxl-ios/Class/YXLBase/Common/MineViewController.m"; sourceTree = SOURCE_ROOT; };
+		04D319DE1DFE5688006C8016 /* BusinessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BusinessViewController.h; path = "yxl-ios/Class/YXLMain/Business/BusinessViewController.h"; sourceTree = SOURCE_ROOT; };
+		04D319DF1DFE5688006C8016 /* BusinessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BusinessViewController.m; path = "yxl-ios/Class/YXLMain/Business/BusinessViewController.m"; sourceTree = SOURCE_ROOT; };
+		04D319E11DFE5695006C8016 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = "yxl-ios/Class/YXLMain/Home/HomeViewController.h"; sourceTree = SOURCE_ROOT; };
+		04D319E21DFE5695006C8016 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = "yxl-ios/Class/YXLMain/Home/HomeViewController.m"; sourceTree = SOURCE_ROOT; };
+		04D319E41DFE56A6006C8016 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageViewController.h; path = "yxl-ios/Class/YXLMain/Message/MessageViewController.h"; sourceTree = SOURCE_ROOT; };
+		04D319E51DFE56A6006C8016 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageViewController.m; path = "yxl-ios/Class/YXLMain/Message/MessageViewController.m"; sourceTree = SOURCE_ROOT; };
+		04D319E71DFE56B1006C8016 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MineViewController.h; path = "yxl-ios/Class/YXLMain/Mine/MineViewController.h"; sourceTree = SOURCE_ROOT; };
+		04D319E81DFE56B1006C8016 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MineViewController.m; path = "yxl-ios/Class/YXLMain/Mine/MineViewController.m"; sourceTree = SOURCE_ROOT; };
 		04D319EA1DFE6C37006C8016 /* UIDevice+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Category.h"; sourceTree = "<group>"; };
 		04D319EB1DFE6C37006C8016 /* UIDevice+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Category.m"; sourceTree = "<group>"; };
 		04D319ED1DFE77AF006C8016 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../../../PrefixHeader.pch; sourceTree = "<group>"; };
@@ -204,6 +284,66 @@
 			path = "yxl-ios";
 			sourceTree = "<group>";
 		};
+		042B5A011DFF835F002BB6A5 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				042B5A021DFF835F002BB6A5 /* yxl_home_cashier@2x.png */,
+				042B5A031DFF835F002BB6A5 /* yxl_home_convert@2x.png */,
+				042B5A041DFF835F002BB6A5 /* yxl_home_join@2x.png */,
+				042B5A051DFF835F002BB6A5 /* yxl_home_notice@2x.png */,
+				042B5A061DFF835F002BB6A5 /* yxl_home_points@2x.png */,
+				042B5A071DFF835F002BB6A5 /* yxl_home_popularize@2x.png */,
+				042B5A081DFF835F002BB6A5 /* yxl_home_pyramid@2x.png */,
+				042B5A091DFF835F002BB6A5 /* yxl_home_recharge@2x.png */,
+				042B5A0A1DFF835F002BB6A5 /* yxl_home_scan@2x.png */,
+				042B5A0B1DFF835F002BB6A5 /* yxl_home_statistics@2x.png */,
+				042B5A0C1DFF835F002BB6A5 /* yxl_home_stock@2x.png */,
+				042B5A0D1DFF835F002BB6A5 /* yxl_home_vip@2x.png */,
+				042B5A0E1DFF835F002BB6A5 /* yxl_home_withdraw@2x.png */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		042B5A0F1DFF835F002BB6A5 /* mine */ = {
+			isa = PBXGroup;
+			children = (
+				042B5A321DFF8791002BB6A5 /* yxl_mine_bankcard@2x.png */,
+				042B5A331DFF8791002BB6A5 /* yxl_mine_capital@2x.png */,
+				042B5A341DFF8791002BB6A5 /* yxl_mine_collection@2x.png */,
+				042B5A351DFF8791002BB6A5 /* yxl_mine_convert@2x.png */,
+				042B5A361DFF8791002BB6A5 /* yxl_mine_detail@2x.png */,
+				042B5A371DFF8791002BB6A5 /* yxl_mine_first@2x.png */,
+				042B5A381DFF8791002BB6A5 /* yxl_mine_history@2x.png */,
+				042B5A391DFF8791002BB6A5 /* yxl_mine_pendingConsignment@2x.png */,
+				042B5A3A1DFF8791002BB6A5 /* yxl_mine_pendingDispatch@2x.png */,
+				042B5A3B1DFF8791002BB6A5 /* yxl_mine_pendingPay@2x.png */,
+				042B5A3C1DFF8791002BB6A5 /* yxl_mine_points@2x.png */,
+				042B5A3D1DFF8791002BB6A5 /* yxl_mine_QRCode@2x.png */,
+				042B5A3E1DFF8791002BB6A5 /* yxl_mine_scan@2x.png */,
+				042B5A3F1DFF8791002BB6A5 /* yxl_mine_second@2x.png */,
+				042B5A401DFF8791002BB6A5 /* yxl_mine_setting@2x.png */,
+				042B5A411DFF8791002BB6A5 /* yxl_mine_third@2x.png */,
+			);
+			path = mine;
+			sourceTree = "<group>";
+		};
+		042B5A101DFF835F002BB6A5 /* shop */ = {
+			isa = PBXGroup;
+			children = (
+				042B5A111DFF835F002BB6A5 /* yxl_shop_beauty@2x.png */,
+				042B5A121DFF835F002BB6A5 /* yxl_shop_building@2x.png */,
+				042B5A131DFF835F002BB6A5 /* yxl_shop_clothes@2x.png */,
+				042B5A141DFF835F002BB6A5 /* yxl_shop_electrical@2x.png */,
+				042B5A151DFF835F002BB6A5 /* yxl_shop_food@2x.png */,
+				042B5A161DFF835F002BB6A5 /* yxl_shop_life@2x.png */,
+				042B5A171DFF835F002BB6A5 /* yxl_shop_location@2x.png */,
+				042B5A181DFF835F002BB6A5 /* yxl_shop_ornament@2x.png */,
+				042B5A191DFF835F002BB6A5 /* yxl_shop_search@2x.png */,
+				042B5A1A1DFF835F002BB6A5 /* yxl_shop_tea@2x.png */,
+			);
+			path = shop;
+			sourceTree = "<group>";
+		};
 		046269FF1DFB93DA00B4DE7C /* Class */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +359,10 @@
 		04626A001DFB93DA00B4DE7C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				042B5A011DFF835F002BB6A5 /* home */,
+				042B5A0F1DFF835F002BB6A5 /* mine */,
+				042B5A101DFF835F002BB6A5 /* shop */,
+				042B59DE1DFF812A002BB6A5 /* yxl_nav_add@2x.png */,
 				04D319EE1DFE8946006C8016 /* yxl_nav_bg@2x.png */,
 				04D319F21DFE897E006C8016 /* yxl_nav_back@2x.png */,
 				04626A261DFBA78900B4DE7C /* yxl_home_s@2x.png */,
@@ -587,17 +731,57 @@
 			buildActionMask = 2147483647;
 			files = (
 				04626A351DFBA78900B4DE7C /* yxl_shop@2x.png in Resources */,
+				042B5A511DFF8791002BB6A5 /* yxl_mine_third@2x.png in Resources */,
+				042B5A491DFF8791002BB6A5 /* yxl_mine_pendingConsignment@2x.png in Resources */,
+				042B5A271DFF835F002BB6A5 /* yxl_home_withdraw@2x.png in Resources */,
+				042B5A441DFF8791002BB6A5 /* yxl_mine_collection@2x.png in Resources */,
+				042B5A431DFF8791002BB6A5 /* yxl_mine_capital@2x.png in Resources */,
 				04626A301DFBA78900B4DE7C /* yxl_message_s@2x.png in Resources */,
+				042B5A301DFF835F002BB6A5 /* yxl_shop_search@2x.png in Resources */,
 				04626A2F1DFBA78900B4DE7C /* yxl_home@2x.png in Resources */,
+				042B5A2C1DFF835F002BB6A5 /* yxl_shop_food@2x.png in Resources */,
+				042B5A291DFF835F002BB6A5 /* yxl_shop_building@2x.png in Resources */,
+				042B5A311DFF835F002BB6A5 /* yxl_shop_tea@2x.png in Resources */,
+				042B5A2D1DFF835F002BB6A5 /* yxl_shop_life@2x.png in Resources */,
+				042B5A201DFF835F002BB6A5 /* yxl_home_popularize@2x.png in Resources */,
+				042B5A2E1DFF835F002BB6A5 /* yxl_shop_location@2x.png in Resources */,
 				04626A311DFBA78900B4DE7C /* yxl_message@2x.png in Resources */,
+				042B5A4A1DFF8791002BB6A5 /* yxl_mine_pendingDispatch@2x.png in Resources */,
+				042B5A1F1DFF835F002BB6A5 /* yxl_home_points@2x.png in Resources */,
+				042B5A4F1DFF8791002BB6A5 /* yxl_mine_second@2x.png in Resources */,
+				042B5A231DFF835F002BB6A5 /* yxl_home_scan@2x.png in Resources */,
+				042B5A211DFF835F002BB6A5 /* yxl_home_pyramid@2x.png in Resources */,
+				042B5A451DFF8791002BB6A5 /* yxl_mine_convert@2x.png in Resources */,
 				04626A321DFBA78900B4DE7C /* yxl_mine_s@2x.png in Resources */,
+				042B5A1D1DFF835F002BB6A5 /* yxl_home_join@2x.png in Resources */,
+				042B5A1E1DFF835F002BB6A5 /* yxl_home_notice@2x.png in Resources */,
 				04D319C91DFE4300006C8016 /* SVProgressHUD.bundle in Resources */,
+				042B5A1C1DFF835F002BB6A5 /* yxl_home_convert@2x.png in Resources */,
 				04D319F01DFE8946006C8016 /* yxl_nav_bg@2x.png in Resources */,
+				042B5A421DFF8791002BB6A5 /* yxl_mine_bankcard@2x.png in Resources */,
+				042B5A2A1DFF835F002BB6A5 /* yxl_shop_clothes@2x.png in Resources */,
+				042B5A221DFF835F002BB6A5 /* yxl_home_recharge@2x.png in Resources */,
+				042B5A2B1DFF835F002BB6A5 /* yxl_shop_electrical@2x.png in Resources */,
+				042B5A501DFF8791002BB6A5 /* yxl_mine_setting@2x.png in Resources */,
+				042B5A4B1DFF8791002BB6A5 /* yxl_mine_pendingPay@2x.png in Resources */,
+				042B5A2F1DFF835F002BB6A5 /* yxl_shop_ornament@2x.png in Resources */,
+				042B5A461DFF8791002BB6A5 /* yxl_mine_detail@2x.png in Resources */,
 				04626A331DFBA78900B4DE7C /* yxl_mine@2x.png in Resources */,
+				042B59EC1DFF812A002BB6A5 /* yxl_nav_add@2x.png in Resources */,
+				042B5A471DFF8791002BB6A5 /* yxl_mine_first@2x.png in Resources */,
 				041241AA1DE81BA30028E618 /* Assets.xcassets in Resources */,
+				042B5A4D1DFF8791002BB6A5 /* yxl_mine_QRCode@2x.png in Resources */,
+				042B5A281DFF835F002BB6A5 /* yxl_shop_beauty@2x.png in Resources */,
+				042B5A251DFF835F002BB6A5 /* yxl_home_stock@2x.png in Resources */,
 				04D319F31DFE897E006C8016 /* yxl_nav_back@2x.png in Resources */,
 				04626A341DFBA78900B4DE7C /* yxl_shop_s@2x.png in Resources */,
+				042B5A4C1DFF8791002BB6A5 /* yxl_mine_points@2x.png in Resources */,
+				042B5A261DFF835F002BB6A5 /* yxl_home_vip@2x.png in Resources */,
+				042B5A241DFF835F002BB6A5 /* yxl_home_statistics@2x.png in Resources */,
+				042B5A4E1DFF8791002BB6A5 /* yxl_mine_scan@2x.png in Resources */,
+				042B5A481DFF8791002BB6A5 /* yxl_mine_history@2x.png in Resources */,
 				04626A2E1DFBA78900B4DE7C /* yxl_home_s@2x.png in Resources */,
+				042B5A1B1DFF835F002BB6A5 /* yxl_home_cashier@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -57,7 +57,7 @@
                            alpha:alpha];
 }
     
-    // UIColor 转UIImage
+// UIColor 转UIImage
 + (UIImage *)SUN_ImageWithColor:(UIColor *)color {
     CGRect rect = CGRectMake(0, 0, 1, 1);
     UIGraphicsBeginImageContext(rect.size);
