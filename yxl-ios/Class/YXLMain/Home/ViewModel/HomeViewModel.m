@@ -13,7 +13,6 @@
 @interface HomeViewModel()
 @property( nonatomic, strong) HomeHeaderView            * headerView;
 @property( nonatomic, strong) HomeTrunkView             * trunkView;
-@property( nonatomic, strong) HomeViewController        * viewController;
 @end
 @implementation HomeViewModel
 - (instancetype)initWithViewController:(YXLBaseViewController *)viewController
@@ -21,9 +20,17 @@
     self = [super initWithViewController:viewController];
     if (self) {
         if ([viewController isKindOfClass:[HomeViewController class]]) {
-            self.viewController = (HomeViewController*)viewController;
-            self.viewController.navigationController.navigationBar.hidden = YES;
-            [self headerView];
+
+            viewController.navigationController.navigationBar.hidden = YES;
+            [viewController.view SUN_AddSubViewsWithArray:@[self.headerView,self.trunkView]];
+            [self.headerView mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.top.left.right.mas_equalTo(0);
+                make.height.mas_equalTo(SCREEN_HEIGHT/4);
+            }];
+            [self.trunkView mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.edges.mas_equalTo(UIEdgeInsetsMake(SCREEN_HEIGHT/4, 0, 49, 0));
+            }];
+
         }
     }
     return self;
@@ -31,21 +38,13 @@
 -(HomeHeaderView *)headerView{
     if (!_headerView) {
         _headerView = [HomeHeaderView new];
-        [self.viewController.view addSubview:_headerView];
-        [_headerView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.left.right.mas_equalTo(0);
-            make.height.mas_equalTo(SCREEN_HEIGHT/6);
-        }];
+        
     }
     return _headerView;
 }
 -(HomeTrunkView *)trunkView{
     if (!_trunkView) {
         _trunkView = [HomeTrunkView new];
-        [self.viewController.view addSubview:_trunkView];
-        [_trunkView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.mas_equalTo(UIEdgeInsetsMake(SCREEN_HEIGHT/6, 0, 0, 49));
-        }];
     }
     return _trunkView;
 }

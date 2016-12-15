@@ -72,7 +72,7 @@
     
     
     self.nickNameLabel.text = @"Tinna";
-    [self.nickNameLabel SUN_SetTitleWithColor:SUN_GlobalTextWhiteColor FontSize:22 bold:NO textAlignment:NSTextAlignmentLeft];
+    [self.nickNameLabel SUN_SetTitleWithColor:SUN_GlobalWhiteColor FontSize:22 bold:NO textAlignment:NSTextAlignmentLeft];
     [self.nickNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.avatarImageView.mas_right).offset(10);
         make.top.mas_equalTo(self.avatarImageView.mas_top);
@@ -81,8 +81,8 @@
 
     }];
     
-    [self.IDNumberLabel SUN_SetTitleWithColor:SUN_GlobalTextWhiteColor FontSize:10 bold:NO textAlignment:NSTextAlignmentLeft];
-    [self.VIPLevelLabel SUN_SetTitleWithColor:SUN_GlobalTextWhiteColor FontSize:10 bold:NO textAlignment:NSTextAlignmentLeft];
+    [self.IDNumberLabel SUN_SetTitleWithColor:SUN_GlobalWhiteColor FontSize:10 bold:NO textAlignment:NSTextAlignmentLeft];
+    [self.VIPLevelLabel SUN_SetTitleWithColor:SUN_GlobalWhiteColor FontSize:10 bold:NO textAlignment:NSTextAlignmentLeft];
     self.IDNumberLabel.text = @"ID号: 13800138000";
     [self.IDNumberLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.nickNameLabel.mas_left).offset(5);

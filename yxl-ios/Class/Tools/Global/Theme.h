@@ -19,10 +19,12 @@
 
 #define SUN_GlobalNormalColor [UIColor SUN_ColorWithHexString:@"#E70050" alpha:1]
 
-#define SUN_GlobalTextWhiteColor [UIColor SUN_ColorWithHexString:@"#FFFFFF" alpha:1]
+#define SUN_GlobalWhiteColor [UIColor SUN_ColorWithHexString:@"#FFFFFF" alpha:1]
 
 #define SUN_GlobalTextGreyColor [UIColor SUN_ColorWithHexString:@"#828282" alpha:1]
 
 #define SUN_GlobalTextBlackColor [UIColor SUN_ColorWithHexString:@"#323232" alpha:1]
+
+#define SUN_GlobalTextSystemColor [UIColor SUN_ColorWithHexString:@"#216BAB" alpha:1]
 
 #endif /* Theme_h */

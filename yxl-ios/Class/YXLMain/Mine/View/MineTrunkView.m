@@ -9,6 +9,8 @@
 #import "MineTrunkView.h"
 #import "MineModel.h"
 #import "MineSecondRowCell.h"
+#define FIRSTROWCELL_IDENTIFIER @"firstCell"
+#define SECONDROWCELL_IDENTIFIER @"secondCell"
 @interface MineTrunkView()<UITableViewDelegate,UITableViewDataSource>
 
 @property( nonatomic, strong) UITableView        * tableView;
@@ -41,8 +43,9 @@
         _tableView.dataSource = self;
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.showsHorizontalScrollIndicator = NO;
+        _tableView.allowsSelection = NO;
         _tableView.tableFooterView = [UIView new];
-        [_tableView registerNib:[UINib nibWithNibName:@"MineSecondRowCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"secondCell"];
+        [_tableView registerNib:[UINib nibWithNibName:@"MineSecondRowCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:SECONDROWCELL_IDENTIFIER];
         [self addSubview:_tableView];
         [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.mas_equalTo(UIEdgeInsetsMake(-10, 0, 0, 0));
@@ -60,9 +63,9 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"firstCell"];
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:FIRSTROWCELL_IDENTIFIER];
         if (!cell) {
-            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"firstcell"];
+            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:FIRSTROWCELL_IDENTIFIER];
         }
         cell.textLabel.text = self.model.dataArray[indexPath.section].title;
         cell.textLabel.font = [UIFont systemFontOfSize:12];
@@ -70,7 +73,7 @@
         return cell;
     }
     else{
-        MineSecondRowCell *cell = [tableView dequeueReusableCellWithIdentifier:@"secondCell" forIndexPath:indexPath];
+        MineSecondRowCell *cell = [tableView dequeueReusableCellWithIdentifier:SECONDROWCELL_IDENTIFIER forIndexPath:indexPath];
         for (UIImageView * imageView in cell.imageArray) {
             if (imageView.tag == self.model.dataArray[indexPath.section].data.count) {
                 break;

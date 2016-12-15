@@ -16,6 +16,9 @@
 /** UIColor 转UIImage */
 + (UIImage *)SUN_ImageWithColor:(UIColor *)color;
 
+/**  创建一个随机UIColor对象 */
++ (UIColor *)randomColor;
+
 
     
 @end

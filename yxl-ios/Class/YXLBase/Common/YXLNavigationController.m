@@ -20,7 +20,7 @@
     
     
     [bar setBackgroundImage:[UIColor SUN_ImageWithColor:SUN_GlobalNormalColor] forBarMetrics:UIBarMetricsDefault];
-    [bar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    [bar setTitleTextAttributes:@{NSForegroundColorAttributeName:SUN_GlobalWhiteColor}];
     
 }
 
