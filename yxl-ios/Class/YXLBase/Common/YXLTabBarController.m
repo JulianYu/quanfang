@@ -97,14 +97,11 @@
 #pragma mark - 添加一个子控制器
 - (void)setupChildVc:(UIViewController *)vc title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage
 {
-    if ([title isEqualToString:@"我的"]) {
-        vc.navigationItem.title = @"";
-    }else if ([title isEqualToString:@"首页"]){
-        vc.navigationItem.title = @"银信联财富";
-    }else if ([title isEqualToString:@"生意"]){
-        vc.navigationItem.title = @"";
-    }else{
+    if ([title isEqualToString:@"消息"]) {
         vc.navigationItem.title = title;
+    }
+    else{
+        vc.navigationItem.title = @"";
     }
     vc.tabBarItem.title = title;
     [vc.tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];

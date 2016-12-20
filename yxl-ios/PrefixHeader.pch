@@ -16,5 +16,11 @@
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
+#import "NetManager.h"
+#import "Singleton.h"
+
+#define WEAKSELF typeof(self) __weak weakSelf = self
+#define WeakSelf(type)  __weak typeof(type) weak##type = type;
+
 
 #endif /* PrefixHeader_pch */

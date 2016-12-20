@@ -621,6 +621,13 @@ return CGPointMake(CGRectGetWidth(self.bounds) / 2.f, CGRectGetHeight(self.bound
     return nil;
 }
 
+/** 14.获取当前view的NAVI */
+- (UINavigationController *)SUN_GetCurrentNavigationController
+{
+    return [self SUN_GetCurrentViewController].navigationController;
+}
+
+
 
 
 @end

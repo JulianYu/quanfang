@@ -12,6 +12,7 @@
 #import "UIColor+Category.h"
 #import "UIView+Category.h"
 #import "UILabel+Category.h"
+#import "UIButton+Category.h"
 
 #define SUN_NavigationH 64
 

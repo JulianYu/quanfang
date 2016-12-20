@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11535.1" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ProductInformationSecondRowCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="34"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="34"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="销量 55" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="504-GM-azU">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="33.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收藏 521人" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OV-IJ-3oJ">
+                        <rect key="frame" x="160" y="0.0" width="160" height="33.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="504-GM-azU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6Q6-5w-B2V"/>
+                    <constraint firstAttribute="bottom" secondItem="504-GM-azU" secondAttribute="bottom" id="7ZM-7h-JQr"/>
+                    <constraint firstItem="0OV-IJ-3oJ" firstAttribute="leading" secondItem="504-GM-azU" secondAttribute="trailing" id="9bd-TE-aKD"/>
+                    <constraint firstAttribute="trailing" secondItem="0OV-IJ-3oJ" secondAttribute="trailing" id="KCA-IP-wbw"/>
+                    <constraint firstItem="504-GM-azU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="VjO-r8-dWl"/>
+                    <constraint firstAttribute="bottom" secondItem="0OV-IJ-3oJ" secondAttribute="bottom" id="bOL-5T-mfL"/>
+                    <constraint firstItem="0OV-IJ-3oJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cIX-Gt-4fy"/>
+                    <constraint firstItem="0OV-IJ-3oJ" firstAttribute="width" secondItem="504-GM-azU" secondAttribute="width" id="lqp-cm-FLm"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+</document>

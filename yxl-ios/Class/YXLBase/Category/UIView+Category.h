@@ -179,7 +179,7 @@ typedef NS_ENUM(NSInteger, UIViewLinearGradientDirection)
 
 /** 13.获取当前View的VC */
 - (UIViewController *)SUN_GetCurrentViewController;
-
-    
+/** 14.获取当前view的NAVI */
+- (UINavigationController *)SUN_GetCurrentNavigationController;
     
 @end

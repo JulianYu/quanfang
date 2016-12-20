@@ -11,15 +11,11 @@
 @implementation HomeModel
 
 + (NSDictionary *)objectClassInArray{
-    return @{@"dataArray" : [HomeSectionData class]};
+    return @{@"dataArray" : [HomeFunctionData class],@"HeaderRowData":[HomeRowData class]};
 }
 
 @end
-@implementation HomeSectionData
-
-+ (NSDictionary *)objectClassInArray{
-    return @{@"first" : [HomeRowData class],@"second" : [HomeRowData class]};
-}
+@implementation HomeFunctionData
 
 @end
 @implementation HomeRowData

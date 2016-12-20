@@ -45,7 +45,7 @@
         _tableView.showsHorizontalScrollIndicator = NO;
         _tableView.allowsSelection = NO;
         _tableView.tableFooterView = [UIView new];
-        [_tableView registerNib:[UINib nibWithNibName:@"MineSecondRowCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:SECONDROWCELL_IDENTIFIER];
+        
         [self addSubview:_tableView];
         [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.mas_equalTo(UIEdgeInsetsMake(-10, 0, 0, 0));
@@ -73,15 +73,18 @@
         return cell;
     }
     else{
-        MineSecondRowCell *cell = [tableView dequeueReusableCellWithIdentifier:SECONDROWCELL_IDENTIFIER forIndexPath:indexPath];
-        for (UIImageView * imageView in cell.imageArray) {
-            if (imageView.tag == self.model.dataArray[indexPath.section].data.count) {
+        MineSecondRowCell *cell = [tableView dequeueReusableCellWithIdentifier:SECONDROWCELL_IDENTIFIER];
+        if (!cell) {
+            cell = [[MineSecondRowCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:SECONDROWCELL_IDENTIFIER];
+        }
+        for (UIButton * imageBtn in cell.imageArray) {
+            if (imageBtn.tag == self.model.dataArray[indexPath.section].data.count) {
                 break;
             }
-            RowData *data = self.model.dataArray[indexPath.section].data[imageView.tag];
+            RowData *data = self.model.dataArray[indexPath.section].data[imageBtn.tag];
             
-            [imageView setImage:[UIImage imageNamed:data.img]];
-            imageView.contentMode = UIViewContentModeScaleAspectFit;
+            [imageBtn setImage:[UIImage imageNamed:data.img] forState:UIControlStateNormal];
+            imageBtn.contentMode = UIViewContentModeScaleAspectFit;
         }
         for (UILabel *label in cell.labelArray) {
             if (label.tag == self.model.dataArray[indexPath.section].data.count) {

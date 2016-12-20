@@ -8,23 +8,23 @@
 
 #import <Foundation/Foundation.h>
 @class HomeRowData;
-@class HomeSectionData;
+@class HomeFunctionData;
 @interface HomeModel : NSObject
-@property( nonatomic, strong) NSArray<HomeSectionData*>        * dataArray;
+@property( nonatomic, strong) NSArray<HomeRowData*>           * HeaderRowData;
+@property( nonatomic, strong) NSArray<HomeFunctionData*>      * dataArray;
 
 @end
 
-@interface HomeSectionData : NSObject
-@property( nonatomic, strong) NSArray<HomeRowData*>        * first;
-@property( nonatomic, strong) NSArray<HomeRowData*>        * second;
-@property( nonatomic, copy) NSString                   * title;
-@property( nonatomic, copy) NSString                   * img;
+@interface HomeFunctionData : NSObject
+@property( nonatomic, copy) NSString                          * text;
+@property( nonatomic, copy) NSString                          * img;
 
 @end
 
 @interface HomeRowData : NSObject
-@property( nonatomic, copy) NSString        * img;
-@property( nonatomic, copy) NSString        * text;
+@property( nonatomic, copy) NSString                          * img;
+@property( nonatomic, copy) NSString                          * title;
 
 
 @end
+

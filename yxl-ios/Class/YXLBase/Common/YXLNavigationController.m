@@ -18,7 +18,6 @@
 + (void)initialize {
     UINavigationBar *bar = [UINavigationBar appearanceWhenContainedIn:[self class], nil];
     
-    
     [bar setBackgroundImage:[UIColor SUN_ImageWithColor:SUN_GlobalNormalColor] forBarMetrics:UIBarMetricsDefault];
     [bar setTitleTextAttributes:@{NSForegroundColorAttributeName:SUN_GlobalWhiteColor}];
     
@@ -32,6 +31,8 @@
     self.delegate = self;
 
 }
+
+
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     if (self.childViewControllers.count) {
         // 不是根控制器

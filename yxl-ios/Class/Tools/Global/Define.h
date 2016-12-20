@@ -11,5 +11,8 @@
 
 #import "UIDevice+Category.h"
 
+#define SUN_TableRegisterCell(tableView, cell, cellId) [tableView registerNib:[UINib nibWithNibName:cell bundle:nil] forCellReuseIdentifier:cellId];
+#define SUN_RegisterCell(cell, cellId) SUN_TableRegisterCell(self.tableView, cell, cellId)
+
 
 #endif /* Define_h */

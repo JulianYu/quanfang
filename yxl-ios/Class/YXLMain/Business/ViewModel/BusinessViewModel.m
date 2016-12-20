@@ -8,11 +8,10 @@
 
 #import "BusinessViewModel.h"
 #import "BusinessViewController.h"
-#import "BusinessGridListView.h"
 #import "BusinessTrunkView.h"
 
 @interface BusinessViewModel ()
-@property( nonatomic, strong) BusinessGridListView      * gridListView;
+
 @property( nonatomic, strong) BusinessTrunkView         * trunkView;
 @end
 @implementation BusinessViewModel
@@ -21,7 +20,6 @@
     self = [super initWithViewController:viewController];
     if (self) {
         if ([viewController isKindOfClass:[BusinessViewController class]]) {
-            viewController = (BusinessViewController *)viewController;
             [viewController.view addSubview:self.trunkView];
             [self.trunkView mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 49, 0));

@@ -22,7 +22,6 @@
     self = [super initWithViewController:viewController];
     if (self) {
         if ([viewController isKindOfClass:[MineViewController class]]) {
-            viewController = (MineViewController *)viewController;
             viewController.navigationController.navigationBar.hidden = YES;
             [viewController.view SUN_AddSubViewsWithArray:@[self.headerView,self.trunkView]];
             [self.trunkView mas_makeConstraints:^(MASConstraintMaker *make) {

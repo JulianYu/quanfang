@@ -70,6 +70,15 @@
     [self.popularizeBtn setImage:[UIImage imageNamed:@"yxl_home_popularize"] forState:UIControlStateNormal];
     [self.popularizeLabel SUN_SetTitleWithColor:SUN_GlobalWhiteColor FontSize:13 bold:NO textAlignment:NSTextAlignmentCenter];
     
+    [self.addBtn SUN_SetEnlargeEdgeWithTop:3 right:10 bottom:0 left:20];
+    [self.scanBtn SUN_SetEnlargeEdgeWithTop:0 right:0 bottom:15 left:0];
+    [self.cashierBtn SUN_SetEnlargeEdgeWithTop:0 right:0 bottom:15 left:0];
+    [self.popularizeBtn SUN_SetEnlargeEdgeWithTop:0 right:0 bottom:15 left:0];
+    
+    [self.addBtn addTarget:self action:@selector(addBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.scanBtn addTarget:self action:@selector(scanBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.cashierBtn addTarget:self action:@selector(cashierBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.popularizeBtn addTarget:self action:@selector(popularizeBtnClick) forControlEvents:UIControlEventTouchUpInside];
     
     [self.scanLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(HEADER_MEMBER_WIDTH);
@@ -93,7 +102,7 @@
         make.width.mas_equalTo(HEADER_MEMBER_WIDTH);
         make.left.mas_equalTo(0);
         make.bottom.mas_equalTo(self.scanLabel);
-        make.top.mas_equalTo(self.titleLabel.mas_bottom);
+        make.top.mas_equalTo(self.addBtn.mas_bottom);
     }];
     [self.cashierBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(HEADER_MEMBER_WIDTH);
@@ -111,5 +120,16 @@
     }];
     
 }
-
+-(void)addBtnClick{
+    NSLog(@"添加被点击了");
+}
+-(void)scanBtnClick{
+    NSLog(@"扫一扫被点击了");
+}
+-(void)cashierBtnClick{
+    NSLog(@"收款被点击了");
+}
+-(void)popularizeBtnClick{
+    NSLog(@"推广码被点击了");
+}
 @end

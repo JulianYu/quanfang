@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface MineSecondRowCell : UITableViewCell
-@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *imageArray;
-@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *labelArray;
+
+@property( nonatomic, strong) NSMutableArray<UIButton *>        * imageArray;
+@property( nonatomic, strong) NSMutableArray<UILabel *>         * labelArray;
 
 @end

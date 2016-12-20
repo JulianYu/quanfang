@@ -1,5 +1,5 @@
 // .h文件
-#define SingletonH(name) + (instancetype)sharedInstance;
+#define SingletonH(name) + (instancetype)shared##name;
 
 // .m文件
 #if __has_feature(objc_arc)
@@ -16,7 +16,7 @@ _instace = [super allocWithZone:zone]; \
 return _instace; \
 } \
 \
-+ (instancetype)sharedInstance \
++ (instancetype)shared##name \
 { \
 static dispatch_once_t onceToken; \
 dispatch_once(&onceToken, ^{ \
@@ -44,7 +44,7 @@ _instace = [super allocWithZone:zone]; \
 return _instace; \
 } \
 \
-+ (instancetype)sharedInstance \
++ (instancetype)shared##name \
 { \
 static dispatch_once_t onceToken; \
 dispatch_once(&onceToken, ^{ \

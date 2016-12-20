@@ -6,7 +6,7 @@
 //  Copyright © 2016年 孙若淮. All rights reserved.
 //
 
-#import "YXLAnimationTabBarController.h"
-@interface YXLTabBarController : YXLAnimationTabBarController
+#import <UIKit/UIKit.h>
+@interface YXLTabBarController : UITabBarController
 
 @end
