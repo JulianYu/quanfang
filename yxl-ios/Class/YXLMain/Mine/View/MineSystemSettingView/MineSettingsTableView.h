@@ -8,6 +8,10 @@
 
 #import "YXLBaseView.h"
 
-@interface MineSettingsTableView : YXLBaseView
+@interface MineSettingsTableView : UITableView
+<
+UITableViewDelegate,
+UITableViewDataSource
+>
 
 @end

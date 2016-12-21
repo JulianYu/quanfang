@@ -7,7 +7,8 @@
 //
 
 #import "MineBankCardViewModel.h"
-
+#import "MineBankCardTableView.h"
+#import "MineBankCardListViewController.h"
 @implementation MineBankCardViewModel
 
 @end

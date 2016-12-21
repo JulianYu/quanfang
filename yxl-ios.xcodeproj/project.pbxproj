@@ -108,6 +108,7 @@
 		04B0FC4D1E0A7AFD00724656 /* MineBankCardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC4C1E0A7AFD00724656 /* MineBankCardViewModel.m */; };
 		04B0FC501E0A7B0900724656 /* MineCollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC4F1E0A7B0900724656 /* MineCollectionViewModel.m */; };
 		04B0FC531E0A7C3300724656 /* MineSettingsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC521E0A7C3300724656 /* MineSettingsTableView.m */; };
+		04B0FC561E0A836600724656 /* MineBankCardTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC551E0A836600724656 /* MineBankCardTableView.m */; };
 		04C21A9E1DFF94D20075BBC7 /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C21A9D1DFF94D20075BBC7 /* UILabel+Category.m */; };
 		04C21AA71DFFA24E0075BBC7 /* MineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C21AA61DFFA24E0075BBC7 /* MineViewModel.m */; };
 		04C21AAA1DFFA5880075BBC7 /* YXLBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C21AA91DFFA5880075BBC7 /* YXLBaseViewModel.m */; };
@@ -327,6 +328,8 @@
 		04B0FC4F1E0A7B0900724656 /* MineCollectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineCollectionViewModel.m; sourceTree = "<group>"; };
 		04B0FC511E0A7C3300724656 /* MineSettingsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSettingsTableView.h; sourceTree = "<group>"; };
 		04B0FC521E0A7C3300724656 /* MineSettingsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineSettingsTableView.m; sourceTree = "<group>"; };
+		04B0FC541E0A836600724656 /* MineBankCardTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineBankCardTableView.h; sourceTree = "<group>"; };
+		04B0FC551E0A836600724656 /* MineBankCardTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineBankCardTableView.m; sourceTree = "<group>"; };
 		04C21A9C1DFF94D20075BBC7 /* UILabel+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Category.h"; sourceTree = "<group>"; };
 		04C21A9D1DFF94D20075BBC7 /* UILabel+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Category.m"; sourceTree = "<group>"; };
 		04C21AA51DFFA24E0075BBC7 /* MineViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewModel.h; sourceTree = "<group>"; };
@@ -1025,6 +1028,8 @@
 			children = (
 				04B0FC511E0A7C3300724656 /* MineSettingsTableView.h */,
 				04B0FC521E0A7C3300724656 /* MineSettingsTableView.m */,
+				04B0FC541E0A836600724656 /* MineBankCardTableView.h */,
+				04B0FC551E0A836600724656 /* MineBankCardTableView.m */,
 			);
 			path = MineSystemSettingView;
 			sourceTree = "<group>";
@@ -1370,6 +1375,7 @@
 				04C21ADE1DFFD7430075BBC7 /* MJPropertyKey.m in Sources */,
 				040D60B01E038D3C00D1ED63 /* BusinessProductsListViewController.m in Sources */,
 				04EDF5CC1E08CEC50002D126 /* ProductRankRowCell.m in Sources */,
+				04B0FC561E0A836600724656 /* MineBankCardTableView.m in Sources */,
 				040D60AD1E038CFE00D1ED63 /* ProductListViewModel.m in Sources */,
 				04C21AE21DFFD7430075BBC7 /* NSObject+MJKeyValue.m in Sources */,
 				04D319C81DFE4300006C8016 /* SVProgressAnimatedView.m in Sources */,
