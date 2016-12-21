@@ -195,8 +195,8 @@ SUNControlDelegate
     
 }
 -(void)cellTap{
-    [[self SUN_GetCurrentViewController].view addSubview:self.sunControl];
-    [self.sunControl reloadData];
+//    [[self SUN_GetCurrentViewController].view addSubview:self.sunControl];
+//    [self.sunControl reloadData];
 //    NSLog(@"我被点击了");
 }
 -(SUNControl *)sunControl{

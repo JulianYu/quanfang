@@ -29,7 +29,7 @@
                 make.edges.mas_equalTo(UIEdgeInsetsMake(self.functionView.bottom, 0, 49, 0));
             }];
             
-            [self test];
+//            [self test];
             
 
             

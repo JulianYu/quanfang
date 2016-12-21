@@ -87,12 +87,30 @@
 		04A392681E0122E300A9FDAD /* HeaderRowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A392661E0122E300A9FDAD /* HeaderRowCell.xib */; };
 		04A3926C1E0132CB00A9FDAD /* BusinessViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A3926B1E0132CB00A9FDAD /* BusinessViewModel.m */; };
 		04A3926F1E01330D00A9FDAD /* BusinessModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A3926E1E01330D00A9FDAD /* BusinessModel.m */; };
-		04C21A9B1DFF8B8B0075BBC7 /* MineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C21A9A1DFF8B8B0075BBC7 /* MineHeaderView.m */; };
+		04B0FC121E0A5AA100724656 /* MinePendingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC111E0A5AA100724656 /* MinePendingViewController.m */; };
+		04B0FC151E0A5BE300724656 /* MinePendingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC141E0A5BE300724656 /* MinePendingViewModel.m */; };
+		04B0FC1D1E0A5C1300724656 /* MineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC181E0A5C1300724656 /* MineHeaderView.m */; };
+		04B0FC1E1E0A5C1300724656 /* MineSecondRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC1A1E0A5C1300724656 /* MineSecondRowCell.m */; };
+		04B0FC1F1E0A5C1300724656 /* MineTrunkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC1C1E0A5C1300724656 /* MineTrunkView.m */; };
+		04B0FC241E0A5CBF00724656 /* MinePendingTrunkTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC231E0A5CBF00724656 /* MinePendingTrunkTableView.m */; };
+		04B0FC281E0A617700724656 /* MinePendingHeaderRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC261E0A617700724656 /* MinePendingHeaderRowCell.m */; };
+		04B0FC291E0A617700724656 /* MinePendingHeaderRowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B0FC271E0A617700724656 /* MinePendingHeaderRowCell.xib */; };
+		04B0FC321E0A61C500724656 /* MinePendingInformationRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC301E0A61C500724656 /* MinePendingInformationRowCell.m */; };
+		04B0FC331E0A61C500724656 /* MinePendingInformationRowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B0FC311E0A61C500724656 /* MinePendingInformationRowCell.xib */; };
+		04B0FC371E0A61D300724656 /* MinePendingPriceRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC351E0A61D300724656 /* MinePendingPriceRowCell.m */; };
+		04B0FC381E0A61D300724656 /* MinePendingPriceRowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B0FC361E0A61D300724656 /* MinePendingPriceRowCell.xib */; };
+		04B0FC3C1E0A61DE00724656 /* MinePendingFooterRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC3A1E0A61DE00724656 /* MinePendingFooterRowCell.m */; };
+		04B0FC3D1E0A61DE00724656 /* MinePendingFooterRowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B0FC3B1E0A61DE00724656 /* MinePendingFooterRowCell.xib */; };
+		04B0FC411E0A77E900724656 /* MineSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC401E0A77E800724656 /* MineSettingViewController.m */; };
+		04B0FC441E0A780D00724656 /* MineBankCardListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC431E0A780D00724656 /* MineBankCardListViewController.m */; };
+		04B0FC471E0A782600724656 /* MineCollectionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC461E0A782600724656 /* MineCollectionListViewController.m */; };
+		04B0FC4A1E0A7AA600724656 /* MineSettingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC491E0A7AA600724656 /* MineSettingViewModel.m */; };
+		04B0FC4D1E0A7AFD00724656 /* MineBankCardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC4C1E0A7AFD00724656 /* MineBankCardViewModel.m */; };
+		04B0FC501E0A7B0900724656 /* MineCollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC4F1E0A7B0900724656 /* MineCollectionViewModel.m */; };
+		04B0FC531E0A7C3300724656 /* MineSettingsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC521E0A7C3300724656 /* MineSettingsTableView.m */; };
 		04C21A9E1DFF94D20075BBC7 /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C21A9D1DFF94D20075BBC7 /* UILabel+Category.m */; };
-		04C21AA41DFFA0C10075BBC7 /* MineTrunkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C21AA31DFFA0C10075BBC7 /* MineTrunkView.m */; };
 		04C21AA71DFFA24E0075BBC7 /* MineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C21AA61DFFA24E0075BBC7 /* MineViewModel.m */; };
 		04C21AAA1DFFA5880075BBC7 /* YXLBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C21AA91DFFA5880075BBC7 /* YXLBaseViewModel.m */; };
-		04C21ABA1DFFCFEA0075BBC7 /* MineSecondRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C21AB81DFFCFEA0075BBC7 /* MineSecondRowCell.m */; };
 		04C21ABF1DFFD13A0075BBC7 /* MineList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C21ABE1DFFD13A0075BBC7 /* MineList.plist */; };
 		04C21AC11DFFD3A30075BBC7 /* yxl_mine_gold@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C21AC01DFFD3A30075BBC7 /* yxl_mine_gold@2x.png */; };
 		04C21AC41DFFD6300075BBC7 /* MineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C21AC31DFFD6300075BBC7 /* MineModel.m */; };
@@ -271,18 +289,50 @@
 		04A3926B1E0132CB00A9FDAD /* BusinessViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessViewModel.m; sourceTree = "<group>"; };
 		04A3926D1E01330D00A9FDAD /* BusinessModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessModel.h; sourceTree = "<group>"; };
 		04A3926E1E01330D00A9FDAD /* BusinessModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessModel.m; sourceTree = "<group>"; };
-		04C21A991DFF8B8B0075BBC7 /* MineHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHeaderView.h; sourceTree = "<group>"; };
-		04C21A9A1DFF8B8B0075BBC7 /* MineHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHeaderView.m; sourceTree = "<group>"; };
+		04B0FC101E0A5AA100724656 /* MinePendingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinePendingViewController.h; sourceTree = "<group>"; };
+		04B0FC111E0A5AA100724656 /* MinePendingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinePendingViewController.m; sourceTree = "<group>"; };
+		04B0FC131E0A5BE300724656 /* MinePendingViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinePendingViewModel.h; sourceTree = "<group>"; };
+		04B0FC141E0A5BE300724656 /* MinePendingViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinePendingViewModel.m; sourceTree = "<group>"; };
+		04B0FC171E0A5C1300724656 /* MineHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHeaderView.h; sourceTree = "<group>"; };
+		04B0FC181E0A5C1300724656 /* MineHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHeaderView.m; sourceTree = "<group>"; };
+		04B0FC191E0A5C1300724656 /* MineSecondRowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSecondRowCell.h; sourceTree = "<group>"; };
+		04B0FC1A1E0A5C1300724656 /* MineSecondRowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineSecondRowCell.m; sourceTree = "<group>"; };
+		04B0FC1B1E0A5C1300724656 /* MineTrunkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineTrunkView.h; sourceTree = "<group>"; };
+		04B0FC1C1E0A5C1300724656 /* MineTrunkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineTrunkView.m; sourceTree = "<group>"; };
+		04B0FC221E0A5CBF00724656 /* MinePendingTrunkTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinePendingTrunkTableView.h; sourceTree = "<group>"; };
+		04B0FC231E0A5CBF00724656 /* MinePendingTrunkTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinePendingTrunkTableView.m; sourceTree = "<group>"; };
+		04B0FC251E0A617700724656 /* MinePendingHeaderRowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinePendingHeaderRowCell.h; sourceTree = "<group>"; };
+		04B0FC261E0A617700724656 /* MinePendingHeaderRowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinePendingHeaderRowCell.m; sourceTree = "<group>"; };
+		04B0FC271E0A617700724656 /* MinePendingHeaderRowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MinePendingHeaderRowCell.xib; sourceTree = "<group>"; };
+		04B0FC2F1E0A61C500724656 /* MinePendingInformationRowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinePendingInformationRowCell.h; sourceTree = "<group>"; };
+		04B0FC301E0A61C500724656 /* MinePendingInformationRowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinePendingInformationRowCell.m; sourceTree = "<group>"; };
+		04B0FC311E0A61C500724656 /* MinePendingInformationRowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MinePendingInformationRowCell.xib; sourceTree = "<group>"; };
+		04B0FC341E0A61D300724656 /* MinePendingPriceRowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinePendingPriceRowCell.h; sourceTree = "<group>"; };
+		04B0FC351E0A61D300724656 /* MinePendingPriceRowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinePendingPriceRowCell.m; sourceTree = "<group>"; };
+		04B0FC361E0A61D300724656 /* MinePendingPriceRowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MinePendingPriceRowCell.xib; sourceTree = "<group>"; };
+		04B0FC391E0A61DE00724656 /* MinePendingFooterRowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinePendingFooterRowCell.h; sourceTree = "<group>"; };
+		04B0FC3A1E0A61DE00724656 /* MinePendingFooterRowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinePendingFooterRowCell.m; sourceTree = "<group>"; };
+		04B0FC3B1E0A61DE00724656 /* MinePendingFooterRowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MinePendingFooterRowCell.xib; sourceTree = "<group>"; };
+		04B0FC3F1E0A77E800724656 /* MineSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSettingViewController.h; sourceTree = "<group>"; };
+		04B0FC401E0A77E800724656 /* MineSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineSettingViewController.m; sourceTree = "<group>"; };
+		04B0FC421E0A780D00724656 /* MineBankCardListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineBankCardListViewController.h; sourceTree = "<group>"; };
+		04B0FC431E0A780D00724656 /* MineBankCardListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineBankCardListViewController.m; sourceTree = "<group>"; };
+		04B0FC451E0A782600724656 /* MineCollectionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineCollectionListViewController.h; sourceTree = "<group>"; };
+		04B0FC461E0A782600724656 /* MineCollectionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineCollectionListViewController.m; sourceTree = "<group>"; };
+		04B0FC481E0A7AA600724656 /* MineSettingViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSettingViewModel.h; sourceTree = "<group>"; };
+		04B0FC491E0A7AA600724656 /* MineSettingViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineSettingViewModel.m; sourceTree = "<group>"; };
+		04B0FC4B1E0A7AFD00724656 /* MineBankCardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineBankCardViewModel.h; sourceTree = "<group>"; };
+		04B0FC4C1E0A7AFD00724656 /* MineBankCardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineBankCardViewModel.m; sourceTree = "<group>"; };
+		04B0FC4E1E0A7B0900724656 /* MineCollectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineCollectionViewModel.h; sourceTree = "<group>"; };
+		04B0FC4F1E0A7B0900724656 /* MineCollectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineCollectionViewModel.m; sourceTree = "<group>"; };
+		04B0FC511E0A7C3300724656 /* MineSettingsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSettingsTableView.h; sourceTree = "<group>"; };
+		04B0FC521E0A7C3300724656 /* MineSettingsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineSettingsTableView.m; sourceTree = "<group>"; };
 		04C21A9C1DFF94D20075BBC7 /* UILabel+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Category.h"; sourceTree = "<group>"; };
 		04C21A9D1DFF94D20075BBC7 /* UILabel+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Category.m"; sourceTree = "<group>"; };
-		04C21AA21DFFA0C10075BBC7 /* MineTrunkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineTrunkView.h; sourceTree = "<group>"; };
-		04C21AA31DFFA0C10075BBC7 /* MineTrunkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineTrunkView.m; sourceTree = "<group>"; };
 		04C21AA51DFFA24E0075BBC7 /* MineViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewModel.h; sourceTree = "<group>"; };
 		04C21AA61DFFA24E0075BBC7 /* MineViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewModel.m; sourceTree = "<group>"; };
 		04C21AA81DFFA5880075BBC7 /* YXLBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXLBaseViewModel.h; sourceTree = "<group>"; };
 		04C21AA91DFFA5880075BBC7 /* YXLBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXLBaseViewModel.m; sourceTree = "<group>"; };
-		04C21AB71DFFCFEA0075BBC7 /* MineSecondRowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineSecondRowCell.h; sourceTree = "<group>"; };
-		04C21AB81DFFCFEA0075BBC7 /* MineSecondRowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineSecondRowCell.m; sourceTree = "<group>"; };
 		04C21ABE1DFFD13A0075BBC7 /* MineList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MineList.plist; sourceTree = "<group>"; };
 		04C21AC01DFFD3A30075BBC7 /* yxl_mine_gold@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_mine_gold@2x.png"; sourceTree = "<group>"; };
 		04C21AC21DFFD6300075BBC7 /* MineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineModel.h; sourceTree = "<group>"; };
@@ -799,6 +849,14 @@
 			children = (
 				04D319E71DFE56B1006C8016 /* MineViewController.h */,
 				04D319E81DFE56B1006C8016 /* MineViewController.m */,
+				04B0FC101E0A5AA100724656 /* MinePendingViewController.h */,
+				04B0FC111E0A5AA100724656 /* MinePendingViewController.m */,
+				04B0FC3F1E0A77E800724656 /* MineSettingViewController.h */,
+				04B0FC401E0A77E800724656 /* MineSettingViewController.m */,
+				04B0FC421E0A780D00724656 /* MineBankCardListViewController.h */,
+				04B0FC431E0A780D00724656 /* MineBankCardListViewController.m */,
+				04B0FC451E0A782600724656 /* MineCollectionListViewController.h */,
+				04B0FC461E0A782600724656 /* MineCollectionListViewController.m */,
 				04C21A921DFF8AE00075BBC7 /* ViewModel */,
 				04626A101DFB93DA00B4DE7C /* Model */,
 				04626A111DFB93DA00B4DE7C /* View */,
@@ -819,12 +877,10 @@
 		04626A111DFB93DA00B4DE7C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				04C21A991DFF8B8B0075BBC7 /* MineHeaderView.h */,
-				04C21A9A1DFF8B8B0075BBC7 /* MineHeaderView.m */,
-				04C21AA21DFFA0C10075BBC7 /* MineTrunkView.h */,
-				04C21AA31DFFA0C10075BBC7 /* MineTrunkView.m */,
-				04C21AB71DFFCFEA0075BBC7 /* MineSecondRowCell.h */,
-				04C21AB81DFFCFEA0075BBC7 /* MineSecondRowCell.m */,
+				04B0FC3E1E0A773B00724656 /* MineSystemSettingView */,
+				04B0FC201E0A5C5800724656 /* MinePendingView */,
+				04B0FC211E0A5C5800724656 /* MineRelationshipView */,
+				04B0FC161E0A5C1300724656 /* MineMainView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -923,6 +979,56 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		04B0FC161E0A5C1300724656 /* MineMainView */ = {
+			isa = PBXGroup;
+			children = (
+				04B0FC171E0A5C1300724656 /* MineHeaderView.h */,
+				04B0FC181E0A5C1300724656 /* MineHeaderView.m */,
+				04B0FC191E0A5C1300724656 /* MineSecondRowCell.h */,
+				04B0FC1A1E0A5C1300724656 /* MineSecondRowCell.m */,
+				04B0FC1B1E0A5C1300724656 /* MineTrunkView.h */,
+				04B0FC1C1E0A5C1300724656 /* MineTrunkView.m */,
+			);
+			path = MineMainView;
+			sourceTree = "<group>";
+		};
+		04B0FC201E0A5C5800724656 /* MinePendingView */ = {
+			isa = PBXGroup;
+			children = (
+				04B0FC221E0A5CBF00724656 /* MinePendingTrunkTableView.h */,
+				04B0FC231E0A5CBF00724656 /* MinePendingTrunkTableView.m */,
+				04B0FC251E0A617700724656 /* MinePendingHeaderRowCell.h */,
+				04B0FC261E0A617700724656 /* MinePendingHeaderRowCell.m */,
+				04B0FC271E0A617700724656 /* MinePendingHeaderRowCell.xib */,
+				04B0FC2F1E0A61C500724656 /* MinePendingInformationRowCell.h */,
+				04B0FC301E0A61C500724656 /* MinePendingInformationRowCell.m */,
+				04B0FC311E0A61C500724656 /* MinePendingInformationRowCell.xib */,
+				04B0FC341E0A61D300724656 /* MinePendingPriceRowCell.h */,
+				04B0FC351E0A61D300724656 /* MinePendingPriceRowCell.m */,
+				04B0FC361E0A61D300724656 /* MinePendingPriceRowCell.xib */,
+				04B0FC391E0A61DE00724656 /* MinePendingFooterRowCell.h */,
+				04B0FC3A1E0A61DE00724656 /* MinePendingFooterRowCell.m */,
+				04B0FC3B1E0A61DE00724656 /* MinePendingFooterRowCell.xib */,
+			);
+			path = MinePendingView;
+			sourceTree = "<group>";
+		};
+		04B0FC211E0A5C5800724656 /* MineRelationshipView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MineRelationshipView;
+			sourceTree = "<group>";
+		};
+		04B0FC3E1E0A773B00724656 /* MineSystemSettingView */ = {
+			isa = PBXGroup;
+			children = (
+				04B0FC511E0A7C3300724656 /* MineSettingsTableView.h */,
+				04B0FC521E0A7C3300724656 /* MineSettingsTableView.m */,
+			);
+			path = MineSystemSettingView;
+			sourceTree = "<group>";
+		};
 		04C21A901DFF8AD20075BBC7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -944,6 +1050,14 @@
 			children = (
 				04C21AA51DFFA24E0075BBC7 /* MineViewModel.h */,
 				04C21AA61DFFA24E0075BBC7 /* MineViewModel.m */,
+				04B0FC131E0A5BE300724656 /* MinePendingViewModel.h */,
+				04B0FC141E0A5BE300724656 /* MinePendingViewModel.m */,
+				04B0FC481E0A7AA600724656 /* MineSettingViewModel.h */,
+				04B0FC491E0A7AA600724656 /* MineSettingViewModel.m */,
+				04B0FC4B1E0A7AFD00724656 /* MineBankCardViewModel.h */,
+				04B0FC4C1E0A7AFD00724656 /* MineBankCardViewModel.m */,
+				04B0FC4E1E0A7B0900724656 /* MineCollectionViewModel.h */,
+				04B0FC4F1E0A7B0900724656 /* MineCollectionViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1124,6 +1238,7 @@
 				042B5A441DFF8791002BB6A5 /* yxl_mine_collection@2x.png in Resources */,
 				04EDF5BE1E08CE670002D126 /* ProductInformationSecondRowCell.xib in Resources */,
 				042B5A431DFF8791002BB6A5 /* yxl_mine_capital@2x.png in Resources */,
+				04B0FC331E0A61C500724656 /* MinePendingInformationRowCell.xib in Resources */,
 				045FE3FB1E091E600069E4F3 /* yxl_shop_footer_cart@2x.png in Resources */,
 				046355511E01423500D03294 /* yxl_shop_menu@2x.png in Resources */,
 				04626A301DFBA78900B4DE7C /* yxl_message_s@2x.png in Resources */,
@@ -1133,10 +1248,12 @@
 				04C21ABF1DFFD13A0075BBC7 /* MineList.plist in Resources */,
 				04C21AC11DFFD3A30075BBC7 /* yxl_mine_gold@2x.png in Resources */,
 				042B5A2C1DFF835F002BB6A5 /* yxl_shop_food@2x.png in Resources */,
+				04B0FC3D1E0A61DE00724656 /* MinePendingFooterRowCell.xib in Resources */,
 				042B5A291DFF835F002BB6A5 /* yxl_shop_building@2x.png in Resources */,
 				042B5A311DFF835F002BB6A5 /* yxl_shop_tea@2x.png in Resources */,
 				042B5A2D1DFF835F002BB6A5 /* yxl_shop_life@2x.png in Resources */,
 				042B5A201DFF835F002BB6A5 /* yxl_home_popularize@2x.png in Resources */,
+				04B0FC381E0A61D300724656 /* MinePendingPriceRowCell.xib in Resources */,
 				042B5A2E1DFF835F002BB6A5 /* yxl_shop_location@2x.png in Resources */,
 				04EDF5CD1E08CEC50002D126 /* ProductRankRowCell.xib in Resources */,
 				04626A311DFBA78900B4DE7C /* yxl_message@2x.png in Resources */,
@@ -1151,6 +1268,7 @@
 				042B5A211DFF835F002BB6A5 /* yxl_home_pyramid@2x.png in Resources */,
 				042B5A451DFF8791002BB6A5 /* yxl_mine_convert@2x.png in Resources */,
 				04626A321DFBA78900B4DE7C /* yxl_mine_s@2x.png in Resources */,
+				04B0FC291E0A617700724656 /* MinePendingHeaderRowCell.xib in Resources */,
 				042B5A1D1DFF835F002BB6A5 /* yxl_home_join@2x.png in Resources */,
 				0463555E1E022BF400D03294 /* BusinessLeftItemCell.xib in Resources */,
 				04EDF5B91E08CE5A0002D126 /* ProductInformationFirstRowCell.xib in Resources */,
@@ -1264,10 +1382,15 @@
 				04C21ADC1DFFD7430075BBC7 /* MJFoundation.m in Sources */,
 				04E911D81DFC023900C84802 /* SDWebImageDecoder.m in Sources */,
 				04E911DC1DFC023900C84802 /* SDWebImagePrefetcher.m in Sources */,
+				04B0FC371E0A61D300724656 /* MinePendingPriceRowCell.m in Sources */,
+				04B0FC471E0A782600724656 /* MineCollectionListViewController.m in Sources */,
 				04D318F01DFE376D006C8016 /* AppDelegate.m in Sources */,
+				04B0FC241E0A5CBF00724656 /* MinePendingTrunkTableView.m in Sources */,
 				04E911E11DFC023900C84802 /* UIImageView+WebCache.m in Sources */,
 				04D319971DFE3FE6006C8016 /* UITabBar+badge.m in Sources */,
+				04B0FC1E1E0A5C1300724656 /* MineSecondRowCell.m in Sources */,
 				04D319D11DFE4FCD006C8016 /* YXLNavigationController.m in Sources */,
+				04B0FC321E0A61C500724656 /* MinePendingInformationRowCell.m in Sources */,
 				04C21A9E1DFF94D20075BBC7 /* UILabel+Category.m in Sources */,
 				04EDF5831E07BC6F0002D126 /* BusinessProductsDetailViewController.m in Sources */,
 				04C21AC41DFFD6300075BBC7 /* MineModel.m in Sources */,
@@ -1283,6 +1406,8 @@
 				04EC0A6A1DFFF75300D69486 /* HomeViewModel.m in Sources */,
 				04E911DE1DFC023900C84802 /* UIImage+GIF.m in Sources */,
 				04C21AA71DFFA24E0075BBC7 /* MineViewModel.m in Sources */,
+				04B0FC1D1E0A5C1300724656 /* MineHeaderView.m in Sources */,
+				04B0FC531E0A7C3300724656 /* MineSettingsTableView.m in Sources */,
 				04C21ADD1DFFD7430075BBC7 /* MJProperty.m in Sources */,
 				04D319E61DFE56A6006C8016 /* MessageViewController.m in Sources */,
 				04A3926C1E0132CB00A9FDAD /* BusinessViewModel.m in Sources */,
@@ -1290,6 +1415,7 @@
 				04EDF5BD1E08CE670002D126 /* ProductInformationSecondRowCell.m in Sources */,
 				04D319C71DFE4300006C8016 /* SVIndefiniteAnimatedView.m in Sources */,
 				04E911D51DFC023900C84802 /* NSData+ImageContentType.m in Sources */,
+				04B0FC281E0A617700724656 /* MinePendingHeaderRowCell.m in Sources */,
 				04D319E31DFE5695006C8016 /* HomeViewController.m in Sources */,
 				0463555D1E022BF400D03294 /* BusinessLeftItemCell.m in Sources */,
 				04D3199A1DFE3FEC006C8016 /* HUD.m in Sources */,
@@ -1298,13 +1424,14 @@
 				04EC0A701DFFF77100D69486 /* HomeTrunkView.m in Sources */,
 				04A3926F1E01330D00A9FDAD /* BusinessModel.m in Sources */,
 				04E911D71DFC023900C84802 /* SDWebImageCompat.m in Sources */,
+				04B0FC4D1E0A7AFD00724656 /* MineBankCardViewModel.m in Sources */,
 				046355B41E02705F00D03294 /* HomeFunctionView.m in Sources */,
 				046355621E022C0900D03294 /* BusinessRightItemCell.m in Sources */,
 				04E911D61DFC023900C84802 /* SDImageCache.m in Sources */,
 				04D319E91DFE56B1006C8016 /* MineViewController.m in Sources */,
 				045FE4041E0927A20069E4F3 /* SUNControl.m in Sources */,
-				04C21ABA1DFFCFEA0075BBC7 /* MineSecondRowCell.m in Sources */,
 				04EC0A801E00EC3B00D69486 /* DataStatisticsRowCell.m in Sources */,
+				04B0FC1F1E0A5C1300724656 /* MineTrunkView.m in Sources */,
 				046E7CA01E039BBF001AC2A7 /* ProductsListTrunkView.m in Sources */,
 				04E911D91DFC023900C84802 /* SDWebImageDownloader.m in Sources */,
 				045FE3F61E0911230069E4F3 /* ProductsDetailFooterView.m in Sources */,
@@ -1314,7 +1441,10 @@
 				04D319F61DFE89E2006C8016 /* UIBarButtonItem+Item.m in Sources */,
 				04D319CB1DFE4300006C8016 /* SVRadialGradientLayer.m in Sources */,
 				04E911DF1DFC023900C84802 /* UIImage+MultiFormat.m in Sources */,
+				04B0FC3C1E0A61DE00724656 /* MinePendingFooterRowCell.m in Sources */,
 				04D319911DFE3F23006C8016 /* UIColor+Category.m in Sources */,
+				04B0FC441E0A780D00724656 /* MineBankCardListViewController.m in Sources */,
+				04B0FC121E0A5AA100724656 /* MinePendingViewController.m in Sources */,
 				04D319DD1DFE564F006C8016 /* YXLTabBarController.m in Sources */,
 				04C21AE71DFFD7A80075BBC7 /* YXLBaseView.m in Sources */,
 				04C21AAA1DFFA5880075BBC7 /* YXLBaseViewModel.m in Sources */,
@@ -1324,17 +1454,19 @@
 				04D319DA1DFE5137006C8016 /* YXLBaseViewController.m in Sources */,
 				04EDF5B81E08CE5A0002D126 /* ProductInformationFirstRowCell.m in Sources */,
 				04E911DD1DFC023900C84802 /* UIButton+WebCache.m in Sources */,
-				04C21AA41DFFA0C10075BBC7 /* MineTrunkView.m in Sources */,
+				04B0FC151E0A5BE300724656 /* MinePendingViewModel.m in Sources */,
 				045FE4071E0927B00069E4F3 /* SUNNumberChooseControl.m in Sources */,
 				04C21ADB1DFFD7430075BBC7 /* MJExtensionConst.m in Sources */,
 				04E911DA1DFC023900C84802 /* SDWebImageDownloaderOperation.m in Sources */,
 				041241A81DE81BA30028E618 /* yxl_ios.xcdatamodeld in Sources */,
 				046355B71E02847A00D03294 /* UITabBar+Animation.m in Sources */,
+				04B0FC501E0A7B0900724656 /* MineCollectionViewModel.m in Sources */,
+				04B0FC4A1E0A7AA600724656 /* MineSettingViewModel.m in Sources */,
 				04D319E01DFE5688006C8016 /* BusinessViewController.m in Sources */,
-				04C21A9B1DFF8B8B0075BBC7 /* MineHeaderView.m in Sources */,
 				04E911E01DFC023900C84802 /* UIImageView+HighlightedWebCache.m in Sources */,
 				04EDF58B1E07C92D0002D126 /* ProductsDetailHeaderView.m in Sources */,
 				046355BA1E02862A00D03294 /* UIButton+Category.m in Sources */,
+				04B0FC411E0A77E900724656 /* MineSettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
