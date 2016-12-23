@@ -7,7 +7,6 @@
 //
 
 #import "BusinessViewModel.h"
-#import "BusinessViewController.h"
 #import "BusinessTrunkView.h"
 
 @interface BusinessViewModel ()
@@ -19,7 +18,7 @@
 {
     self = [super initWithViewController:viewController];
     if (self) {
-        if ([viewController isKindOfClass:[BusinessViewController class]]) {
+        if ([viewController isKindOfClass:NSClassFromString(@"BusinessViewController")]) {
             [viewController.view addSubview:self.trunkView];
             [self.trunkView mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 49, 0));

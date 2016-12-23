@@ -18,6 +18,7 @@
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    self.navigationController.navigationBar.alpha = 1;
     self.navigationController.navigationBar.hidden = NO;
 }
 - (ProductListViewModel *)viewModel{

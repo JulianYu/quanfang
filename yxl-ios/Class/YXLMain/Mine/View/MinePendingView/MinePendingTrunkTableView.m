@@ -28,11 +28,9 @@
     return self;
 }
 -(void)buildUI{
+    [super buildUI];
     self.delegate = self;
     self.dataSource = self;
-    self.showsVerticalScrollIndicator = NO;
-    self.showsHorizontalScrollIndicator = NO;
-    self.tableFooterView = [UIView new];
     self.allowsSelection = NO;
     
     SUN_TableRegisterCell(self, @"MinePendingHeaderRowCell", MINEPENDING_HEADER_ROWCELL);

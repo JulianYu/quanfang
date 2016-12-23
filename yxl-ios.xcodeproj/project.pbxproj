@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0403BFB81E0D006400BEDA43 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0403BFA81E0D006400BEDA43 /* LoginViewController.m */; };
+		0403BFB91E0D006400BEDA43 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0403BFA91E0D006400BEDA43 /* LoginViewController.xib */; };
+		0403BFBA1E0D006400BEDA43 /* PolicyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0403BFAB1E0D006400BEDA43 /* PolicyViewController.m */; };
+		0403BFBB1E0D006400BEDA43 /* ResertPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0403BFAD1E0D006400BEDA43 /* ResertPasswordViewController.m */; };
+		0403BFBC1E0D006400BEDA43 /* ResertPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0403BFAE1E0D006400BEDA43 /* ResertPasswordViewController.xib */; };
+		0403BFBD1E0D006400BEDA43 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0403BFB01E0D006400BEDA43 /* SignUpViewController.m */; };
+		0403BFBE1E0D006400BEDA43 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0403BFB11E0D006400BEDA43 /* SignUpViewController.xib */; };
+		0403BFC01E0D006400BEDA43 /* UserViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0403BFB51E0D006400BEDA43 /* UserViewModel.m */; };
+		0403BFC11E0D006400BEDA43 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0403BFB71E0D006400BEDA43 /* WelcomeViewController.m */; };
+		0403BFC41E0D022100BEDA43 /* YXLBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0403BFC31E0D022100BEDA43 /* YXLBaseModel.m */; };
+		0403BFC81E0D047D00BEDA43 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0403BFC71E0D047D00BEDA43 /* UserModel.m */; };
 		040D60AD1E038CFE00D1ED63 /* ProductListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D60AC1E038CFE00D1ED63 /* ProductListViewModel.m */; };
 		040D60B01E038D3C00D1ED63 /* BusinessProductsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040D60AF1E038D3C00D1ED63 /* BusinessProductsListViewController.m */; };
 		04108B1A537634AD51D332D0 /* Pods_yxl_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7F9367702B647B7973BF59 /* Pods_yxl_ios.framework */; };
@@ -52,6 +63,8 @@
 		042B5A4F1DFF8791002BB6A5 /* yxl_mine_second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A3F1DFF8791002BB6A5 /* yxl_mine_second@2x.png */; };
 		042B5A501DFF8791002BB6A5 /* yxl_mine_setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A401DFF8791002BB6A5 /* yxl_mine_setting@2x.png */; };
 		042B5A511DFF8791002BB6A5 /* yxl_mine_third@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A411DFF8791002BB6A5 /* yxl_mine_third@2x.png */; };
+		0439C3FB1E0CD1B900F1BE82 /* MineBalanceRechargeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0439C3FA1E0CD1B900F1BE82 /* MineBalanceRechargeViewController.m */; };
+		0439C3FE1E0CD1D900F1BE82 /* MineBalanceWithdrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0439C3FD1E0CD1D900F1BE82 /* MineBalanceWithdrawViewController.m */; };
 		045FE3F61E0911230069E4F3 /* ProductsDetailFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045FE3F51E0911230069E4F3 /* ProductsDetailFooterView.m */; };
 		045FE3FB1E091E600069E4F3 /* yxl_shop_footer_cart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 045FE3F71E091E600069E4F3 /* yxl_shop_footer_cart@2x.png */; };
 		045FE3FC1E091E600069E4F3 /* yxl_shop_footer_chat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 045FE3F81E091E600069E4F3 /* yxl_shop_footer_chat@2x.png */; };
@@ -83,6 +96,24 @@
 		046355B71E02847A00D03294 /* UITabBar+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 046355B61E02847A00D03294 /* UITabBar+Animation.m */; };
 		046355BA1E02862A00D03294 /* UIButton+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 046355B91E02862A00D03294 /* UIButton+Category.m */; };
 		046E7CA01E039BBF001AC2A7 /* ProductsListTrunkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046E7C9F1E039BBF001AC2A7 /* ProductsListTrunkView.m */; };
+		0499C0231E0B65D9007B5DD3 /* MineModifyPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499C0221E0B65D9007B5DD3 /* MineModifyPasswordViewController.m */; };
+		0499C0291E0B68FC007B5DD3 /* MineModifyPasswordTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499C0281E0B68FC007B5DD3 /* MineModifyPasswordTableView.m */; };
+		0499C02D1E0B6A73007B5DD3 /* MineCommonSettingModifyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499C02B1E0B6A73007B5DD3 /* MineCommonSettingModifyCell.m */; };
+		0499C02E1E0B6A73007B5DD3 /* MineCommonSettingModifyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0499C02C1E0B6A73007B5DD3 /* MineCommonSettingModifyCell.xib */; };
+		0499C0341E0B6B70007B5DD3 /* MineCommonFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499C0331E0B6B70007B5DD3 /* MineCommonFooterView.m */; };
+		0499C03E1E0B7656007B5DD3 /* MineTransactionPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499C03C1E0B7656007B5DD3 /* MineTransactionPasswordViewController.m */; };
+		0499C03F1E0B7656007B5DD3 /* MineTransactionPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0499C03D1E0B7656007B5DD3 /* MineTransactionPasswordViewController.xib */; };
+		0499C0431E0BB168007B5DD3 /* MineBankCardItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499C0411E0BB168007B5DD3 /* MineBankCardItemCell.m */; };
+		0499C0441E0BB168007B5DD3 /* MineBankCardItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0499C0421E0BB168007B5DD3 /* MineBankCardItemCell.xib */; };
+		0499C0471E0BB750007B5DD3 /* MineBankCardAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499C0461E0BB750007B5DD3 /* MineBankCardAddViewController.m */; };
+		0499C04A1E0BB812007B5DD3 /* MineBankCardAddTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499C0491E0BB812007B5DD3 /* MineBankCardAddTableView.m */; };
+		0499C04D1E0BBD60007B5DD3 /* MineBankCardToSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499C04C1E0BBD60007B5DD3 /* MineBankCardToSelectViewController.m */; };
+		0499C0501E0BBE24007B5DD3 /* MineBankCardSelectTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499C04F1E0BBE24007B5DD3 /* MineBankCardSelectTableView.m */; };
+		0499C0531E0BC18B007B5DD3 /* MineDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499C0521E0BC18B007B5DD3 /* MineDetailViewController.m */; };
+		0499C0561E0BC35E007B5DD3 /* MineInfromationTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499C0551E0BC35E007B5DD3 /* MineInfromationTableView.m */; };
+		0499C0591E0BCBBF007B5DD3 /* MineModifyNickNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499C0581E0BCBBF007B5DD3 /* MineModifyNickNameViewController.m */; };
+		0499C05C1E0BCF77007B5DD3 /* MineModifySexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499C05B1E0BCF77007B5DD3 /* MineModifySexViewController.m */; };
+		0499C0821E0C24F4007B5DD3 /* YXLBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499C0811E0C24F4007B5DD3 /* YXLBaseTableView.m */; };
 		04A392671E0122E300A9FDAD /* HeaderRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A392651E0122E300A9FDAD /* HeaderRowCell.m */; };
 		04A392681E0122E300A9FDAD /* HeaderRowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A392661E0122E300A9FDAD /* HeaderRowCell.xib */; };
 		04A3926C1E0132CB00A9FDAD /* BusinessViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A3926B1E0132CB00A9FDAD /* BusinessViewModel.m */; };
@@ -109,6 +140,10 @@
 		04B0FC501E0A7B0900724656 /* MineCollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC4F1E0A7B0900724656 /* MineCollectionViewModel.m */; };
 		04B0FC531E0A7C3300724656 /* MineSettingsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC521E0A7C3300724656 /* MineSettingsTableView.m */; };
 		04B0FC561E0A836600724656 /* MineBankCardTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC551E0A836600724656 /* MineBankCardTableView.m */; };
+		04B64F281E0CBB4F006BBF35 /* MineBalanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B64F271E0CBB4F006BBF35 /* MineBalanceViewController.m */; };
+		04B64F2B1E0CBCEE006BBF35 /* MineBalanceViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B64F2A1E0CBCEE006BBF35 /* MineBalanceViewModel.m */; };
+		04B64F2F1E0CBEA3006BBF35 /* MineBalanceHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B64F2E1E0CBEA3006BBF35 /* MineBalanceHeaderView.m */; };
+		04B64F321E0CBF94006BBF35 /* MineBalanceTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B64F311E0CBF94006BBF35 /* MineBalanceTableView.m */; };
 		04C21A9E1DFF94D20075BBC7 /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C21A9D1DFF94D20075BBC7 /* UILabel+Category.m */; };
 		04C21AA71DFFA24E0075BBC7 /* MineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C21AA61DFFA24E0075BBC7 /* MineViewModel.m */; };
 		04C21AAA1DFFA5880075BBC7 /* YXLBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C21AA91DFFA5880075BBC7 /* YXLBaseViewModel.m */; };
@@ -191,6 +226,25 @@
 
 /* Begin PBXFileReference section */
 		02C74BB5F1A8D2E1E5338EA7 /* Pods_yxl_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yxl_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0403BFA71E0D006400BEDA43 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		0403BFA81E0D006400BEDA43 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		0403BFA91E0D006400BEDA43 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		0403BFAA1E0D006400BEDA43 /* PolicyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolicyViewController.h; sourceTree = "<group>"; };
+		0403BFAB1E0D006400BEDA43 /* PolicyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolicyViewController.m; sourceTree = "<group>"; };
+		0403BFAC1E0D006400BEDA43 /* ResertPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResertPasswordViewController.h; sourceTree = "<group>"; };
+		0403BFAD1E0D006400BEDA43 /* ResertPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResertPasswordViewController.m; sourceTree = "<group>"; };
+		0403BFAE1E0D006400BEDA43 /* ResertPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResertPasswordViewController.xib; sourceTree = "<group>"; };
+		0403BFAF1E0D006400BEDA43 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		0403BFB01E0D006400BEDA43 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		0403BFB11E0D006400BEDA43 /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		0403BFB41E0D006400BEDA43 /* UserViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewModel.h; sourceTree = "<group>"; };
+		0403BFB51E0D006400BEDA43 /* UserViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewModel.m; sourceTree = "<group>"; };
+		0403BFB61E0D006400BEDA43 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		0403BFB71E0D006400BEDA43 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		0403BFC21E0D022100BEDA43 /* YXLBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXLBaseModel.h; sourceTree = "<group>"; };
+		0403BFC31E0D022100BEDA43 /* YXLBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXLBaseModel.m; sourceTree = "<group>"; };
+		0403BFC61E0D047D00BEDA43 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		0403BFC71E0D047D00BEDA43 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		040D60AB1E038CFE00D1ED63 /* ProductListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListViewModel.h; sourceTree = "<group>"; };
 		040D60AC1E038CFE00D1ED63 /* ProductListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListViewModel.m; sourceTree = "<group>"; };
 		040D60AE1E038D3C00D1ED63 /* BusinessProductsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessProductsListViewController.h; sourceTree = "<group>"; };
@@ -239,6 +293,10 @@
 		042B5A3F1DFF8791002BB6A5 /* yxl_mine_second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_mine_second@2x.png"; sourceTree = "<group>"; };
 		042B5A401DFF8791002BB6A5 /* yxl_mine_setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_mine_setting@2x.png"; sourceTree = "<group>"; };
 		042B5A411DFF8791002BB6A5 /* yxl_mine_third@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_mine_third@2x.png"; sourceTree = "<group>"; };
+		0439C3F91E0CD1B900F1BE82 /* MineBalanceRechargeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineBalanceRechargeViewController.h; sourceTree = "<group>"; };
+		0439C3FA1E0CD1B900F1BE82 /* MineBalanceRechargeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineBalanceRechargeViewController.m; sourceTree = "<group>"; };
+		0439C3FC1E0CD1D900F1BE82 /* MineBalanceWithdrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineBalanceWithdrawViewController.h; sourceTree = "<group>"; };
+		0439C3FD1E0CD1D900F1BE82 /* MineBalanceWithdrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineBalanceWithdrawViewController.m; sourceTree = "<group>"; };
 		045FE3F41E0911230069E4F3 /* ProductsDetailFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsDetailFooterView.h; sourceTree = "<group>"; };
 		045FE3F51E0911230069E4F3 /* ProductsDetailFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsDetailFooterView.m; sourceTree = "<group>"; };
 		045FE3F71E091E600069E4F3 /* yxl_shop_footer_cart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_shop_footer_cart@2x.png"; sourceTree = "<group>"; };
@@ -283,6 +341,39 @@
 		046355B91E02862A00D03294 /* UIButton+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Category.m"; sourceTree = "<group>"; };
 		046E7C9E1E039BBF001AC2A7 /* ProductsListTrunkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsListTrunkView.h; sourceTree = "<group>"; };
 		046E7C9F1E039BBF001AC2A7 /* ProductsListTrunkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsListTrunkView.m; sourceTree = "<group>"; };
+		0499C0211E0B65D9007B5DD3 /* MineModifyPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineModifyPasswordViewController.h; sourceTree = "<group>"; };
+		0499C0221E0B65D9007B5DD3 /* MineModifyPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineModifyPasswordViewController.m; sourceTree = "<group>"; };
+		0499C0271E0B68FC007B5DD3 /* MineModifyPasswordTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineModifyPasswordTableView.h; sourceTree = "<group>"; };
+		0499C0281E0B68FC007B5DD3 /* MineModifyPasswordTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineModifyPasswordTableView.m; sourceTree = "<group>"; };
+		0499C02A1E0B6A73007B5DD3 /* MineCommonSettingModifyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineCommonSettingModifyCell.h; sourceTree = "<group>"; };
+		0499C02B1E0B6A73007B5DD3 /* MineCommonSettingModifyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineCommonSettingModifyCell.m; sourceTree = "<group>"; };
+		0499C02C1E0B6A73007B5DD3 /* MineCommonSettingModifyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineCommonSettingModifyCell.xib; sourceTree = "<group>"; };
+		0499C0321E0B6B70007B5DD3 /* MineCommonFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineCommonFooterView.h; sourceTree = "<group>"; };
+		0499C0331E0B6B70007B5DD3 /* MineCommonFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineCommonFooterView.m; sourceTree = "<group>"; };
+		0499C03B1E0B7656007B5DD3 /* MineTransactionPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineTransactionPasswordViewController.h; sourceTree = "<group>"; };
+		0499C03C1E0B7656007B5DD3 /* MineTransactionPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineTransactionPasswordViewController.m; sourceTree = "<group>"; };
+		0499C03D1E0B7656007B5DD3 /* MineTransactionPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineTransactionPasswordViewController.xib; sourceTree = "<group>"; };
+		0499C0401E0BB168007B5DD3 /* MineBankCardItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineBankCardItemCell.h; sourceTree = "<group>"; };
+		0499C0411E0BB168007B5DD3 /* MineBankCardItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineBankCardItemCell.m; sourceTree = "<group>"; };
+		0499C0421E0BB168007B5DD3 /* MineBankCardItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineBankCardItemCell.xib; sourceTree = "<group>"; };
+		0499C0451E0BB750007B5DD3 /* MineBankCardAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineBankCardAddViewController.h; sourceTree = "<group>"; };
+		0499C0461E0BB750007B5DD3 /* MineBankCardAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineBankCardAddViewController.m; sourceTree = "<group>"; };
+		0499C0481E0BB812007B5DD3 /* MineBankCardAddTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineBankCardAddTableView.h; sourceTree = "<group>"; };
+		0499C0491E0BB812007B5DD3 /* MineBankCardAddTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineBankCardAddTableView.m; sourceTree = "<group>"; };
+		0499C04B1E0BBD60007B5DD3 /* MineBankCardToSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineBankCardToSelectViewController.h; sourceTree = "<group>"; };
+		0499C04C1E0BBD60007B5DD3 /* MineBankCardToSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineBankCardToSelectViewController.m; sourceTree = "<group>"; };
+		0499C04E1E0BBE24007B5DD3 /* MineBankCardSelectTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineBankCardSelectTableView.h; sourceTree = "<group>"; };
+		0499C04F1E0BBE24007B5DD3 /* MineBankCardSelectTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineBankCardSelectTableView.m; sourceTree = "<group>"; };
+		0499C0511E0BC18B007B5DD3 /* MineDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineDetailViewController.h; sourceTree = "<group>"; };
+		0499C0521E0BC18B007B5DD3 /* MineDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineDetailViewController.m; sourceTree = "<group>"; };
+		0499C0541E0BC35E007B5DD3 /* MineInfromationTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineInfromationTableView.h; sourceTree = "<group>"; };
+		0499C0551E0BC35E007B5DD3 /* MineInfromationTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineInfromationTableView.m; sourceTree = "<group>"; };
+		0499C0571E0BCBBF007B5DD3 /* MineModifyNickNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineModifyNickNameViewController.h; sourceTree = "<group>"; };
+		0499C0581E0BCBBF007B5DD3 /* MineModifyNickNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineModifyNickNameViewController.m; sourceTree = "<group>"; };
+		0499C05A1E0BCF77007B5DD3 /* MineModifySexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineModifySexViewController.h; sourceTree = "<group>"; };
+		0499C05B1E0BCF77007B5DD3 /* MineModifySexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineModifySexViewController.m; sourceTree = "<group>"; };
+		0499C0801E0C24F4007B5DD3 /* YXLBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXLBaseTableView.h; sourceTree = "<group>"; };
+		0499C0811E0C24F4007B5DD3 /* YXLBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXLBaseTableView.m; sourceTree = "<group>"; };
 		04A392641E0122E300A9FDAD /* HeaderRowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderRowCell.h; sourceTree = "<group>"; };
 		04A392651E0122E300A9FDAD /* HeaderRowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderRowCell.m; sourceTree = "<group>"; };
 		04A392661E0122E300A9FDAD /* HeaderRowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderRowCell.xib; sourceTree = "<group>"; };
@@ -330,6 +421,14 @@
 		04B0FC521E0A7C3300724656 /* MineSettingsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineSettingsTableView.m; sourceTree = "<group>"; };
 		04B0FC541E0A836600724656 /* MineBankCardTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineBankCardTableView.h; sourceTree = "<group>"; };
 		04B0FC551E0A836600724656 /* MineBankCardTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineBankCardTableView.m; sourceTree = "<group>"; };
+		04B64F261E0CBB4F006BBF35 /* MineBalanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineBalanceViewController.h; sourceTree = "<group>"; };
+		04B64F271E0CBB4F006BBF35 /* MineBalanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineBalanceViewController.m; sourceTree = "<group>"; };
+		04B64F291E0CBCEE006BBF35 /* MineBalanceViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineBalanceViewModel.h; sourceTree = "<group>"; };
+		04B64F2A1E0CBCEE006BBF35 /* MineBalanceViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineBalanceViewModel.m; sourceTree = "<group>"; };
+		04B64F2D1E0CBEA3006BBF35 /* MineBalanceHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineBalanceHeaderView.h; sourceTree = "<group>"; };
+		04B64F2E1E0CBEA3006BBF35 /* MineBalanceHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineBalanceHeaderView.m; sourceTree = "<group>"; };
+		04B64F301E0CBF94006BBF35 /* MineBalanceTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineBalanceTableView.h; sourceTree = "<group>"; };
+		04B64F311E0CBF94006BBF35 /* MineBalanceTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineBalanceTableView.m; sourceTree = "<group>"; };
 		04C21A9C1DFF94D20075BBC7 /* UILabel+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Category.h"; sourceTree = "<group>"; };
 		04C21A9D1DFF94D20075BBC7 /* UILabel+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Category.m"; sourceTree = "<group>"; };
 		04C21AA51DFFA24E0075BBC7 /* MineViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewModel.h; sourceTree = "<group>"; };
@@ -501,6 +600,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0403BFA61E0D005300BEDA43 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0403BFC51E0D045500BEDA43 /* Model */,
+				0403BFA71E0D006400BEDA43 /* LoginViewController.h */,
+				0403BFA81E0D006400BEDA43 /* LoginViewController.m */,
+				0403BFA91E0D006400BEDA43 /* LoginViewController.xib */,
+				0403BFAA1E0D006400BEDA43 /* PolicyViewController.h */,
+				0403BFAB1E0D006400BEDA43 /* PolicyViewController.m */,
+				0403BFAC1E0D006400BEDA43 /* ResertPasswordViewController.h */,
+				0403BFAD1E0D006400BEDA43 /* ResertPasswordViewController.m */,
+				0403BFAE1E0D006400BEDA43 /* ResertPasswordViewController.xib */,
+				0403BFAF1E0D006400BEDA43 /* SignUpViewController.h */,
+				0403BFB01E0D006400BEDA43 /* SignUpViewController.m */,
+				0403BFB11E0D006400BEDA43 /* SignUpViewController.xib */,
+				0403BFB41E0D006400BEDA43 /* UserViewModel.h */,
+				0403BFB51E0D006400BEDA43 /* UserViewModel.m */,
+				0403BFB61E0D006400BEDA43 /* WelcomeViewController.h */,
+				0403BFB71E0D006400BEDA43 /* WelcomeViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0403BFC51E0D045500BEDA43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0403BFC61E0D047D00BEDA43 /* UserModel.h */,
+				0403BFC71E0D047D00BEDA43 /* UserModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		040D60A21E038AAB00D1ED63 /* BusinessMainView */ = {
 			isa = PBXGroup;
 			children = (
@@ -765,6 +896,10 @@
 				04C21AA91DFFA5880075BBC7 /* YXLBaseViewModel.m */,
 				04C21AE51DFFD7A80075BBC7 /* YXLBaseView.h */,
 				04C21AE61DFFD7A80075BBC7 /* YXLBaseView.m */,
+				0499C0801E0C24F4007B5DD3 /* YXLBaseTableView.h */,
+				0499C0811E0C24F4007B5DD3 /* YXLBaseTableView.m */,
+				0403BFC21E0D022100BEDA43 /* YXLBaseModel.h */,
+				0403BFC31E0D022100BEDA43 /* YXLBaseModel.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -772,6 +907,7 @@
 		04626A081DFB93DA00B4DE7C /* YXLMain */ = {
 			isa = PBXGroup;
 			children = (
+				0403BFA61E0D005300BEDA43 /* Login */,
 				04626A3E1DFBB47F00B4DE7C /* Business */,
 				04626A091DFB93DA00B4DE7C /* Home */,
 				04626A0C1DFB93DA00B4DE7C /* Message */,
@@ -852,12 +988,33 @@
 			children = (
 				04D319E71DFE56B1006C8016 /* MineViewController.h */,
 				04D319E81DFE56B1006C8016 /* MineViewController.m */,
+				04B64F261E0CBB4F006BBF35 /* MineBalanceViewController.h */,
+				04B64F271E0CBB4F006BBF35 /* MineBalanceViewController.m */,
+				0439C3F91E0CD1B900F1BE82 /* MineBalanceRechargeViewController.h */,
+				0439C3FA1E0CD1B900F1BE82 /* MineBalanceRechargeViewController.m */,
+				0439C3FC1E0CD1D900F1BE82 /* MineBalanceWithdrawViewController.h */,
+				0439C3FD1E0CD1D900F1BE82 /* MineBalanceWithdrawViewController.m */,
+				0499C0511E0BC18B007B5DD3 /* MineDetailViewController.h */,
+				0499C0521E0BC18B007B5DD3 /* MineDetailViewController.m */,
+				0499C0571E0BCBBF007B5DD3 /* MineModifyNickNameViewController.h */,
+				0499C0581E0BCBBF007B5DD3 /* MineModifyNickNameViewController.m */,
+				0499C05A1E0BCF77007B5DD3 /* MineModifySexViewController.h */,
+				0499C05B1E0BCF77007B5DD3 /* MineModifySexViewController.m */,
 				04B0FC101E0A5AA100724656 /* MinePendingViewController.h */,
 				04B0FC111E0A5AA100724656 /* MinePendingViewController.m */,
 				04B0FC3F1E0A77E800724656 /* MineSettingViewController.h */,
 				04B0FC401E0A77E800724656 /* MineSettingViewController.m */,
+				0499C0211E0B65D9007B5DD3 /* MineModifyPasswordViewController.h */,
+				0499C0221E0B65D9007B5DD3 /* MineModifyPasswordViewController.m */,
+				0499C03B1E0B7656007B5DD3 /* MineTransactionPasswordViewController.h */,
+				0499C03C1E0B7656007B5DD3 /* MineTransactionPasswordViewController.m */,
+				0499C03D1E0B7656007B5DD3 /* MineTransactionPasswordViewController.xib */,
 				04B0FC421E0A780D00724656 /* MineBankCardListViewController.h */,
 				04B0FC431E0A780D00724656 /* MineBankCardListViewController.m */,
+				0499C0451E0BB750007B5DD3 /* MineBankCardAddViewController.h */,
+				0499C0461E0BB750007B5DD3 /* MineBankCardAddViewController.m */,
+				0499C04B1E0BBD60007B5DD3 /* MineBankCardToSelectViewController.h */,
+				0499C04C1E0BBD60007B5DD3 /* MineBankCardToSelectViewController.m */,
 				04B0FC451E0A782600724656 /* MineCollectionListViewController.h */,
 				04B0FC461E0A782600724656 /* MineCollectionListViewController.m */,
 				04C21A921DFF8AE00075BBC7 /* ViewModel */,
@@ -880,6 +1037,7 @@
 		04626A111DFB93DA00B4DE7C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04B64F2C1E0CBD66006BBF35 /* MineBalanceView */,
 				04B0FC3E1E0A773B00724656 /* MineSystemSettingView */,
 				04B0FC201E0A5C5800724656 /* MinePendingView */,
 				04B0FC211E0A5C5800724656 /* MineRelationshipView */,
@@ -991,6 +1149,8 @@
 				04B0FC1A1E0A5C1300724656 /* MineSecondRowCell.m */,
 				04B0FC1B1E0A5C1300724656 /* MineTrunkView.h */,
 				04B0FC1C1E0A5C1300724656 /* MineTrunkView.m */,
+				0499C0541E0BC35E007B5DD3 /* MineInfromationTableView.h */,
+				0499C0551E0BC35E007B5DD3 /* MineInfromationTableView.m */,
 			);
 			path = MineMainView;
 			sourceTree = "<group>";
@@ -1030,8 +1190,33 @@
 				04B0FC521E0A7C3300724656 /* MineSettingsTableView.m */,
 				04B0FC541E0A836600724656 /* MineBankCardTableView.h */,
 				04B0FC551E0A836600724656 /* MineBankCardTableView.m */,
+				0499C0481E0BB812007B5DD3 /* MineBankCardAddTableView.h */,
+				0499C0491E0BB812007B5DD3 /* MineBankCardAddTableView.m */,
+				0499C04E1E0BBE24007B5DD3 /* MineBankCardSelectTableView.h */,
+				0499C04F1E0BBE24007B5DD3 /* MineBankCardSelectTableView.m */,
+				0499C0401E0BB168007B5DD3 /* MineBankCardItemCell.h */,
+				0499C0411E0BB168007B5DD3 /* MineBankCardItemCell.m */,
+				0499C0421E0BB168007B5DD3 /* MineBankCardItemCell.xib */,
+				0499C0271E0B68FC007B5DD3 /* MineModifyPasswordTableView.h */,
+				0499C0281E0B68FC007B5DD3 /* MineModifyPasswordTableView.m */,
+				0499C02A1E0B6A73007B5DD3 /* MineCommonSettingModifyCell.h */,
+				0499C02B1E0B6A73007B5DD3 /* MineCommonSettingModifyCell.m */,
+				0499C02C1E0B6A73007B5DD3 /* MineCommonSettingModifyCell.xib */,
+				0499C0321E0B6B70007B5DD3 /* MineCommonFooterView.h */,
+				0499C0331E0B6B70007B5DD3 /* MineCommonFooterView.m */,
 			);
 			path = MineSystemSettingView;
+			sourceTree = "<group>";
+		};
+		04B64F2C1E0CBD66006BBF35 /* MineBalanceView */ = {
+			isa = PBXGroup;
+			children = (
+				04B64F2D1E0CBEA3006BBF35 /* MineBalanceHeaderView.h */,
+				04B64F2E1E0CBEA3006BBF35 /* MineBalanceHeaderView.m */,
+				04B64F301E0CBF94006BBF35 /* MineBalanceTableView.h */,
+				04B64F311E0CBF94006BBF35 /* MineBalanceTableView.m */,
+			);
+			path = MineBalanceView;
 			sourceTree = "<group>";
 		};
 		04C21A901DFF8AD20075BBC7 /* ViewModel */ = {
@@ -1055,6 +1240,8 @@
 			children = (
 				04C21AA51DFFA24E0075BBC7 /* MineViewModel.h */,
 				04C21AA61DFFA24E0075BBC7 /* MineViewModel.m */,
+				04B64F291E0CBCEE006BBF35 /* MineBalanceViewModel.h */,
+				04B64F2A1E0CBCEE006BBF35 /* MineBalanceViewModel.m */,
 				04B0FC131E0A5BE300724656 /* MinePendingViewModel.h */,
 				04B0FC141E0A5BE300724656 /* MinePendingViewModel.m */,
 				04B0FC481E0A7AA600724656 /* MineSettingViewModel.h */,
@@ -1238,11 +1425,13 @@
 			files = (
 				04626A351DFBA78900B4DE7C /* yxl_shop@2x.png in Resources */,
 				042B5A511DFF8791002BB6A5 /* yxl_mine_third@2x.png in Resources */,
+				0403BFBC1E0D006400BEDA43 /* ResertPasswordViewController.xib in Resources */,
 				042B5A491DFF8791002BB6A5 /* yxl_mine_pendingConsignment@2x.png in Resources */,
 				042B5A271DFF835F002BB6A5 /* yxl_home_withdraw@2x.png in Resources */,
 				042B5A441DFF8791002BB6A5 /* yxl_mine_collection@2x.png in Resources */,
 				04EDF5BE1E08CE670002D126 /* ProductInformationSecondRowCell.xib in Resources */,
 				042B5A431DFF8791002BB6A5 /* yxl_mine_capital@2x.png in Resources */,
+				0499C0441E0BB168007B5DD3 /* MineBankCardItemCell.xib in Resources */,
 				04B0FC331E0A61C500724656 /* MinePendingInformationRowCell.xib in Resources */,
 				045FE3FB1E091E600069E4F3 /* yxl_shop_footer_cart@2x.png in Resources */,
 				046355511E01423500D03294 /* yxl_shop_menu@2x.png in Resources */,
@@ -1272,6 +1461,7 @@
 				04EDF57D1E07B7540002D126 /* ProductItemCollectionViewCell.xib in Resources */,
 				042B5A211DFF835F002BB6A5 /* yxl_home_pyramid@2x.png in Resources */,
 				042B5A451DFF8791002BB6A5 /* yxl_mine_convert@2x.png in Resources */,
+				0499C02E1E0B6A73007B5DD3 /* MineCommonSettingModifyCell.xib in Resources */,
 				04626A321DFBA78900B4DE7C /* yxl_mine_s@2x.png in Resources */,
 				04B0FC291E0A617700724656 /* MinePendingHeaderRowCell.xib in Resources */,
 				042B5A1D1DFF835F002BB6A5 /* yxl_home_join@2x.png in Resources */,
@@ -1290,6 +1480,7 @@
 				046355571E0149CE00D03294 /* yxl_shop_wine@2x.png in Resources */,
 				042B5A2A1DFF835F002BB6A5 /* yxl_shop_clothes@2x.png in Resources */,
 				042B5A221DFF835F002BB6A5 /* yxl_home_recharge@2x.png in Resources */,
+				0403BFBE1E0D006400BEDA43 /* SignUpViewController.xib in Resources */,
 				042B5A2B1DFF835F002BB6A5 /* yxl_shop_electrical@2x.png in Resources */,
 				042B5A501DFF8791002BB6A5 /* yxl_mine_setting@2x.png in Resources */,
 				042B5A4B1DFF8791002BB6A5 /* yxl_mine_pendingPay@2x.png in Resources */,
@@ -1300,7 +1491,9 @@
 				042B5A471DFF8791002BB6A5 /* yxl_mine_first@2x.png in Resources */,
 				04EDF5C31E08CE8D0002D126 /* ProductSellerFirstRowCell.xib in Resources */,
 				041241AA1DE81BA30028E618 /* Assets.xcassets in Resources */,
+				0403BFB91E0D006400BEDA43 /* LoginViewController.xib in Resources */,
 				042B5A4D1DFF8791002BB6A5 /* yxl_mine_QRCode@2x.png in Resources */,
+				0499C03F1E0B7656007B5DD3 /* MineTransactionPasswordViewController.xib in Resources */,
 				042B5A281DFF835F002BB6A5 /* yxl_shop_beauty@2x.png in Resources */,
 				042B5A251DFF835F002BB6A5 /* yxl_home_stock@2x.png in Resources */,
 				04D319F31DFE897E006C8016 /* yxl_nav_back@2x.png in Resources */,
@@ -1375,8 +1568,11 @@
 				04C21ADE1DFFD7430075BBC7 /* MJPropertyKey.m in Sources */,
 				040D60B01E038D3C00D1ED63 /* BusinessProductsListViewController.m in Sources */,
 				04EDF5CC1E08CEC50002D126 /* ProductRankRowCell.m in Sources */,
+				0403BFB81E0D006400BEDA43 /* LoginViewController.m in Sources */,
 				04B0FC561E0A836600724656 /* MineBankCardTableView.m in Sources */,
+				04B64F2F1E0CBEA3006BBF35 /* MineBalanceHeaderView.m in Sources */,
 				040D60AD1E038CFE00D1ED63 /* ProductListViewModel.m in Sources */,
+				0499C04A1E0BB812007B5DD3 /* MineBankCardAddTableView.m in Sources */,
 				04C21AE21DFFD7430075BBC7 /* NSObject+MJKeyValue.m in Sources */,
 				04D319C81DFE4300006C8016 /* SVProgressAnimatedView.m in Sources */,
 				04E911DB1DFC023900C84802 /* SDWebImageManager.m in Sources */,
@@ -1388,17 +1584,24 @@
 				04C21ADC1DFFD7430075BBC7 /* MJFoundation.m in Sources */,
 				04E911D81DFC023900C84802 /* SDWebImageDecoder.m in Sources */,
 				04E911DC1DFC023900C84802 /* SDWebImagePrefetcher.m in Sources */,
+				0403BFBD1E0D006400BEDA43 /* SignUpViewController.m in Sources */,
 				04B0FC371E0A61D300724656 /* MinePendingPriceRowCell.m in Sources */,
 				04B0FC471E0A782600724656 /* MineCollectionListViewController.m in Sources */,
 				04D318F01DFE376D006C8016 /* AppDelegate.m in Sources */,
+				0499C0471E0BB750007B5DD3 /* MineBankCardAddViewController.m in Sources */,
 				04B0FC241E0A5CBF00724656 /* MinePendingTrunkTableView.m in Sources */,
 				04E911E11DFC023900C84802 /* UIImageView+WebCache.m in Sources */,
 				04D319971DFE3FE6006C8016 /* UITabBar+badge.m in Sources */,
+				0499C03E1E0B7656007B5DD3 /* MineTransactionPasswordViewController.m in Sources */,
 				04B0FC1E1E0A5C1300724656 /* MineSecondRowCell.m in Sources */,
 				04D319D11DFE4FCD006C8016 /* YXLNavigationController.m in Sources */,
+				04B64F281E0CBB4F006BBF35 /* MineBalanceViewController.m in Sources */,
+				0499C0291E0B68FC007B5DD3 /* MineModifyPasswordTableView.m in Sources */,
 				04B0FC321E0A61C500724656 /* MinePendingInformationRowCell.m in Sources */,
+				0499C0531E0BC18B007B5DD3 /* MineDetailViewController.m in Sources */,
 				04C21A9E1DFF94D20075BBC7 /* UILabel+Category.m in Sources */,
 				04EDF5831E07BC6F0002D126 /* BusinessProductsDetailViewController.m in Sources */,
+				0403BFC41E0D022100BEDA43 /* YXLBaseModel.m in Sources */,
 				04C21AC41DFFD6300075BBC7 /* MineModel.m in Sources */,
 				0463554F1E013B2A00D03294 /* BusinessTrunkView.m in Sources */,
 				04C21AE31DFFD7430075BBC7 /* NSObject+MJProperty.m in Sources */,
@@ -1407,6 +1610,9 @@
 				04EC0A771E00E7EF00D69486 /* HomeModel.m in Sources */,
 				04EC0A6D1DFFF76400D69486 /* HomeHeaderView.m in Sources */,
 				04D3198D1DFE3EBB006C8016 /* AppDelegate+Category.m in Sources */,
+				0499C0821E0C24F4007B5DD3 /* YXLBaseTableView.m in Sources */,
+				0439C3FE1E0CD1D900F1BE82 /* MineBalanceWithdrawViewController.m in Sources */,
+				0499C0561E0BC35E007B5DD3 /* MineInfromationTableView.m in Sources */,
 				04C21AE11DFFD7430075BBC7 /* NSObject+MJCoding.m in Sources */,
 				04C21AE41DFFD7430075BBC7 /* NSString+MJExtension.m in Sources */,
 				04EC0A6A1DFFF75300D69486 /* HomeViewModel.m in Sources */,
@@ -1423,27 +1629,38 @@
 				04E911D51DFC023900C84802 /* NSData+ImageContentType.m in Sources */,
 				04B0FC281E0A617700724656 /* MinePendingHeaderRowCell.m in Sources */,
 				04D319E31DFE5695006C8016 /* HomeViewController.m in Sources */,
+				04B64F2B1E0CBCEE006BBF35 /* MineBalanceViewModel.m in Sources */,
 				0463555D1E022BF400D03294 /* BusinessLeftItemCell.m in Sources */,
 				04D3199A1DFE3FEC006C8016 /* HUD.m in Sources */,
 				046355B11E0242D800D03294 /* BusinessGridListCell.m in Sources */,
 				04EDF5861E07BD960002D126 /* ProductsDetailViewModel.m in Sources */,
 				04EC0A701DFFF77100D69486 /* HomeTrunkView.m in Sources */,
+				0499C0431E0BB168007B5DD3 /* MineBankCardItemCell.m in Sources */,
 				04A3926F1E01330D00A9FDAD /* BusinessModel.m in Sources */,
 				04E911D71DFC023900C84802 /* SDWebImageCompat.m in Sources */,
 				04B0FC4D1E0A7AFD00724656 /* MineBankCardViewModel.m in Sources */,
+				0403BFC11E0D006400BEDA43 /* WelcomeViewController.m in Sources */,
 				046355B41E02705F00D03294 /* HomeFunctionView.m in Sources */,
+				0499C0231E0B65D9007B5DD3 /* MineModifyPasswordViewController.m in Sources */,
 				046355621E022C0900D03294 /* BusinessRightItemCell.m in Sources */,
 				04E911D61DFC023900C84802 /* SDImageCache.m in Sources */,
+				0439C3FB1E0CD1B900F1BE82 /* MineBalanceRechargeViewController.m in Sources */,
 				04D319E91DFE56B1006C8016 /* MineViewController.m in Sources */,
+				0499C0591E0BCBBF007B5DD3 /* MineModifyNickNameViewController.m in Sources */,
 				045FE4041E0927A20069E4F3 /* SUNControl.m in Sources */,
+				0499C0341E0B6B70007B5DD3 /* MineCommonFooterView.m in Sources */,
 				04EC0A801E00EC3B00D69486 /* DataStatisticsRowCell.m in Sources */,
 				04B0FC1F1E0A5C1300724656 /* MineTrunkView.m in Sources */,
 				046E7CA01E039BBF001AC2A7 /* ProductsListTrunkView.m in Sources */,
+				0403BFC01E0D006400BEDA43 /* UserViewModel.m in Sources */,
 				04E911D91DFC023900C84802 /* SDWebImageDownloader.m in Sources */,
 				045FE3F61E0911230069E4F3 /* ProductsDetailFooterView.m in Sources */,
+				0499C04D1E0BBD60007B5DD3 /* MineBankCardToSelectViewController.m in Sources */,
+				0403BFC81E0D047D00BEDA43 /* UserModel.m in Sources */,
 				04EDF5C71E08CE9C0002D126 /* ProductSellerSecondRowCell.m in Sources */,
 				04EDF57C1E07B7540002D126 /* ProductItemCollectionViewCell.m in Sources */,
 				04EDF5801E07BC330002D126 /* ProductsDetailTrunkView.m in Sources */,
+				0499C05C1E0BCF77007B5DD3 /* MineModifySexViewController.m in Sources */,
 				04D319F61DFE89E2006C8016 /* UIBarButtonItem+Item.m in Sources */,
 				04D319CB1DFE4300006C8016 /* SVRadialGradientLayer.m in Sources */,
 				04E911DF1DFC023900C84802 /* UIImage+MultiFormat.m in Sources */,
@@ -1451,7 +1668,9 @@
 				04D319911DFE3F23006C8016 /* UIColor+Category.m in Sources */,
 				04B0FC441E0A780D00724656 /* MineBankCardListViewController.m in Sources */,
 				04B0FC121E0A5AA100724656 /* MinePendingViewController.m in Sources */,
+				0499C02D1E0B6A73007B5DD3 /* MineCommonSettingModifyCell.m in Sources */,
 				04D319DD1DFE564F006C8016 /* YXLTabBarController.m in Sources */,
+				0499C0501E0BBE24007B5DD3 /* MineBankCardSelectTableView.m in Sources */,
 				04C21AE71DFFD7A80075BBC7 /* YXLBaseView.m in Sources */,
 				04C21AAA1DFFA5880075BBC7 /* YXLBaseViewModel.m in Sources */,
 				045FE4111E092F970069E4F3 /* NetManager.m in Sources */,
@@ -1464,12 +1683,15 @@
 				045FE4071E0927B00069E4F3 /* SUNNumberChooseControl.m in Sources */,
 				04C21ADB1DFFD7430075BBC7 /* MJExtensionConst.m in Sources */,
 				04E911DA1DFC023900C84802 /* SDWebImageDownloaderOperation.m in Sources */,
+				0403BFBB1E0D006400BEDA43 /* ResertPasswordViewController.m in Sources */,
 				041241A81DE81BA30028E618 /* yxl_ios.xcdatamodeld in Sources */,
 				046355B71E02847A00D03294 /* UITabBar+Animation.m in Sources */,
 				04B0FC501E0A7B0900724656 /* MineCollectionViewModel.m in Sources */,
 				04B0FC4A1E0A7AA600724656 /* MineSettingViewModel.m in Sources */,
 				04D319E01DFE5688006C8016 /* BusinessViewController.m in Sources */,
 				04E911E01DFC023900C84802 /* UIImageView+HighlightedWebCache.m in Sources */,
+				04B64F321E0CBF94006BBF35 /* MineBalanceTableView.m in Sources */,
+				0403BFBA1E0D006400BEDA43 /* PolicyViewController.m in Sources */,
 				04EDF58B1E07C92D0002D126 /* ProductsDetailHeaderView.m in Sources */,
 				046355BA1E02862A00D03294 /* UIButton+Category.m in Sources */,
 				04B0FC411E0A77E900724656 /* MineSettingViewController.m in Sources */,
@@ -1583,7 +1805,7 @@
 				INFOPLIST_FILE = "yxl-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.erongchuang.yxl-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = com.erongchuang.quanfang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "yxl-ios/YXL-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1606,7 +1828,7 @@
 				INFOPLIST_FILE = "yxl-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.erongchuang.yxl-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = com.erongchuang.quanfang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "yxl-ios/YXL-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

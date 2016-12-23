@@ -6,9 +6,9 @@
 //  Copyright © 2016年 孙若淮. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "YXLBaseTableView.h"
 
-@interface MinePendingTrunkTableView : UITableView
+@interface MinePendingTrunkTableView : YXLBaseTableView
 <
 UITableViewDelegate,
 UITableViewDataSource

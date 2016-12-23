@@ -63,18 +63,6 @@
         }];
     }
     
-    UIView *lineVI = [UIView new];
-    lineVI.backgroundColor = SUN_GlobalTextGreyColor;
-    [self addSubview:lineVI];
-    
-    [lineVI mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.mas_equalTo(0);
-        make.height.mas_equalTo(0.5);
-        make.top.mas_equalTo(lastBtn.mas_top).offset(-1);
-    }];
-    
-
-    
 }
 -(NSMutableArray<UIButton *> *)btnArray{
     if (!_btnArray) {

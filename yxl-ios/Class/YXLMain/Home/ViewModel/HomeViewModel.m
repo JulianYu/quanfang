@@ -10,7 +10,6 @@
 #import "HomeHeaderView.h"
 #import "HomeTrunkView.h"
 #import "HomeFunctionView.h"
-#import "HomeViewController.h"
 @interface HomeViewModel()
 @property( nonatomic, strong) HomeHeaderView            * headerView;
 @property( nonatomic, strong) HomeFunctionView          * functionView;
@@ -21,7 +20,7 @@
 {
     self = [super initWithViewController:viewController];
     if (self) {
-        if ([viewController isKindOfClass:[HomeViewController class]]) {
+        if ([viewController isKindOfClass:NSClassFromString(@"HomeViewController")]) {
 
             viewController.navigationController.navigationBar.hidden = YES;
             [viewController.view SUN_AddSubViewsWithArray:@[self.headerView,self.functionView,self.trunkView]];

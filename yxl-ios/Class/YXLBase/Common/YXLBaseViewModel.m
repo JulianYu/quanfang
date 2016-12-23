@@ -7,8 +7,6 @@
 //
 
 #import "YXLBaseViewModel.h"
-#import "YXLBaseViewController.h"
-#import "HUD.h"
 @implementation YXLBaseViewModel
 - (instancetype)initWithViewController:(YXLBaseViewController *)viewController
 {
@@ -17,5 +15,14 @@
         
     }
     return self;
+}
+-(instancetype)initWithUIViewController:(UIViewController *)viewController
+{
+    self = [super init];
+    if (self) {
+        
+    }
+    return self;
+
 }
 @end

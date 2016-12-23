@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 @class GridListData;
+
 @interface BusinessModel : NSObject
 @property( nonatomic, strong) NSArray<GridListData*>        * dataArray;
 @end

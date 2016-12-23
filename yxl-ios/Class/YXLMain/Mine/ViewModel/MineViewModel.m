@@ -7,27 +7,39 @@
 //
 
 #import "MineViewModel.h"
-#import "MineViewController.h"
 #import "MineHeaderView.h"
 #import "MineTrunkView.h"
 #import "MineModel.h"
+#import "MineInfromationTableView.h"
 @interface MineViewModel()
 @property( nonatomic, strong) MineHeaderView        * headerView;
 @property( nonatomic, strong) MineTrunkView         * trunkView;
 @property( nonatomic, strong) MineModel             * model;
+
+@property( nonatomic, strong) MineInfromationTableView        * informationTableView;
 @end
 @implementation MineViewModel
 - (instancetype)initWithViewController:(YXLBaseViewController *)viewController
 {
     self = [super initWithViewController:viewController];
     if (self) {
-        if ([viewController isKindOfClass:[MineViewController class]]) {
+        if ([viewController isMemberOfClass:NSClassFromString(@"MineViewController")]) {
             viewController.navigationController.navigationBar.hidden = YES;
-            [viewController.view SUN_AddSubViewsWithArray:@[self.headerView,self.trunkView]];
+            [viewController.view addSubview:self.headerView];
+            [viewController.view addSubview:self.trunkView];
             [self.trunkView mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.edges.mas_equalTo(UIEdgeInsetsMake(self.headerView.height, 0, 49, 0));
             }];
 
+        }
+        if ([viewController isMemberOfClass:NSClassFromString(@"MineDetailViewController")]) {
+            [viewController.view addSubview:self.informationTableView];
+        }
+        if ([viewController isMemberOfClass:NSClassFromString(@"MineModifyNickNameViewController")]) {
+            
+        }
+        if ([viewController isMemberOfClass:NSClassFromString(@"MineModifySexViewController")]) {
+            
         }
         
     }
@@ -46,5 +58,10 @@
     }
     return _trunkView;
 }
-
+-(MineInfromationTableView *)informationTableView{
+    if (!_informationTableView) {
+        _informationTableView = [[MineInfromationTableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    }
+    return _informationTableView;
+}
 @end

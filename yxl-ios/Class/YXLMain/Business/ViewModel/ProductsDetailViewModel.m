@@ -9,7 +9,6 @@
 #import "ProductsDetailViewModel.h"
 #import "ProductsDetailTrunkView.h"
 #import "ProductsDetailFooterView.h"
-#import "BusinessProductsDetailViewController.h"
 @interface ProductsDetailViewModel()
 @property( nonatomic, strong) ProductsDetailTrunkView           * trunkView;
 @property( nonatomic, strong) ProductsDetailFooterView          * footerView;
@@ -20,7 +19,7 @@
 {
     self = [super initWithViewController:viewController];
     if (self) {
-        if ([viewController isKindOfClass:[BusinessProductsDetailViewController class]]) {
+        if ([viewController isKindOfClass:NSClassFromString(@"BusinessProductsDetailViewController")]) {
             [viewController.view SUN_AddSubViewsWithArray:@[self.trunkView,self.footerView]];
         }
     }

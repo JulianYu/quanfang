@@ -7,7 +7,6 @@
 //
 
 #import "ProductListViewModel.h"
-#import "BusinessProductsListViewController.h"
 #import "ProductsListTrunkView.h"
 
 @interface ProductListViewModel()
@@ -19,7 +18,7 @@
 {
     self = [super initWithViewController:viewController];
     if (self) {
-        if ([viewController isKindOfClass:[BusinessProductsListViewController class]]) {
+        if ([viewController isKindOfClass:NSClassFromString(@"BusinessProductsListViewController")]) {
             [viewController.view addSubview:self.trunkView];
             [self setupNavi:viewController];
         }

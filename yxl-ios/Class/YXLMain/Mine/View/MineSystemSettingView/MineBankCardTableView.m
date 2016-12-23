@@ -7,15 +7,41 @@
 //
 
 #import "MineBankCardTableView.h"
-
+#import "MineBankCardItemCell.h"
+#define MINEBANKCARD_ITEMCELL @"bankCardItemCell"
 @implementation MineBankCardTableView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self buildUI];
+    }
+    return self;
 }
-*/
+-(void)buildUI{
+    [super buildUI];
+    self.delegate = self;
+    self.dataSource = self;
+    self.backgroundColor = [UIColor clearColor];
+    self.separatorStyle = UITableViewCellSeparatorStyleNone;
+    SUN_TableRegisterCell(self, @"MineBankCardItemCell", MINEBANKCARD_ITEMCELL);
+}
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 1;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    MineBankCardItemCell *cell = [tableView dequeueReusableCellWithIdentifier:MINEBANKCARD_ITEMCELL forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellEditingStyleNone;
+    
+    return cell;
+
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 160;
+}
 
 @end

@@ -12,6 +12,7 @@
 #import "HeaderRowCell.h"
 #import "HomeHeaderView.h"
 #import "HomeFunctionView.h"
+#import "YXLBaseTableView.h"
 #define DATAROWCELL_IDENTIFIER @"dataStatisticsCell"
 #define NOTICEROWCELL_IDENTIFIER @"noticesCell"
 #define HEADERROWCELL_IDENTIFIER @"headerCell"
@@ -42,12 +43,9 @@
 
 -(UITableView *)tableView{
     if (!_tableView) {
-        _tableView = [UITableView new];
+        _tableView = [[YXLBaseTableView alloc]initWithFrame:CGRectZero];
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        _tableView.showsVerticalScrollIndicator = NO;
-        _tableView.showsHorizontalScrollIndicator = NO;
-        _tableView.tableFooterView = [UIView new];
         _tableView.allowsSelection = NO;
         SUN_RegisterCell(@"HeaderRowCell", HEADERROWCELL_IDENTIFIER);
         [self addSubview:_tableView];

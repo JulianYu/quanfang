@@ -8,15 +8,24 @@
 
 #import "BusinessModel.h"
 
+int i ;
+
 @implementation BusinessModel
 + (NSDictionary *)objectClassInArray{
     return @{@"dataArray" : [GridListData class]};
+}
+-(void)test1{
+    i =5;
+    
+    i = SCREEN_WIDTH;
 }
 
 @end
 
 @implementation GridListData
-
+-(void)test2{
+    i = 6;
+}
 
 
 @end

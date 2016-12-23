@@ -7,7 +7,6 @@
 //
 
 #import "MinePendingViewModel.h"
-#import "MinePendingViewController.h"
 #import "MinePendingTrunkTableView.h"
 @interface MinePendingViewModel()
 @property( nonatomic, strong) MinePendingTrunkTableView        * trunkTabelView;
@@ -18,7 +17,7 @@
     self = [super initWithViewController:viewController];
     if (self) {
         
-        if ([viewController isKindOfClass:[MinePendingViewController class]]) {
+        if ([viewController isKindOfClass:NSClassFromString(@"MinePendingViewController")]) {
             [viewController.view addSubview:self.trunkTabelView];
         }
     }

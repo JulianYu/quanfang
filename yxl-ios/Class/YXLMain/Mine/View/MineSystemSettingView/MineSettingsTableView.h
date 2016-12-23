@@ -6,9 +6,9 @@
 //  Copyright © 2016年 孙若淮. All rights reserved.
 //
 
-#import "YXLBaseView.h"
+#import "YXLBaseTableView.h"
 
-@interface MineSettingsTableView : UITableView
+@interface MineSettingsTableView : YXLBaseTableView
 <
 UITableViewDelegate,
 UITableViewDataSource

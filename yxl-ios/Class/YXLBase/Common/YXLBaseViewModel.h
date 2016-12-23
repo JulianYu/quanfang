@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-@class YXLBaseViewController;
+#import "YXLBaseViewController.h"
+#import "MJExtension.h"
+#import "HUD.h"
+
 @interface YXLBaseViewModel : NSObject
 -(instancetype)initWithViewController:(YXLBaseViewController*)viewController;
+
+-(instancetype)initWithUIViewController:(UIViewController *)viewController;
 @end

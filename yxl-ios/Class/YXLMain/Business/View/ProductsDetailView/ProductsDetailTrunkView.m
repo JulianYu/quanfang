@@ -14,6 +14,7 @@
 #import "ProductSellerSecondRowCell.h"
 #import "ProductRankRowCell.h"
 #import "SUNControl.h"
+#import "YXLBaseTableView.h"
 #define PRODUCTINFORMATION_FIRSTROWCELL @"informationFirstCell"
 #define PRODUCTINFORMATION_SECONDROWCELL @"informationSecondCell"
 #define PRODUCTSELLER_FIRSTROWCELL @"sellerFirstCell"
@@ -46,12 +47,9 @@ SUNControlDelegate
 }
 -(UITableView *)tableView{
     if (!_tableView) {
-        _tableView = [UITableView new];
-        _tableView.showsVerticalScrollIndicator = NO;
-        _tableView.showsHorizontalScrollIndicator = NO;
+        _tableView = [[YXLBaseTableView alloc]initWithFrame:CGRectZero];;
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        _tableView.tableFooterView = [UIView new];
         _tableView.allowsSelection = NO;
         self.headerView = [[ProductsDetailHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT*5/8)];
         _tableView.tableHeaderView = self.headerView;

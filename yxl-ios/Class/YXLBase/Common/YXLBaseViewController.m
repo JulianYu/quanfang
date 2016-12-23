@@ -18,6 +18,7 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = SUN_GlobalBackgroundColor;
+    
 }
 
 - (void)didReceiveMemoryWarning {

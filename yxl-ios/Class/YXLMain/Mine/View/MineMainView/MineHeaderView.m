@@ -7,7 +7,7 @@
 //
 
 #import "MineHeaderView.h"
-
+#import "MineDetailViewController.h"
 @interface MineHeaderView ()
 
 @property( nonatomic, strong) UIButton           * personalBtn;
@@ -46,6 +46,8 @@
     [self.personalBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(UIEdgeInsetsMake(0 , 0, 0, 0));
     }];
+    
+    [self.personalBtn addTarget:self action:@selector(personalBtnClick) forControlEvents:UIControlEventTouchUpInside];
     
     [self.avatarImageView SUN_SetBordersWithColor:[UIColor whiteColor] andCornerRadius:30.0f andWidth:1];
     self.avatarImageView.backgroundColor = [UIColor yellowColor];
@@ -98,6 +100,11 @@
         make.top.mas_equalTo(self.IDNumberLabel.mas_bottom);
     }];
     
+}
+-(void)personalBtnClick{
+    MineDetailViewController *vc = [MineDetailViewController new];
+    vc.title = @"资料信息";
+    [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
 }
 
 @end

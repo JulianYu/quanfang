@@ -13,7 +13,8 @@
 #import "MineSettingViewController.h"
 #import "MineBankCardListViewController.h"
 #import "MineCollectionListViewController.h"
-
+#import "MineBalanceViewController.h"
+#import "YXLBaseTableView.h"
 #define FIRSTROWCELL_IDENTIFIER @"firstCell"
 #define SECONDROWCELL_IDENTIFIER @"secondCell"
 @interface MineTrunkView()<UITableViewDelegate,UITableViewDataSource>
@@ -43,14 +44,11 @@
 }
 -(UITableView *)tableView{
     if (!_tableView) {
-        _tableView = [UITableView new];
+        _tableView = [[YXLBaseTableView alloc]initWithFrame:CGRectZero];;
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        _tableView.showsVerticalScrollIndicator = NO;
-        _tableView.showsHorizontalScrollIndicator = NO;
         _tableView.allowsSelection = NO;
-        _tableView.tableFooterView = [UIView new];
-        
+
         [self addSubview:_tableView];
         [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.mas_equalTo(UIEdgeInsetsMake(-10, 0, 0, 0));
@@ -83,10 +81,10 @@
             cell = [[MineSecondRowCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:SECONDROWCELL_IDENTIFIER];
         }
         for (UIButton * imageBtn in cell.btnArray) {
-            if (imageBtn.tag == self.model.dataArray[indexPath.section].data.count) {
+            if (imageBtn.tag%1000 == self.model.dataArray[indexPath.section].data.count) {
                 break;
             }
-            RowData *data = self.model.dataArray[indexPath.section].data[imageBtn.tag];
+            RowData *data = self.model.dataArray[indexPath.section].data[imageBtn.tag%1000];
             
             [imageBtn setImage:[UIImage imageNamed:data.img] forState:UIControlStateNormal];
             imageBtn.contentMode = UIViewContentModeScaleAspectFit;
@@ -144,8 +142,29 @@
         [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
 
     }
+    if (self.indexPath.section == 2) {
+        switch (self.indexPath.row) {
+            case 0:
+            {
+                MineBalanceViewController *vc = [[MineBalanceViewController alloc]init];
+                [self SUN_GetCurrentNavigationController].navigationBar.hidden = NO;
+                [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
+            }
+                
+                break;
+                
+            default:
+                break;
+        }
+    }
     if (self.indexPath.section == 3) {
-        
+        switch (self.indexPath.row) {
+            case 0:
+                break;
+                
+            default:
+                break;
+        }
     }
     
     if (self.indexPath.section == 4) {
@@ -178,6 +197,7 @@
             }
                 break;
             default:
+                //二维码
                 break;
         }
         
