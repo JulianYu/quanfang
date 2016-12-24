@@ -10,14 +10,7 @@
 
 @implementation MineBankCardSelectTableView
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self buildUI];
-    }
-    return self;
-}
+
 -(void)buildUI{
     self.delegate = self;
     self.dataSource = self;

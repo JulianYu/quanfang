@@ -28,4 +28,6 @@
 
 #define SUN_GlobalTextSystemColor [UIColor SUN_ColorWithHexString:@"#216BAB" alpha:1]
 
+#define SUN_GlobalTextGreenColor [UIColor SUN_ColorWithHexString:@"#79CA17" alpha:1]
+
 #endif /* Theme_h */

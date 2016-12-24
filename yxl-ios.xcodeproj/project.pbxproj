@@ -39,6 +39,15 @@
 		0424ECD81E0E1968006B0C3B /* HomeVIPSelectedSexItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0424ECD61E0E1968006B0C3B /* HomeVIPSelectedSexItemCell.xib */; };
 		0424ECDA1E0E5177006B0C3B /* yxl_login_unselect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0424ECD91E0E5177006B0C3B /* yxl_login_unselect@2x.png */; };
 		0424ECDD1E0E5394006B0C3B /* HomeVIPLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424ECDC1E0E5394006B0C3B /* HomeVIPLevelViewController.m */; };
+		0424ECE01E0E58B1006B0C3B /* MineBalanceRechargeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424ECDF1E0E58B1006B0C3B /* MineBalanceRechargeTableView.m */; };
+		0424ECE31E0E595E006B0C3B /* MineBalanceWithdrawTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424ECE21E0E595E006B0C3B /* MineBalanceWithdrawTableView.m */; };
+		0424ECE51E0E5C04006B0C3B /* yxl_pay_weChatPay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0424ECE41E0E5C04006B0C3B /* yxl_pay_weChatPay@2x.png */; };
+		0424ECE71E0E5D0D006B0C3B /* yxl_pay_aliPay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0424ECE61E0E5D0D006B0C3B /* yxl_pay_aliPay@2x.png */; };
+		0424ECEB1E0E65FE006B0C3B /* HomeConvertViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424ECEA1E0E65FE006B0C3B /* HomeConvertViewModel.m */; };
+		0424ECEE1E0E662E006B0C3B /* HomeConvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424ECED1E0E662E006B0C3B /* HomeConvertViewController.m */; };
+		0424ECF11E0E6717006B0C3B /* HomeConvertTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424ECF01E0E6717006B0C3B /* HomeConvertTableView.m */; };
+		0424ECF41E0E7258006B0C3B /* MinePendingDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424ECF31E0E7258006B0C3B /* MinePendingDetailViewController.m */; };
+		0424ECF71E0E7CD4006B0C3B /* MinePendingDetailTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424ECF61E0E7CD4006B0C3B /* MinePendingDetailTableView.m */; };
 		042B59EC1DFF812A002BB6A5 /* yxl_nav_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B59DE1DFF812A002BB6A5 /* yxl_nav_add@2x.png */; };
 		042B5A1B1DFF835F002BB6A5 /* yxl_home_cashier@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A021DFF835F002BB6A5 /* yxl_home_cashier@2x.png */; };
 		042B5A1C1DFF835F002BB6A5 /* yxl_home_convert@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 042B5A031DFF835F002BB6A5 /* yxl_home_convert@2x.png */; };
@@ -290,6 +299,22 @@
 		0424ECD91E0E5177006B0C3B /* yxl_login_unselect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_login_unselect@2x.png"; sourceTree = "<group>"; };
 		0424ECDB1E0E5394006B0C3B /* HomeVIPLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVIPLevelViewController.h; sourceTree = "<group>"; };
 		0424ECDC1E0E5394006B0C3B /* HomeVIPLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVIPLevelViewController.m; sourceTree = "<group>"; };
+		0424ECDE1E0E58B1006B0C3B /* MineBalanceRechargeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineBalanceRechargeTableView.h; sourceTree = "<group>"; };
+		0424ECDF1E0E58B1006B0C3B /* MineBalanceRechargeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineBalanceRechargeTableView.m; sourceTree = "<group>"; };
+		0424ECE11E0E595E006B0C3B /* MineBalanceWithdrawTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineBalanceWithdrawTableView.h; sourceTree = "<group>"; };
+		0424ECE21E0E595E006B0C3B /* MineBalanceWithdrawTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineBalanceWithdrawTableView.m; sourceTree = "<group>"; };
+		0424ECE41E0E5C04006B0C3B /* yxl_pay_weChatPay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_pay_weChatPay@2x.png"; sourceTree = "<group>"; };
+		0424ECE61E0E5D0D006B0C3B /* yxl_pay_aliPay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_pay_aliPay@2x.png"; sourceTree = "<group>"; };
+		0424ECE91E0E65FE006B0C3B /* HomeConvertViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeConvertViewModel.h; sourceTree = "<group>"; };
+		0424ECEA1E0E65FE006B0C3B /* HomeConvertViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeConvertViewModel.m; sourceTree = "<group>"; };
+		0424ECEC1E0E662E006B0C3B /* HomeConvertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeConvertViewController.h; sourceTree = "<group>"; };
+		0424ECED1E0E662E006B0C3B /* HomeConvertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeConvertViewController.m; sourceTree = "<group>"; };
+		0424ECEF1E0E6717006B0C3B /* HomeConvertTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeConvertTableView.h; sourceTree = "<group>"; };
+		0424ECF01E0E6717006B0C3B /* HomeConvertTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeConvertTableView.m; sourceTree = "<group>"; };
+		0424ECF21E0E7258006B0C3B /* MinePendingDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinePendingDetailViewController.h; sourceTree = "<group>"; };
+		0424ECF31E0E7258006B0C3B /* MinePendingDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinePendingDetailViewController.m; sourceTree = "<group>"; };
+		0424ECF51E0E7CD4006B0C3B /* MinePendingDetailTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinePendingDetailTableView.h; sourceTree = "<group>"; };
+		0424ECF61E0E7CD4006B0C3B /* MinePendingDetailTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinePendingDetailTableView.m; sourceTree = "<group>"; };
 		042B59DE1DFF812A002BB6A5 /* yxl_nav_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_nav_add@2x.png"; sourceTree = "<group>"; };
 		042B5A021DFF835F002BB6A5 /* yxl_home_cashier@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_home_cashier@2x.png"; sourceTree = "<group>"; };
 		042B5A031DFF835F002BB6A5 /* yxl_home_convert@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_home_convert@2x.png"; sourceTree = "<group>"; };
@@ -793,11 +818,13 @@
 			path = HomePaymentView;
 			sourceTree = "<group>";
 		};
-		0424ECBF1E0E139B006B0C3B /* HomePreparePayView */ = {
+		0424ECE81E0E65DD006B0C3B /* HomeConvertView */ = {
 			isa = PBXGroup;
 			children = (
+				0424ECEF1E0E6717006B0C3B /* HomeConvertTableView.h */,
+				0424ECF01E0E6717006B0C3B /* HomeConvertTableView.m */,
 			);
-			path = HomePreparePayView;
+			path = HomeConvertView;
 			sourceTree = "<group>";
 		};
 		042B5A011DFF835F002BB6A5 /* home */ = {
@@ -909,6 +936,8 @@
 				04626A2D1DFBA78900B4DE7C /* yxl_shop@2x.png */,
 				0424ECA91E0E0F23006B0C3B /* yxl_login_selected@2x.png */,
 				0424ECD91E0E5177006B0C3B /* yxl_login_unselect@2x.png */,
+				0424ECE41E0E5C04006B0C3B /* yxl_pay_weChatPay@2x.png */,
+				0424ECE61E0E5D0D006B0C3B /* yxl_pay_aliPay@2x.png */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -1004,6 +1033,8 @@
 				0424ECC41E0E1442006B0C3B /* HomeVIPApplicationViewController.m */,
 				0424ECDB1E0E5394006B0C3B /* HomeVIPLevelViewController.h */,
 				0424ECDC1E0E5394006B0C3B /* HomeVIPLevelViewController.m */,
+				0424ECEC1E0E662E006B0C3B /* HomeConvertViewController.h */,
+				0424ECED1E0E662E006B0C3B /* HomeConvertViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1021,8 +1052,8 @@
 		04626A0B1DFB93DA00B4DE7C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0424ECE81E0E65DD006B0C3B /* HomeConvertView */,
 				0424ECBE1E0E139B006B0C3B /* HomePaymentView */,
-				0424ECBF1E0E139B006B0C3B /* HomePreparePayView */,
 				0424ECBD1E0E12C1006B0C3B /* HomeVIPPromoteView */,
 				0424ECAB1E0E1170006B0C3B /* HomeMainView */,
 			);
@@ -1074,6 +1105,8 @@
 				0499C05B1E0BCF77007B5DD3 /* MineModifySexViewController.m */,
 				04B0FC101E0A5AA100724656 /* MinePendingViewController.h */,
 				04B0FC111E0A5AA100724656 /* MinePendingViewController.m */,
+				0424ECF21E0E7258006B0C3B /* MinePendingDetailViewController.h */,
+				0424ECF31E0E7258006B0C3B /* MinePendingDetailViewController.m */,
 				04B0FC3F1E0A77E800724656 /* MineSettingViewController.h */,
 				04B0FC401E0A77E800724656 /* MineSettingViewController.m */,
 				0499C0211E0B65D9007B5DD3 /* MineModifyPasswordViewController.h */,
@@ -1244,6 +1277,8 @@
 				04B0FC391E0A61DE00724656 /* MinePendingFooterRowCell.h */,
 				04B0FC3A1E0A61DE00724656 /* MinePendingFooterRowCell.m */,
 				04B0FC3B1E0A61DE00724656 /* MinePendingFooterRowCell.xib */,
+				0424ECF51E0E7CD4006B0C3B /* MinePendingDetailTableView.h */,
+				0424ECF61E0E7CD4006B0C3B /* MinePendingDetailTableView.m */,
 			);
 			path = MinePendingView;
 			sourceTree = "<group>";
@@ -1287,6 +1322,10 @@
 				04B64F2E1E0CBEA3006BBF35 /* MineBalanceHeaderView.m */,
 				04B64F301E0CBF94006BBF35 /* MineBalanceTableView.h */,
 				04B64F311E0CBF94006BBF35 /* MineBalanceTableView.m */,
+				0424ECDE1E0E58B1006B0C3B /* MineBalanceRechargeTableView.h */,
+				0424ECDF1E0E58B1006B0C3B /* MineBalanceRechargeTableView.m */,
+				0424ECE11E0E595E006B0C3B /* MineBalanceWithdrawTableView.h */,
+				0424ECE21E0E595E006B0C3B /* MineBalanceWithdrawTableView.m */,
 			);
 			path = MineBalanceView;
 			sourceTree = "<group>";
@@ -1298,6 +1337,8 @@
 				04EC0A691DFFF75300D69486 /* HomeViewModel.m */,
 				0424ECC61E0E14A0006B0C3B /* HomePromoteViewModel.h */,
 				0424ECC71E0E14A0006B0C3B /* HomePromoteViewModel.m */,
+				0424ECE91E0E65FE006B0C3B /* HomeConvertViewModel.h */,
+				0424ECEA1E0E65FE006B0C3B /* HomeConvertViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1531,6 +1572,7 @@
 				042B5A4A1DFF8791002BB6A5 /* yxl_mine_pendingDispatch@2x.png in Resources */,
 				042B5A1F1DFF835F002BB6A5 /* yxl_home_points@2x.png in Resources */,
 				04EC0A721E00E7C300D69486 /* HomeList.plist in Resources */,
+				0424ECE71E0E5D0D006B0C3B /* yxl_pay_aliPay@2x.png in Resources */,
 				042B5A4F1DFF8791002BB6A5 /* yxl_mine_second@2x.png in Resources */,
 				042B5A231DFF835F002BB6A5 /* yxl_home_scan@2x.png in Resources */,
 				046355531E01468D00D03294 /* BusinessGridlist.plist in Resources */,
@@ -1577,6 +1619,7 @@
 				04D319F31DFE897E006C8016 /* yxl_nav_back@2x.png in Resources */,
 				04626A341DFBA78900B4DE7C /* yxl_shop_s@2x.png in Resources */,
 				042B5A4C1DFF8791002BB6A5 /* yxl_mine_silver@2x.png in Resources */,
+				0424ECE51E0E5C04006B0C3B /* yxl_pay_weChatPay@2x.png in Resources */,
 				042B5A261DFF835F002BB6A5 /* yxl_home_vip@2x.png in Resources */,
 				042B5A241DFF835F002BB6A5 /* yxl_home_statistics@2x.png in Resources */,
 				042B5A4E1DFF8791002BB6A5 /* yxl_mine_scan@2x.png in Resources */,
@@ -1663,6 +1706,7 @@
 				04E911DC1DFC023900C84802 /* SDWebImagePrefetcher.m in Sources */,
 				0403BFBD1E0D006400BEDA43 /* SignUpViewController.m in Sources */,
 				04B0FC371E0A61D300724656 /* MinePendingPriceRowCell.m in Sources */,
+				0424ECF41E0E7258006B0C3B /* MinePendingDetailViewController.m in Sources */,
 				04B0FC471E0A782600724656 /* MineCollectionListViewController.m in Sources */,
 				04D318F01DFE376D006C8016 /* AppDelegate.m in Sources */,
 				0424ECD71E0E1968006B0C3B /* HomeVIPSelectedSexItemCell.m in Sources */,
@@ -1682,6 +1726,7 @@
 				04C21A9E1DFF94D20075BBC7 /* UILabel+Category.m in Sources */,
 				04EDF5831E07BC6F0002D126 /* BusinessProductsDetailViewController.m in Sources */,
 				0403BFC41E0D022100BEDA43 /* YXLBaseModel.m in Sources */,
+				0424ECF11E0E6717006B0C3B /* HomeConvertTableView.m in Sources */,
 				04C21AC41DFFD6300075BBC7 /* MineModel.m in Sources */,
 				0463554F1E013B2A00D03294 /* BusinessTrunkView.m in Sources */,
 				04C21AE31DFFD7430075BBC7 /* NSObject+MJProperty.m in Sources */,
@@ -1699,9 +1744,11 @@
 				0424ECBA1E0E1170006B0C3B /* HomeFunctionView.m in Sources */,
 				04EC0A6A1DFFF75300D69486 /* HomeViewModel.m in Sources */,
 				04E911DE1DFC023900C84802 /* UIImage+GIF.m in Sources */,
+				0424ECF71E0E7CD4006B0C3B /* MinePendingDetailTableView.m in Sources */,
 				0424ECCE1E0E157E006B0C3B /* HomeVIPApplicationTableView.m in Sources */,
 				04C21AA71DFFA24E0075BBC7 /* MineViewModel.m in Sources */,
 				04B0FC1D1E0A5C1300724656 /* MineHeaderView.m in Sources */,
+				0424ECE31E0E595E006B0C3B /* MineBalanceWithdrawTableView.m in Sources */,
 				04B0FC531E0A7C3300724656 /* MineSettingsTableView.m in Sources */,
 				04C21ADD1DFFD7430075BBC7 /* MJProperty.m in Sources */,
 				04D319E61DFE56A6006C8016 /* MessageViewController.m in Sources */,
@@ -1727,7 +1774,9 @@
 				04E911D61DFC023900C84802 /* SDImageCache.m in Sources */,
 				0439C3FB1E0CD1B900F1BE82 /* MineBalanceRechargeViewController.m in Sources */,
 				04D319E91DFE56B1006C8016 /* MineViewController.m in Sources */,
+				0424ECEE1E0E662E006B0C3B /* HomeConvertViewController.m in Sources */,
 				0424ECC81E0E14A0006B0C3B /* HomePromoteViewModel.m in Sources */,
+				0424ECEB1E0E65FE006B0C3B /* HomeConvertViewModel.m in Sources */,
 				0499C0591E0BCBBF007B5DD3 /* MineModifyNickNameViewController.m in Sources */,
 				045FE4041E0927A20069E4F3 /* SUNControl.m in Sources */,
 				0499C0341E0B6B70007B5DD3 /* MineCommonFooterView.m in Sources */,
@@ -1738,6 +1787,7 @@
 				045FE3F61E0911230069E4F3 /* ProductsDetailFooterView.m in Sources */,
 				0499C04D1E0BBD60007B5DD3 /* MineBankCardToSelectViewController.m in Sources */,
 				0403BFC81E0D047D00BEDA43 /* UserModel.m in Sources */,
+				0424ECE01E0E58B1006B0C3B /* MineBalanceRechargeTableView.m in Sources */,
 				04EDF5C71E08CE9C0002D126 /* ProductSellerSecondRowCell.m in Sources */,
 				04EDF57C1E07B7540002D126 /* ProductItemCollectionViewCell.m in Sources */,
 				04EDF5801E07BC330002D126 /* ProductsDetailTrunkView.m in Sources */,

@@ -47,10 +47,15 @@
         [self.button addTarget:self action:@selector(addBankCard) forControlEvents:UIControlEventTouchUpInside];
     }
     if ([[self SUN_GetCurrentViewController] isMemberOfClass:NSClassFromString(@"MineBankCardAddViewController")]) {
-        [self.button setBackgroundColor:[UIColor SUN_ColorWithHexString:@"#79CA17" alpha:1]];
+        [self.button setBackgroundColor:SUN_GlobalTextGreenColor];
         [self.button setTitle:@"立即绑定" forState:UIControlStateNormal];
         [self.button addTarget:self action:@selector(bindBankCard) forControlEvents:UIControlEventTouchUpInside];
         
+    }
+    if ([[self SUN_GetCurrentViewController] isMemberOfClass:NSClassFromString(@"HomeConvertViewController")]) {
+
+        [self.button setBackgroundColor:SUN_GlobalTextGreenColor];
+        [self.button setTitle:@"兑换" forState:UIControlStateNormal];
     }
     
 }

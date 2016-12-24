@@ -13,14 +13,7 @@
 @implementation MineBankCardAddTableView
 
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self buildUI];
-    }
-    return self;
-}
+
 -(void)buildUI{
     [super buildUI];
     self.delegate = self;

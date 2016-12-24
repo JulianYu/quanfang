@@ -15,6 +15,7 @@
 #import "MineCollectionListViewController.h"
 #import "MineBalanceViewController.h"
 #import "YXLBaseTableView.h"
+#import "HomeConvertViewController.h"
 #define FIRSTROWCELL_IDENTIFIER @"firstCell"
 #define SECONDROWCELL_IDENTIFIER @"secondCell"
 @interface MineTrunkView()<UITableViewDelegate,UITableViewDataSource>
@@ -152,8 +153,17 @@
             }
                 
                 break;
-                
+            case 1:
+                break;
+            case 2:
+                break;
             default:
+            {
+                HomeConvertViewController *vc = [HomeConvertViewController new];
+                vc.title = @"币盾兑换";
+                [self SUN_GetCurrentNavigationController].navigationBar.hidden = NO;
+                [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
+            }
                 break;
         }
     }

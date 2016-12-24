@@ -9,6 +9,9 @@
 #import "HomeFunctionView.h"
 #import "HomeModel.h"
 #import "HomeVIPApplicationViewController.h"
+#import "MineBalanceWithdrawViewController.h"
+#import "MineBalanceRechargeViewController.h"
+#import "HomeConvertViewController.h"
 @interface HomeFunctionView (){
     int row;
     int line;
@@ -116,12 +119,19 @@
             break;
         case 2:
         {
+            MineBalanceRechargeViewController *vc = [MineBalanceRechargeViewController new];
+            vc.title = @"充值";
+            [self SUN_GetCurrentNavigationController].navigationBar.hidden = NO;
+            [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
         
         }
             break;
         case 3:
         {
-        
+            MineBalanceWithdrawViewController *vc = [MineBalanceWithdrawViewController new];
+            vc.title = @"提现";
+            [self SUN_GetCurrentNavigationController].navigationBar.hidden = NO;
+            [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
         }
             break;
         case 4:
@@ -136,12 +146,16 @@
             break;
         case 6:
         {
+            HomeConvertViewController *vc = [HomeConvertViewController new];
+            vc.title = @"币盾兑换";
+            [self SUN_GetCurrentNavigationController].navigationBar.hidden = NO;
+            [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
+            
             
         }
             break;
         default:
         {
-        
         }
             break;
     }

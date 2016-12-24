@@ -11,7 +11,7 @@
 #import "MinePendingInformationRowCell.h"
 #import "MinePendingPriceRowCell.h"
 #import "MinePendingFooterRowCell.h"
-
+#import "MinePendingDetailViewController.h"
 
 #define MINEPENDING_HEADER_ROWCELL @"PendingHeaderRowCell"
 #define MINEPENDING_INFORMATION_ROWCELL @"PendingInformationRowCell"
@@ -19,19 +19,11 @@
 #define MINEPENDING_FOOTER_ROWCELL @"PendingFooterRowCell"
 @implementation MinePendingTrunkTableView
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self buildUI];
-    }
-    return self;
-}
+
 -(void)buildUI{
     [super buildUI];
     self.delegate = self;
     self.dataSource = self;
-    self.allowsSelection = NO;
     
     SUN_TableRegisterCell(self, @"MinePendingHeaderRowCell", MINEPENDING_HEADER_ROWCELL);
     SUN_TableRegisterCell(self, @"MinePendingInformationRowCell", MINEPENDING_INFORMATION_ROWCELL);
@@ -48,10 +40,13 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {
         MinePendingHeaderRowCell *cell = [tableView dequeueReusableCellWithIdentifier:MINEPENDING_HEADER_ROWCELL forIndexPath:indexPath];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }
     if (indexPath.row == 3) {
         MinePendingPriceRowCell *cell = [tableView dequeueReusableCellWithIdentifier:MINEPENDING_PRICE_ROWCELL forIndexPath:indexPath];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+
         return cell;
     }
     if (indexPath.row == 4) {
@@ -110,10 +105,13 @@
         
         
 
-        
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+
         return cell;
     }
     MinePendingInformationRowCell *cell = [tableView dequeueReusableCellWithIdentifier:MINEPENDING_INFORMATION_ROWCELL forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+
     return cell;
     
 }
@@ -136,7 +134,13 @@
             return 54;
             break;
     }
-    
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 1 || indexPath.row == 2) {
+        MinePendingDetailViewController *vc = [MinePendingDetailViewController new];
+        vc.title  = @"订单详情";
+        [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
+    }
 }
 
 

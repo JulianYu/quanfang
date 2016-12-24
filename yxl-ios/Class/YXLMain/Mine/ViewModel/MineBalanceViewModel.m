@@ -9,9 +9,13 @@
 #import "MineBalanceViewModel.h"
 #import "MineBalanceHeaderView.h"
 #import "MineBalanceTableView.h"
+#import "MineBalanceRechargeTableView.h"
+#import "MineBalanceWithdrawTableView.h"
 @interface MineBalanceViewModel ()
 @property( nonatomic, strong) MineBalanceHeaderView         * headerView;
 @property( nonatomic, strong) MineBalanceTableView          * tableView;
+@property( nonatomic, strong) MineBalanceRechargeTableView        * rechargeTableView;
+@property( nonatomic, strong) MineBalanceWithdrawTableView        * withdrawTableView;
 @end
 @implementation MineBalanceViewModel
 - (instancetype)initWithViewController:(YXLBaseViewController *)viewController
@@ -23,13 +27,25 @@
             [viewController.view addSubview:self.tableView];
         }
         if ([viewController isMemberOfClass:NSClassFromString(@"MineBalanceRechargeViewController")]) {
-            
+            [viewController.view addSubview:self.rechargeTableView];
         }
         if ([viewController isMemberOfClass:NSClassFromString(@"MineBalanceWithdrawViewController")]) {
-            
+            [viewController.view addSubview:self.withdrawTableView];
         }
     }
     return self;
+}
+-(MineBalanceWithdrawTableView *)withdrawTableView{
+    if (!_withdrawTableView){
+        _withdrawTableView = [[MineBalanceWithdrawTableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    }
+    return _withdrawTableView;
+}
+-(MineBalanceRechargeTableView *)rechargeTableView{
+    if (!_rechargeTableView) {
+        _rechargeTableView = [[MineBalanceRechargeTableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    }
+    return _rechargeTableView;
 }
 -(MineBalanceHeaderView *)headerView{
     if (!_headerView) {
