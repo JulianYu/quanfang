@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11535.1" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HomeVIPApplyItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="测试测试" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwF-YJ-j5x">
+                        <rect key="frame" x="20" y="0.0" width="80" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="obb-FI-I2G"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ibH-fv-W5L">
+                        <rect key="frame" x="110" y="0.0" width="210" height="44"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ibH-fv-W5L" secondAttribute="bottom" id="3rN-nE-eDA"/>
+                    <constraint firstItem="zwF-YJ-j5x" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="firstBaseline" id="ZVv-SE-dFm"/>
+                    <constraint firstItem="ibH-fv-W5L" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="erC-Cb-dPt"/>
+                    <constraint firstItem="ibH-fv-W5L" firstAttribute="leading" secondItem="zwF-YJ-j5x" secondAttribute="trailing" constant="10" id="ftw-zb-2CX"/>
+                    <constraint firstItem="zwF-YJ-j5x" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="giy-lc-zqi"/>
+                    <constraint firstItem="zwF-YJ-j5x" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottom" id="jWL-6a-BzD"/>
+                    <constraint firstAttribute="trailing" secondItem="ibH-fv-W5L" secondAttribute="trailing" id="wCw-Cq-AVE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="label" destination="zwF-YJ-j5x" id="72W-3W-GZG"/>
+                <outlet property="textField" destination="ibH-fv-W5L" id="1qu-Gb-ZUL"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

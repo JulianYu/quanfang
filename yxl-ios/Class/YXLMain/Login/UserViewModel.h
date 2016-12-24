@@ -17,4 +17,5 @@
 - (void)setOffline:(BOOL)flag;
 
 -(void)pushToSignUpBy:(LoginViewController*)viewController;
+-(void)checkToLogin;
 @end

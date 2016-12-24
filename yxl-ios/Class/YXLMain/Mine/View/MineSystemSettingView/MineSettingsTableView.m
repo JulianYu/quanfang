@@ -9,7 +9,8 @@
 #import "MineSettingsTableView.h"
 #import "MineModifyPasswordViewController.h"
 #import "MineTransactionPasswordViewController.h"
-
+#import "LoginViewController.h"
+#import "YXLNavigationController.h"
 @implementation MineSettingsTableView
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -113,6 +114,9 @@
             vc.title = @"交易密码";
             [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
         }
+    }
+    if (indexPath.section == 2) {
+        [UIApplication sharedApplication].keyWindow.rootViewController = [[YXLNavigationController alloc]initWithRootViewController:[LoginViewController new]];
     }
 }
 @end

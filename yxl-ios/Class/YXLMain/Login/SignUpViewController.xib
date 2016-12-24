@@ -157,7 +157,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <state key="normal" title="《用户注册协议》"/>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectFile.png" translatesAutoresizingMaskIntoConstraints="NO" id="bdI-Ky-Age">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yxl_login_selected" translatesAutoresizingMaskIntoConstraints="NO" id="bdI-Ky-Age">
                     <rect key="frame" x="20" y="296" width="15" height="15"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="15" id="Q0v-YF-yvI"/>
@@ -226,6 +226,6 @@
         </view>
     </objects>
     <resources>
-        <image name="selectFile.png" width="44" height="44"/>
+        <image name="yxl_login_selected" width="320" height="64"/>
     </resources>
 </document>

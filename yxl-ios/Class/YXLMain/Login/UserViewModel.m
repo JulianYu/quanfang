@@ -7,7 +7,7 @@
 //
 
 #import "UserViewModel.h"
-
+#import "YXLTabBarController.h"
 @interface UserViewModel ()
 @property( nonatomic, strong) UITextField        * phoneTF;
 @property( nonatomic, strong) UITextField        * passwordTF;
@@ -46,6 +46,10 @@
     SignUpViewController *vc = [SignUpViewController new];
     vc.title = @"注册";
     [viewController.navigationController pushViewController:vc animated:YES];
+}
+-(void)checkToLogin{
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [UIApplication sharedApplication].keyWindow.rootViewController = [[YXLTabBarController alloc]init];
 }
 -(void)setForgotBtn:(UIButton *)forgotBtn{
     NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:@"忘记密码"];
