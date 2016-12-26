@@ -11,11 +11,14 @@
 #import "MineBalanceTableView.h"
 #import "MineBalanceRechargeTableView.h"
 #import "MineBalanceWithdrawTableView.h"
+#import "MineCommonFooterView.h"
+#import "MineBalanceRechargeNumberViewController.h"
 @interface MineBalanceViewModel ()
-@property( nonatomic, strong) MineBalanceHeaderView         * headerView;
-@property( nonatomic, strong) MineBalanceTableView          * tableView;
-@property( nonatomic, strong) MineBalanceRechargeTableView        * rechargeTableView;
-@property( nonatomic, strong) MineBalanceWithdrawTableView        * withdrawTableView;
+@property( nonatomic, strong) MineBalanceHeaderView                 * headerView;
+@property( nonatomic, strong) MineBalanceTableView                  * tableView;
+@property( nonatomic, strong) MineBalanceRechargeTableView          * rechargeTableView;
+@property( nonatomic, strong) MineBalanceWithdrawTableView          * withdrawTableView;
+@property( nonatomic, strong) MineCommonFooterView                  * footerView;
 @end
 @implementation MineBalanceViewModel
 - (instancetype)initWithViewController:(YXLBaseViewController *)viewController
@@ -32,8 +35,19 @@
         if ([viewController isMemberOfClass:NSClassFromString(@"MineBalanceWithdrawViewController")]) {
             [viewController.view addSubview:self.withdrawTableView];
         }
+        if ([viewController isMemberOfClass:NSClassFromString(@"MineBalanceRechargeNumberViewController")]) {
+            self.footerView.y = ((MineBalanceRechargeNumberViewController*)viewController).numberView.bottom+20;
+            [viewController.view addSubview:self.footerView];
+            [self.footerView update];
+        }
     }
     return self;
+}
+-(MineCommonFooterView *)footerView{
+    if (!_footerView) {
+        _footerView = [[MineCommonFooterView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 40)];
+    }
+    return _footerView;
 }
 -(MineBalanceWithdrawTableView *)withdrawTableView{
     if (!_withdrawTableView){

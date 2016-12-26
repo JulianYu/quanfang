@@ -13,8 +13,8 @@
 #import "ProductSellerFirstRowCell.h"
 #import "ProductSellerSecondRowCell.h"
 #import "ProductRankRowCell.h"
-#import "SUNControl.h"
 #import "YXLBaseTableView.h"
+#import "BusinessProductsDetailViewController.h"
 #define PRODUCTINFORMATION_FIRSTROWCELL @"informationFirstCell"
 #define PRODUCTINFORMATION_SECONDROWCELL @"informationSecondCell"
 #define PRODUCTSELLER_FIRSTROWCELL @"sellerFirstCell"
@@ -24,13 +24,14 @@
 <
 UITableViewDelegate,
 UITableViewDataSource,
-UIScrollViewDelegate,
-SUNControlDelegate
+UIScrollViewDelegate
 >
+{
+    CGPoint center;
 
-@property( nonatomic, strong) ProductsDetailHeaderView        * headerView;
-@property( nonatomic, strong) UITableView           * tableView;
-@property( nonatomic, strong) SUNControl            * sunControl;
+}
+@property( nonatomic, strong) ProductsDetailHeaderView          * headerView;
+@property( nonatomic, strong) UITableView                       * tableView;
 @end
 @implementation ProductsDetailTrunkView
 
@@ -44,6 +45,7 @@ SUNControlDelegate
 }
 -(void)buildUI{
     [self tableView];
+    
 }
 -(UITableView *)tableView{
     if (!_tableView) {
@@ -193,67 +195,23 @@ SUNControlDelegate
     
 }
 -(void)cellTap{
-//    [[self SUN_GetCurrentViewController].view addSubview:self.sunControl];
-//    [self.sunControl reloadData];
-//    NSLog(@"我被点击了");
+    [((BusinessProductsDetailViewController*)[self SUN_GetCurrentViewController]).viewModel show];
 }
--(SUNControl *)sunControl{
-    if (!_sunControl) {
-        _sunControl = [[SUNControl alloc]initWithFrame:CGRectMake(0, self.height- 398 - 50, self.width, 398)];
-        _sunControl.backgroundColor = [UIColor clearColor];
-        _sunControl.delegate = self;
-    }
-    return _sunControl;
-}
+
+
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
-    if (scrollView.contentOffset.y <10) {
-        [self SUN_GetCurrentViewController].navigationController.navigationBar.hidden = YES;
+    if (scrollView.contentOffset.y <=SCREEN_WIDTH*6/10) {
+        [self SUN_GetCurrentNavigationController].navigationBar.hidden = YES;
     }
-    
-    
-    if (scrollView.contentOffset.y >0){
+    else if ( scrollView.contentOffset.y >SCREEN_WIDTH*6/10 && scrollView.contentOffset.y < SCREEN_HEIGHT*5.0/8-20 - 64 ) {
         [self SUN_GetCurrentViewController].navigationController.navigationBar.hidden = NO;
-        
-        if (scrollView.contentOffset.y < SCREEN_HEIGHT*5.0/8-20 - 64 ) {
-            [self SUN_GetCurrentViewController].navigationController.navigationBar.alpha = scrollView.contentOffset.y/(SCREEN_HEIGHT*5.0/8-20 -64 );
-        }
-        
-        
-
-        
+        [self SUN_GetCurrentViewController].navigationController.navigationBar.alpha = scrollView.contentOffset.y/(SCREEN_HEIGHT*5.0/8-20 -64-SCREEN_WIDTH*6/10);
+    }
+    else{
+        [self SUN_GetCurrentNavigationController].navigationBar.hidden = NO;
     }
     
 }
-- (void) configScrollViewData:(UIScrollView *) scrollView {
-    NSUInteger rowCount = 10;
-    for (int i = 0; i < rowCount; i++) {
-        int row = i / 4;
-        int colomn = i % 4;
-        UILabel *label = [[UILabel alloc] initWithFrame:
-                          CGRectMake(80 * colomn + 10 * (colomn + 1), 40 * row + 10 * (row + 1), 80, 40)];
-        label.text = [NSString stringWithFormat:@"sku-%d--",i];
-        label.textAlignment = NSTextAlignmentCenter;
-        label.backgroundColor = [UIColor redColor];
-        [scrollView addSubview:label];
-    }
-    
-    scrollView.contentSize = CGSizeMake(self.width, rowCount * 50);
-    
-}
-- (void) configImageView:(UIImageView *) imageView
-                   price:(UILabel *) priceLabel
-                   store:(UILabel *) storeLabel
-                  choose:(UILabel *) chooseLabel
-                  number:(SUNNumberChooseControl *) numberControl {
-    //    imageView.image = [UIImage imageNamed:@"mail"];
-    priceLabel.text = @"￥399.9";
-    storeLabel.text = @"库存24044件";
-    chooseLabel.text = @"请选择颜色分类";
-    numberControl.maxNumber = 5;
-    numberControl.minNumber = 2;
-}
-
-
 @end
 

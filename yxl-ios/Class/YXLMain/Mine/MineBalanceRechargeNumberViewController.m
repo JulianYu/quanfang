@@ -1,34 +1,29 @@
 //
-//  BusinessProductsDetailViewController.m
+//  MineBalanceRechargeNumberViewController.m
 //  yxl-ios
 //
-//  Created by mac on 16/12/19.
+//  Created by mac on 16/12/26.
 //  Copyright © 2016年 孙若淮. All rights reserved.
 //
 
-#import "BusinessProductsDetailViewController.h"
-@interface BusinessProductsDetailViewController ()
+#import "MineBalanceRechargeNumberViewController.h"
+#import "MineBalanceViewModel.h"
+@interface MineBalanceRechargeNumberViewController ()
+@property( nonatomic, strong) MineBalanceViewModel        * viewModel;
 @end
 
-@implementation BusinessProductsDetailViewController
+@implementation MineBalanceRechargeNumberViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self viewModel];
 }
--(ProductsDetailViewModel *)viewModel{
+-(MineBalanceViewModel *)viewModel{
     if (!_viewModel) {
-        _viewModel = [[ProductsDetailViewModel alloc]initWithViewController:self]
-        ;
+        _viewModel = [[MineBalanceViewModel alloc]initWithViewController:self];
     }
     return _viewModel;
 }
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    
-    self.navigationController.navigationBar.hidden = YES;
-}
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

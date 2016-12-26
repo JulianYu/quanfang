@@ -1,6 +1,6 @@
 //
 //  AppDelegate.h
-//  test
+//  yxl-ios
 //
 //  Created by mac on 16/12/05.
 //  Copyright © 2016年 孙若淮. All rights reserved.

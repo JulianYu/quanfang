@@ -11,11 +11,13 @@
 #import "MineCommonFooterView.h"
 #import "MineBankCardAddTableView.h"
 #import "MineBankCardSelectTableView.h"
+#import "MineBalanceBankCardTableView.h"
 @interface MineBankCardViewModel ()
 @property( nonatomic, strong) MineBankCardTableView                 * bankCardTableView;
 @property( nonatomic, strong) MineCommonFooterView                  * footerView;
 @property( nonatomic, strong) MineBankCardAddTableView              * addTableView;
 @property( nonatomic, strong) MineBankCardSelectTableView           * selectTableView;
+@property( nonatomic, strong) MineBalanceBankCardTableView          * balanceTableView;
 @end
 @implementation MineBankCardViewModel
 - (instancetype)initWithViewController:(YXLBaseViewController *)viewController
@@ -40,8 +42,21 @@
             [viewController.view addSubview:self.selectTableView];
         }
         
+        if ([viewController isMemberOfClass:NSClassFromString(@"MineBalanceRechargeBankCardViewController")]) {
+            self.footerView.y = self.balanceTableView.bottom+20;
+            [viewController.view addSubview:self.balanceTableView];
+            [viewController.view addSubview:self.footerView];
+            [self.footerView update];
+        }
+        
     }
     return self;
+}
+-(MineBalanceBankCardTableView *)balanceTableView{
+    if (!_balanceTableView) {
+        _balanceTableView = [[MineBalanceBankCardTableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 200)];
+    }
+    return _balanceTableView;
 }
 -(MineBankCardTableView *)bankCardTableView{
     if (!_bankCardTableView) {

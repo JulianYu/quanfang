@@ -7,6 +7,7 @@
 //
 
 #import "ProductsDetailFooterView.h"
+#import "BusinessCartListViewController.h"
 @interface ProductsDetailFooterView()
 @end
 @implementation ProductsDetailFooterView
@@ -31,11 +32,14 @@
             [btn SUN_SetEnlargeEdgeWithTop:0 right:0 bottom:15 left:0];
             UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(i * leftBtnWidth, 34, leftBtnWidth, 15)];
             [label SUN_SetTitleWithColor:SUN_GlobalTextGreyColor FontSize:10 bold:NO textAlignment:NSTextAlignmentCenter];
+            [btn setBackgroundColor:SUN_GlobalBackgroundColor];
+            [label setBackgroundColor:SUN_GlobalBackgroundColor];
             
             switch (i) {
                 case 0:
                     label.text = @"消息";
                     [btn setImage:[UIImage imageNamed:@"yxl_shop_footer_chat"] forState:UIControlStateNormal];
+                    
                     break;
                 case 1:
                     label.text = @"收藏";
@@ -45,7 +49,7 @@
                 default:
                     label.text = @"购物车";
                     [btn setImage:[UIImage imageNamed:@"yxl_shop_footer_cart"] forState:UIControlStateNormal];
-
+                    [btn addTarget:self action:@selector(cart) forControlEvents:UIControlEventTouchUpInside];
                     break;
             }
             
@@ -61,6 +65,7 @@
                 case 3:
                     [btn setBackgroundColor:[UIColor SUN_ColorWithHexString:@"#F9C716" alpha:1]];
                     [btn setTitle:@"加入购物车" forState:UIControlStateNormal];
+                    [btn addTarget:self action:@selector(joinCart) forControlEvents:UIControlEventTouchUpInside];
                     break;
                     
                 default:
@@ -70,12 +75,17 @@
             }
         }
         
-        
-        
-        
-        
         [self addSubview:btn];
     }
+}
+-(void)joinCart{
+}
+-(void)cart{
+    [self SUN_GetCurrentNavigationController].navigationBar.hidden = NO;
+    BusinessCartListViewController *vc = [BusinessCartListViewController new];
+    vc.title = @"购物车";
+    [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
+
 }
 /*
 // Only override drawRect: if you perform custom drawing.

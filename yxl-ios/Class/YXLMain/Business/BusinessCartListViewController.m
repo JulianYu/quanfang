@@ -1,38 +1,34 @@
 //
-//  BusinessProductsDetailViewController.m
+//  BusinessCartListViewController.m
 //  yxl-ios
 //
-//  Created by mac on 16/12/19.
+//  Created by mac on 16/12/26.
 //  Copyright © 2016年 孙若淮. All rights reserved.
 //
 
-#import "BusinessProductsDetailViewController.h"
-@interface BusinessProductsDetailViewController ()
+#import "BusinessCartListViewController.h"
+#import "ProductsCartViewModel.h"
+@interface BusinessCartListViewController ()
+@property( nonatomic, strong) ProductsCartViewModel        * viewModel;
 @end
 
-@implementation BusinessProductsDetailViewController
+@implementation BusinessCartListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self viewModel];
 }
--(ProductsDetailViewModel *)viewModel{
+-(ProductsCartViewModel *)viewModel{
     if (!_viewModel) {
-        _viewModel = [[ProductsDetailViewModel alloc]initWithViewController:self]
-        ;
+        _viewModel = [[ProductsCartViewModel alloc]initWithViewController:self];
     }
     return _viewModel;
 }
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    
-    self.navigationController.navigationBar.hidden = YES;
-}
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    self.navigationController.navigationBar.hidden = NO;
+
 }
 
 /*

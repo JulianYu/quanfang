@@ -1,34 +1,29 @@
 //
-//  BusinessProductsDetailViewController.m
+//  MineBalanceRechargeBankCardViewController.m
 //  yxl-ios
 //
-//  Created by mac on 16/12/19.
+//  Created by mac on 16/12/26.
 //  Copyright © 2016年 孙若淮. All rights reserved.
 //
 
-#import "BusinessProductsDetailViewController.h"
-@interface BusinessProductsDetailViewController ()
+#import "MineBalanceRechargeBankCardViewController.h"
+#import "MineBankCardViewModel.h"
+@interface MineBalanceRechargeBankCardViewController ()
+@property( nonatomic, strong) MineBankCardViewModel        * viewModel;
 @end
 
-@implementation BusinessProductsDetailViewController
+@implementation MineBalanceRechargeBankCardViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self viewModel];
 }
--(ProductsDetailViewModel *)viewModel{
+-(MineBankCardViewModel *)viewModel{
     if (!_viewModel) {
-        _viewModel = [[ProductsDetailViewModel alloc]initWithViewController:self]
-        ;
+        _viewModel = [[MineBankCardViewModel alloc]initWithViewController:self];
     }
-    return _viewModel;
+    return  _viewModel;
 }
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    
-    self.navigationController.navigationBar.hidden = YES;
-}
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

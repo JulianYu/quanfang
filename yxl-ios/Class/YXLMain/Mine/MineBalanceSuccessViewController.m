@@ -1,34 +1,23 @@
 //
-//  BusinessProductsDetailViewController.m
+//  MineBalanceSuccessViewController.m
 //  yxl-ios
 //
-//  Created by mac on 16/12/19.
+//  Created by mac on 16/12/26.
 //  Copyright © 2016年 孙若淮. All rights reserved.
 //
 
-#import "BusinessProductsDetailViewController.h"
-@interface BusinessProductsDetailViewController ()
+#import "MineBalanceSuccessViewController.h"
+
+@interface MineBalanceSuccessViewController ()
+
 @end
 
-@implementation BusinessProductsDetailViewController
+@implementation MineBalanceSuccessViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self viewModel];
+    // Do any additional setup after loading the view.
 }
--(ProductsDetailViewModel *)viewModel{
-    if (!_viewModel) {
-        _viewModel = [[ProductsDetailViewModel alloc]initWithViewController:self]
-        ;
-    }
-    return _viewModel;
-}
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    
-    self.navigationController.navigationBar.hidden = YES;
-}
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

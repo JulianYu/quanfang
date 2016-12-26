@@ -7,7 +7,8 @@
 //
 
 #import "MineBalanceRechargeTableView.h"
-
+#import "MineBalanceRechargeNumberViewController.h"
+#import "MineBalanceRechargeBankCardViewController.h"
 @implementation MineBalanceRechargeTableView
 
 
@@ -66,14 +67,25 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.row) {
         case 0:
-            
+            [self pushToRechargeNumberViewControllerByIndexPath:indexPath];
             break;
         case 1:
-            
+            [self pushToRechargeNumberViewControllerByIndexPath:indexPath];
             break;
         default:
+        {
+            MineBalanceRechargeBankCardViewController *vc = [MineBalanceRechargeBankCardViewController new];
+            vc.title = @"充值";
+            [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
+        }
+            
             break;
     }
 }
-
+-(void)pushToRechargeNumberViewControllerByIndexPath:(NSIndexPath*)indexPath{
+    
+    MineBalanceRechargeNumberViewController *vc = [MineBalanceRechargeNumberViewController new];
+    vc.title = @"充值";
+    [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
+}
 @end

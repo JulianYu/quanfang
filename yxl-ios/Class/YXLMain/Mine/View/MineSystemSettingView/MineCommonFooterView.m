@@ -8,6 +8,7 @@
 
 #import "MineCommonFooterView.h"
 #import "MineBankCardAddViewController.h"
+#import "MineBalanceSuccessViewController.h"
 @implementation MineCommonFooterView
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -57,7 +58,22 @@
         [self.button setBackgroundColor:SUN_GlobalTextGreenColor];
         [self.button setTitle:@"兑换" forState:UIControlStateNormal];
     }
+    if ([[self SUN_GetCurrentViewController] isMemberOfClass:NSClassFromString(@"MineBalanceRechargeNumberViewController")]) {
+        [self.button setBackgroundColor:SUN_GlobalTextGreenColor];
+        [self.button addTarget:self action:@selector(paySuccess) forControlEvents:UIControlEventTouchUpInside];
+        [self.button setTitle:@"充值" forState:UIControlStateNormal];
+    }
     
+    if ([[self SUN_GetCurrentViewController]isMemberOfClass:NSClassFromString(@"MineBalanceRechargeBankCardViewController")]) {
+        [self.button setBackgroundColor:SUN_GlobalTextGreenColor];
+        [self.button setTitle:@"生成汇款订单" forState:UIControlStateNormal];
+    }
+    
+}
+-(void)paySuccess{
+    MineBalanceSuccessViewController *vc = [MineBalanceSuccessViewController new];
+    vc.title = @"充值成功";
+    [[self SUN_GetCurrentNavigationController]pushViewController:vc animated:YES];
 }
 -(void)addBankCard{
     MineBankCardAddViewController *vc = [MineBankCardAddViewController new];

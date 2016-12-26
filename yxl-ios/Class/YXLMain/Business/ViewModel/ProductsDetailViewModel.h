@@ -9,5 +9,5 @@
 #import "YXLBaseViewModel.h"
 
 @interface ProductsDetailViewModel : YXLBaseViewModel
-
+-(void)show;
 @end

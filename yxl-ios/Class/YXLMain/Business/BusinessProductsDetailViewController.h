@@ -7,7 +7,9 @@
 //
 
 #import "YXLBaseViewController.h"
+#import "ProductsDetailViewModel.h"
 
 @interface BusinessProductsDetailViewController : YXLBaseViewController
+@property( nonatomic, strong) ProductsDetailViewModel        * viewModel;
 
 @end
