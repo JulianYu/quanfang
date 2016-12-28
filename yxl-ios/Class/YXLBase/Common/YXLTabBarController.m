@@ -105,7 +105,7 @@
     }
     vc.tabBarItem.title = title;
     [vc.tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
-    [vc.tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor SUN_ColorWithHexString:@"#D0005D" alpha:1],NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
+    [vc.tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:SUN_GlobalNormalColor,NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
     vc.tabBarItem.image = [UIImage imageNamed:image];
     vc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     

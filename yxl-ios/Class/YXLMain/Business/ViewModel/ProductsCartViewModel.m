@@ -9,7 +9,7 @@
 #import "ProductsCartViewModel.h"
 #import "CartListTableView.h"
 @interface ProductsCartViewModel()
-@property( nonatomic, strong) CartListTableView        * CartListtableView;
+@property( nonatomic, strong) CartListTableView        * cartListtableView;
 @end
 @implementation ProductsCartViewModel
 - (instancetype)initWithViewController:(YXLBaseViewController *)viewController
@@ -17,10 +17,17 @@
     self = [super initWithViewController:viewController];
     if (self) {
         if ([viewController isMemberOfClass:NSClassFromString(@"BusinessCartListViewController")]) {
-            
+            [viewController.view addSubview:self.cartListtableView];
         }
     }
     return self;
+}
+
+-(CartListTableView *)cartListtableView{
+    if (!_cartListtableView) {
+        _cartListtableView = [[CartListTableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    }
+    return _cartListtableView;
 }
 
 

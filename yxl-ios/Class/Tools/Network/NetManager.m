@@ -21,6 +21,7 @@
 #import "AFNetworking.h"
 #import "AFNetworkActivityIndicatorManager.h"
 
+#import "MJExtension.h"
 //#import "UIImage+CompressImage.h"
 
 
@@ -49,6 +50,7 @@ static NSMutableArray *tasks;
         /*! 设置返回数据为json, 分别设置请求以及相应的序列化器 */
         /*! 根据服务器的设定不同还可以设置 [AFHTTPResponseSerializer serializer](常用) */
         AFJSONResponseSerializer * response = [AFJSONResponseSerializer serializer];
+        
         /*! 这里是去掉了键值对里空对象的键值 */
 //        response.removesKeysWithNullValues = YES;
         manager.responseSerializer = response;
@@ -108,6 +110,8 @@ static NSMutableArray *tasks;
     return tasks;
 }
 
+
+
 #pragma mark - ***** 网络请求的类方法---get / post / put / delete
 /*!
  *  网络请求的实例方法
@@ -132,17 +136,24 @@ static NSMutableArray *tasks;
     }
     WEAKSELF;
     /*! 检查地址中是否有中文 */
-//    NSString *URLString = [NSURL URLWithString:urlString] ? urlString : [self strUTF8Encoding:urlString];
-//    
-//    NSLog(@"******************** 请求参数 ***************************");
-//    NSLog(@"请求头: %@\n请求方式: %@\n请求URL: %@\n请求param: %@\n\n",[self sharedAFManager].requestSerializer.HTTPRequestHeaders, (type == HttpRequestTypeGet) ? @"GET":@"POST",URLString, parameters);
-//    NSLog(@"********************************************************");
-//    
+    NSString *URLString = [NSURL URLWithString:urlString] ? urlString : [self strUTF8Encoding:urlString];
+//
+    NSLog(@"******************** 请求参数 ***************************");
+    NSLog(@"请求头: %@\n请求方式: %@\n请求URL: %@\n请求param: %@\n\n",[self sharedAFManager].requestSerializer.HTTPRequestHeaders, (type == HttpRequestTypeGet) ? @"GET":@"POST",URLString, parameters);
+    NSLog(@"********************************************************");
+//
     URLSessionTask *sessionTask = nil;
+    
+    
+    
+    NSString *par = [parameters mj_JSONString];
+    NSDictionary *pars = [NSDictionary dictionaryWithObject:par forKey:@"json"];
+
+    
     
     if (type == HttpRequestTypeGet)
     {
-        sessionTask = [[self sharedAFManager] GET:urlString parameters:parameters  progress:^(NSProgress * _Nonnull downloadProgress) {
+        sessionTask = [[self sharedAFManager] GET:urlString parameters:pars  progress:^(NSProgress * _Nonnull downloadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             
@@ -157,6 +168,13 @@ static NSMutableArray *tasks;
             
             if (successBlock)
             {
+                
+                NSData *jsonData = [NSJSONSerialization dataWithJSONObject:responseObject options:kNilOptions error:nil];
+                NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+        
+                NSLog(@"%@",jsonString);
+
+                
                 successBlock(responseObject);
             }
             
@@ -165,6 +183,7 @@ static NSMutableArray *tasks;
             //        [self writeInfoWithDict:(NSDictionary *)responseObject];
             
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
             
             if (failureBlock)
             {
@@ -177,7 +196,7 @@ static NSMutableArray *tasks;
     }
     else if (type == HttpRequestTypePost)
     {
-        sessionTask = [[self sharedAFManager] POST:urlString parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+        sessionTask = [[self sharedAFManager] POST:urlString parameters:pars progress:^(NSProgress * _Nonnull uploadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             
@@ -192,6 +211,11 @@ static NSMutableArray *tasks;
             
             if (successBlock)
             {
+                NSData *jsonData = [NSJSONSerialization dataWithJSONObject:responseObject options:kNilOptions error:nil];
+                NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+                
+                NSLog(@"%@",jsonString);
+
                 successBlock(responseObject);
             }
             
@@ -210,7 +234,7 @@ static NSMutableArray *tasks;
     }
     else if (type == HttpRequestTypePut)
     {
-        sessionTask = [[self sharedAFManager] PUT:urlString parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        sessionTask = [[self sharedAFManager] PUT:urlString parameters:pars success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             
             if (successBlock)
             {

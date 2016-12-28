@@ -9,10 +9,17 @@
 #import <Foundation/Foundation.h>
 @class STATUS;
 @interface YXLBaseModel : NSObject
+
 @property (nonatomic, strong) STATUS *status;
+
 @end
 
 @interface STATUS : NSObject
-@property (nonatomic, copy) NSNumber *status;
+
+@property (nonatomic, assign) NSInteger succeed;
+
+@property (nonatomic, assign) NSInteger error;
+
 @property (nonatomic, copy) NSString *msg;
+
 @end

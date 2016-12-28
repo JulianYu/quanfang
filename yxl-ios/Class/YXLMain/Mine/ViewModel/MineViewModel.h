@@ -9,5 +9,5 @@
 #import "YXLBaseViewModel.h"
 
 @interface MineViewModel : YXLBaseViewModel
-
+-(void)pushToPersonalViewControllerBY:(UIViewController*)viewController;
 @end

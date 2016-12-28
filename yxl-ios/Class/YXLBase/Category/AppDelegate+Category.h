@@ -9,6 +9,12 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate (Category)
+
+//本地服务器
+- (void)setServerConfigWithlocal;
+//外网
+- (void)setServerConfigWithIntel;
+
 - (void)isFirstLaunched;
 
 @end

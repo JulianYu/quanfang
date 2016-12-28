@@ -82,6 +82,7 @@
 }
 -(void)cart{
     [self SUN_GetCurrentNavigationController].navigationBar.hidden = NO;
+    [self SUN_GetCurrentNavigationController].navigationBar.alpha = 1;
     BusinessCartListViewController *vc = [BusinessCartListViewController new];
     vc.title = @"购物车";
     [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];

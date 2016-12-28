@@ -11,6 +11,7 @@
 #import "MineTrunkView.h"
 #import "MineModel.h"
 #import "MineInfromationTableView.h"
+#import "MineDetailViewController.h"
 @interface MineViewModel()
 @property( nonatomic, strong) MineHeaderView        * headerView;
 @property( nonatomic, strong) MineTrunkView         * trunkView;
@@ -47,7 +48,7 @@
 }
 -(MineHeaderView *)headerView{
     if (!_headerView) {
-        _headerView = [[MineHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT/5)];
+        _headerView = [[MineHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 130)];
         
     }
     return _headerView;
@@ -63,5 +64,17 @@
         _informationTableView = [[MineInfromationTableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
     }
     return _informationTableView;
+}
+-(void)pushToPersonalViewControllerBY:(UIViewController *)viewController{
+    if ([UserViewModel online]) {
+        MineDetailViewController *vc = [MineDetailViewController new];
+        vc.title = @"资料信息";
+        [viewController.navigationController pushViewController:vc animated:YES];
+    }
+    else{
+        [self showLogin];
+    }
+    
+
 }
 @end

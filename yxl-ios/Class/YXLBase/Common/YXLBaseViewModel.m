@@ -7,6 +7,8 @@
 //
 
 #import "YXLBaseViewModel.h"
+#import "NetManager.h"
+
 @implementation YXLBaseViewModel
 - (instancetype)initWithViewController:(YXLBaseViewController *)viewController
 {
@@ -24,5 +26,18 @@
     }
     return self;
 
+}
+-(void)presentFailureHUD:(STATUS *)status{
+    if (status.error == 2) {
+        [HUD SUN_ShowErrorWithStatus:@"帐号信息过期"];
+    }
+    else{
+        [HUD SUN_ShowErrorWithStatus:status.msg];
+    }
+}
+-(void)showLogin{
+    LoginViewController *vc = [LoginViewController new];
+    YXLNavigationController *navi = [[YXLNavigationController alloc]initWithRootViewController:vc];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:navi animated:YES completion:nil];
 }
 @end

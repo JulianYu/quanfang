@@ -18,6 +18,11 @@
 
 #import "NetManager.h"
 
+#import "UserViewModel.h"
+
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+
 #define WEAKSELF typeof(self) __weak weakSelf = self
 #define WeakSelf(type)  __weak typeof(type) weak##type = type;
 

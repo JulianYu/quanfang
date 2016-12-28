@@ -20,4 +20,5 @@
     self.textAlignment = textAlignment;
 
 }
+
 @end

@@ -19,6 +19,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+    //配置BaseURL
+#define local 1
+#if local
+    [self setServerConfigWithlocal];
+#else
+    [self setServerConfigWithIntel];
+#endif
+
+    
     [self isFirstLaunched];
     
     return YES;

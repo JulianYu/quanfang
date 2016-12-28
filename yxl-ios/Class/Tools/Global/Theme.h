@@ -13,8 +13,9 @@
 #import "UIView+Category.h"
 #import "UILabel+Category.h"
 #import "UIButton+Category.h"
+#import "NSObject+Category.h"
 
-#define SUN_NavigationH 64
+#define SUN_NavigationH 44
 
 #define SUN_GlobalBackgroundColor [UIColor SUN_ColorWithHexString:@"#E6E6E6" alpha:1]
 

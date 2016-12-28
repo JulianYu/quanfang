@@ -9,5 +9,8 @@
 #import "YXLBaseTableView.h"
 
 @interface CartListTableView : YXLBaseTableView
-
+<
+UITableViewDataSource,
+UITableViewDelegate
+>
 @end

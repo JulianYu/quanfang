@@ -17,19 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self viewModel];
-    
     [self setUpNavi];
 }
-
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
 
-    
     [self.navigationController.navigationBar setBackgroundImage:[UIColor SUN_ImageWithColor:SUN_GlobalWhiteColor] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:SUN_GlobalTextBlackColor}];
-
+    
 }
 -(void)setUpNavi{
     
@@ -46,12 +43,11 @@
 
 }
 -(void)cancelBtnClick{
-    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 -(void)signUpBtnClick{
     [self.viewModel pushToSignUpBy:self];
 }
-
 
 -(UserViewModel *)viewModel{
     if (!_viewModel) {
@@ -60,10 +56,8 @@
     return _viewModel;
 }
 - (IBAction)loginBtnClick:(UIButton *)sender {
-    [self.viewModel checkToLogin];
+    [self.viewModel login:self.phoneTF.text password:self.passwordTF.text viewController:self];
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -21,31 +21,35 @@
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstStart"];
         
         NSLog(@"第一次启用APP");
-        LoginViewController *vc = [[LoginViewController alloc]init];
-        YXLNavigationController *navi = [[YXLNavigationController alloc]initWithRootViewController:vc];
-        self.window.rootViewController = navi;
-        
+        [HUD setMinimumDismissTimeInterval:1];
+        [HUD SUN_ShowWithStatus:@"第一次使用程序"];
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+        self.window.rootViewController = [[YXLTabBarController alloc]init];
+                
     }
     else{
-        if (![UserViewModel online]) {
-            
-            [UIApplication sharedApplication].statusBarHidden = NO;
-            LoginViewController *vc = [[LoginViewController alloc]init];
-            YXLNavigationController *navi = [[YXLNavigationController alloc]initWithRootViewController:vc];
-            self.window.rootViewController = navi;
-            
-        }
-        else{
-            
-            [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-            self.window.rootViewController = [[YXLTabBarController alloc]init];
-        }
-    
+        
+//        [UserViewModel online];
+        
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+        self.window.rootViewController = [[YXLTabBarController alloc]init];
+        
     }
     
     
     [self.window makeKeyAndVisible];
 
 }
+#pragma mark - *****  服务器 设置
+
+- (void)setServerConfigWithlocal{
+    [ServerConfig sharedServerConfig].url = @"http://192.168.1.230/quanfan";
+    
+}
+- (void)setServerConfigWithIntel{
+    [ServerConfig sharedServerConfig].url = @"";
+    
+}
+
 
 @end

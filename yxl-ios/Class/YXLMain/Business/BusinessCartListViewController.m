@@ -17,12 +17,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self viewModel];
+    
 }
 -(ProductsCartViewModel *)viewModel{
     if (!_viewModel) {
         _viewModel = [[ProductsCartViewModel alloc]initWithViewController:self];
     }
     return _viewModel;
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.navigationController.navigationBar.hidden = NO;
 }
 
 - (void)didReceiveMemoryWarning {

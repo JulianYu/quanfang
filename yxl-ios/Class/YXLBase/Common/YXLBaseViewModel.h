@@ -10,9 +10,18 @@
 #import "YXLBaseViewController.h"
 #import "MJExtension.h"
 #import "HUD.h"
+#import "YXLBaseModel.h"
+#import "LoginViewController.h"
+#import "YXLNavigationController.h"
+#import "UserModel.h"
+#define SUN_DEFAULTS [NSUserDefaults standardUserDefaults]
 
 @interface YXLBaseViewModel : NSObject
 -(instancetype)initWithViewController:(YXLBaseViewController*)viewController;
 
 -(instancetype)initWithUIViewController:(UIViewController *)viewController;
+
+-(void)presentFailureHUD:(STATUS*)status;
+
+-(void)showLogin;
 @end

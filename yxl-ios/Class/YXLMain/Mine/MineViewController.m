@@ -22,7 +22,6 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     [self viewModel];
 }
 -(void)viewWillAppear:(BOOL)animated{

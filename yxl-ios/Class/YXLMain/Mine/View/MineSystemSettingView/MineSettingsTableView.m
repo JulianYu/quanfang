@@ -11,6 +11,7 @@
 #import "MineTransactionPasswordViewController.h"
 #import "LoginViewController.h"
 #import "YXLNavigationController.h"
+#import "MineAddressManageViewController.h"
 @implementation MineSettingsTableView
 
 
@@ -25,7 +26,7 @@
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (section == 0) {
-        return 2;
+        return 3;
     }
     if (section == 1) {
         return 3;
@@ -49,8 +50,11 @@
         if (indexPath.row == 0) {
             cell.textLabel.text = @"修改密码";
         }
-        else{
+        else if (indexPath.row == 1){
             cell.textLabel.text = @"交易密码";
+        }
+        else{
+            cell.textLabel.text = @"地址管理";
         }
     }
     
@@ -102,9 +106,14 @@
             vc.title = @"密码修改";
             [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
         }
-        if (indexPath.row == 1) {
+        else if (indexPath.row == 1) {
             MineTransactionPasswordViewController *vc = [MineTransactionPasswordViewController new];
             vc.title = @"交易密码";
+            [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
+        }
+        else{
+            MineAddressManageViewController *vc = [MineAddressManageViewController new];
+            vc.title = @"地址管理";
             [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
         }
     }
