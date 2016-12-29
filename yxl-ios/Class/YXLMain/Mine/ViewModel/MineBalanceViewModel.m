@@ -28,6 +28,7 @@
         if ([viewController isMemberOfClass:NSClassFromString(@"MineBalanceViewController")]) {
             [viewController.view addSubview:self.headerView];
             [viewController.view addSubview:self.tableView];
+            [self getMyBalance];
         }
         if ([viewController isMemberOfClass:NSClassFromString(@"MineBalanceRechargeViewController")]) {
             [viewController.view addSubview:self.rechargeTableView];
@@ -72,5 +73,24 @@
         _tableView = [[MineBalanceTableView alloc]initWithFrame:CGRectMake(0, self.headerView.bottom,SCREEN_WIDTH , SCREEN_HEIGHT-self.headerView.height)];
     }
     return _tableView;
+}
+-(void)getMyBalance{
+    NSString *url = [NSString stringWithFormat:@"%@/ApiPersonal/myBalance",[ServerConfig sharedServerConfig].url];
+    Session *session = [UserModel sharedUserModel].session;
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{@"session":[session mj_keyValues]}];
+    
+    [NetManager requestWithType:HttpRequestTypePost UrlString:url Parameters:params SuccessBlock:^(id response) {
+        STATUS *status = [STATUS mj_objectWithKeyValues:[response objectForKey:@"status"]];
+        if (status.succeed == 1) {
+            [UserModel sharedUserModel].user.balance = [response objectForKey:@"data"];
+            self.headerView.balanceLabel.text = [UserModel sharedUserModel].user.balance;
+        }
+        else{
+            [YXLBaseViewModel presentFailureHUD:status];
+        }
+    } FailureBlock:^(NSError *error) {
+    } progress:nil];
+
 }
 @end

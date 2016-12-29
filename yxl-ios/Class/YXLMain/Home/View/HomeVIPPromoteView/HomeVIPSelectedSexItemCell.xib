@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="性别" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chq-fD-6A1">
@@ -43,6 +43,10 @@
                             <constraint firstAttribute="height" constant="25" id="7kc-Nu-Wxh"/>
                         </constraints>
                         <state key="normal" image="yxl_login_unselect"/>
+                        <state key="selected" image="yxl_login_selected.png"/>
+                        <connections>
+                            <action selector="rightBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="yeD-Qu-IRe"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="女" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJy-59-7uc">
                         <rect key="frame" x="230" y="0.0" width="30" height="44"/>
@@ -60,6 +64,10 @@
                             <constraint firstAttribute="width" constant="25" id="m49-Oq-ZYb"/>
                         </constraints>
                         <state key="normal" image="yxl_login_unselect"/>
+                        <state key="selected" image="yxl_login_selected.png"/>
+                        <connections>
+                            <action selector="leftBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="777-l4-U60"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -78,9 +86,14 @@
                     <constraint firstItem="jJy-59-7uc" firstAttribute="leading" secondItem="uhl-sc-L0H" secondAttribute="trailing" constant="5" id="w8j-TS-xYV"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="leftBtn" destination="Qxf-sZ-O6y" id="XNS-PN-a08"/>
+                <outlet property="rightBtn" destination="uhl-sc-L0H" id="ixB-bT-Dv2"/>
+            </connections>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="yxl_login_selected.png" width="22" height="22"/>
         <image name="yxl_login_unselect" width="21" height="21"/>
     </resources>
 </document>

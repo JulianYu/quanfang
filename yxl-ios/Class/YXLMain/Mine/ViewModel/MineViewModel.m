@@ -72,7 +72,7 @@
         [viewController.navigationController pushViewController:vc animated:YES];
     }
     else{
-        [self showLogin];
+        [UserViewModel showLogin];
     }
     
 

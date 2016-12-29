@@ -9,5 +9,6 @@
 #import "YXLBaseView.h"
 
 @interface MineBalanceHeaderView : YXLBaseView
+@property( nonatomic, strong) UILabel           * balanceLabel;
 
 @end

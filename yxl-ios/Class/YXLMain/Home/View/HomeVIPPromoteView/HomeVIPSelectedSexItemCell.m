@@ -12,13 +12,20 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+- (IBAction)rightBtnClick:(id)sender {
+    self.rightBtn.selected = YES;
+    self.leftBtn.selected = NO;
+}
+- (IBAction)leftBtnClick:(id)sender {
+    self.leftBtn.selected = YES;
+    self.rightBtn.selected = NO;
 }
 
 @end

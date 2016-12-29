@@ -7,7 +7,9 @@
 //
 
 #import "YXLBaseViewModel.h"
+#import "HomeVIPApplicationTableView.h"
 
 @interface HomePromoteViewModel : YXLBaseViewModel
-
+@property( nonatomic, strong) HomeVIPApplicationTableView           * applicationTableView;
+-(void)reloadData;
 @end

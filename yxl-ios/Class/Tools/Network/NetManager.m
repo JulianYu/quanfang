@@ -50,6 +50,7 @@ static NSMutableArray *tasks;
         /*! 设置返回数据为json, 分别设置请求以及相应的序列化器 */
         /*! 根据服务器的设定不同还可以设置 [AFHTTPResponseSerializer serializer](常用) */
         AFJSONResponseSerializer * response = [AFJSONResponseSerializer serializer];
+//        AFHTTPResponseSerializer * response = [AFHTTPResponseSerializer serializer];
         
         /*! 这里是去掉了键值对里空对象的键值 */
 //        response.removesKeysWithNullValues = YES;
@@ -58,6 +59,7 @@ static NSMutableArray *tasks;
         /* 设置请求服务器数据格式为json */
         /*! 根据服务器的设定不同还可以设置 [AFHTTPRequestSerializer serializer](常用) */
         AFHTTPRequestSerializer * request = [AFHTTPRequestSerializer serializer];
+//        AFJSONRequestSerializer * request = [AFJSONRequestSerializer serializer];
         manager.requestSerializer = request;
         
         /*! 设置apikey ------类似于自己应用中的tokken---此处仅仅作为测试使用*/
@@ -135,19 +137,27 @@ static NSMutableArray *tasks;
         return nil;
     }
     WEAKSELF;
+    NSDictionary *pars = nil;
+    if (!parameters) {
+        
+    }
+    else{
+        NSString *par = [parameters mj_JSONString];
+        pars = [NSDictionary dictionaryWithObject:par forKey:@"json"];
+    }
+    
+    
     /*! 检查地址中是否有中文 */
     NSString *URLString = [NSURL URLWithString:urlString] ? urlString : [self strUTF8Encoding:urlString];
 //
     NSLog(@"******************** 请求参数 ***************************");
-    NSLog(@"请求头: %@\n请求方式: %@\n请求URL: %@\n请求param: %@\n\n",[self sharedAFManager].requestSerializer.HTTPRequestHeaders, (type == HttpRequestTypeGet) ? @"GET":@"POST",URLString, parameters);
+    NSLog(@"请求头: %@\n请求方式: %@\n请求URL: %@\n请求param: %@\n\n",[self sharedAFManager].requestSerializer.HTTPRequestHeaders, (type == HttpRequestTypeGet) ? @"GET":@"POST",URLString, pars);
     NSLog(@"********************************************************");
 //
     URLSessionTask *sessionTask = nil;
     
     
     
-    NSString *par = [parameters mj_JSONString];
-    NSDictionary *pars = [NSDictionary dictionaryWithObject:par forKey:@"json"];
 
     
     

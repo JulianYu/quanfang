@@ -103,6 +103,11 @@
 }
 -(void)btnClick:(UIButton*)sender{
     
+    if (![UserViewModel online]) {
+        [UserViewModel showLogin];
+        return;
+    }
+    
     switch (sender.tag) {
         case 0:
         {

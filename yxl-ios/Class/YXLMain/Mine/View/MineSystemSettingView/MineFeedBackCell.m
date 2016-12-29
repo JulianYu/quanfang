@@ -1,18 +1,18 @@
 //
-//  HomeVIPApplyItemCell.m
+//  MineFeedBackCell.m
 //  yxl-ios
 //
-//  Created by mac on 16/12/24.
+//  Created by mac on 16/12/29.
 //  Copyright © 2016年 孙若淮. All rights reserved.
 //
 
-#import "HomeVIPApplyItemCell.h"
+#import "MineFeedBackCell.h"
 
-@implementation HomeVIPApplyItemCell
+@implementation MineFeedBackCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    self.textField.textColor = SUN_GlobalTextBlackColor;
+    // Initialization code
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

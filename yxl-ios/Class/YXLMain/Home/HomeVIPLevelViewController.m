@@ -7,16 +7,22 @@
 //
 
 #import "HomeVIPLevelViewController.h"
-
+#import "HomePromoteViewModel.h"
 @interface HomeVIPLevelViewController ()
-
+@property( nonatomic, strong) HomePromoteViewModel        * viewModel;
 @end
 
 @implementation HomeVIPLevelViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self viewModel];
+}
+-(HomePromoteViewModel *)viewModel{
+    if (!_viewModel) {
+        _viewModel = [[HomePromoteViewModel alloc]initWithViewController:self];
+    }
+    return _viewModel;
 }
 
 - (void)didReceiveMemoryWarning {

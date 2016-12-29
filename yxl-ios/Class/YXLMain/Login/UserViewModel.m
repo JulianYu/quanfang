@@ -15,17 +15,31 @@
 @end
 @implementation UserViewModel
 +(BOOL)online{
-//    NSUserDefaults *userDef = SUN_DEFAULTS;
-//    NSDictionary *session = [userDef objectForKey:@"session"];
-//    [UserModel sharedUserModel].session  = [Session mj_objectWithKeyValues:session];
     if ([UserModel sharedUserModel].session) {
         return YES;
     }
     return NO;
 }
++(void)showLogin{
+    LoginViewController *vc = [LoginViewController sharedLoginViewController];
+    YXLNavigationController *navi = [[YXLNavigationController alloc]initWithRootViewController:vc];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:navi animated:YES completion:nil];
+}
+
++(void)readUserDefault{
+    NSUserDefaults *userDef = [NSUserDefaults standardUserDefaults];
+    NSDictionary *session = [userDef objectForKey:@"session"];
+    NSDictionary *user = [userDef objectForKey:@"user"];
+    [UserModel sharedUserModel].session  = [Session mj_objectWithKeyValues:session];
+    [UserModel sharedUserModel].user = [User mj_objectWithKeyValues:user];
+    
+
+}
+
 -(void)setOnline:(BOOL)flag{
     NSUserDefaults *userDef = SUN_DEFAULTS;
     [userDef setObject:[self.userModel.session mj_keyValues] forKey:@"session"];
+    [userDef setObject:[self.userModel.user mj_keyValues] forKey:@"user"];
     [userDef synchronize];
     
     [[NSNotificationCenter defaultCenter]postNotificationName:UserStateChangeToLoginSuccess object:self];
@@ -33,10 +47,14 @@
 }
 -(void)setOffline:(BOOL)flag{
     [SUN_DEFAULTS removeObjectForKey:@"session"];
+    [SUN_DEFAULTS removeObjectForKey:@"users"];
     [SUN_DEFAULTS synchronize];
-
+    [UserModel sharedUserModel].session = nil;
+    [UserModel sharedUserModel].user = nil;
     [[NSNotificationCenter defaultCenter]postNotificationName:UserStateChangeToLogoutSuccess object:self];
 }
+
+
 -(UserModel *)userModel{
     if (!_userModel) {
         _userModel = [UserModel sharedUserModel];
@@ -85,11 +103,11 @@
             self.userModel.session = [Session mj_objectWithKeyValues:[[response objectForKey:@"data"]objectForKey:@"session"]];
             self.userModel.user = [User mj_objectWithKeyValues:[[response objectForKey:@"data"] objectForKey:@"user"]];
             [self setOnline:YES];
-
+            [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
             [viewController dismissViewControllerAnimated:YES completion:nil];
         }
         else{
-            [self presentFailureHUD:status];
+            [YXLBaseViewModel presentFailureHUD:status];
         }
     } FailureBlock:^(NSError *error) {
     } progress:nil];
@@ -107,7 +125,7 @@
             completionHandle(response,nil);
                     }
         else{
-            [self presentFailureHUD:status];
+            [YXLBaseViewModel presentFailureHUD:status];
         }
     } FailureBlock:^(NSError *error) {
     } progress:nil];
@@ -115,7 +133,7 @@
 }
 
 -(void)sendRegMobileCode:(NSString*)mobile{
-    [HUD setMinimumDismissTimeInterval:1];
+    
     if ([mobile isEqualToString:@""]) {
         [HUD SUN_ShowWithStatus:@"请输入手机号码"];
         return;
@@ -131,7 +149,47 @@
             
         }
         else{
-            [self presentFailureHUD:status];
+            [YXLBaseViewModel presentFailureHUD:status];
+        }
+    } FailureBlock:^(NSError *error) {
+    } progress:nil];
+
+}
+-(void)logoutBy:(UIViewController*)viewController{
+
+    NSString *url = [NSString stringWithFormat:@"%@/ApiPersonal/logout",[ServerConfig sharedServerConfig].url];
+    Session *session = [UserModel sharedUserModel].session;
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{@"session":[session mj_keyValues]}];
+    
+    [NetManager requestWithType:HttpRequestTypePost UrlString:url Parameters:params SuccessBlock:^(id response) {
+        STATUS *status = [STATUS mj_objectWithKeyValues:[response objectForKey:@"status"]];
+        if (status.succeed == 1) {
+            [HUD SUN_ShowSuccessWithStatus:@"退出登录成功"];
+            [self setOffline:YES];
+            [UserViewModel showLogin];
+            
+        }
+        else{
+            [YXLBaseViewModel presentFailureHUD:status];
+        }
+    } FailureBlock:^(NSError *error) {
+    } progress:nil];
+
+}
+-(void)getUserInforCompletionHandle:(void (^)(id, id))completionHandle{
+    NSString *url = [NSString stringWithFormat:@"%@/ApiPersonal/userIndex",[ServerConfig sharedServerConfig].url];
+    Session *session = [UserModel sharedUserModel].session;
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{@"session":[session mj_keyValues]}];
+    [NetManager requestWithType:HttpRequestTypePost UrlString:url Parameters:params SuccessBlock:^(id response) {
+        STATUS *status = [STATUS mj_objectWithKeyValues:[response objectForKey:@"status"]];
+        if (status.succeed == 1) {
+//            self.userModel.user = [User mj_objectWithKeyValues:[[response objectForKey:@"data"] objectForKey:@"user"]];
+
+        }
+        else{
+            [YXLBaseViewModel presentFailureHUD:status];
         }
     } FailureBlock:^(NSError *error) {
     } progress:nil];

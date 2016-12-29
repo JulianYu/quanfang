@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Singleton.h"
 @interface LoginViewController : UIViewController
+SingletonH(LoginViewController)
 @property (weak, nonatomic) IBOutlet UIButton *forgotPasswordBtn;
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTF;

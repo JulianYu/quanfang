@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeVIPSelectedSexItemCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIButton *rightBtn;
+@property (weak, nonatomic) IBOutlet UIButton *leftBtn;
 
 @end

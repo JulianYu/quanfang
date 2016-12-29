@@ -21,7 +21,6 @@
 
 -(instancetype)initWithUIViewController:(UIViewController *)viewController;
 
--(void)presentFailureHUD:(STATUS*)status;
++(void)presentFailureHUD:(STATUS*)status;
 
--(void)showLogin;
 @end

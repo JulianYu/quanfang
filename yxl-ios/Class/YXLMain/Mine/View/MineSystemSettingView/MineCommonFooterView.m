@@ -69,6 +69,40 @@
         [self.button setTitle:@"生成汇款订单" forState:UIControlStateNormal];
     }
     
+    if ([[self SUN_GetCurrentViewController]isMemberOfClass:NSClassFromString(@"HomeVIPApplicationViewController")]) {
+        [self.button setBackgroundColor:SUN_GlobalNormalColor];
+        [self.button addTarget:self action:@selector(applyVip) forControlEvents:UIControlEventTouchUpInside];
+        [self.button setTitle:@"提交" forState:UIControlStateNormal]; 
+    }
+    
+    if ([[self SUN_GetCurrentViewController] isMemberOfClass:NSClassFromString(@"MineFeedBackViewController")]) {
+        [self.button setBackgroundColor:SUN_GlobalNormalColor];
+        [self.button setTitle:@"提交" forState:UIControlStateNormal];
+    }
+    
+}
+-(void)applyVip{
+    NSString *url = [NSString stringWithFormat:@"%@/ApiPersonal/applyLevel",[ServerConfig sharedServerConfig].url];
+        Session *session = [UserModel sharedUserModel].session;
+        
+        NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{@"session":[session mj_keyValues]}];
+    [params setValue:@"孙若淮" forKey:@"true_name"];
+    [params setValue:@"445202199308190316" forKey:@"idcard"];
+    [params setValue:@"13822260454" forKey:@"mobile"];
+    [params setValue:@"7" forKey:@"group_id"];
+    
+    [NetManager requestWithType:HttpRequestTypePost UrlString:url Parameters:params SuccessBlock:^(id response) {
+        [HUD setMinimumDismissTimeInterval:1];
+        STATUS *status = [STATUS mj_objectWithKeyValues:[response objectForKey:@"status"]];
+        if (status.succeed == 1) {
+            [HUD SUN_ShowSuccessWithStatus:status.msg];
+        }
+        else{
+            [YXLBaseViewModel presentFailureHUD:status];
+        }
+    } FailureBlock:^(NSError *error) {
+    } progress:nil];
+
 }
 -(void)paySuccess{
     MineBalanceSuccessViewController *vc = [MineBalanceSuccessViewController new];

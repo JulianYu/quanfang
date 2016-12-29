@@ -12,6 +12,7 @@
 #import "LoginViewController.h"
 #import "YXLNavigationController.h"
 #import "MineAddressManageViewController.h"
+#import "MineFeedBackViewController.h"
 @implementation MineSettingsTableView
 
 
@@ -19,10 +20,21 @@
     [super buildUI];
     self.delegate = self;
     self.dataSource = self;
+    self.backgroundColor = [UIColor clearColor];
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(logout) name:UserStateChangeToLogoutSuccess object:nil];
     
 }
+-(void)logout{
+    [self reloadData];
+}
+
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 3;
+    if ([UserViewModel online]) {
+        return 3;
+    }
+    return 2;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (section == 0) {
@@ -101,24 +113,55 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0) {
+        if (![UserViewModel online]) {
+            [UserViewModel showLogin];
+            return;
+
+        }
         if (indexPath.row == 0) {
-            MineModifyPasswordViewController *vc = [MineModifyPasswordViewController new];
-            vc.title = @"密码修改";
-            [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
+                MineModifyPasswordViewController *vc = [MineModifyPasswordViewController new];
+                vc.title = @"密码修改";
+                [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
         }
         else if (indexPath.row == 1) {
-            MineTransactionPasswordViewController *vc = [MineTransactionPasswordViewController new];
-            vc.title = @"交易密码";
-            [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
+            if ([UserViewModel online]) {
+                MineTransactionPasswordViewController *vc = [MineTransactionPasswordViewController new];
+                vc.title = @"交易密码";
+                [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
+            }
+            else{
+                [UserViewModel showLogin];
+            }
         }
         else{
-            MineAddressManageViewController *vc = [MineAddressManageViewController new];
-            vc.title = @"地址管理";
-            [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
+            if ([UserViewModel online]) {
+                MineAddressManageViewController *vc = [MineAddressManageViewController new];
+                vc.title = @"地址管理";
+                [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
+            }
+            else{
+                [UserViewModel showLogin];
+            }
         }
     }
-    if (indexPath.section == 2) {
-        [UIApplication sharedApplication].keyWindow.rootViewController = [[YXLNavigationController alloc]initWithRootViewController:[LoginViewController new]];
+    else if (indexPath.section == 1) {
+        if (indexPath.row == 0) {
+            if (![UserViewModel online]) {
+                [UserViewModel showLogin];
+                return;
+                
+            }
+            else{
+                MineFeedBackViewController *vc = [MineFeedBackViewController new];
+                vc.title = @"建议反馈";
+                [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
+            }
+        }
+        
+    }
+    else {
+        UserViewModel *viewModel = [UserViewModel new];
+        [viewModel logoutBy:[self SUN_GetCurrentViewController]];
     }
 }
 @end

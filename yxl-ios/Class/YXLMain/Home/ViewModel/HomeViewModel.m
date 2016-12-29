@@ -27,26 +27,9 @@
             [self.trunkView mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.edges.mas_equalTo(UIEdgeInsetsMake(self.functionView.bottom, 0, 49, 0));
             }];
-            
-//            [self test];
-            
-
-            
         }
     }
     return self;
-}
--(void)test{
-    NSString *url = @"http://192.168.1.230/quanfan/apimy/test";
-    
-    NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    [params setValue:@4 forKey:@"id"];
-    [NetManager requestWithType:HttpRequestTypePost UrlString:url Parameters:params SuccessBlock:^(id response) {
-        NSLog(@"%@",response);
-    } FailureBlock:^(NSError *error) {
-        
-    } progress:nil];
-
 }
 -(HomeFunctionView *)functionView{
     if (!_functionView) {

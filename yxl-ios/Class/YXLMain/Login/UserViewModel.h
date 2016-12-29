@@ -14,14 +14,16 @@
 #import "LoginViewController.h"
 @interface UserViewModel : YXLBaseViewModel
 + (BOOL)online;
-
++ (void)readUserDefault;
++ (void)showLogin;
 - (void)setOnline:(BOOL)flag;
 - (void)setOffline:(BOOL)flag;
 
--(void)pushToSignUpBy:(LoginViewController*)viewController;
+- (void)pushToSignUpBy:(LoginViewController*)viewController;
+- (void)logoutBy:(UIViewController*)viewController;
 
--(void)login:(NSString*)phone password:(NSString*)password viewController:(UIViewController*)viewController;
--(void)signUp:(SignUpModel*)model CompletionHandle:(void (^)(id model , id error))completionHandle;
--(void)sendRegMobileCode:(NSString*)mobile;
-
+- (void)login:(NSString*)phone password:(NSString*)password viewController:(UIViewController*)viewController;
+- (void)signUp:(SignUpModel*)model CompletionHandle:(void (^)(id model , id error))completionHandle;
+- (void)sendRegMobileCode:(NSString*)mobile;
+- (void)getUserInforCompletionHandle:(void (^)(id model , id error))completionHandle;;
 @end

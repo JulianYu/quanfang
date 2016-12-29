@@ -40,12 +40,28 @@
             cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"test"];
         }
         cell.textLabel.text = @"资格级别";
+        if (!self.rankStr) {
+            cell.detailTextLabel.text = @"请选择资格级别";
+            [cell.detailTextLabel SUN_SetTitleWithColor:[UIColor SUN_ColorWithHexString:@"#CACACF" alpha:1] FontSize:14 bold:NO textAlignment:NSTextAlignmentLeft];
+
+        }else{
+            cell.detailTextLabel.text = self.rankStr;
+            [cell.detailTextLabel SUN_SetTitleWithColor:SUN_GlobalTextBlackColor FontSize:14 bold:NO textAlignment:NSTextAlignmentLeft];
+
+        }
+        
+        
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         [cell.textLabel SUN_SetTitleWithColor:[UIColor blackColor] FontSize:15 bold:NO textAlignment:NSTextAlignmentLeft];
         [cell.textLabel mas_updateConstraints:^(MASConstraintMaker *make) {
             make.left.mas_equalTo(20);
             make.top.bottom.mas_equalTo(0);
             make.width.mas_equalTo(80);
+        }];
+        [cell.detailTextLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_equalTo(cell.textLabel.mas_right).mas_equalTo(10);
+            make.top.bottom.mas_equalTo(0);
+            make.width.mas_equalTo(100);
         }];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
@@ -55,7 +71,8 @@
         switch (indexPath.row) {
             case 0:
                 cell.label.text = @"用户ID号";
-                cell.textField.placeholder = @"15693932898";
+                cell.textField.placeholder = [UserModel sharedUserModel].user.user_id;
+                cell.textField.enabled = NO;
                 break;
             case 3:
                 cell.label.text = @"真实姓名";

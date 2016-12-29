@@ -13,4 +13,6 @@
 UITableViewDelegate,
 UITableViewDataSource
 >
+@property( nonatomic, copy) NSString        * rankStr;
+
 @end

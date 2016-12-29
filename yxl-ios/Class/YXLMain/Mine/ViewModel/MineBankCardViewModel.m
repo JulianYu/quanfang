@@ -29,6 +29,7 @@
             [viewController.view addSubview:self.bankCardTableView];
             [viewController.view addSubview:self.footerView];
             [self.footerView update];
+            [self getMyBankCard];
         }
         
         if ([viewController isKindOfClass:NSClassFromString(@"MineBankCardAddViewController")]) {
@@ -36,10 +37,12 @@
             [viewController.view addSubview:self.addTableView];
             [viewController.view addSubview:self.footerView];
             [self.footerView update];
+            [self addBankCard];
         }
         
         if ([viewController isKindOfClass:NSClassFromString(@"MineBankCardToSelectViewController" )]) {
             [viewController.view addSubview:self.selectTableView];
+            [self getBankList];
         }
         
         if ([viewController isMemberOfClass:NSClassFromString(@"MineBalanceRechargeBankCardViewController")]) {
@@ -81,5 +84,63 @@
         _footerView = [[MineCommonFooterView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 40)];
     }
     return _footerView;
+}
+-(void)getMyBankCard{
+    NSString *url = [NSString stringWithFormat:@"%@/ApiPersonal/myBankcard",[ServerConfig sharedServerConfig].url];
+    Session *session = [UserModel sharedUserModel].session;
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{@"session":[session mj_keyValues]}];
+    [NetManager requestWithType:HttpRequestTypePost UrlString:url Parameters:params SuccessBlock:^(id response) {
+        STATUS *status = [STATUS mj_objectWithKeyValues:[response objectForKey:@"status"]];
+        if (status.succeed == 1) {
+            
+        }
+        else{
+            [YXLBaseViewModel presentFailureHUD:status];
+        }
+    } FailureBlock:^(NSError *error) {
+    } progress:nil];
+
+}
+
+-(void)getBankList{
+
+    NSString *url = [NSString stringWithFormat:@"%@/ApiOther/bankList",[ServerConfig sharedServerConfig].url];
+    
+    [NetManager requestWithType:HttpRequestTypePost UrlString:url Parameters:nil SuccessBlock:^(id response) {
+        STATUS *status = [STATUS mj_objectWithKeyValues:[response objectForKey:@"status"]];
+        if (status.succeed == 1) {
+            
+        }
+        else{
+            [YXLBaseViewModel presentFailureHUD:status];
+        }
+    } FailureBlock:^(NSError *error) {
+    } progress:nil];
+
+}
+
+-(void)addBankCard{
+
+    
+    NSString *url = [NSString stringWithFormat:@"%@/ApiPersonal/bankcardAdd",[ServerConfig sharedServerConfig].url];
+    Session *session = [UserModel sharedUserModel].session;
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{@"session":[session mj_keyValues]}];
+    [params setValue:@"小淮" forKey:@"realname"];
+    [params setValue:@"12373837484746374647" forKey:@"cardnum"];
+    [params setValue:@"1" forKey:@"bankfullname"];
+    [params setValue:@"13822260454" forKey:@"mobile"];
+    [NetManager requestWithType:HttpRequestTypePost UrlString:url Parameters:params SuccessBlock:^(id response) {
+        STATUS *status = [STATUS mj_objectWithKeyValues:[response objectForKey:@"status"]];
+        if (status.succeed == 1) {
+            
+        }
+        else{
+            [YXLBaseViewModel presentFailureHUD:status];
+        }
+    } FailureBlock:^(NSError *error) {
+    } progress:nil];
+
 }
 @end

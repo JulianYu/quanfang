@@ -13,7 +13,7 @@
 @end
 
 @implementation LoginViewController
-
+SingletonM(LoginViewController)
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self viewModel];
@@ -23,6 +23,8 @@
     [super viewWillAppear:animated];
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    
+    self.navigationController.navigationBar.shadowImage = [UIColor SUN_ImageWithColor:SUN_GlobalWhiteColor];
 
     [self.navigationController.navigationBar setBackgroundImage:[UIColor SUN_ImageWithColor:SUN_GlobalWhiteColor] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:SUN_GlobalTextBlackColor}];
@@ -30,7 +32,6 @@
 }
 -(void)setUpNavi{
     
-    self.navigationController.navigationBar.shadowImage = [UIColor SUN_ImageWithColor:SUN_GlobalWhiteColor];
     self.title = @"登录";
     UIBarButtonItem *cancelBtn = [[UIBarButtonItem alloc]initWithTitle:@"Ｘ" style:UIBarButtonItemStyleDone target:self action:@selector(cancelBtnClick)];
     cancelBtn.tintColor = SUN_GlobalTextBlackColor;
@@ -43,6 +44,7 @@
 
 }
 -(void)cancelBtnClick{
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 -(void)signUpBtnClick{
@@ -63,7 +65,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(void)dealloc{
 
+}
 /*
 #pragma mark - Navigation
 

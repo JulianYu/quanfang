@@ -11,33 +11,47 @@
 #import "MineModifyPasswordTableView.h"
 #import "MineCommonFooterView.h"
 #import "MineTransactionPasswordViewController.h"
+#import "MineFeedBackTableView.h"
 @interface MineSettingViewModel ()
 @property( nonatomic, strong) MineSettingsTableView        * settingTableView;
 @property( nonatomic, strong) MineModifyPasswordTableView        * modifyTableView;
 @property( nonatomic, strong) MineCommonFooterView        * footerView;
+@property( nonatomic, strong) MineFeedBackTableView        * feedBackTableView;
 @end
 @implementation MineSettingViewModel
 - (instancetype)initWithViewController:(YXLBaseViewController *)viewController
 {
     self = [super initWithViewController:viewController];
     if (self) {
-        if ([viewController isKindOfClass:NSClassFromString(@"MineSettingViewController")]) {
+        if ([viewController isMemberOfClass:NSClassFromString(@"MineSettingViewController")]) {
             [viewController.view addSubview:self.settingTableView];
         }
-        if ([viewController isKindOfClass:NSClassFromString(@"MineModifyPasswordViewController")]) {
+        if ([viewController isMemberOfClass:NSClassFromString(@"MineModifyPasswordViewController")]) {
             [viewController.view addSubview:self.modifyTableView];
             self.footerView.y = self.modifyTableView.height+20;
             [viewController.view addSubview:self.footerView];
             [self.footerView update];
         }
-        if ([viewController isKindOfClass:NSClassFromString(@"MineTransactionPasswordViewController")]) {
+        if ([viewController isMemberOfClass:NSClassFromString(@"MineTransactionPasswordViewController")]) {
             self.footerView.y = ((MineTransactionPasswordViewController*)viewController).rePasswordTF.bottom+20;
             [viewController.view addSubview:self.footerView];
             [self.footerView update];
         }
 
+        if ([viewController isMemberOfClass:NSClassFromString(@"MineFeedBackViewController")]) {
+            [viewController.view addSubview:self.feedBackTableView];
+            self.footerView.y = self.feedBackTableView.bottom+20;
+            [viewController.view addSubview:self.footerView];
+            [self.footerView update];
+        }
     }
     return self;
+}
+-(MineFeedBackTableView *)feedBackTableView{
+    if (!_feedBackTableView) {
+        _feedBackTableView = [[MineFeedBackTableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 160)];
+    }
+    return _feedBackTableView;
 }
 -(MineModifyPasswordTableView *)modifyTableView{
     if (!_modifyTableView) {
@@ -47,7 +61,7 @@
 }
 -(MineSettingsTableView *)settingTableView{
     if (!_settingTableView) {
-        _settingTableView = [[MineSettingsTableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 10*3+44*6)];
+        _settingTableView = [[MineSettingsTableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
     }
     return _settingTableView;
 }

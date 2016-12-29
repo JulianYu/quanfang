@@ -12,7 +12,6 @@
 @property( nonatomic, strong) UIButton          * detailBtn;
 @property( nonatomic, strong) UIButton          * backBtn;
 @property( nonatomic, strong) UILabel           * accountLabel;
-@property( nonatomic, strong) UILabel           * balanceLabel;
 @end
 @implementation MineBalanceHeaderView
 
@@ -46,7 +45,7 @@
     [self.detailBtn setTitle:@"明细" forState:UIControlStateNormal];
     [self.detailBtn.titleLabel SUN_SetTitleWithColor:SUN_GlobalWhiteColor FontSize:14 bold:YES textAlignment:NSTextAlignmentLeft];
     
-    self.balanceLabel.text = @"35.00";
+    self.balanceLabel.text = @"0.00";
     [self.balanceLabel SUN_SetTitleWithColor:SUN_GlobalWhiteColor FontSize:35 bold:NO textAlignment:NSTextAlignmentCenter];
     
     [self SUN_AddSubViewsWithArray:@[self.titleLabel,self.detailBtn,self.backBtn,self.accountLabel,self.balanceLabel]];

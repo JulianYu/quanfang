@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "AppDelegate+Category.h"
-#import "LoginViewController.h"
 #import "WelcomeViewController.h"
 @interface AppDelegate ()
 

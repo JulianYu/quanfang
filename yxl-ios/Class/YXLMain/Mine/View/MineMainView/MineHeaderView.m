@@ -59,8 +59,7 @@
     
     [self.personalBtn addTarget:self action:@selector(personalBtnClick) forControlEvents:UIControlEventTouchUpInside];
     
-    [self.avatarImageView SUN_SetBordersWithColor:[UIColor whiteColor] andCornerRadius:30.0f andWidth:1];
-    [self.avatarImageView setImage:[UIImage imageNamed:@"yxl_placeholder_avatar"]];
+    [self.avatarImageView SUN_SetBordersWithColor:[UIColor whiteColor] andCornerRadius:30.0f andWidth:2];
     [self.avatarImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(20);
         make.top.mas_equalTo(40);
@@ -80,9 +79,14 @@
         make.bottom.mas_equalTo(self.detailImageView.mas_bottom).offset(5);
         make.right.mas_equalTo(self.detailImageView.mas_left).offset(-10);
     }];
-    
-    [self.informationLabel SUN_SetTitleWithColor:SUN_GlobalWhiteColor FontSize:16 bold:NO textAlignment:NSTextAlignmentLeft];
-    self.informationLabel.text = @"点击此处登录";
+    if ([UserViewModel online]) {
+        [self login];
+    }
+    else{
+        [self.avatarImageView setImage:[UIImage imageNamed:@"yxl_placeholder_avatar"]];
+        [self.informationLabel SUN_SetTitleWithColor:SUN_GlobalWhiteColor FontSize:16 bold:NO textAlignment:NSTextAlignmentLeft];
+        self.informationLabel.text = @"点击此处登录";
+    }
     
     [self.informationLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.avatarImageView.mas_right).offset(10);
@@ -91,11 +95,17 @@
         make.bottom.mas_equalTo(self.avatarImageView.mas_bottom);
     }];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(change) name:UserStateChangeToLoginSuccess object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(login) name:UserStateChangeToLoginSuccess object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(logout) name:UserStateChangeToLogoutSuccess object:nil];
     
 }
--(void)change{
-    
+-(void)logout{
+    [self.informationLabel SUN_SetTitleWithColor:SUN_GlobalWhiteColor FontSize:16 bold:NO textAlignment:NSTextAlignmentLeft];
+    self.informationLabel.text = @"点击此处登录";
+    [self.avatarImageView setImage:[UIImage imageNamed:@"yxl_placeholder_avatar"]];
+}
+-(void)login{
     
     self.nickNameStr = [UserModel sharedUserModel].user.username;
     self.IDNumberStr = [NSString stringWithFormat:@"ID号：%@",[UserModel sharedUserModel].user.user_id];

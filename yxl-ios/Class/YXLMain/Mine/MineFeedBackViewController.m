@@ -1,32 +1,32 @@
 //
-//  HomeVIPApplicationViewController.m
+//  MineFeedBackViewController.m
 //  yxl-ios
 //
-//  Created by mac on 16/12/24.
+//  Created by mac on 16/12/29.
 //  Copyright © 2016年 孙若淮. All rights reserved.
 //
 
-#import "HomeVIPApplicationViewController.h"
+#import "MineFeedBackViewController.h"
+#import "MineSettingViewModel.h"
+@interface MineFeedBackViewController ()
+@property( nonatomic, strong) MineSettingViewModel        * viewModel;
+@end
 
-@implementation HomeVIPApplicationViewController
+@implementation MineFeedBackViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self viewModel];
 }
--(HomePromoteViewModel *)viewModel{
+-(MineSettingViewModel *)viewModel{
     if (!_viewModel) {
-        _viewModel = [[HomePromoteViewModel alloc]initWithViewController:self];
+        _viewModel = [[MineSettingViewModel alloc]initWithViewController:self];
     }
     return _viewModel;
 }
--(void)viewWillAppear:(BOOL)animated{
-    [self.viewModel reloadData];
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    
+    // Dispose of any resources that can be recreated.
 }
 
 /*

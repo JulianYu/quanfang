@@ -8,8 +8,6 @@
 
 #import "AppDelegate+Category.h"
 #import "YXLTabBarController.h"
-#import "YXLNavigationController.h"
-#import "LoginViewController.h"
 #import "UserViewModel.h"
 @implementation AppDelegate (Category)
 -(void)isFirstLaunched{
@@ -29,7 +27,7 @@
     }
     else{
         
-//        [UserViewModel online];
+        [UserViewModel readUserDefault];
         
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
         self.window.rootViewController = [[YXLTabBarController alloc]init];

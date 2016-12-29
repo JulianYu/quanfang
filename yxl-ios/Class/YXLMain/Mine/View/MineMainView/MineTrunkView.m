@@ -121,6 +121,14 @@
 -(void)btnClick:(UIButton*)sender{
     self.indexPath = [NSIndexPath indexPathForRow:sender.tag%1000 inSection:sender.tag/1000];
 
+    
+    if (!(self.indexPath.section == 4 && self.indexPath.row == 0)) {
+        if (![UserViewModel online]) {
+            [UserViewModel showLogin];
+            return;
+        }
+    }
+    
     if (self.indexPath.section == 1) {
         MinePendingViewController *vc = [[MinePendingViewController alloc] init];
 

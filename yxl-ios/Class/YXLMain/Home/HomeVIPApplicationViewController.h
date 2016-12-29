@@ -7,7 +7,10 @@
 //
 
 #import "YXLBaseViewController.h"
+#import "Singleton.h"
+#import "HomePromoteViewModel.h"
 
 @interface HomeVIPApplicationViewController : YXLBaseViewController
+@property( nonatomic, strong) HomePromoteViewModel        * viewModel;
 
 @end
