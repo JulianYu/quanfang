@@ -7,11 +7,6 @@
 //
 
 #import "MineDetailViewController.h"
-#import "MineViewModel.h"
-@interface MineDetailViewController ()
-@property( nonatomic, strong) MineViewModel        * viewModel;
-@end
-
 @implementation MineDetailViewController
 
 - (void)viewDidLoad {

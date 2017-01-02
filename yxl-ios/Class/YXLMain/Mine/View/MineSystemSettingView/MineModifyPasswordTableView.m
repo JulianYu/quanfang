@@ -10,7 +10,12 @@
 #import "MineCommonSettingModifyCell.h"
 #define MINECOMMONSETTING_MODIFYCELL @"modifyCell"
 @implementation MineModifyPasswordTableView
-
+-(MineModifyPasswordModel *)model{
+    if (!_model) {
+        _model = [MineModifyPasswordModel new];
+    }
+    return _model;
+}
 
 -(void)buildUI{
     [super buildUI];
@@ -29,6 +34,8 @@
     MineCommonSettingModifyCell *cell = [tableView dequeueReusableCellWithIdentifier:MINECOMMONSETTING_MODIFYCELL forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.textField.secureTextEntry = YES;
+    cell.textField.tag = indexPath.row;
+    [cell.textField addTarget:self action:@selector(textFieldValueChanged:) forControlEvents:UIControlEventEditingChanged];
     switch (indexPath.row) {
         case 0:
             cell.label.text = @"旧密码";
@@ -50,5 +57,20 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 10;
+}
+-(void)textFieldValueChanged:(UITextField*)textField{
+    switch (textField.tag) {
+        case 0:
+            self.model.fpassword = textField.text;
+            break;
+        case 1:
+            self.model.password = textField.text;
+            break;
+        case 2:
+            self.model.repassword = textField.text;
+            break;
+        default:
+            break;
+    }
 }
 @end

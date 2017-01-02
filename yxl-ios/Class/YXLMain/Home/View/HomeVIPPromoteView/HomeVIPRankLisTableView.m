@@ -44,7 +44,6 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     cell.accessoryType = UITableViewCellAccessoryCheckmark;
-//    HomeVIPApplicationViewController *vc = [HomeVIPApplicationViewController sharedHomeVIPApplicationViewController];
-//    vc.viewModel.applicationTableView.rankStr = [self.rankArr objectAtIndex:indexPath.row].group_name;
+    [self.rankDelegate hasSelectedRank:[self.rankArr objectAtIndex:indexPath.row].group_name  group_id:[self.rankArr objectAtIndex:indexPath.row].id];
 }
 @end

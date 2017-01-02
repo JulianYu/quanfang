@@ -28,6 +28,7 @@
     }
     return self;
 }
+#pragma mark - lazy
 -(ProductChooseView *)choosetView{
     if (!_chooseView) {
         _chooseView = [[ProductChooseView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT,
@@ -41,7 +42,22 @@
     }
     return _chooseView;
 }
+-(ProductsDetailFooterView *)footerView{
+    if (!_footerView) {
+        _footerView = [[ProductsDetailFooterView alloc]initWithFrame:CGRectMake(0, SCREEN_HEIGHT-49, SCREEN_WIDTH, 49)];
+        _footerView.backgroundColor = [UIColor clearColor];
+    }
+    return _footerView;
+}
+-(ProductsDetailTrunkView *)trunkView{
+    if (!_trunkView) {
+        _trunkView = [[ProductsDetailTrunkView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-49)];
+        _trunkView.backgroundColor = [UIColor clearColor];
+    }
+    return _trunkView;
+}
 
+#pragma mark - methods
 -(void)show{
     
     [UIView animateWithDuration: 0.35 animations: ^{
@@ -74,19 +90,5 @@
     [HUD SUN_ShowSuccessWithStatus:@"添加成功"];
 }
 
--(ProductsDetailFooterView *)footerView{
-    if (!_footerView) {
-        _footerView = [[ProductsDetailFooterView alloc]initWithFrame:CGRectMake(0, SCREEN_HEIGHT-49, SCREEN_WIDTH, 49)];
-        _footerView.backgroundColor = [UIColor clearColor];
-    }
-    return _footerView;
-}
--(ProductsDetailTrunkView *)trunkView{
-    if (!_trunkView) {
-        _trunkView = [[ProductsDetailTrunkView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-49)];
-        _trunkView.backgroundColor = [UIColor clearColor];
-    }
-    return _trunkView;
-}
 
 @end

@@ -55,6 +55,7 @@
     }
     return self;
 }
+#pragma mark - lazy
 -(MineBalanceBankCardTableView *)balanceTableView{
     if (!_balanceTableView) {
         _balanceTableView = [[MineBalanceBankCardTableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 200)];
@@ -85,6 +86,8 @@
     }
     return _footerView;
 }
+
+#pragma mark - network requests
 -(void)getMyBankCard{
     NSString *url = [NSString stringWithFormat:@"%@/ApiPersonal/myBankcard",[ServerConfig sharedServerConfig].url];
     Session *session = [UserModel sharedUserModel].session;
@@ -99,6 +102,8 @@
             [YXLBaseViewModel presentFailureHUD:status];
         }
     } FailureBlock:^(NSError *error) {
+        [YXLBaseViewModel presentFailureHUD:nil];
+
     } progress:nil];
 
 }
@@ -116,13 +121,14 @@
             [YXLBaseViewModel presentFailureHUD:status];
         }
     } FailureBlock:^(NSError *error) {
+        [YXLBaseViewModel presentFailureHUD:nil];
+
     } progress:nil];
 
 }
 
 -(void)addBankCard{
 
-    
     NSString *url = [NSString stringWithFormat:@"%@/ApiPersonal/bankcardAdd",[ServerConfig sharedServerConfig].url];
     Session *session = [UserModel sharedUserModel].session;
     
@@ -140,6 +146,8 @@
             [YXLBaseViewModel presentFailureHUD:status];
         }
     } FailureBlock:^(NSError *error) {
+        [YXLBaseViewModel presentFailureHUD:nil];
+
     } progress:nil];
 
 }

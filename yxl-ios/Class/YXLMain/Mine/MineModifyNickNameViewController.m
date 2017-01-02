@@ -7,10 +7,6 @@
 //
 
 #import "MineModifyNickNameViewController.h"
-#import "MineViewModel.h"
-@interface MineModifyNickNameViewController ()
-@property( nonatomic, strong) MineViewModel        * viewModel;
-@end
 
 @implementation MineModifyNickNameViewController
 

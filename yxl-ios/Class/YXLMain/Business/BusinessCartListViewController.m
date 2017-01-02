@@ -33,7 +33,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    self.navigationController.navigationBar.hidden = NO;
 
 }
 

@@ -13,12 +13,19 @@
 #import "MineBalanceWithdrawTableView.h"
 #import "MineCommonFooterView.h"
 #import "MineBalanceRechargeNumberViewController.h"
+#import "MineGoldSilverViewController.h"
+#import "MineGoldSilverHeaderView.h"
+#import "MineGoldSilverTableView.h"
 @interface MineBalanceViewModel ()
 @property( nonatomic, strong) MineBalanceHeaderView                 * headerView;
 @property( nonatomic, strong) MineBalanceTableView                  * tableView;
 @property( nonatomic, strong) MineBalanceRechargeTableView          * rechargeTableView;
 @property( nonatomic, strong) MineBalanceWithdrawTableView          * withdrawTableView;
 @property( nonatomic, strong) MineCommonFooterView                  * footerView;
+
+@property( nonatomic, strong) MineGoldSilverHeaderView        * goldSilverHeaderView;
+@property( nonatomic, strong) MineGoldSilverTableView        * goldSilverTableView;
+
 @end
 @implementation MineBalanceViewModel
 - (instancetype)initWithViewController:(YXLBaseViewController *)viewController
@@ -41,9 +48,17 @@
             [viewController.view addSubview:self.footerView];
             [self.footerView update];
         }
+        if ([viewController isMemberOfClass:NSClassFromString(@"MineGoldSilverViewController")]) {
+            [viewController.view addSubview:self.goldSilverHeaderView];
+            [viewController.view addSubview:self.goldSilverTableView];
+            self.goldSilverHeaderView.tag = ((MineGoldSilverViewController*)viewController).delegate;
+            self.goldSilverTableView.tag = self.goldSilverHeaderView.tag;
+        }
+        
     }
     return self;
 }
+#pragma mark -lazy
 -(MineCommonFooterView *)footerView{
     if (!_footerView) {
         _footerView = [[MineCommonFooterView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 40)];
@@ -74,6 +89,19 @@
     }
     return _tableView;
 }
+-(MineGoldSilverHeaderView *)goldSilverHeaderView{
+    if (!_goldSilverHeaderView) {
+        _goldSilverHeaderView = [[MineGoldSilverHeaderView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT/4)];
+    }
+    return _goldSilverHeaderView;
+}
+-(MineGoldSilverTableView *)goldSilverTableView{
+    if (!_goldSilverTableView) {
+        _goldSilverTableView = [[MineGoldSilverTableView alloc]initWithFrame:CGRectMake(0, self.goldSilverHeaderView.bottom, SCREEN_WIDTH, SCREEN_HEIGHT*3/4)];
+    }
+    return _goldSilverTableView;
+}
+#pragma mark - network requests
 -(void)getMyBalance{
     NSString *url = [NSString stringWithFormat:@"%@/ApiPersonal/myBalance",[ServerConfig sharedServerConfig].url];
     Session *session = [UserModel sharedUserModel].session;
@@ -90,6 +118,7 @@
             [YXLBaseViewModel presentFailureHUD:status];
         }
     } FailureBlock:^(NSError *error) {
+        [YXLBaseViewModel presentFailureHUD:nil];
     } progress:nil];
 
 }

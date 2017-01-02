@@ -10,6 +10,7 @@
 #import "HomeHeaderView.h"
 #import "HomeTrunkView.h"
 #import "HomeFunctionView.h"
+#import "HomeNoticeListModel.h"
 @interface HomeViewModel()
 @property( nonatomic, strong) HomeHeaderView            * headerView;
 @property( nonatomic, strong) HomeFunctionView          * functionView;
@@ -27,10 +28,12 @@
             [self.trunkView mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.edges.mas_equalTo(UIEdgeInsetsMake(self.functionView.bottom, 0, 49, 0));
             }];
+            [self getNoticeList];
         }
     }
     return self;
 }
+#pragma mark - lazy
 -(HomeFunctionView *)functionView{
     if (!_functionView) {
         
@@ -49,5 +52,23 @@
         _trunkView = [HomeTrunkView new];
     }
     return _trunkView;
+}
+#pragma mark - network requests
+-(void)getNoticeList{
+    NSString *url = [NSString stringWithFormat:@"%@/ApiOther/noticeList",[ServerConfig sharedServerConfig].url];
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    
+    [NetManager requestWithType:HttpRequestTypePost UrlString:url Parameters:params SuccessBlock:^(id response) {
+        STATUS *status = [STATUS mj_objectWithKeyValues:[response objectForKey:@"status"]];
+        if (status.succeed == 1) {
+            self.trunkView.noticeListModel = [HomeNoticeListModel mj_objectWithKeyValues:response];
+        }
+        else{
+            [YXLBaseViewModel presentFailureHUD:status];
+        }
+    } FailureBlock:^(NSError *error) {
+    } progress:nil];
+
+
 }
 @end

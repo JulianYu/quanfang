@@ -7,6 +7,8 @@
 //
 
 #import "BusinessBannerCell.h"
+#import "BusinessViewController.h"
+
 #define MAX_PAGE_COUNT 4
 
 @interface BusinessBannerCell ()<UIScrollViewDelegate>
@@ -19,6 +21,9 @@
 
 -(void)buildUI{
     [self scrollView];
+    [self updateData];
+}
+-(void)updateData{
 }
 
 -(UIScrollView *)scrollView{

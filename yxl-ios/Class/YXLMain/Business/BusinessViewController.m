@@ -7,9 +7,9 @@
 //
 
 #import "BusinessViewController.h"
-#import "BusinessViewModel.h"
+
 @interface BusinessViewController ()
-@property( nonatomic, strong) BusinessViewModel        * viewModel;
+
 @end
 
 @implementation BusinessViewController

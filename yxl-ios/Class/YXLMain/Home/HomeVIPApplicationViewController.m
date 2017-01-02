@@ -22,6 +22,7 @@
 }
 -(void)viewWillAppear:(BOOL)animated{
     [self.viewModel reloadData];
+    [self.viewModel.applicationTableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -27,6 +27,7 @@
     }
     return self;
 }
+#pragma mark - methods
 -(void)setupNavi:(YXLBaseViewController*)viewController{
     [viewController.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     
@@ -44,6 +45,7 @@
     viewController.navigationItem.titleView = textField;
 
 }
+#pragma mark - lazy
 -(ProductsListTrunkView *)trunkView{
     if (!_trunkView) {
         _trunkView = [[ProductsListTrunkView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];

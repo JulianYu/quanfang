@@ -57,7 +57,7 @@
             cell.textLabel.text = @"支付宝充值";
             break;
         default:
-            [cell.imageView setImage:[UIImage imageNamed:@"yxl_mine_pendingPay"]];
+            [cell.imageView setImage:[UIImage imageNamed:@"yxl_pay_bankcard"]];
             cell.textLabel.text = @"银行转帐";
             break;
     }

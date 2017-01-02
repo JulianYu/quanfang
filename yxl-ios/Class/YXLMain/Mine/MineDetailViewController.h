@@ -7,7 +7,9 @@
 //
 
 #import "YXLBaseViewController.h"
+#import "MineViewModel.h"
 
 @interface MineDetailViewController : YXLBaseViewController
+@property( nonatomic, strong) MineViewModel        * viewModel;
 
 @end

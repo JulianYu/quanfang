@@ -9,6 +9,9 @@
 #import "MineCommonFooterView.h"
 #import "MineBankCardAddViewController.h"
 #import "MineBalanceSuccessViewController.h"
+#import "HomeVIPApplicationViewController.h"
+#import "MineModifyPasswordViewController.h"
+#import "MineTransactionPasswordViewController.h"
 @implementation MineCommonFooterView
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -34,88 +37,91 @@
 }
 -(void)update{
     if ([[self SUN_GetCurrentViewController] isMemberOfClass:NSClassFromString(@"MineModifyPasswordViewController")]) {
-        [self.button setTitle:@"保存" forState:UIControlStateNormal];
+        [self resetButtonTitle:@"保存" titleColor:nil backgroundColor:nil tag:0];
     }
     if ([[self SUN_GetCurrentViewController] isMemberOfClass:NSClassFromString(@"MineTransactionPasswordViewController")]) {
-        [self.button setTitle:@"确认" forState:UIControlStateNormal];
+        [self resetButtonTitle:@"确认" titleColor:nil backgroundColor:nil tag:1];
     }
     if ([[self SUN_GetCurrentViewController] isMemberOfClass:NSClassFromString(@"MineBankCardListViewController")]) {
-        [self.button setBackgroundColor:SUN_GlobalWhiteColor];
         [self.button SUN_SetBordersWithColor:[UIColor SUN_ColorWithHexString:@"#CAE7B6" alpha:1] andCornerRadius:5 andWidth:1];
-        [self.button setTitleColor:[UIColor SUN_ColorWithHexString:@"#CAE7B6" alpha:1] forState:UIControlStateNormal];
-        [self.button setTitle:@"添加" forState:UIControlStateNormal];
-        
-        [self.button addTarget:self action:@selector(addBankCard) forControlEvents:UIControlEventTouchUpInside];
+        [self resetButtonTitle:@"添加" titleColor:SUN_GlobalTextGreenColor backgroundColor:SUN_GlobalWhiteColor tag:2];
     }
     if ([[self SUN_GetCurrentViewController] isMemberOfClass:NSClassFromString(@"MineBankCardAddViewController")]) {
-        [self.button setBackgroundColor:SUN_GlobalTextGreenColor];
-        [self.button setTitle:@"立即绑定" forState:UIControlStateNormal];
-        [self.button addTarget:self action:@selector(bindBankCard) forControlEvents:UIControlEventTouchUpInside];
-        
+        [self resetButtonTitle:@"立即绑定" titleColor:nil backgroundColor:SUN_GlobalTextGreenColor tag:3];
     }
     if ([[self SUN_GetCurrentViewController] isMemberOfClass:NSClassFromString(@"HomeConvertViewController")]) {
-
-        [self.button setBackgroundColor:SUN_GlobalTextGreenColor];
-        [self.button setTitle:@"兑换" forState:UIControlStateNormal];
+        [self resetButtonTitle:@"兑换" titleColor:nil backgroundColor:SUN_GlobalTextGreenColor tag:4];
     }
     if ([[self SUN_GetCurrentViewController] isMemberOfClass:NSClassFromString(@"MineBalanceRechargeNumberViewController")]) {
-        [self.button setBackgroundColor:SUN_GlobalTextGreenColor];
-        [self.button addTarget:self action:@selector(paySuccess) forControlEvents:UIControlEventTouchUpInside];
-        [self.button setTitle:@"充值" forState:UIControlStateNormal];
+        [self resetButtonTitle:@"充值" titleColor:nil backgroundColor:SUN_GlobalTextGreenColor tag:5];
     }
     
     if ([[self SUN_GetCurrentViewController]isMemberOfClass:NSClassFromString(@"MineBalanceRechargeBankCardViewController")]) {
-        [self.button setBackgroundColor:SUN_GlobalTextGreenColor];
-        [self.button setTitle:@"生成汇款订单" forState:UIControlStateNormal];
+        [self resetButtonTitle:@"生成汇款订单" titleColor:nil backgroundColor:SUN_GlobalTextGreenColor tag:6];
     }
     
     if ([[self SUN_GetCurrentViewController]isMemberOfClass:NSClassFromString(@"HomeVIPApplicationViewController")]) {
-        [self.button setBackgroundColor:SUN_GlobalNormalColor];
-        [self.button addTarget:self action:@selector(applyVip) forControlEvents:UIControlEventTouchUpInside];
-        [self.button setTitle:@"提交" forState:UIControlStateNormal]; 
+        [self resetButtonTitle:@"提交" titleColor:nil backgroundColor:SUN_GlobalNormalColor tag:7];
     }
     
     if ([[self SUN_GetCurrentViewController] isMemberOfClass:NSClassFromString(@"MineFeedBackViewController")]) {
-        [self.button setBackgroundColor:SUN_GlobalNormalColor];
-        [self.button setTitle:@"提交" forState:UIControlStateNormal];
+        [self resetButtonTitle:@"提交" titleColor:nil backgroundColor:SUN_GlobalNormalColor tag:8];
     }
-    
+    if ([[self SUN_GetCurrentViewController] isMemberOfClass:NSClassFromString(@"HomeBuyStockPointsViewController")]) {
+        [self resetButtonTitle:@"购买" titleColor:nil backgroundColor:SUN_GlobalTextGreenColor tag:9];
+    }
 }
--(void)applyVip{
-    NSString *url = [NSString stringWithFormat:@"%@/ApiPersonal/applyLevel",[ServerConfig sharedServerConfig].url];
-        Session *session = [UserModel sharedUserModel].session;
-        
-        NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{@"session":[session mj_keyValues]}];
-    [params setValue:@"孙若淮" forKey:@"true_name"];
-    [params setValue:@"445202199308190316" forKey:@"idcard"];
-    [params setValue:@"13822260454" forKey:@"mobile"];
-    [params setValue:@"7" forKey:@"group_id"];
-    
-    [NetManager requestWithType:HttpRequestTypePost UrlString:url Parameters:params SuccessBlock:^(id response) {
-        [HUD setMinimumDismissTimeInterval:1];
-        STATUS *status = [STATUS mj_objectWithKeyValues:[response objectForKey:@"status"]];
-        if (status.succeed == 1) {
-            [HUD SUN_ShowSuccessWithStatus:status.msg];
-        }
-        else{
-            [YXLBaseViewModel presentFailureHUD:status];
-        }
-    } FailureBlock:^(NSError *error) {
-    } progress:nil];
+
+
+-(void)resetButtonTitle:(NSString*)title titleColor:(UIColor*)color backgroundColor:(UIColor*)backgroundColor tag:(NSInteger)tag{
+    if (color) {
+        [self.button setTitleColor:color forState:UIControlStateNormal];
+    }
+    if (backgroundColor) {
+        [self.button setBackgroundColor:backgroundColor];
+    }
+    if (title) {
+        [self.button setTitle:title forState:UIControlStateNormal];
+    }
+    if (tag) {
+        self.button.tag = tag;
+    }
+    [self.button addTarget:self action:@selector(commitBtnClick) forControlEvents:UIControlEventTouchUpInside];
 
 }
--(void)paySuccess{
-    MineBalanceSuccessViewController *vc = [MineBalanceSuccessViewController new];
-    vc.title = @"充值成功";
-    [[self SUN_GetCurrentNavigationController]pushViewController:vc animated:YES];
-}
--(void)addBankCard{
-    MineBankCardAddViewController *vc = [MineBankCardAddViewController new];
-    vc.title = @"添加银行卡";
-    [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];;
-}
--(void)bindBankCard{
-    [[self SUN_GetCurrentNavigationController] popViewControllerAnimated:YES];
+
+-(void)commitBtnClick{
+    switch (self.button.tag) {
+        case 0:
+            [((MineModifyPasswordViewController*)[self SUN_GetCurrentViewController]).viewModel modifyPasswordBtnClickBy:[self SUN_GetCurrentViewController]];
+            break;
+        case 1:
+            [((MineTransactionPasswordViewController*)[self SUN_GetCurrentViewController]).viewModel setTransactionPasswordBy:[self SUN_GetCurrentViewController]];
+            break;
+        case 2:
+        {
+            MineBankCardAddViewController *vc = [MineBankCardAddViewController new];
+            vc.title = @"添加银行卡";
+            [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
+        }
+            break;
+        case 3:
+            [[self SUN_GetCurrentNavigationController] popViewControllerAnimated:YES];
+            break;
+        case 5:
+        {
+            MineBalanceSuccessViewController *vc = [MineBalanceSuccessViewController new];
+            vc.title = @"充值成功";
+            [[self SUN_GetCurrentNavigationController]pushViewController:vc animated:YES];
+            
+        }
+        case 7:
+            [((HomeVIPApplicationViewController*)[self SUN_GetCurrentViewController]).viewModel commitBtnClick];
+            break;
+        default:
+            break;
+    }
+    
 }
 
 @end

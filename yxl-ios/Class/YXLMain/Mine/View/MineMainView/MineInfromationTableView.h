@@ -11,6 +11,8 @@
 @interface MineInfromationTableView : YXLBaseTableView
 <
 UITableViewDelegate,
-UITableViewDataSource
+UITableViewDataSource,
+UIImagePickerControllerDelegate,
+UINavigationControllerDelegate
 >
 @end

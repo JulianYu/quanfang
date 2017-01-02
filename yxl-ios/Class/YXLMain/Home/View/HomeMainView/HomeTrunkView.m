@@ -21,6 +21,8 @@
 
 @property( nonatomic, strong) UITableView        * tableView;
 @property( nonatomic, strong) HomeModel          * model;
+
+@property( nonatomic, strong) NSMutableArray<Notice*>        * noticeArray;
 @end
 
 @implementation HomeTrunkView
@@ -37,7 +39,7 @@
     
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"HomeList" ofType:@"plist"];
     self.model = [HomeModel mj_objectWithFile:plistPath];
-
+    self.backgroundColor = [UIColor clearColor];
     [self.tableView reloadData];
 }
 
@@ -47,6 +49,7 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.allowsSelection = NO;
+        _tableView.backgroundColor = [UIColor clearColor];
         SUN_RegisterCell(@"HeaderRowCell", HEADERROWCELL_IDENTIFIER);
         [self addSubview:_tableView];
         [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -56,6 +59,11 @@
     }
     return _tableView;
 }
+-(void)setNoticeListModel:(HomeNoticeListModel *)noticeListModel{
+    self.noticeArray = [NSMutableArray arrayWithArray:noticeListModel.data];
+    [self.tableView reloadData];
+}
+
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 2;
 }
@@ -64,7 +72,10 @@
         return 3;
     }
     else{
-        return 6;
+        if (self.noticeArray.count>4) {
+            return 6;
+        }
+        return 2+self.noticeArray.count;
     }
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -97,14 +108,14 @@
             }
         }
         else{
-            if (indexPath.row != 5) {
+            if (indexPath.row != (self.noticeArray.count>4?4:self.noticeArray.count)+1) {
             UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NOTICEROWCELL_IDENTIFIER];
                 if (!cell) {
                     cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:NOTICEROWCELL_IDENTIFIER];
                 }
                 [cell.textLabel SUN_SetTitleWithColor:SUN_GlobalTextGreyColor FontSize:12 bold:NO textAlignment:NSTextAlignmentLeft];
-                cell.textLabel.text = @"全场免费消费百分百返利";
-                cell.detailTextLabel.text = @"2016-10-10";
+                cell.textLabel.text = [self.noticeArray objectAtIndex:indexPath.row-1].title;
+                cell.detailTextLabel.text = [self.noticeArray objectAtIndex:indexPath.row-1].time;
                 [cell.detailTextLabel SUN_SetTitleWithColor:SUN_GlobalTextGreyColor FontSize:10 bold:NO textAlignment:NSTextAlignmentLeft];
                 return cell;
             }
@@ -113,7 +124,12 @@
                 if (!cell) {
                     cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:FOOTERROOCELL_IDENTIFIER];
                 }
-                cell.textLabel.text = @"立即查看更多内容";
+                if (self.noticeArray.count) {
+                    cell.textLabel.text = @"立即查看更多内容";
+                }
+                else{
+                    cell.textLabel.text = @"暂无内容";
+                }
                 [cell.textLabel SUN_SetTitleWithColor:SUN_GlobalTextSystemColor FontSize:13 bold:NO textAlignment:NSTextAlignmentCenter];
                 return cell;
 

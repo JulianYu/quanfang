@@ -99,11 +99,7 @@ UICollectionViewDelegateFlowLayout
             collectionView.delegate = self;
             
             [collectionView registerNib:[UINib nibWithNibName:@"ProductItemCollectionViewCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:PRODUCTROW_COLLECTIONVIEWCELL];
-            
-
         }
-        
-        
     }
     return _scrollView;
 }
@@ -175,6 +171,17 @@ UICollectionViewDelegateFlowLayout
             
         }
     }
+}
+
+-(void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath{
+    cell.alpha=0.5;
+    cell.layer.transform = CATransform3DMakeScale(0.1, 0.1, 1);
+    [UIView animateWithDuration:.25 animations:^{
+        cell.layer.transform = CATransform3DMakeScale(1, 1, 1);
+        cell.alpha=1;
+    }];
+
+
 }
 
 

@@ -27,6 +27,7 @@
     }
     return self;
 }
+#pragma mark - lazy
 -(MineAddressAddTableView *)addTableView{
     if (!_addTableView) {
         _addTableView = [[MineAddressAddTableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];

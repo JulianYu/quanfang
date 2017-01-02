@@ -8,5 +8,6 @@
 
 #import "YXLBaseViewModel.h"
 @interface BusinessViewModel : YXLBaseViewModel
+-(void)getBannerList;
 
 @end

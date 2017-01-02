@@ -10,8 +10,9 @@
 #import "MineSettingsTableView.h"
 #import "MineModifyPasswordTableView.h"
 #import "MineCommonFooterView.h"
-#import "MineTransactionPasswordViewController.h"
 #import "MineFeedBackTableView.h"
+#import "MineTransactionPasswordViewController.h"
+
 @interface MineSettingViewModel ()
 @property( nonatomic, strong) MineSettingsTableView        * settingTableView;
 @property( nonatomic, strong) MineModifyPasswordTableView        * modifyTableView;
@@ -47,6 +48,7 @@
     }
     return self;
 }
+#pragma mark - lazy
 -(MineFeedBackTableView *)feedBackTableView{
     if (!_feedBackTableView) {
         _feedBackTableView = [[MineFeedBackTableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 160)];
@@ -70,5 +72,66 @@
         _footerView= [[MineCommonFooterView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 40)];
     }
     return _footerView;
+}
+#pragma mark -network request
+-(void)modifyPasswordBtnClickBy:(UIViewController *)viewController{
+    
+    NSString *url = [NSString stringWithFormat:@"%@/ApiPersonal/password_edit",[ServerConfig sharedServerConfig].url];
+    Session *session = [UserModel sharedUserModel].session;
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{@"session":[session mj_keyValues]}];
+    [params setValue:self.modifyTableView.model.fpassword forKey:@"fpassword"];
+    [params setValue:self.modifyTableView.model.password forKey:@"password"];
+    [params setValue:self.modifyTableView.model.repassword forKey:@"repassword"];
+    [NetManager requestWithType:HttpRequestTypePost UrlString:url Parameters:params SuccessBlock:^(id response) {
+        STATUS *status = [STATUS mj_objectWithKeyValues:[response objectForKey:@"status"]];
+        if (status.succeed == 1) {
+            [HUD SUN_ShowSuccessWithStatus:status.msg];
+            [viewController.navigationController popViewControllerAnimated:YES];
+        }
+        else{
+            [YXLBaseViewModel presentFailureHUD:status];
+        }
+    } FailureBlock:^(NSError *error) {
+        [YXLBaseViewModel presentFailureHUD:nil];
+    } progress:nil];
+}
+-(void)sendMobileCode:(NSString *)mobile{
+    NSString *url = [NSString stringWithFormat:@"%@/ApiPersonal/sendMobileCodes",[ServerConfig sharedServerConfig].url];
+    Session *session = [UserModel sharedUserModel].session;
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{@"session":[session mj_keyValues]}];
+    [params setValue:mobile forKey:@"mobile"];
+    [NetManager requestWithType:HttpRequestTypePost UrlString:url Parameters:params SuccessBlock:^(id response) {
+        STATUS *status = [STATUS mj_objectWithKeyValues:[response objectForKey:@"status"]];
+        if (status.succeed == 1) {
+            [HUD SUN_ShowSuccessWithStatus:status.msg];
+        }
+        else{
+            [YXLBaseViewModel presentFailureHUD:status];
+        }
+    } FailureBlock:^(NSError *error) {
+    } progress:nil];
+    
+}
+
+-(void)setTransactionPasswordBy:(UIViewController *)viewController{
+    NSString *url = [NSString stringWithFormat:@"%@/ApiPersonal/Paypassword_edit",[ServerConfig sharedServerConfig].url];
+    Session *session = [UserModel sharedUserModel].session;
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{@"session":[session mj_keyValues]}];
+    [params setValue:((MineTransactionPasswordViewController*)viewController).phoneTF.text forKey:@"mobile"];
+    [params setValue:((MineTransactionPasswordViewController*)viewController).PINTF.text forKey:@"mobild_code"];
+    [params setValue:((MineTransactionPasswordViewController*)viewController).passwordTF.text forKey:@"pay_password"];
+    [params setValue:((MineTransactionPasswordViewController*)viewController).rePasswordTF.text forKey:@"pay_repassword"];
+    [NetManager requestWithType:HttpRequestTypePost UrlString:url Parameters:params SuccessBlock:^(id response) {
+        STATUS *status = [STATUS mj_objectWithKeyValues:[response objectForKey:@"status"]];
+        if (status.succeed == 1) {
+            [HUD SUN_ShowSuccessWithStatus:status.msg];
+            [viewController.navigationController popViewControllerAnimated:YES];
+        }
+        else{
+            [YXLBaseViewModel presentFailureHUD:status];
+        }
+    } FailureBlock:^(NSError *error) {
+    } progress:nil];
+
 }
 @end

@@ -12,7 +12,6 @@
 #import "MineCommonFooterView.h"
 @interface HomePromoteViewModel ()
 @property( nonatomic, strong) HomeVIPRankListModel                  * rankModel;
-@property( nonatomic, strong) HomeVIPRankLisTableView               * listTableView;
 @property( nonatomic, strong) MineCommonFooterView                  * footerView;
 @end
 
@@ -40,7 +39,7 @@
     }
     return self;
 }
-
+#pragma mark - lazy
 -(HomeVIPApplicationTableView *)applicationTableView{
     if (!_applicationTableView) {
         _applicationTableView = [[HomeVIPApplicationTableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 44*7)];
@@ -59,10 +58,40 @@
     }
     return _footerView;
 }
+#pragma mark - method
 -(void)reloadData{
     [self.applicationTableView reloadData];
 }
 
+#pragma mark network requests
+-(void)commitBtnClick{
+    
+    NSString *url = [NSString stringWithFormat:@"%@/ApiPersonal/applyLevel",[ServerConfig sharedServerConfig].url];
+    Session *session = [UserModel sharedUserModel].session;
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{@"session":[session mj_keyValues]}];
+    
+    [params setValue:self.applicationTableView.model.true_name forKey:@"true_name"];
+    [params setValue:self.applicationTableView.model.idcard forKey:@"idcard"];
+    [params setValue:self.applicationTableView.model.mobile forKey:@"mobile"];
+    [params setValue:self.applicationTableView.model.group_id forKey:@"group_id"];
+    
+    [NetManager requestWithType:HttpRequestTypePost UrlString:url Parameters:params SuccessBlock:^(id response) {
+        [HUD setMinimumDismissTimeInterval:1];
+        STATUS *status = [STATUS mj_objectWithKeyValues:[response objectForKey:@"status"]];
+        if (status.succeed == 1) {
+            [HUD SUN_ShowSuccessWithStatus:status.msg];
+        }
+        else{
+            [YXLBaseViewModel presentFailureHUD:status];
+        }
+    } FailureBlock:^(NSError *error) {
+        [YXLBaseViewModel presentFailureHUD:nil];
+        
+    } progress:nil];
+
+
+}
 -(void)getVIPRankListCompletionHandle:(void (^)(id model , id error))completionHandle{
     NSString *url = [NSString stringWithFormat:@"%@/ApiOther/RankList",[ServerConfig sharedServerConfig].url];
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
@@ -77,6 +106,7 @@
             [YXLBaseViewModel presentFailureHUD:status];
         }
     } FailureBlock:^(NSError *error) {
+        [YXLBaseViewModel presentFailureHUD:nil];
     } progress:nil];
     
 }

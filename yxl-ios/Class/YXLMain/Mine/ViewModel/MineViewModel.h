@@ -10,4 +10,7 @@
 
 @interface MineViewModel : YXLBaseViewModel
 -(void)pushToPersonalViewControllerBY:(UIViewController*)viewController;
+-(void)uploadAvatarImage:(NSArray*)imagesArray;
+-(void)modifyUserInformationByHead_ico:(NSString*)head_ico nickname:(NSString*)nickname sex:(NSString*)sex CompletionHandle:(void (^)(id model , id error))completionHandle;
+
 @end

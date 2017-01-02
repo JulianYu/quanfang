@@ -29,6 +29,7 @@
     }
     return self;
 }
+#pragma mark - methods
 -(void)setupNavi:(YXLBaseViewController *)viewController{
     [viewController.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
 
@@ -49,11 +50,28 @@
 -(void)locationClick{
 
 }
-
+#pragma mark - lazy
 -(BusinessTrunkView *)trunkView{
     if (!_trunkView) {
         _trunkView = [[BusinessTrunkView alloc]initWithFrame:CGRectZero];
     }
     return _trunkView;
+}
+#pragma mark - network requests
+-(void)getBannerList{
+    NSString *url = [NSString stringWithFormat:@"%@/ApiUser/bannerList",[ServerConfig sharedServerConfig].url];
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    
+    [NetManager requestWithType:HttpRequestTypePost UrlString:url Parameters:params SuccessBlock:^(id response) {
+        STATUS *status = [STATUS mj_objectWithKeyValues:[response objectForKey:@"status"]];
+        if (status.succeed == 1) {
+            
+        }
+        else{
+            [YXLBaseViewModel presentFailureHUD:status];
+        }
+    } FailureBlock:^(NSError *error) {
+    } progress:nil];
+
 }
 @end

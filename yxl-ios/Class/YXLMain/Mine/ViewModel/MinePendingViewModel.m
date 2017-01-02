@@ -29,6 +29,7 @@
     }
     return self;
 }
+#pragma mark - lazy
 -(MinePendingTrunkTableView *)trunkTabelView{
     if (!_trunkTabelView) {
         _trunkTabelView = [[MinePendingTrunkTableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 44+34+44+54+54+10)];

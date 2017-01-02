@@ -7,11 +7,12 @@
 //
 
 #import "YXLBaseTableView.h"
+#import "MineModifyPasswordModel.h"
 
 @interface MineModifyPasswordTableView : YXLBaseTableView
 <
 UITableViewDelegate,
 UITableViewDataSource
 >
-
+@property( nonatomic, strong) MineModifyPasswordModel        * model;
 @end

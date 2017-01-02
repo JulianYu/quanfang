@@ -28,11 +28,16 @@
 
 }
 +(void)presentFailureHUD:(STATUS *)status{
-    if (status.error == 2) {
-        [HUD SUN_ShowErrorWithStatus:@"帐号信息过期"];
+    if (status) {
+        if (status.error == 2) {
+            [HUD SUN_ShowErrorWithStatus:@"帐号信息过期"];
+        }
+        else{
+            [HUD SUN_ShowErrorWithStatus:status.msg];
+        }
     }
     else{
-        [HUD SUN_ShowErrorWithStatus:status.msg];
+        [HUD SUN_ShowErrorWithStatus:@"当前网络不佳"];
     }
 }
 @end

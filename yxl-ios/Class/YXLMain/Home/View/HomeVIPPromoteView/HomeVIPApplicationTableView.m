@@ -13,12 +13,16 @@
 #define HOMEVIPAPPLY_ITEMCELL @"applyItemCell"
 #define HOMEVIPSELECTEDSEX_ITEMCELL @"sexItemCell"
 @implementation HomeVIPApplicationTableView
-
+-(HomeVIPApplyModel *)model{
+    if (!_model) {
+        _model = [HomeVIPApplyModel new];
+    }
+    return _model;
+}
 -(void)buildUI{
     [super buildUI];
     self.delegate = self;
     self.dataSource = self;
-    
     SUN_TableRegisterCell(self, @"HomeVIPApplyItemCell", HOMEVIPAPPLY_ITEMCELL);
     SUN_TableRegisterCell(self, @"HomeVIPSelectedSexItemCell", HOMEVIPSELECTEDSEX_ITEMCELL);
 }
@@ -26,7 +30,7 @@
     return 1;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 7;
+    return 6;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 1) {
@@ -50,7 +54,6 @@
 
         }
         
-        
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         [cell.textLabel SUN_SetTitleWithColor:[UIColor blackColor] FontSize:15 bold:NO textAlignment:NSTextAlignmentLeft];
         [cell.textLabel mas_updateConstraints:^(MASConstraintMaker *make) {
@@ -68,6 +71,8 @@
     }
     else{
         HomeVIPApplyItemCell *cell = [tableView dequeueReusableCellWithIdentifier:HOMEVIPAPPLY_ITEMCELL forIndexPath:indexPath];
+        cell.textField.tag = indexPath.row;
+        [cell.textField addTarget:self action:@selector(textFieldValueChange:) forControlEvents:UIControlEventEditingChanged];
         switch (indexPath.row) {
             case 0:
                 cell.label.text = @"用户ID号";
@@ -82,13 +87,10 @@
                 cell.label.text = @"身份证号";
                 cell.textField.placeholder = @"请输入身份证";
                 break;
-            case 5:
+            default:
                 cell.label.text = @"联系电话";
                 cell.textField.placeholder = @"请输入联系电话";
-                break;
-            default:
-                cell.label.text = @"推荐人";
-                cell.textField.placeholder = @"请输入推荐人ID号";
+
                 break;
         }
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -103,7 +105,25 @@
     if (indexPath.row == 2) {
         HomeVIPLevelViewController *vc = [HomeVIPLevelViewController new];
         vc.title = @"资格级别";
+        vc.viewModel.listTableView.rankDelegate = self;
         [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
+    }
+}
+-(void)hasSelectedRank:(NSString *)group_name group_id:(NSString *)group_id{
+    self.rankStr = group_name;
+    self.model.group_id = group_id;
+}
+-(void)textFieldValueChange:(UITextField*)textField{
+    switch (textField.tag) {
+        case 3:
+            self.model.true_name = textField.text;
+            break;
+        case 4:
+            self.model.idcard = textField.text;
+            break;
+        default:
+            self.model.mobile = textField.text;
+            break;
     }
 }
 @end

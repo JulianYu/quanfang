@@ -20,7 +20,7 @@
         
         NSLog(@"第一次启用APP");
         [HUD setMinimumDismissTimeInterval:1];
-        [HUD SUN_ShowWithStatus:@"第一次使用程序"];
+        [HUD SUN_ShowSuccessWithStatus:@"第一次使用程序"];
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
         self.window.rootViewController = [[YXLTabBarController alloc]init];
                 

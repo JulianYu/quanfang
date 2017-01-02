@@ -16,6 +16,7 @@
 #import "MineBalanceViewController.h"
 #import "YXLBaseTableView.h"
 #import "HomeConvertViewController.h"
+#import "MineGoldSilverViewController.h"
 #define FIRSTROWCELL_IDENTIFIER @"firstCell"
 #define SECONDROWCELL_IDENTIFIER @"secondCell"
 @interface MineTrunkView()<UITableViewDelegate,UITableViewDataSource>
@@ -162,8 +163,20 @@
                 
                 break;
             case 1:
+            {
+                MineGoldSilverViewController *vc = [MineGoldSilverViewController new];
+                vc.delegate = 0;
+                [self SUN_GetCurrentNavigationController].navigationBar.hidden = NO;
+                [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
+            }
                 break;
             case 2:
+            {
+                MineGoldSilverViewController *vc = [MineGoldSilverViewController new];
+                vc.delegate = 1;
+                [self SUN_GetCurrentNavigationController].navigationBar.hidden = NO;
+                [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
+            }
                 break;
             default:
             {

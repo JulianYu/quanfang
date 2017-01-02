@@ -9,6 +9,4 @@
 #import "YXLBaseView.h"
 
 @interface BusinessTrunkView : YXLBaseView
-
-
 @end

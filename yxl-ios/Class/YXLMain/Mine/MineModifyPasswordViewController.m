@@ -7,10 +7,6 @@
 //
 
 #import "MineModifyPasswordViewController.h"
-#import "MineSettingViewModel.h"
-@interface MineModifyPasswordViewController ()
-@property( nonatomic, strong) MineSettingViewModel        * viewModel;
-@end
 
 @implementation MineModifyPasswordViewController
 

@@ -7,7 +7,9 @@
 //
 
 #import "YXLBaseViewController.h"
+#import "MineSettingViewModel.h"
 
 @interface MineModifyPasswordViewController : YXLBaseViewController
+@property( nonatomic, strong) MineSettingViewModel        * viewModel;
 
 @end

@@ -99,6 +99,14 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(logout) name:UserStateChangeToLogoutSuccess object:nil];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeHeadIcon) name:UserInformationDidChangeSuccessByHeadIcon object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(login) name:UserInformationDidChangeSuccessByNickname object:nil];
+    
+}
+-(void)changeHeadIcon{
+    NSString *url = [NSString stringWithFormat:@"%@/%@",[ServerConfig sharedServerConfig].url,[UserModel sharedUserModel].user.head_ico];
+    [self.avatarImageView sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:@"yxl_placeholder_avatar"]];
 }
 -(void)logout{
     [self.informationLabel SUN_SetTitleWithColor:SUN_GlobalWhiteColor FontSize:16 bold:NO textAlignment:NSTextAlignmentLeft];
@@ -106,8 +114,12 @@
     [self.avatarImageView setImage:[UIImage imageNamed:@"yxl_placeholder_avatar"]];
 }
 -(void)login{
-    
-    self.nickNameStr = [UserModel sharedUserModel].user.username;
+    if (![[UserModel sharedUserModel].user.nickname isEqualToString:@""]) {
+        self.nickNameStr = [UserModel sharedUserModel].user.nickname;
+    }
+    else{
+        self.nickNameStr = [UserModel sharedUserModel].user.username;
+    }
     self.IDNumberStr = [NSString stringWithFormat:@"ID号：%@",[UserModel sharedUserModel].user.user_id];
     if (![UserModel sharedUserModel].user.group_id) {
         self.VIPLevelStr = @"会员等级：普通用户";
@@ -124,8 +136,7 @@
     self.informationLabel.attributedText = informationStr;
     self.informationLabel.numberOfLines = 3;
     NSString *url = [NSString stringWithFormat:@"%@/%@",[ServerConfig sharedServerConfig].url,[UserModel sharedUserModel].user.head_ico];
-    [self.avatarImageView sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:@"yxl_placeholder_avatar"]];
-    
+    [self.avatarImageView sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:@"yxl_placeholder_avatar"]];    
 }
 -(void)personalBtnClick{
     [self.viewModel pushToPersonalViewControllerBY:[self SUN_GetCurrentViewController]];

@@ -12,6 +12,9 @@
 #import "MineBalanceWithdrawViewController.h"
 #import "MineBalanceRechargeViewController.h"
 #import "HomeConvertViewController.h"
+#import "HomeBuyStockPointsViewController.h"
+#import "HomeDistributePointsViewController.h"
+#import "HomeJoinUsViewController.h"
 @interface HomeFunctionView (){
     int row;
     int line;
@@ -141,12 +144,17 @@
             break;
         case 4:
         {
-            
+            HomeDistributePointsViewController *vc = [HomeDistributePointsViewController new];
+            vc.title = @"分发积分";
+            [self SUN_GetCurrentNavigationController].navigationBar.hidden = NO;
+            [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
         }
             break;
         case 5:
         {
-            
+            HomeBuyStockPointsViewController *vc = [HomeBuyStockPointsViewController new];
+            [self SUN_GetCurrentNavigationController].navigationBar.hidden = NO;
+            [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
         }
             break;
         case 6:
@@ -155,12 +163,15 @@
             vc.title = @"币盾兑换";
             [self SUN_GetCurrentNavigationController].navigationBar.hidden = NO;
             [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
-            
-            
         }
             break;
         default:
         {
+            HomeJoinUsViewController *vc = [HomeJoinUsViewController new];
+            vc.title = @"加盟我们";
+            [self SUN_GetCurrentNavigationController].navigationBar.hidden = NO;
+            [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
+            
         }
             break;
     }

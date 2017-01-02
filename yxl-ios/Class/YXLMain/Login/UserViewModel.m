@@ -14,6 +14,7 @@
 @property( nonatomic, strong) UserModel          * userModel;
 @end
 @implementation UserViewModel
+#pragma mark - global methods
 +(BOOL)online{
     if ([UserModel sharedUserModel].session) {
         return YES;
@@ -35,26 +36,7 @@
     
 
 }
-
--(void)setOnline:(BOOL)flag{
-    NSUserDefaults *userDef = SUN_DEFAULTS;
-    [userDef setObject:[self.userModel.session mj_keyValues] forKey:@"session"];
-    [userDef setObject:[self.userModel.user mj_keyValues] forKey:@"user"];
-    [userDef synchronize];
-    
-    [[NSNotificationCenter defaultCenter]postNotificationName:UserStateChangeToLoginSuccess object:self];
-    
-}
--(void)setOffline:(BOOL)flag{
-    [SUN_DEFAULTS removeObjectForKey:@"session"];
-    [SUN_DEFAULTS removeObjectForKey:@"users"];
-    [SUN_DEFAULTS synchronize];
-    [UserModel sharedUserModel].session = nil;
-    [UserModel sharedUserModel].user = nil;
-    [[NSNotificationCenter defaultCenter]postNotificationName:UserStateChangeToLogoutSuccess object:self];
-}
-
-
+#pragma mark - lazy
 -(UserModel *)userModel{
     if (!_userModel) {
         _userModel = [UserModel sharedUserModel];
@@ -75,11 +57,32 @@
     
     return self;
 }
+#pragma mark - methods
+
+-(void)setOnline:(BOOL)flag{
+    NSUserDefaults *userDef = SUN_DEFAULTS;
+    [userDef setObject:[self.userModel.session mj_keyValues] forKey:@"session"];
+    [userDef setObject:[self.userModel.user mj_keyValues] forKey:@"user"];
+    [userDef synchronize];
+    
+    [[NSNotificationCenter defaultCenter]postNotificationName:UserStateChangeToLoginSuccess object:self];
+    
+}
+-(void)setOffline:(BOOL)flag{
+    [SUN_DEFAULTS removeObjectForKey:@"session"];
+    [SUN_DEFAULTS removeObjectForKey:@"users"];
+    [SUN_DEFAULTS synchronize];
+    [UserModel sharedUserModel].session = nil;
+    [UserModel sharedUserModel].user = nil;
+    [[NSNotificationCenter defaultCenter]postNotificationName:UserStateChangeToLogoutSuccess object:self];
+}
+
 -(void)pushToSignUpBy:(LoginViewController *)viewController{
     SignUpViewController *vc = [SignUpViewController new];
     vc.title = @"注册";
     [viewController.navigationController pushViewController:vc animated:YES];
 }
+
 -(void)setForgotBtn:(UIButton *)forgotBtn{
     NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:@"忘记密码"];
     NSRange strRange = {0,[str length]};
@@ -87,6 +90,9 @@
     [str addAttribute:NSForegroundColorAttributeName value:SUN_GlobalTextBlackColor range:strRange];
     [forgotBtn setAttributedTitle:str forState:UIControlStateNormal];
 }
+
+
+#pragma mark - network requests
 
 -(void)login:(NSString *)phone password:(NSString *)password viewController:(UIViewController *)viewController{
     NSString *url = [NSString stringWithFormat:@"%@/Apiuser/login_act",[ServerConfig sharedServerConfig].url];    
@@ -110,6 +116,8 @@
             [YXLBaseViewModel presentFailureHUD:status];
         }
     } FailureBlock:^(NSError *error) {
+        [YXLBaseViewModel presentFailureHUD:nil];
+
     } progress:nil];
 }
 -(void)signUp:(SignUpModel *)model CompletionHandle:(void (^)(id, id))completionHandle{
@@ -128,6 +136,8 @@
             [YXLBaseViewModel presentFailureHUD:status];
         }
     } FailureBlock:^(NSError *error) {
+        [YXLBaseViewModel presentFailureHUD:nil];
+
     } progress:nil];
 
 }
@@ -152,6 +162,8 @@
             [YXLBaseViewModel presentFailureHUD:status];
         }
     } FailureBlock:^(NSError *error) {
+        [YXLBaseViewModel presentFailureHUD:nil];
+
     } progress:nil];
 
 }
@@ -174,6 +186,8 @@
             [YXLBaseViewModel presentFailureHUD:status];
         }
     } FailureBlock:^(NSError *error) {
+        [YXLBaseViewModel presentFailureHUD:nil];
+
     } progress:nil];
 
 }
@@ -185,13 +199,13 @@
     [NetManager requestWithType:HttpRequestTypePost UrlString:url Parameters:params SuccessBlock:^(id response) {
         STATUS *status = [STATUS mj_objectWithKeyValues:[response objectForKey:@"status"]];
         if (status.succeed == 1) {
-//            self.userModel.user = [User mj_objectWithKeyValues:[[response objectForKey:@"data"] objectForKey:@"user"]];
 
         }
         else{
             [YXLBaseViewModel presentFailureHUD:status];
         }
     } FailureBlock:^(NSError *error) {
+        [YXLBaseViewModel presentFailureHUD:nil];
     } progress:nil];
 
 }

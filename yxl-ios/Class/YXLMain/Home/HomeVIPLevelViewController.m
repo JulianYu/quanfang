@@ -7,9 +7,7 @@
 //
 
 #import "HomeVIPLevelViewController.h"
-#import "HomePromoteViewModel.h"
 @interface HomeVIPLevelViewController ()
-@property( nonatomic, strong) HomePromoteViewModel        * viewModel;
 @end
 
 @implementation HomeVIPLevelViewController

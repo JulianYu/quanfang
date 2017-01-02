@@ -9,5 +9,7 @@
 #import "YXLBaseViewModel.h"
 
 @interface MineSettingViewModel : YXLBaseViewModel
-
+-(void)modifyPasswordBtnClickBy:(UIViewController*)viewController;
+-(void)setTransactionPasswordBy:(UIViewController*)viewController;
+-(void)sendMobileCode:(NSString*)mobile;
 @end

@@ -7,12 +7,16 @@
 //
 
 #import "YXLBaseTableView.h"
+#import "HomeVIPRankLisTableView.h"
+#import "HomeVIPApplyModel.h"
 
 @interface HomeVIPApplicationTableView : YXLBaseTableView
 <
 UITableViewDelegate,
-UITableViewDataSource
+UITableViewDataSource,
+SelectedRankDelegate
 >
 @property( nonatomic, copy) NSString        * rankStr;
+@property( nonatomic, strong) HomeVIPApplyModel        * model;
 
 @end

@@ -22,7 +22,7 @@
     }
     return self;
 }
-
+#pragma mark - lazy
 -(CartListTableView *)cartListtableView{
     if (!_cartListtableView) {
         _cartListtableView = [[CartListTableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];

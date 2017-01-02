@@ -7,7 +7,7 @@
 //
 
 #import "YXLBaseView.h"
-
+#import "HomeNoticeListModel.h"
 @interface HomeTrunkView : YXLBaseView
-
+@property( nonatomic, strong) HomeNoticeListModel        * noticeListModel;
 @end

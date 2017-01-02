@@ -7,10 +7,6 @@
 //
 
 #import "MineTransactionPasswordViewController.h"
-#import "MineSettingViewModel.h"
-@interface MineTransactionPasswordViewController ()
-@property( nonatomic, strong) MineSettingViewModel        * viewModel   ;
-@end
 
 @implementation MineTransactionPasswordViewController
 
@@ -23,6 +19,9 @@
         _viewModel = [[MineSettingViewModel alloc]initWithViewController:self];
     }
     return _viewModel;
+}
+- (IBAction)PINBtnClick:(id)sender {
+    [self.viewModel sendMobileCode:self.phoneTF.text];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -71,6 +71,7 @@
                 default:
                     [btn setBackgroundColor: [UIColor SUN_ColorWithHexString:@"#DC121E" alpha:1]];
                     [btn setTitle:@"立即购买" forState:UIControlStateNormal];
+                    [btn addTarget:self action:@selector(cart) forControlEvents:UIControlEventTouchUpInside];
                     break;
             }
         }

@@ -11,5 +11,9 @@
 
 @interface HomePromoteViewModel : YXLBaseViewModel
 @property( nonatomic, strong) HomeVIPApplicationTableView           * applicationTableView;
+@property( nonatomic, strong) HomeVIPRankLisTableView               * listTableView;
+
 -(void)reloadData;
+
+-(void)commitBtnClick;
 @end

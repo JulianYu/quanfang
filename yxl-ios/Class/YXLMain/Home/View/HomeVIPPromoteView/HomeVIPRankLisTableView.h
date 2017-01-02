@@ -8,10 +8,16 @@
 
 #import "YXLBaseTableView.h"
 #import "HomeVIPRankListModel.h"
+@protocol SelectedRankDelegate <NSObject>
+-(void)hasSelectedRank:(NSString*)group_name group_id:(NSString*)group_id;
+@end
+
 @interface HomeVIPRankLisTableView : YXLBaseTableView
 <
 UITableViewDelegate,
 UITableViewDataSource
 >
-@property( nonatomic, strong) HomeVIPRankListModel        * model;
+@property( nonatomic, strong) HomeVIPRankListModel          * model;
+@property( nonatomic, weak) id <SelectedRankDelegate>     rankDelegate;
+
 @end

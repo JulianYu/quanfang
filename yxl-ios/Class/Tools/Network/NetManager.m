@@ -320,11 +320,20 @@ static NSMutableArray *tasks;
         return nil;
     }
     WEAKSELF;
+    NSDictionary *pars = nil;
+//    if (!parameters) {
+//    
+//    }
+//    else{
+//        NSString *par = [parameters mj_JSONString];
+//        pars = [NSDictionary dictionaryWithObject:par forKey:@"file"];
+//    }
+    
     /*! 检查地址中是否有中文 */
     NSString *URLString = [NSURL URLWithString:urlString] ? urlString : [self strUTF8Encoding:urlString];
     
     NSLog(@"******************** 请求参数 ***************************");
-    NSLog(@"请求头: %@\n请求方式: %@\n请求URL: %@\n请求param: %@\n\n",[self sharedAFManager].requestSerializer.HTTPRequestHeaders, @"POST",URLString, parameters);
+    NSLog(@"请求头: %@\n请求方式: %@\n请求URL: %@\n请求param: %@\n\n",[self sharedAFManager].requestSerializer.HTTPRequestHeaders, @"POST",URLString, pars);
     NSLog(@"******************************************************");
     
     
@@ -366,7 +375,8 @@ static NSMutableArray *tasks;
             {   // 图片数据不为空才传递 fileName
                 //                [formData appendPartWithFileData:imgData name:[NSString stringWithFormat:@"picflie%ld",(long)i] fileName:@"image.png" mimeType:@" image/jpeg"];
                 
-                [formData appendPartWithFileData:imgData name:[NSString stringWithFormat:@"picflie%ld",(long)idx] fileName:fileName mimeType:@"image/png"];
+//                [formData appendPartWithFileData:imgData name:[NSString stringWithFormat:@"picflie%ld",(long)idx] fileName:fileName mimeType:@"image/png"];
+                [formData appendPartWithFileData:imgData name:[NSString stringWithFormat:@"file"] fileName:fileName mimeType:@"image/png"];
             }
             
         }];
@@ -383,7 +393,12 @@ static NSMutableArray *tasks;
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        NSLog(@"上传图片成功 = %@",responseObject);
+//        NSLog(@"上传图片成功 = %@",responseObject);
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:responseObject options:kNilOptions error:nil];
+        NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+        
+        NSLog(@"%@",jsonString);
+
         if (successBlock)
         {
             successBlock(responseObject);

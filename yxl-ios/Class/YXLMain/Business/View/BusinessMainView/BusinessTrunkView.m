@@ -57,29 +57,23 @@ UICollectionViewDelegateFlowLayout
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
         
-        
         [_collectionView registerClass:[BusinessBannerCell class] forCellWithReuseIdentifier:BANNERROWCELL_IDENTIFIER];
         
         [_collectionView registerClass:[BusinessGridListCell class] forCellWithReuseIdentifier:GRIDLISTROWCELL_IDENTIFIER];
 
-        
-        
         [_collectionView registerNib:[UINib nibWithNibName:@"BusinessLeftItemCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:LEFTROWCELL_IDENTIFIER];
 
         [_collectionView registerNib:[UINib nibWithNibName:@"BusinessRightItemCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:RIGHTROWCELL_IDENTIFIER];
-        
     }
     return _collectionView;
 
 }
 #pragma mark - ***** UICollectionViewDataSource
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
-{
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     return 8;
 }
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     if (section == 0 || section == 1) {
         return 1;
     }
@@ -88,8 +82,7 @@ UICollectionViewDelegateFlowLayout
 
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0) {
         BusinessBannerCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:BANNERROWCELL_IDENTIFIER forIndexPath:indexPath];
         [cell buildUI];
@@ -113,8 +106,7 @@ UICollectionViewDelegateFlowLayout
     
     
 }
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section >1) {
         BusinessProductsListViewController *vc = [BusinessProductsListViewController new];
         vc.indexpath = indexPath;
@@ -123,35 +115,28 @@ UICollectionViewDelegateFlowLayout
     
 }
 
-- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
-{
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
     UICollectionReusableView *reusable = nil;
-    if (kind == UICollectionElementKindSectionHeader)
-    {
+    if (kind == UICollectionElementKindSectionHeader){
     }
     return reusable;
 }
-- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath NS_AVAILABLE_IOS(8_0)
-{
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath NS_AVAILABLE_IOS(8_0){
+    
+
+    
     if (indexPath.section == 1 || indexPath.section == 0) {
     }
-    else
-    {
-    
-        if (indexPath.row % 2 != 0)
-        {
-            
-            
-            cell.transform = CGAffineTransformTranslate(cell.transform, SCREEN_WIDTH/4,0);
+    else{
+        if (indexPath.row % 2 != 0){
+            cell.transform = CGAffineTransformTranslate(cell.transform, SCREEN_WIDTH/2,0);
         }
-        else
-        {
-            cell.transform = CGAffineTransformTranslate(cell.transform, -SCREEN_WIDTH/4, 0);
+        else{
+            cell.transform = CGAffineTransformTranslate(cell.transform, -SCREEN_WIDTH/2, 0);
         }
-    
         cell.alpha = 0.0;
     
-        [UIView animateWithDuration:0.3 animations:^{
+        [UIView animateWithDuration:0.5 animations:^{
     
             cell.transform = CGAffineTransformIdentity;
     
@@ -163,18 +148,15 @@ UICollectionViewDelegateFlowLayout
     
 }
 
-
 #pragma mark - ***** UICollectionViewDelegateFlowLayout
-- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
-{
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
     if (section == 1 || section == 0) {
         return UIEdgeInsetsMake(0, 0, 0, 0);
     }
     return UIEdgeInsetsMake(5, 0, 5, 0);
 }
 
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-{
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0 || indexPath.section == 1) {
         return CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT/5);
     }
