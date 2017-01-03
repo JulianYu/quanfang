@@ -31,8 +31,7 @@
 #pragma mark - lazy
 -(ProductChooseView *)choosetView{
     if (!_chooseView) {
-        _chooseView = [[ProductChooseView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT,
-                                                                          SCREEN_WIDTH, SCREEN_HEIGHT)];
+        _chooseView = [[ProductChooseView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT)];
         [_chooseView.cancelBtn addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
         [_chooseView.checkBtn addTarget:self action:@selector(check) forControlEvents:UIControlEventTouchUpInside];
         

@@ -7,7 +7,10 @@
 //
 
 #import "YXLBaseViewModel.h"
+#import "BusinessBannerCell.h"
 @interface BusinessViewModel : YXLBaseViewModel
--(void)getBannerList;
+
+-(void)setUpBannerDataBy:(BusinessBannerCell*)cell;
+
 
 @end

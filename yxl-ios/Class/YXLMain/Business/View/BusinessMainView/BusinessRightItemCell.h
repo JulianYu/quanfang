@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface BusinessRightItemCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UILabel *productHeaderNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *productHeaderPriceLabel;
+@property (weak, nonatomic) IBOutlet UIButton *productHeaderBtn;
+
+@property (weak, nonatomic) IBOutlet UILabel *productFooterNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *productFooterPriceLabel;
+@property (weak, nonatomic) IBOutlet UIButton *productFooterBtn;
+
 
 @end

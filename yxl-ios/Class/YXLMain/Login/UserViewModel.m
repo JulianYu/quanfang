@@ -177,6 +177,7 @@
     [NetManager requestWithType:HttpRequestTypePost UrlString:url Parameters:params SuccessBlock:^(id response) {
         STATUS *status = [STATUS mj_objectWithKeyValues:[response objectForKey:@"status"]];
         if (status.succeed == 1) {
+            [HUD setMinimumDismissTimeInterval:1];
             [HUD SUN_ShowSuccessWithStatus:@"退出登录成功"];
             [self setOffline:YES];
             [UserViewModel showLogin];

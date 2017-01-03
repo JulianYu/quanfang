@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface BusinessLeftItemCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UILabel *productNameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *productImageView;
 
 @end

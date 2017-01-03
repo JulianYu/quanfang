@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CartBodyItemCell : UITableViewCell<UIScrollViewDelegate>
-@property (weak, nonatomic) IBOutlet UIScrollView       *scrollView;
+@interface CartBodyItemCell : UITableViewCell<UIScrollViewDelegate,UITextFieldDelegate>
+@property( nonatomic, strong) UIScrollView       *scrollView;
 @property( nonatomic, strong) UILabel                   * priceLabel;
 @property( nonatomic, strong) UIButton                  * editBtn;
 @property( nonatomic, strong) UIView                    * line;

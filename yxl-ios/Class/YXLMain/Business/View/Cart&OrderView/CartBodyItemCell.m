@@ -8,28 +8,41 @@
 
 #import "CartBodyItemCell.h"
 
-@implementation CartBodyItemCell{
+@implementation CartBodyItemCell
+{
     CGFloat startContentOffsetX;
-    CGFloat willEndContentOffsetX;
-    CGFloat endContentOffsetX;
+    BOOL isLeft;
 }
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        [self buildUI];
+    }
+    return self;
+}
+
+- (void)buildUI {
     self.backgroundColor = [UIColor clearColor];
+
     
+    self.scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(9, 0, SCREEN_WIDTH-18, 140)];
+    [self.contentView addSubview:self.scrollView];
     UIImageView *bodyImageView = [[UIImageView alloc]initWithFrame:CGRectMake(-10, 0, SCREEN_WIDTH, 140)];
     bodyImageView.image = [UIImage imageNamed:@"yxl_cart_body"];
     bodyImageView.contentMode = UIViewContentModeScaleToFill;
     
-    UIView *editVI = [[UIView alloc]initWithFrame:CGRectMake(bodyImageView.width, 0, SCREEN_WIDTH/3, 140)];
-    
+    UIView *editVI = [[UIView alloc]initWithFrame:CGRectMake(bodyImageView.right-2, 0, SCREEN_WIDTH/3, 140)];
+    editVI.backgroundColor = [UIColor SUN_ColorWithHexString:@"#F0F0F0" alpha:1];
     [self.scrollView addSubview:editVI];
     [self.scrollView addSubview:bodyImageView];
     
-    self.scrollView.contentSize = CGSizeMake(SCREEN_WIDTH+1+SCREEN_WIDTH/3, 0);
-    self.scrollView.delegate = self;
+    self.scrollView.contentSize = CGSizeMake(SCREEN_WIDTH-10+SCREEN_WIDTH/3, 0);
     self.scrollView.bounces = NO;
+    self.scrollView.showsVerticalScrollIndicator = NO;
+    self.scrollView.showsHorizontalScrollIndicator = NO;
+    self.scrollView.delegate = self;
     
     self.priceLabel = [[UILabel alloc]initWithFrame:CGRectZero];
     self.editBtn = [[UIButton alloc]initWithFrame:CGRectZero];
@@ -58,7 +71,6 @@
     self.line.backgroundColor = SUN_GlobalBackgroundColor;
     self.line.frame = CGRectMake(10, self.priceLabel.bottom+10, SCREEN_WIDTH-18-20, 0.5);
     
-    
     self.productImageView.image = [UIColor SUN_ImageWithColor:[UIColor randomColor]];
     self.productImageView.frame = CGRectMake(30, self.line.bottom+18, 60, 60);
     
@@ -86,29 +98,36 @@
     
     [self.textField setBackground:[UIImage imageNamed:@"yxl_cart_edit_choose_number"]];
     self.textField.borderStyle = UITextBorderStyleNone;
+    self.textField.delegate = self;
+    self.textField.textAlignment = NSTextAlignmentCenter;
     self.subBtn.frame = CGRectMake(5, 10, (editVI.width-10)/3, 30);
     self.textField.frame = CGRectMake(self.subBtn.right, 10, self.subBtn.width, 30);
     self.addBtn.frame = CGRectMake(self.textField.right, 10, self.subBtn.width, 30);
     
+    [self.deleteBtn setTitle:@"移除商品" forState:UIControlStateNormal];
+    self.deleteBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+    [self.deleteBtn setTitleColor:SUN_GlobalTextGreyColor forState:UIControlStateNormal];
+    [self.deleteBtn setBackgroundColor:SUN_GlobalBackgroundColor];
+    [self.deleteBtn SUN_SetBordersWithColor:SUN_GlobalTextGreyColor andCornerRadius:5 andWidth:.5];
+    self.deleteBtn.frame = CGRectMake(10, self.subBtn.bottom+40, editVI.width-20, 30);
+    
 }
+
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    
     startContentOffsetX = scrollView.contentOffset.x;
 }
 
-- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset{
-        willEndContentOffsetX = scrollView.contentOffset.x;
-}
-
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-    endContentOffsetX = scrollView.contentOffset.x;
-    if (endContentOffsetX < willEndContentOffsetX && willEndContentOffsetX < startContentOffsetX) {
-//        self.editBtn.selected = NO;
-    } else if (endContentOffsetX > willEndContentOffsetX && willEndContentOffsetX > startContentOffsetX) {
-//        self.editBtn.selected = YES;
-
+-(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
+    if (startContentOffsetX>scrollView.contentOffset.x) {
+        [scrollView setContentOffset:CGPointMake(0, 0) animated:YES];
+        self.editBtn.selected = NO;
+    }
+    else{
+        [scrollView setContentOffset:CGPointMake(SCREEN_WIDTH/3+5, 0) animated:YES];
+        self.editBtn.selected = YES;
     }
 }
-
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

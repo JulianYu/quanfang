@@ -29,7 +29,7 @@
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K7U-lE-XYd">
                         <rect key="frame" x="0.0" y="30" width="320" height="270"/>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </imageView>
                 </subviews>
             </view>
@@ -42,6 +42,10 @@
                 <constraint firstAttribute="trailing" secondItem="nrw-jN-B6D" secondAttribute="trailing" id="Rbm-AY-dFZ"/>
                 <constraint firstItem="K7U-lE-XYd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ViT-Hh-w3f"/>
             </constraints>
+            <connections>
+                <outlet property="productImageView" destination="K7U-lE-XYd" id="zPq-2Z-Lmd"/>
+                <outlet property="productNameLabel" destination="nrw-jN-B6D" id="xoq-9i-p6z"/>
+            </connections>
         </collectionViewCell>
     </objects>
 </document>

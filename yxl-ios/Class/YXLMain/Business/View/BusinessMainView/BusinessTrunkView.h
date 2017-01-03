@@ -7,6 +7,9 @@
 //
 
 #import "YXLBaseView.h"
-
+#import "BusinessHomeProductsModel.h"
 @interface BusinessTrunkView : YXLBaseView
+@property( nonatomic, strong) BusinessHomeProductsModel        * model;
+@property( nonatomic, strong) UICollectionView        * collectionView;
+
 @end

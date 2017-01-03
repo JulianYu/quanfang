@@ -100,7 +100,7 @@
 }
 -(void)valueChange:(UITextField*)textField{
     
-    NSLog(@"当前输入框文字个数:%ld",textField.text.length);
+//    NSLog(@"当前输入框文字个数:%lu",textField.text.length);
     
     self.str = textField.text;
 }

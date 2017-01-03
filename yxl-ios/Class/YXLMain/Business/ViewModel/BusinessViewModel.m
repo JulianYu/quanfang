@@ -8,10 +8,13 @@
 
 #import "BusinessViewModel.h"
 #import "BusinessTrunkView.h"
-
+#import "BusinessBannerModel.h"
+#import "BusinessHomeProductsModel.h"
 @interface BusinessViewModel ()
 
 @property( nonatomic, strong) BusinessTrunkView         * trunkView;
+@property( nonatomic, strong) BusinessBannerModel        * bannerModel;
+@property( nonatomic, strong) BusinessHomeProductsModel        * homeproductsModel;
 @end
 @implementation BusinessViewModel
 - (instancetype)initWithViewController:(YXLBaseViewController *)viewController
@@ -25,6 +28,7 @@
                 
             }];
             [self setupNavi:viewController];
+            [self setUpProductsData];
         }
     }
     return self;
@@ -50,6 +54,21 @@
 -(void)locationClick{
 
 }
+
+-(void)setUpBannerDataBy:(BusinessBannerCell *)cell{
+    
+    [self getBannerListCompletionHandle:^(id model, id error) {
+        [cell updateDataBy:model];
+    }];
+}
+-(void)setUpProductsData{
+    [self getChildCategoryByParentidCompletionHandle:^(id model, id error) {
+        self.trunkView.model = model;
+        [self.trunkView.collectionView reloadData];
+    }];
+}
+
+
 #pragma mark - lazy
 -(BusinessTrunkView *)trunkView{
     if (!_trunkView) {
@@ -58,14 +77,16 @@
     return _trunkView;
 }
 #pragma mark - network requests
--(void)getBannerList{
-    NSString *url = [NSString stringWithFormat:@"%@/ApiUser/bannerList",[ServerConfig sharedServerConfig].url];
+
+-(void)getChildCategoryByParentidCompletionHandle:(void (^)(id model , id error))completionHandle{
+    NSString *url = [NSString stringWithFormat:@"%@/ApiOther/getChildCategoryByParentid",[ServerConfig sharedServerConfig].url];
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     
     [NetManager requestWithType:HttpRequestTypePost UrlString:url Parameters:params SuccessBlock:^(id response) {
         STATUS *status = [STATUS mj_objectWithKeyValues:[response objectForKey:@"status"]];
         if (status.succeed == 1) {
-            
+            self.homeproductsModel = [BusinessHomeProductsModel mj_objectWithKeyValues:response];
+            completionHandle(self.homeproductsModel,nil);
         }
         else{
             [YXLBaseViewModel presentFailureHUD:status];
@@ -74,4 +95,23 @@
     } progress:nil];
 
 }
+
+-(void)getBannerListCompletionHandle:(void (^)(id model , id error))completionHandle{
+    NSString *url = [NSString stringWithFormat:@"%@/ApiUser/bannerList",[ServerConfig sharedServerConfig].url];
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    
+    [NetManager requestWithType:HttpRequestTypePost UrlString:url Parameters:params SuccessBlock:^(id response) {
+        STATUS *status = [STATUS mj_objectWithKeyValues:[response objectForKey:@"status"]];
+        if (status.succeed == 1) {
+            self.bannerModel = [BusinessBannerModel mj_objectWithKeyValues:response];
+            completionHandle(self.bannerModel,status.msg);
+        }
+        else{
+            [YXLBaseViewModel presentFailureHUD:status];
+        }
+    } FailureBlock:^(NSError *error) {
+    } progress:nil];
+
+}
+
 @end

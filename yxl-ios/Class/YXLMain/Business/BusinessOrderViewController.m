@@ -1,32 +1,30 @@
 //
-//  BusinessViewController.m
+//  BusinessOrderViewController.m
 //  yxl-ios
 //
-//  Created by mac on 16/12/12.
-//  Copyright © 2016年 孙若淮. All rights reserved.
+//  Created by mac on 17/1/3.
+//  Copyright © 2017年 孙若淮. All rights reserved.
 //
 
-#import "BusinessViewController.h"
-
-@interface BusinessViewController ()
-
+#import "BusinessOrderViewController.h"
+#import "ProductsOrderViewModel.h"
+@interface BusinessOrderViewController ()
+@property( nonatomic, strong) ProductsOrderViewModel        * viewModel;
 @end
 
-@implementation BusinessViewController
+@implementation BusinessOrderViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self viewModel];
-    
 }
-
--(BusinessViewModel *)viewModel{
+-(ProductsOrderViewModel *)viewModel{
     if (!_viewModel) {
-        _viewModel = [[BusinessViewModel alloc]initWithViewController:self];
-        
+        _viewModel = [[ProductsOrderViewModel alloc]initWithViewController:self];
     }
     return _viewModel;
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

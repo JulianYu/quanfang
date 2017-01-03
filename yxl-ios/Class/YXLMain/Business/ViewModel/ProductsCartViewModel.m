@@ -18,6 +18,7 @@
     if (self) {
         if ([viewController isMemberOfClass:NSClassFromString(@"BusinessCartListViewController")]) {
             [viewController.view addSubview:self.cartListtableView];
+            self.cartListtableView.model = @"test";
         }
     }
     return self;
@@ -25,7 +26,7 @@
 #pragma mark - lazy
 -(CartListTableView *)cartListtableView{
     if (!_cartListtableView) {
-        _cartListtableView = [[CartListTableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+        _cartListtableView = [[CartListTableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64)];
     }
     return _cartListtableView;
 }

@@ -1,14 +1,14 @@
 //
-//  CartListFooterView.m
+//  OrderDetailFooterView.m
 //  yxl-ios
 //
-//  Created by mac on 17/1/2.
+//  Created by mac on 17/1/3.
 //  Copyright © 2017年 孙若淮. All rights reserved.
 //
 
-#import "CartListFooterView.h"
-#import "BusinessOrderViewController.h"
-@implementation CartListFooterView
+#import "OrderDetailFooterView.h"
+
+@implementation OrderDetailFooterView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -48,7 +48,7 @@
     }];
     
     [self.checkOutBtn setBackgroundColor:[UIColor redColor]];
-    [self.checkOutBtn setTitle:@"结 算" forState:UIControlStateNormal];
+    [self.checkOutBtn setTitle:@"提交订单" forState:UIControlStateNormal];
     [self.checkOutBtn addTarget:self action:@selector(checkOut) forControlEvents:UIControlEventTouchUpInside];
     self.checkOutBtn.titleLabel.font = [UIFont systemFontOfSize:14];
     [self.checkOutBtn setTitleColor:SUN_GlobalWhiteColor forState:UIControlStateNormal];
@@ -59,11 +59,10 @@
         make.right.mas_equalTo(self.checkOutBtn.mas_left).offset(-10);
         make.height.mas_equalTo(21);
     }];
-
+    
 }
 -(void)checkOut{
-    BusinessOrderViewController *vc = [BusinessOrderViewController new];
-    vc.title = @"结算";
-    [[self SUN_GetCurrentNavigationController] pushViewController:vc animated:YES];
 }
+
+
 @end

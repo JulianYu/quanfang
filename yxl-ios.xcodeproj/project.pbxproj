@@ -109,6 +109,8 @@
 		042DB38D1E111BDA00E4F57D /* MineBalanceBankCardTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DB38C1E111BDA00E4F57D /* MineBalanceBankCardTableView.m */; };
 		0439C3FB1E0CD1B900F1BE82 /* MineBalanceRechargeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0439C3FA1E0CD1B900F1BE82 /* MineBalanceRechargeViewController.m */; };
 		0439C3FE1E0CD1D900F1BE82 /* MineBalanceWithdrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0439C3FD1E0CD1D900F1BE82 /* MineBalanceWithdrawViewController.m */; };
+		043E85901E1B9CEC001C6973 /* HomeRelationshipViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 043E858F1E1B9CEC001C6973 /* HomeRelationshipViewModel.m */; };
+		043E85931E1BA1D2001C6973 /* BusinessBannerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 043E85921E1BA1D2001C6973 /* BusinessBannerModel.m */; };
 		045FE3F61E0911230069E4F3 /* ProductsDetailFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045FE3F51E0911230069E4F3 /* ProductsDetailFooterView.m */; };
 		045FE3FB1E091E600069E4F3 /* yxl_shop_footer_cart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 045FE3F71E091E600069E4F3 /* yxl_shop_footer_cart@2x.png */; };
 		045FE3FC1E091E600069E4F3 /* yxl_shop_footer_chat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 045FE3F81E091E600069E4F3 /* yxl_shop_footer_chat@2x.png */; };
@@ -174,8 +176,15 @@
 		0499C0561E0BC35E007B5DD3 /* MineInfromationTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499C0551E0BC35E007B5DD3 /* MineInfromationTableView.m */; };
 		0499C0591E0BCBBF007B5DD3 /* MineModifyNickNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499C0581E0BCBBF007B5DD3 /* MineModifyNickNameViewController.m */; };
 		0499C0821E0C24F4007B5DD3 /* YXLBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499C0811E0C24F4007B5DD3 /* YXLBaseTableView.m */; };
+		04A386DB1E1BA62600202D7A /* yxl_placeholder_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A386DA1E1BA62600202D7A /* yxl_placeholder_image@2x.png */; };
+		04A386DE1E1BAC8E00202D7A /* BusinessHomeProductsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A386DD1E1BAC8E00202D7A /* BusinessHomeProductsModel.m */; };
 		04A3926C1E0132CB00A9FDAD /* BusinessViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A3926B1E0132CB00A9FDAD /* BusinessViewModel.m */; };
 		04A3926F1E01330D00A9FDAD /* BusinessModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A3926E1E01330D00A9FDAD /* BusinessModel.m */; };
+		04ACBACE1E1B419C006D79DF /* BusinessOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ACBACD1E1B419C006D79DF /* BusinessOrderViewController.m */; };
+		04ACBAD11E1B426B006D79DF /* ProductsOrderViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ACBAD01E1B426B006D79DF /* ProductsOrderViewModel.m */; };
+		04ACBAD41E1B43DB006D79DF /* OrderDetailTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ACBAD31E1B43DB006D79DF /* OrderDetailTableView.m */; };
+		04ACBAD91E1B4709006D79DF /* yxl_order_checkout_headerCellBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ACBAD61E1B4709006D79DF /* yxl_order_checkout_headerCellBg@2x.png */; };
+		04ACBADA1E1B4709006D79DF /* yxl_order_checkout_headerView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04ACBAD71E1B4709006D79DF /* yxl_order_checkout_headerView@2x.png */; };
 		04B0FC121E0A5AA100724656 /* MinePendingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC111E0A5AA100724656 /* MinePendingViewController.m */; };
 		04B0FC151E0A5BE300724656 /* MinePendingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC141E0A5BE300724656 /* MinePendingViewModel.m */; };
 		04B0FC1D1E0A5C1300724656 /* MineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B0FC181E0A5C1300724656 /* MineHeaderView.m */; };
@@ -202,7 +211,6 @@
 		04B22A601E1A2B1B00A493AD /* yxl_cart_body@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B22A5D1E1A2B1B00A493AD /* yxl_cart_body@2x.png */; };
 		04B22A611E1A2B1B00A493AD /* yxl_cart_header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B22A5E1E1A2B1B00A493AD /* yxl_cart_header@2x.png */; };
 		04B22A651E1A2D2100A493AD /* CartBodyItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B22A631E1A2D2100A493AD /* CartBodyItemCell.m */; };
-		04B22A661E1A2D2100A493AD /* CartBodyItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B22A641E1A2D2100A493AD /* CartBodyItemCell.xib */; };
 		04B22A691E1A468800A493AD /* CartListFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B22A681E1A468800A493AD /* CartListFooterView.m */; };
 		04B22A6D1E1A59B000A493AD /* yxl_cart_edit_choose_addBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B22A6A1E1A59B000A493AD /* yxl_cart_edit_choose_addBtn@2x.png */; };
 		04B22A6E1E1A59B000A493AD /* yxl_cart_edit_choose_number@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B22A6B1E1A59B000A493AD /* yxl_cart_edit_choose_number@2x.png */; };
@@ -211,6 +219,14 @@
 		04B64F2B1E0CBCEE006BBF35 /* MineBalanceViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B64F2A1E0CBCEE006BBF35 /* MineBalanceViewModel.m */; };
 		04B64F2F1E0CBEA3006BBF35 /* MineBalanceHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B64F2E1E0CBEA3006BBF35 /* MineBalanceHeaderView.m */; };
 		04B64F321E0CBF94006BBF35 /* MineBalanceTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B64F311E0CBF94006BBF35 /* MineBalanceTableView.m */; };
+		04B6CFAA1E1B7E5600A5B854 /* OrderAddressRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6CFA81E1B7E5600A5B854 /* OrderAddressRowCell.m */; };
+		04B6CFAB1E1B7E5600A5B854 /* OrderAddressRowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B6CFA91E1B7E5600A5B854 /* OrderAddressRowCell.xib */; };
+		04B6CFAF1E1B7ED900A5B854 /* OrderPaymentRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6CFAD1E1B7ED900A5B854 /* OrderPaymentRowCell.m */; };
+		04B6CFB01E1B7ED900A5B854 /* OrderPaymentRowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B6CFAE1E1B7ED900A5B854 /* OrderPaymentRowCell.xib */; };
+		04B6CFB41E1B7F0A00A5B854 /* OrderInformationBodyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6CFB21E1B7F0A00A5B854 /* OrderInformationBodyCell.m */; };
+		04B6CFB51E1B7F0A00A5B854 /* OrderInformationBodyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B6CFB31E1B7F0A00A5B854 /* OrderInformationBodyCell.xib */; };
+		04B6CFB71E1B8AB100A5B854 /* yxl_order_checkout_necessary@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B6CFB61E1B8AB100A5B854 /* yxl_order_checkout_necessary@2x.png */; };
+		04B6CFBA1E1B93A700A5B854 /* OrderDetailFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6CFB91E1B93A700A5B854 /* OrderDetailFooterView.m */; };
 		04C21A9E1DFF94D20075BBC7 /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C21A9D1DFF94D20075BBC7 /* UILabel+Category.m */; };
 		04C21AA71DFFA24E0075BBC7 /* MineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C21AA61DFFA24E0075BBC7 /* MineViewModel.m */; };
 		04C21AAA1DFFA5880075BBC7 /* YXLBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C21AA91DFFA5880075BBC7 /* YXLBaseViewModel.m */; };
@@ -447,6 +463,10 @@
 		0439C3FA1E0CD1B900F1BE82 /* MineBalanceRechargeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineBalanceRechargeViewController.m; sourceTree = "<group>"; };
 		0439C3FC1E0CD1D900F1BE82 /* MineBalanceWithdrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineBalanceWithdrawViewController.h; sourceTree = "<group>"; };
 		0439C3FD1E0CD1D900F1BE82 /* MineBalanceWithdrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineBalanceWithdrawViewController.m; sourceTree = "<group>"; };
+		043E858E1E1B9CEC001C6973 /* HomeRelationshipViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeRelationshipViewModel.h; sourceTree = "<group>"; };
+		043E858F1E1B9CEC001C6973 /* HomeRelationshipViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeRelationshipViewModel.m; sourceTree = "<group>"; };
+		043E85911E1BA1D2001C6973 /* BusinessBannerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessBannerModel.h; sourceTree = "<group>"; };
+		043E85921E1BA1D2001C6973 /* BusinessBannerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessBannerModel.m; sourceTree = "<group>"; };
 		045FE3F41E0911230069E4F3 /* ProductsDetailFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsDetailFooterView.h; sourceTree = "<group>"; };
 		045FE3F51E0911230069E4F3 /* ProductsDetailFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsDetailFooterView.m; sourceTree = "<group>"; };
 		045FE3F71E091E600069E4F3 /* yxl_shop_footer_cart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_shop_footer_cart@2x.png"; sourceTree = "<group>"; };
@@ -552,10 +572,21 @@
 		0499C0581E0BCBBF007B5DD3 /* MineModifyNickNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineModifyNickNameViewController.m; sourceTree = "<group>"; };
 		0499C0801E0C24F4007B5DD3 /* YXLBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXLBaseTableView.h; sourceTree = "<group>"; };
 		0499C0811E0C24F4007B5DD3 /* YXLBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXLBaseTableView.m; sourceTree = "<group>"; };
+		04A386DA1E1BA62600202D7A /* yxl_placeholder_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_placeholder_image@2x.png"; sourceTree = "<group>"; };
+		04A386DC1E1BAC8E00202D7A /* BusinessHomeProductsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessHomeProductsModel.h; sourceTree = "<group>"; };
+		04A386DD1E1BAC8E00202D7A /* BusinessHomeProductsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessHomeProductsModel.m; sourceTree = "<group>"; };
 		04A3926A1E0132CB00A9FDAD /* BusinessViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessViewModel.h; sourceTree = "<group>"; };
 		04A3926B1E0132CB00A9FDAD /* BusinessViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessViewModel.m; sourceTree = "<group>"; };
 		04A3926D1E01330D00A9FDAD /* BusinessModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessModel.h; sourceTree = "<group>"; };
 		04A3926E1E01330D00A9FDAD /* BusinessModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessModel.m; sourceTree = "<group>"; };
+		04ACBACC1E1B419C006D79DF /* BusinessOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessOrderViewController.h; sourceTree = "<group>"; };
+		04ACBACD1E1B419C006D79DF /* BusinessOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessOrderViewController.m; sourceTree = "<group>"; };
+		04ACBACF1E1B426B006D79DF /* ProductsOrderViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsOrderViewModel.h; sourceTree = "<group>"; };
+		04ACBAD01E1B426B006D79DF /* ProductsOrderViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsOrderViewModel.m; sourceTree = "<group>"; };
+		04ACBAD21E1B43DB006D79DF /* OrderDetailTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailTableView.h; sourceTree = "<group>"; };
+		04ACBAD31E1B43DB006D79DF /* OrderDetailTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailTableView.m; sourceTree = "<group>"; };
+		04ACBAD61E1B4709006D79DF /* yxl_order_checkout_headerCellBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_order_checkout_headerCellBg@2x.png"; sourceTree = "<group>"; };
+		04ACBAD71E1B4709006D79DF /* yxl_order_checkout_headerView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_order_checkout_headerView@2x.png"; sourceTree = "<group>"; };
 		04B0FC101E0A5AA100724656 /* MinePendingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinePendingViewController.h; sourceTree = "<group>"; };
 		04B0FC111E0A5AA100724656 /* MinePendingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinePendingViewController.m; sourceTree = "<group>"; };
 		04B0FC131E0A5BE300724656 /* MinePendingViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinePendingViewModel.h; sourceTree = "<group>"; };
@@ -601,7 +632,6 @@
 		04B22A5E1E1A2B1B00A493AD /* yxl_cart_header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_cart_header@2x.png"; sourceTree = "<group>"; };
 		04B22A621E1A2D2100A493AD /* CartBodyItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartBodyItemCell.h; sourceTree = "<group>"; };
 		04B22A631E1A2D2100A493AD /* CartBodyItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartBodyItemCell.m; sourceTree = "<group>"; };
-		04B22A641E1A2D2100A493AD /* CartBodyItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartBodyItemCell.xib; sourceTree = "<group>"; };
 		04B22A671E1A468800A493AD /* CartListFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartListFooterView.h; sourceTree = "<group>"; };
 		04B22A681E1A468800A493AD /* CartListFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartListFooterView.m; sourceTree = "<group>"; };
 		04B22A6A1E1A59B000A493AD /* yxl_cart_edit_choose_addBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_cart_edit_choose_addBtn@2x.png"; sourceTree = "<group>"; };
@@ -615,6 +645,18 @@
 		04B64F2E1E0CBEA3006BBF35 /* MineBalanceHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineBalanceHeaderView.m; sourceTree = "<group>"; };
 		04B64F301E0CBF94006BBF35 /* MineBalanceTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineBalanceTableView.h; sourceTree = "<group>"; };
 		04B64F311E0CBF94006BBF35 /* MineBalanceTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineBalanceTableView.m; sourceTree = "<group>"; };
+		04B6CFA71E1B7E5600A5B854 /* OrderAddressRowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderAddressRowCell.h; sourceTree = "<group>"; };
+		04B6CFA81E1B7E5600A5B854 /* OrderAddressRowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderAddressRowCell.m; sourceTree = "<group>"; };
+		04B6CFA91E1B7E5600A5B854 /* OrderAddressRowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderAddressRowCell.xib; sourceTree = "<group>"; };
+		04B6CFAC1E1B7ED900A5B854 /* OrderPaymentRowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderPaymentRowCell.h; sourceTree = "<group>"; };
+		04B6CFAD1E1B7ED900A5B854 /* OrderPaymentRowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderPaymentRowCell.m; sourceTree = "<group>"; };
+		04B6CFAE1E1B7ED900A5B854 /* OrderPaymentRowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderPaymentRowCell.xib; sourceTree = "<group>"; };
+		04B6CFB11E1B7F0A00A5B854 /* OrderInformationBodyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderInformationBodyCell.h; sourceTree = "<group>"; };
+		04B6CFB21E1B7F0A00A5B854 /* OrderInformationBodyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderInformationBodyCell.m; sourceTree = "<group>"; };
+		04B6CFB31E1B7F0A00A5B854 /* OrderInformationBodyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderInformationBodyCell.xib; sourceTree = "<group>"; };
+		04B6CFB61E1B8AB100A5B854 /* yxl_order_checkout_necessary@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yxl_order_checkout_necessary@2x.png"; sourceTree = "<group>"; };
+		04B6CFB81E1B93A700A5B854 /* OrderDetailFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailFooterView.h; sourceTree = "<group>"; };
+		04B6CFB91E1B93A700A5B854 /* OrderDetailFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailFooterView.m; sourceTree = "<group>"; };
 		04C21A9C1DFF94D20075BBC7 /* UILabel+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Category.h"; sourceTree = "<group>"; };
 		04C21A9D1DFF94D20075BBC7 /* UILabel+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Category.m"; sourceTree = "<group>"; };
 		04C21AA51DFFA24E0075BBC7 /* MineViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewModel.h; sourceTree = "<group>"; };
@@ -964,13 +1006,6 @@
 			path = HomeVIPPromoteView;
 			sourceTree = "<group>";
 		};
-		0424ECBE1E0E139B006B0C3B /* HomePaymentView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HomePaymentView;
-			sourceTree = "<group>";
-		};
 		0424ECE81E0E65DD006B0C3B /* HomeConvertView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1032,6 +1067,9 @@
 		042B5A101DFF835F002BB6A5 /* shop */ = {
 			isa = PBXGroup;
 			children = (
+				04B6CFB61E1B8AB100A5B854 /* yxl_order_checkout_necessary@2x.png */,
+				04ACBAD61E1B4709006D79DF /* yxl_order_checkout_headerCellBg@2x.png */,
+				04ACBAD71E1B4709006D79DF /* yxl_order_checkout_headerView@2x.png */,
 				04B22A6A1E1A59B000A493AD /* yxl_cart_edit_choose_addBtn@2x.png */,
 				04B22A6B1E1A59B000A493AD /* yxl_cart_edit_choose_number@2x.png */,
 				04B22A6C1E1A59B000A493AD /* yxl_cart_edit_choose_subBtn@2x.png */,
@@ -1068,9 +1106,28 @@
 				04B22A681E1A468800A493AD /* CartListFooterView.m */,
 				04B22A621E1A2D2100A493AD /* CartBodyItemCell.h */,
 				04B22A631E1A2D2100A493AD /* CartBodyItemCell.m */,
-				04B22A641E1A2D2100A493AD /* CartBodyItemCell.xib */,
+				04ACBAD21E1B43DB006D79DF /* OrderDetailTableView.h */,
+				04ACBAD31E1B43DB006D79DF /* OrderDetailTableView.m */,
+				04B6CFB81E1B93A700A5B854 /* OrderDetailFooterView.h */,
+				04B6CFB91E1B93A700A5B854 /* OrderDetailFooterView.m */,
+				04B6CFA71E1B7E5600A5B854 /* OrderAddressRowCell.h */,
+				04B6CFA81E1B7E5600A5B854 /* OrderAddressRowCell.m */,
+				04B6CFA91E1B7E5600A5B854 /* OrderAddressRowCell.xib */,
+				04B6CFAC1E1B7ED900A5B854 /* OrderPaymentRowCell.h */,
+				04B6CFAD1E1B7ED900A5B854 /* OrderPaymentRowCell.m */,
+				04B6CFAE1E1B7ED900A5B854 /* OrderPaymentRowCell.xib */,
+				04B6CFB11E1B7F0A00A5B854 /* OrderInformationBodyCell.h */,
+				04B6CFB21E1B7F0A00A5B854 /* OrderInformationBodyCell.m */,
+				04B6CFB31E1B7F0A00A5B854 /* OrderInformationBodyCell.xib */,
 			);
 			path = "Cart&OrderView";
+			sourceTree = "<group>";
+		};
+		043E858D1E1B9A62001C6973 /* HomeRelationshipView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeRelationshipView;
 			sourceTree = "<group>";
 		};
 		045FE40E1E092F930069E4F3 /* Network */ = {
@@ -1117,6 +1174,7 @@
 				0424ECE41E0E5C04006B0C3B /* yxl_pay_weChatPay@2x.png */,
 				0424ECE61E0E5D0D006B0C3B /* yxl_pay_aliPay@2x.png */,
 				04DB8CFD1E165C7800153820 /* yxl_pay_bankcard@2x.png */,
+				04A386DA1E1BA62600202D7A /* yxl_placeholder_image@2x.png */,
 				040E34E81E13C52F00484EAD /* yxl_placeholder_avatar@2x.png */,
 			);
 			path = Resource;
@@ -1246,8 +1304,8 @@
 		04626A0B1DFB93DA00B4DE7C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				043E858D1E1B9A62001C6973 /* HomeRelationshipView */,
 				0424ECE81E0E65DD006B0C3B /* HomeConvertView */,
-				0424ECBE1E0E139B006B0C3B /* HomePaymentView */,
 				0424ECBD1E0E12C1006B0C3B /* HomeVIPPromoteView */,
 				0424ECAB1E0E1170006B0C3B /* HomeMainView */,
 			);
@@ -1359,7 +1417,6 @@
 				04B64F2C1E0CBD66006BBF35 /* MineBalanceView */,
 				04B0FC3E1E0A773B00724656 /* MineSystemSettingView */,
 				04B0FC201E0A5C5800724656 /* MinePendingView */,
-				04B0FC211E0A5C5800724656 /* MineRelationshipView */,
 				04B0FC161E0A5C1300724656 /* MineMainView */,
 			);
 			path = View;
@@ -1407,6 +1464,8 @@
 				04EDF5821E07BC6F0002D126 /* BusinessProductsDetailViewController.m */,
 				042DB3731E11069600E4F57D /* BusinessCartListViewController.h */,
 				042DB3741E11069600E4F57D /* BusinessCartListViewController.m */,
+				04ACBACC1E1B419C006D79DF /* BusinessOrderViewController.h */,
+				04ACBACD1E1B419C006D79DF /* BusinessOrderViewController.m */,
 			);
 			path = Business;
 			sourceTree = "<group>";
@@ -1417,6 +1476,10 @@
 				04A3926D1E01330D00A9FDAD /* BusinessModel.h */,
 				04A3926E1E01330D00A9FDAD /* BusinessModel.m */,
 				046355521E01468D00D03294 /* BusinessGridlist.plist */,
+				043E85911E1BA1D2001C6973 /* BusinessBannerModel.h */,
+				043E85921E1BA1D2001C6973 /* BusinessBannerModel.m */,
+				04A386DC1E1BAC8E00202D7A /* BusinessHomeProductsModel.h */,
+				04A386DD1E1BAC8E00202D7A /* BusinessHomeProductsModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1483,6 +1546,8 @@
 				04EDF5851E07BD960002D126 /* ProductsDetailViewModel.m */,
 				042DB3761E110EC800E4F57D /* ProductsCartViewModel.h */,
 				042DB3771E110EC800E4F57D /* ProductsCartViewModel.m */,
+				04ACBACF1E1B426B006D79DF /* ProductsOrderViewModel.h */,
+				04ACBAD01E1B426B006D79DF /* ProductsOrderViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1525,13 +1590,6 @@
 				0424ECF61E0E7CD4006B0C3B /* MinePendingDetailTableView.m */,
 			);
 			path = MinePendingView;
-			sourceTree = "<group>";
-		};
-		04B0FC211E0A5C5800724656 /* MineRelationshipView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MineRelationshipView;
 			sourceTree = "<group>";
 		};
 		04B0FC3E1E0A773B00724656 /* MineSystemSettingView */ = {
@@ -1594,6 +1652,8 @@
 				0424ECC71E0E14A0006B0C3B /* HomePromoteViewModel.m */,
 				0424ECE91E0E65FE006B0C3B /* HomeConvertViewModel.h */,
 				0424ECEA1E0E65FE006B0C3B /* HomeConvertViewModel.m */,
+				043E858E1E1B9CEC001C6973 /* HomeRelationshipViewModel.h */,
+				043E858F1E1B9CEC001C6973 /* HomeRelationshipViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1829,6 +1889,7 @@
 				042B5A301DFF835F002BB6A5 /* yxl_shop_search@2x.png in Resources */,
 				04B22A6F1E1A59B000A493AD /* yxl_cart_edit_choose_subBtn@2x.png in Resources */,
 				04626A2F1DFBA78900B4DE7C /* yxl_home@2x.png in Resources */,
+				04B6CFB51E1B7F0A00A5B854 /* OrderInformationBodyCell.xib in Resources */,
 				04EDF5C81E08CE9C0002D126 /* ProductSellerSecondRowCell.xib in Resources */,
 				04C21ABF1DFFD13A0075BBC7 /* MineList.plist in Resources */,
 				04C21AC11DFFD3A30075BBC7 /* yxl_mine_gold@2x.png in Resources */,
@@ -1838,6 +1899,7 @@
 				042B5A291DFF835F002BB6A5 /* yxl_shop_building@2x.png in Resources */,
 				042B5A311DFF835F002BB6A5 /* yxl_shop_tea@2x.png in Resources */,
 				042B5A2D1DFF835F002BB6A5 /* yxl_shop_life@2x.png in Resources */,
+				04B6CFB71E1B8AB100A5B854 /* yxl_order_checkout_necessary@2x.png in Resources */,
 				042B5A201DFF835F002BB6A5 /* yxl_home_popularize@2x.png in Resources */,
 				04B0FC381E0A61D300724656 /* MinePendingPriceRowCell.xib in Resources */,
 				04B22A601E1A2B1B00A493AD /* yxl_cart_body@2x.png in Resources */,
@@ -1846,6 +1908,7 @@
 				042DB3841E11172700E4F57D /* MineBalanceRechargeNumberViewController.xib in Resources */,
 				04EDF5CD1E08CEC50002D126 /* ProductRankRowCell.xib in Resources */,
 				0477EAFE1E1245B50082BFF1 /* MineAddressAddItemCell.xib in Resources */,
+				04B6CFB01E1B7ED900A5B854 /* OrderPaymentRowCell.xib in Resources */,
 				0424ECAA1E0E0F23006B0C3B /* yxl_login_selected@2x.png in Resources */,
 				04626A311DFBA78900B4DE7C /* yxl_message@2x.png in Resources */,
 				042B5A4A1DFF8791002BB6A5 /* yxl_mine_pendingDispatch@2x.png in Resources */,
@@ -1876,12 +1939,12 @@
 				046355591E0149E000D03294 /* yxl_shop_amusement@2x.png in Resources */,
 				04EDF5881E07C16C0002D126 /* yxl_nav_share@2x.png in Resources */,
 				04B22A6E1E1A59B000A493AD /* yxl_cart_edit_choose_number@2x.png in Resources */,
-				04B22A661E1A2D2100A493AD /* CartBodyItemCell.xib in Resources */,
 				04D319F01DFE8946006C8016 /* yxl_nav_bg@2x.png in Resources */,
 				042B5A421DFF8791002BB6A5 /* yxl_mine_bankcard@2x.png in Resources */,
 				046355571E0149CE00D03294 /* yxl_shop_wine@2x.png in Resources */,
 				04B22A611E1A2B1B00A493AD /* yxl_cart_header@2x.png in Resources */,
 				042B5A2A1DFF835F002BB6A5 /* yxl_shop_clothes@2x.png in Resources */,
+				04B6CFAB1E1B7E5600A5B854 /* OrderAddressRowCell.xib in Resources */,
 				042B5A221DFF835F002BB6A5 /* yxl_home_recharge@2x.png in Resources */,
 				0403BFBE1E0D006400BEDA43 /* SignUpViewController.xib in Resources */,
 				042B5A2B1DFF835F002BB6A5 /* yxl_shop_electrical@2x.png in Resources */,
@@ -1901,6 +1964,7 @@
 				0499C03F1E0B7656007B5DD3 /* MineTransactionPasswordViewController.xib in Resources */,
 				042B5A281DFF835F002BB6A5 /* yxl_shop_beauty@2x.png in Resources */,
 				042B5A251DFF835F002BB6A5 /* yxl_home_stock@2x.png in Resources */,
+				04A386DB1E1BA62600202D7A /* yxl_placeholder_image@2x.png in Resources */,
 				04D319F31DFE897E006C8016 /* yxl_nav_back@2x.png in Resources */,
 				04626A341DFBA78900B4DE7C /* yxl_shop_s@2x.png in Resources */,
 				042B5A4C1DFF8791002BB6A5 /* yxl_mine_silver@2x.png in Resources */,
@@ -1913,6 +1977,8 @@
 				0424ECD81E0E1968006B0C3B /* HomeVIPSelectedSexItemCell.xib in Resources */,
 				04626A2E1DFBA78900B4DE7C /* yxl_home_s@2x.png in Resources */,
 				042B5A1B1DFF835F002BB6A5 /* yxl_home_cashier@2x.png in Resources */,
+				04ACBADA1E1B4709006D79DF /* yxl_order_checkout_headerView@2x.png in Resources */,
+				04ACBAD91E1B4709006D79DF /* yxl_order_checkout_headerCellBg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1992,13 +2058,16 @@
 				04C21ADF1DFFD7430075BBC7 /* MJPropertyType.m in Sources */,
 				04E4329C1E10C19B00225824 /* ProductChooseView.m in Sources */,
 				04C21AE01DFFD7430075BBC7 /* NSObject+MJClass.m in Sources */,
+				04B6CFAF1E1B7ED900A5B854 /* OrderPaymentRowCell.m in Sources */,
 				04C21ADC1DFFD7430075BBC7 /* MJFoundation.m in Sources */,
 				04E911D81DFC023900C84802 /* SDWebImageDecoder.m in Sources */,
 				04E911DC1DFC023900C84802 /* SDWebImagePrefetcher.m in Sources */,
+				04B6CFB41E1B7F0A00A5B854 /* OrderInformationBodyCell.m in Sources */,
 				0403BFBD1E0D006400BEDA43 /* SignUpViewController.m in Sources */,
 				048975711E19EEC3008F8FED /* HomeJoinUsViewController.m in Sources */,
 				040E34E41E13BED500484EAD /* NSObject+Category.m in Sources */,
 				04B0FC371E0A61D300724656 /* MinePendingPriceRowCell.m in Sources */,
+				04B6CFAA1E1B7E5600A5B854 /* OrderAddressRowCell.m in Sources */,
 				0424ECF41E0E7258006B0C3B /* MinePendingDetailViewController.m in Sources */,
 				04B0FC471E0A782600724656 /* MineCollectionListViewController.m in Sources */,
 				04D318F01DFE376D006C8016 /* AppDelegate.m in Sources */,
@@ -2015,11 +2084,13 @@
 				04B0FC1E1E0A5C1300724656 /* MineSecondRowCell.m in Sources */,
 				04D319D11DFE4FCD006C8016 /* YXLNavigationController.m in Sources */,
 				0424ECBB1E0E1170006B0C3B /* HomeHeaderView.m in Sources */,
+				04B6CFBA1E1B93A700A5B854 /* OrderDetailFooterView.m in Sources */,
 				0424ECDD1E0E5394006B0C3B /* HomeVIPLevelViewController.m in Sources */,
 				04B64F281E0CBB4F006BBF35 /* MineBalanceViewController.m in Sources */,
 				0499C0291E0B68FC007B5DD3 /* MineModifyPasswordTableView.m in Sources */,
 				049419DB1E1657FA007083C1 /* HomeNoticeListModel.m in Sources */,
 				04B0FC321E0A61C500724656 /* MinePendingInformationRowCell.m in Sources */,
+				04ACBAD41E1B43DB006D79DF /* OrderDetailTableView.m in Sources */,
 				0499C0531E0BC18B007B5DD3 /* MineDetailViewController.m in Sources */,
 				04C21A9E1DFF94D20075BBC7 /* UILabel+Category.m in Sources */,
 				04EDF5831E07BC6F0002D126 /* BusinessProductsDetailViewController.m in Sources */,
@@ -2046,6 +2117,7 @@
 				0424ECCE1E0E157E006B0C3B /* HomeVIPApplicationTableView.m in Sources */,
 				04C21AA71DFFA24E0075BBC7 /* MineViewModel.m in Sources */,
 				04B0FC1D1E0A5C1300724656 /* MineHeaderView.m in Sources */,
+				04A386DE1E1BAC8E00202D7A /* BusinessHomeProductsModel.m in Sources */,
 				0424ECE31E0E595E006B0C3B /* MineBalanceWithdrawTableView.m in Sources */,
 				04B0FC531E0A7C3300724656 /* MineSettingsTableView.m in Sources */,
 				04C21ADD1DFFD7430075BBC7 /* MJProperty.m in Sources */,
@@ -2057,6 +2129,7 @@
 				04D319C71DFE4300006C8016 /* SVIndefiniteAnimatedView.m in Sources */,
 				04E911D51DFC023900C84802 /* NSData+ImageContentType.m in Sources */,
 				04B0FC281E0A617700724656 /* MinePendingHeaderRowCell.m in Sources */,
+				043E85901E1B9CEC001C6973 /* HomeRelationshipViewModel.m in Sources */,
 				04D319E31DFE5695006C8016 /* HomeViewController.m in Sources */,
 				0477EAF61E1241B00082BFF1 /* MineAddressAddViewController.m in Sources */,
 				04B64F2B1E0CBCEE006BBF35 /* MineBalanceViewModel.m in Sources */,
@@ -2067,6 +2140,7 @@
 				04EDF5861E07BD960002D126 /* ProductsDetailViewModel.m in Sources */,
 				0477EAF91E1244810082BFF1 /* MineAddressAddTableView.m in Sources */,
 				0499C0431E0BB168007B5DD3 /* MineBankCardItemCell.m in Sources */,
+				043E85931E1BA1D2001C6973 /* BusinessBannerModel.m in Sources */,
 				04A3926F1E01330D00A9FDAD /* BusinessModel.m in Sources */,
 				04E911D71DFC023900C84802 /* SDWebImageCompat.m in Sources */,
 				04B0FC4D1E0A7AFD00724656 /* MineBankCardViewModel.m in Sources */,
@@ -2087,6 +2161,7 @@
 				04B0FC1F1E0A5C1300724656 /* MineTrunkView.m in Sources */,
 				046E7CA01E039BBF001AC2A7 /* ProductsListTrunkView.m in Sources */,
 				0403BFC01E0D006400BEDA43 /* UserViewModel.m in Sources */,
+				04ACBACE1E1B419C006D79DF /* BusinessOrderViewController.m in Sources */,
 				04E911D91DFC023900C84802 /* SDWebImageDownloader.m in Sources */,
 				0477EAE71E120E2E0082BFF1 /* MineAddressManageViewController.m in Sources */,
 				045FE3F61E0911230069E4F3 /* ProductsDetailFooterView.m in Sources */,
@@ -2137,6 +2212,7 @@
 				0403BFBB1E0D006400BEDA43 /* ResertPasswordViewController.m in Sources */,
 				041241A81DE81BA30028E618 /* yxl_ios.xcdatamodeld in Sources */,
 				042DB38A1E111B1400E4F57D /* MineBalanceRechargeBankCardViewController.m in Sources */,
+				04ACBAD11E1B426B006D79DF /* ProductsOrderViewModel.m in Sources */,
 				042551371E1507FF00B63563 /* MineFeedBackCell.m in Sources */,
 				046355B71E02847A00D03294 /* UITabBar+Animation.m in Sources */,
 				04B0FC501E0A7B0900724656 /* MineCollectionViewModel.m in Sources */,

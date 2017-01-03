@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11535.1" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="OrderAddressRowCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yxl_order_checkout_headerView.png" translatesAutoresizingMaskIntoConstraints="NO" id="ynt-2v-baC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收件人：张三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QmT-iA-QR3">
+                        <rect key="frame" x="18" y="18" width="294" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="pVL-Zv-0LQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广东省 深圳市 宝安区" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fth-t2-w9c">
+                        <rect key="frame" x="18" y="51" width="294" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="DcY-1h-gVy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QmT-iA-QR3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="3aV-Zd-LGy"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="QmT-iA-QR3" secondAttribute="trailing" id="DPT-uW-eca"/>
+                    <constraint firstItem="Fth-t2-w9c" firstAttribute="top" secondItem="QmT-iA-QR3" secondAttribute="bottom" constant="12" id="K1M-wq-6FE"/>
+                    <constraint firstItem="ynt-2v-baC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Mms-4g-GJ8"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Fth-t2-w9c" secondAttribute="trailing" id="O3j-T4-CYW"/>
+                    <constraint firstItem="ynt-2v-baC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ok9-fh-ycs"/>
+                    <constraint firstAttribute="trailing" secondItem="ynt-2v-baC" secondAttribute="trailing" id="TXB-dw-WPT"/>
+                    <constraint firstItem="Fth-t2-w9c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="arZ-tM-jBI"/>
+                    <constraint firstItem="QmT-iA-QR3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="gFr-ir-NEx"/>
+                    <constraint firstAttribute="bottom" secondItem="ynt-2v-baC" secondAttribute="bottom" id="wQ6-47-zhT"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="yxl_order_checkout_headerView.png" width="303" height="113"/>
+    </resources>
+</document>

@@ -17,7 +17,7 @@
 
 #define SUN_NavigationH 44
 
-#define SUN_GlobalBackgroundColor [UIColor SUN_ColorWithHexString:@"#E6E6E6" alpha:1]
+#define SUN_GlobalBackgroundColor [UIColor SUN_ColorWithHexString:@"#E6E6E7" alpha:1]
 
 #define SUN_GlobalNormalColor [UIColor SUN_ColorWithHexString:@"#E70050" alpha:1]
 

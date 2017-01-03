@@ -13,4 +13,6 @@
 UITableViewDataSource,
 UITableViewDelegate
 >
+@property( nonatomic, copy) NSString        * model;
+
 @end

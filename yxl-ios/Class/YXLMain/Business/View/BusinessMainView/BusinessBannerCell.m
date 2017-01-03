@@ -9,7 +9,7 @@
 #import "BusinessBannerCell.h"
 #import "BusinessViewController.h"
 
-#define MAX_PAGE_COUNT 4
+//#define MAX_PAGE_COUNT 4
 
 @interface BusinessBannerCell ()<UIScrollViewDelegate>
 @property (nonatomic, strong) UIScrollView                  *scrollView;
@@ -17,13 +17,32 @@
 @property (nonatomic, strong) UIPageControl                 *pagecontrol;
 
 @end
-@implementation BusinessBannerCell
+@implementation BusinessBannerCell{
+    NSInteger count;
+}
 
 -(void)buildUI{
     [self scrollView];
-    [self updateData];
 }
--(void)updateData{
+-(void)updateDataBy:(BusinessBannerModel *)model{
+    
+    for (int i = 0; i < model.data.player.count ; i++) {
+        UIImageView *image = [[UIImageView alloc]initWithFrame:CGRectMake(SCREEN_WIDTH*i, 0, SCREEN_WIDTH, self.height)];
+        NSString *url = [NSString stringWithFormat:@"%@/%@",[ServerConfig sharedServerConfig].url,[model.data.player objectAtIndex:i].img];
+        [image sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:@"yxl_placeholder_image"]];
+        [self.scrollView addSubview:image];
+    }
+    self.scrollView.contentSize = CGSizeMake(SCREEN_WIDTH * model.data.player.count, self.scrollView.height);
+
+    self.pagecontrol.numberOfPages = model.data.player.count;
+    CGSize size = [_pagecontrol sizeForNumberOfPages:model.data.player.count];
+    
+    self.pagecontrol.bounds = CGRectMake(0, 0, size.width, size.height);
+    self.pagecontrol.center = CGPointMake(self.center.x, self.height-10);
+    count = model.data.player.count;
+    [self setupTimer];
+
+
 }
 
 -(UIScrollView *)scrollView{
@@ -37,14 +56,7 @@
         self.scrollView.delegate                       = self;
         [self.scrollView scrollRectToVisible:CGRectMake(0, 0, SCREEN_WIDTH, self.scrollView.frame.size.height) animated:NO];
         [self addSubview:self.scrollView];
-        self.scrollView.contentSize = CGSizeMake(SCREEN_WIDTH * MAX_PAGE_COUNT, self.scrollView.height);
-        for (int i = 0; i < MAX_PAGE_COUNT ; i++) {
-            UIImageView *image = [[UIImageView alloc]initWithFrame:CGRectMake(SCREEN_WIDTH*i, 0, SCREEN_WIDTH, self.height)];
-            [image setImage:[UIColor SUN_ImageWithColor:[UIColor randomColor]]];
-            [self.scrollView addSubview:image];
-        }
         self.pagecontrol.currentPage = 0;
-        [self setupTimer];
         
         
     }
@@ -55,11 +67,7 @@
 -(UIPageControl *)pagecontrol{
     if (!_pagecontrol) {
         _pagecontrol = [[UIPageControl alloc]init];
-        _pagecontrol.numberOfPages = MAX_PAGE_COUNT;
-        CGSize size = [_pagecontrol sizeForNumberOfPages:MAX_PAGE_COUNT];
-        
-        _pagecontrol.bounds = CGRectMake(0, 0, size.width, size.height);
-        _pagecontrol.center = CGPointMake(self.center.x, self.height-10);
+
         
         _pagecontrol.currentPageIndicatorTintColor = [UIColor whiteColor];
         _pagecontrol.pageIndicatorTintColor = [UIColor grayColor];
@@ -87,7 +95,7 @@
     [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
 -(void)timerChanged{
-    int page = (self.pagecontrol.currentPage +1) % MAX_PAGE_COUNT;
+    int page = (self.pagecontrol.currentPage +1) % (int)count;
     self.pagecontrol.currentPage = page;
     [self pageChanged:self.pagecontrol];
 }
@@ -99,7 +107,7 @@
     [self.timer invalidate];
 }
 -(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
-    [self setupTimer];
+//    [self setupTimer];
 }
 
 
