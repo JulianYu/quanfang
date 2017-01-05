@@ -12,19 +12,24 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    NSString *sellPrice = @"￥3398.00元";
-    NSString *marketPrice = @"市场价格￥3398.00元";
-    NSString *str =[NSString stringWithFormat:@"%@  %@",sellPrice,marketPrice];
+    
+}
+-(void)setData:(Data *)data{
+    self.productNameLabel.text = data.name;
+    
+    self.sellPrice = [NSString stringWithFormat:@"￥%@元",data.sell_price];
+    self.marketPrice = [NSString stringWithFormat:@"市场价格￥%@元",data.market_price];
+    NSString *str =[NSString stringWithFormat:@"%@  %@",self.sellPrice,self.marketPrice];
     NSMutableAttributedString *price = [[NSMutableAttributedString alloc]initWithString:str];
     [price beginEditing];
-    [price addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:16] range:[str rangeOfString:sellPrice]];
-    [price addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:12] range:[str rangeOfString:marketPrice]];
-    [price addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:[str rangeOfString:sellPrice]];
-    [price addAttribute:NSForegroundColorAttributeName value:SUN_GlobalTextGreyColor range:[str rangeOfString:marketPrice]];
-    [price addAttribute:NSStrikethroughStyleAttributeName value:@(NSUnderlinePatternSolid|NSUnderlineStyleSingle) range:[str rangeOfString:marketPrice]];
+    [price addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:16] range:[str rangeOfString:self.sellPrice]];
+    [price addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:12] range:[str rangeOfString:self.marketPrice]];
+    [price addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:[str rangeOfString:self.sellPrice]];
+    [price addAttribute:NSForegroundColorAttributeName value:SUN_GlobalTextGreyColor range:[str rangeOfString:self.marketPrice]];
+    [price addAttribute:NSStrikethroughStyleAttributeName value:@(NSUnderlinePatternSolid|NSUnderlineStyleSingle) range:[str rangeOfString:self.marketPrice]];
     self.priceLabel.attributedText = price;
     self.priceLabel.numberOfLines = 1;
-    
+
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

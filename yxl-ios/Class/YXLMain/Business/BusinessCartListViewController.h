@@ -9,5 +9,4 @@
 #import "YXLBaseViewController.h"
 
 @interface BusinessCartListViewController : YXLBaseViewController
-
 @end

@@ -31,8 +31,11 @@
     NSUserDefaults *userDef = [NSUserDefaults standardUserDefaults];
     NSDictionary *session = [userDef objectForKey:@"session"];
     NSDictionary *user = [userDef objectForKey:@"user"];
-    [UserModel sharedUserModel].session  = [Session mj_objectWithKeyValues:session];
-    [UserModel sharedUserModel].user = [User mj_objectWithKeyValues:user];
+    if (user && session) {
+        [UserModel sharedUserModel].session  = [Session mj_objectWithKeyValues:session];
+        [UserModel sharedUserModel].user = [User mj_objectWithKeyValues:user];
+    }
+    
     
 
 }
@@ -131,7 +134,7 @@
             [HUD SUN_ShowSuccessWithStatus:@"注册成功"];
             
             completionHandle(response,nil);
-                    }
+        }
         else{
             [YXLBaseViewModel presentFailureHUD:status];
         }

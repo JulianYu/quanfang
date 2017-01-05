@@ -7,6 +7,7 @@
 //
 
 #import "YXLBaseView.h"
+#import "BusinessProductsListModel.h"
 @interface ProductsListTrunkView : YXLBaseView
-
+@property( nonatomic, strong) BusinessProductsListModel        * model;
 @end

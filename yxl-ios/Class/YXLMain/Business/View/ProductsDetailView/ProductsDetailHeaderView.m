@@ -24,7 +24,7 @@
     return self;
 }
 -(void)buildUI{
-    self.backgroundColor = [UIColor randomColor];
+    self.backgroundColor = [UIColor blackColor];
     self.backBtn = [[UIButton alloc]initWithFrame:CGRectZero];
     [self.backBtn setImage:[UIImage imageNamed:@"yxl_nav_back"] forState:UIControlStateNormal];
     
@@ -48,8 +48,38 @@
         make.width.mas_equalTo(44);
         make.height.mas_equalTo(44);
     }];
+    
+    
+    
+    [self addSubview:self.scrollView];
+    [self sendSubviewToBack:self.scrollView];
 
 }
+-(NSMutableArray<UIImageView *> *)imageViewArray{
+    if (!_imageViewArray) {
+        _imageViewArray = [NSMutableArray array];
+    }
+    return _imageViewArray;
+}
+-(UIScrollView *)scrollView{
+    if (!_scrollView) {
+        _scrollView = [[UIScrollView alloc]initWithFrame:self.frame];
+        _scrollView.pagingEnabled = YES;
+        _scrollView.contentSize = CGSizeMake(4*SCREEN_WIDTH, 0);
+        _scrollView.showsVerticalScrollIndicator = NO;
+        _scrollView.showsHorizontalScrollIndicator = NO;
+        for (int i = 0; i<4; i++) {
+            UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(i*SCREEN_WIDTH, 0, SCREEN_WIDTH, self.height)];
+            imageView.contentMode = UIViewContentModeScaleToFill;
+            [_scrollView addSubview:imageView];
+            [self.imageViewArray addObject:imageView];
+        }
+        
+    }
+    return _scrollView;
+
+}
+
 -(void)backBtnClick{
     [self SUN_GetCurrentNavigationController].navigationBar.hidden = NO;
     [[self SUN_GetCurrentNavigationController] popViewControllerAnimated:YES];

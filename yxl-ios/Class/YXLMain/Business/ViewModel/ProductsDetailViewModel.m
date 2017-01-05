@@ -10,10 +10,12 @@
 #import "ProductsDetailTrunkView.h"
 #import "ProductsDetailFooterView.h"
 #import "ProductChooseView.h"
+#import "BusinessProductDetailModel.h"
 @interface ProductsDetailViewModel()
 @property( nonatomic, strong) ProductsDetailTrunkView           * trunkView;
 @property( nonatomic, strong) ProductsDetailFooterView          * footerView;
 @property( nonatomic, strong) ProductChooseView                 * chooseView;
+@property( nonatomic, strong) BusinessProductDetailModel        * detailModel;
 @end
 @implementation ProductsDetailViewModel
 
@@ -57,6 +59,10 @@
 }
 
 #pragma mark - methods
+-(void)setData:(Goods *)data{
+    [self getProductDetailByProductId:data.id];
+}
+
 -(void)show{
     
     [UIView animateWithDuration: 0.35 animations: ^{
@@ -87,6 +93,25 @@
     
     
     [HUD SUN_ShowSuccessWithStatus:@"添加成功"];
+}
+
+#pragma mark - network requests
+-(void)getProductDetailByProductId:(NSString*)productId{
+    NSString *url = [NSString stringWithFormat:@"%@/ApiOther/productsdetail",[ServerConfig sharedServerConfig].url];
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params setValue:productId forKey:@"goods_id"];
+    [NetManager requestWithType:HttpRequestTypePost UrlString:url Parameters:params SuccessBlock:^(id response) {
+        STATUS *status = [STATUS mj_objectWithKeyValues:[response objectForKey:@"status"]];
+        if (status.succeed == 1) {
+            self.detailModel = [BusinessProductDetailModel mj_objectWithKeyValues:response];
+            self.trunkView.detailModel = self.detailModel;
+        }
+        else{
+            [YXLBaseViewModel presentFailureHUD:status];
+        }
+    } FailureBlock:^(NSError *error) {
+    } progress:nil];
+
 }
 
 

@@ -55,6 +55,8 @@
             </constraints>
             <connections>
                 <outlet property="productImageView" destination="JPp-OP-mac" id="T2K-bV-F1r"/>
+                <outlet property="productNameLabel" destination="kKg-sv-qml" id="6gT-WF-aAb"/>
+                <outlet property="productPriceLabel" destination="PO5-bI-8Ab" id="n5k-G7-D2I"/>
             </connections>
             <point key="canvasLocation" x="-29" y="-13"/>
         </collectionViewCell>

@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BusinessHomeProductsModel.h"
 
 @interface BusinessRightItemCell : UICollectionViewCell
+
+@property( nonatomic, strong) Goods        * headerGoods;
+@property( nonatomic, strong) Goods        * footerGoods;
+
 @property (weak, nonatomic) IBOutlet UILabel *productHeaderNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *productHeaderPriceLabel;
 @property (weak, nonatomic) IBOutlet UIButton *productHeaderBtn;

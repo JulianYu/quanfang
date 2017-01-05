@@ -24,7 +24,7 @@
 - (ProductListViewModel *)viewModel{
     if (!_viewModel) {
         _viewModel = [[ProductListViewModel alloc]initWithViewController:self];
-        _viewModel.indexPath = self.indexpath;
+        _viewModel.productsData = self.data;
     }
     return  _viewModel;
 }

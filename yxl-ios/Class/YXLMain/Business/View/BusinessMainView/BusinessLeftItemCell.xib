@@ -27,23 +27,25 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K7U-lE-XYd">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGU-TV-pSL">
                         <rect key="frame" x="0.0" y="30" width="320" height="270"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    </imageView>
+                        <connections>
+                            <action selector="btnClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Wmw-fp-Zw6"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="nrw-jN-B6D" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="1cs-EO-Mgp"/>
                 <constraint firstItem="nrw-jN-B6D" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1hB-Zv-e6e"/>
-                <constraint firstAttribute="bottom" secondItem="K7U-lE-XYd" secondAttribute="bottom" id="1jb-Hr-hkV"/>
-                <constraint firstAttribute="trailing" secondItem="K7U-lE-XYd" secondAttribute="trailing" id="64O-xB-JlZ"/>
-                <constraint firstItem="K7U-lE-XYd" firstAttribute="top" secondItem="nrw-jN-B6D" secondAttribute="bottom" id="KqL-sW-6NN"/>
                 <constraint firstAttribute="trailing" secondItem="nrw-jN-B6D" secondAttribute="trailing" id="Rbm-AY-dFZ"/>
-                <constraint firstItem="K7U-lE-XYd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ViT-Hh-w3f"/>
+                <constraint firstItem="JGU-TV-pSL" firstAttribute="top" secondItem="nrw-jN-B6D" secondAttribute="bottom" id="WeU-9s-Jrz"/>
+                <constraint firstAttribute="trailing" secondItem="JGU-TV-pSL" secondAttribute="trailing" id="bgK-N5-PI6"/>
+                <constraint firstAttribute="bottom" secondItem="JGU-TV-pSL" secondAttribute="bottom" id="fz8-j2-Sos"/>
+                <constraint firstItem="JGU-TV-pSL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qQq-p6-Yf3"/>
             </constraints>
             <connections>
-                <outlet property="productImageView" destination="K7U-lE-XYd" id="zPq-2Z-Lmd"/>
+                <outlet property="productButton" destination="JGU-TV-pSL" id="ZQX-YL-6KW"/>
                 <outlet property="productNameLabel" destination="nrw-jN-B6D" id="xoq-9i-p6z"/>
             </connections>
         </collectionViewCell>

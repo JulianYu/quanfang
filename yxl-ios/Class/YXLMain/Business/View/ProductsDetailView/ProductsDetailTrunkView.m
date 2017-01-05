@@ -47,6 +47,19 @@ UIScrollViewDelegate
     [self tableView];
     
 }
+-(void)setDetailModel:(BusinessProductDetailModel *)detailModel{
+    _detailModel = detailModel;
+    [self.tableView reloadData];
+    int i = 0;
+    for (UIImageView *imageView in self.headerView.imageViewArray) {
+        if (i<detailModel.data.photo.count) {
+            NSString *url = [NSString stringWithFormat:@"%@/%@",[ServerConfig sharedServerConfig].url,[detailModel.data.photo objectAtIndex:i].img];
+            [imageView sd_setImageWithURL:[NSURL URLWithString:url]];
+        }
+        i++;
+    }
+}
+
 -(UITableView *)tableView{
     if (!_tableView) {
         _tableView = [[YXLBaseTableView alloc]initWithFrame:CGRectZero];;
@@ -60,7 +73,6 @@ UIScrollViewDelegate
         SUN_RegisterCell(@"ProductSellerFirstRowCell", PRODUCTSELLER_FIRSTROWCELL);
         SUN_RegisterCell(@"ProductSellerSecondRowCell", PRODUCTSELLER_SECONDROWCELL);
         SUN_RegisterCell(@"ProductRankRowCell", PRODUCTRANK_ROWCELL);
-        
         
         [self addSubview:_tableView];
         [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -84,7 +96,12 @@ UIScrollViewDelegate
             return 1;
             break;
         case 3:
-            return 6;
+            if (!self.detailModel.data.properties.count) {
+                return 2;
+            }
+            else{
+                return self.detailModel.data.properties.count+1;
+            }
             break;
         case 4:
             return 2;
@@ -123,14 +140,23 @@ UIScrollViewDelegate
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
             ProductInformationFirstRowCell *cell = [tableView dequeueReusableCellWithIdentifier:PRODUCTINFORMATION_FIRSTROWCELL forIndexPath:indexPath];
+            cell.data = self.detailModel.data;
             return cell;
         }
         ProductInformationSecondRowCell *cell = [tableView dequeueReusableCellWithIdentifier:PRODUCTINFORMATION_SECONDROWCELL forIndexPath:indexPath];
+        cell.sellNumberLabel.text = [NSString stringWithFormat:@"销量%@",self.detailModel.data.buy_num];
+        cell.collectNumberLabel.text = [NSString stringWithFormat:@"收藏%@",self.detailModel.data.favorite];
         return cell;
     }
     else if (indexPath.section == 1){
         if (indexPath.row == 0) {
             ProductSellerFirstRowCell *cell = [tableView dequeueReusableCellWithIdentifier:PRODUCTSELLER_FIRSTROWCELL forIndexPath:indexPath];
+            
+            NSString *url = [NSString stringWithFormat:@"%@/%@",[ServerConfig sharedServerConfig].url,self.detailModel.data.sellerinfo.head_ico];
+            
+            [cell.sellerImageView sd_setImageWithURL:[NSURL URLWithString:url]];
+            
+            cell.sellerNameLabel.text = self.detailModel.data.sellerinfo.username;
             return cell;
         }
         ProductSellerSecondRowCell *cell = [tableView dequeueReusableCellWithIdentifier:PRODUCTSELLER_SECONDROWCELL forIndexPath:indexPath];
@@ -153,6 +179,7 @@ UIScrollViewDelegate
         if (indexPath.section == 3){
             if (indexPath.row == 0) {
                 cell.textLabel.text = @"基本参数";
+                
                 [cell.textLabel SUN_SetTitleWithColor:SUN_GlobalTextGreyColor FontSize:14 bold:NO textAlignment:NSTextAlignmentLeft];
                 [cell.textLabel mas_updateConstraints:^(MASConstraintMaker *make) {
                     make.left.mas_equalTo(25);
@@ -160,8 +187,14 @@ UIScrollViewDelegate
                 }];
                 return cell;
             }
-            cell.textLabel.text = @"测试测试";
-            cell.detailTextLabel.text = @"测试测试测试测试测试测试测试";
+            if (!self.detailModel.data.properties.count) {
+                cell.textLabel.text = @"无";
+                cell.detailTextLabel.text = @"";
+            }
+            else{
+                cell.textLabel.text = [self.detailModel.data.properties objectAtIndex:indexPath.row-1].name;
+                cell.detailTextLabel.text = [self.detailModel.data.properties objectAtIndex:indexPath.row-1].attribute_value;
+            }
             [cell.textLabel SUN_SetTitleWithColor:SUN_GlobalTextGreyColor FontSize:12 bold:NO textAlignment:NSTextAlignmentLeft];
             [cell.textLabel mas_updateConstraints:^(MASConstraintMaker *make) {
                 make.centerY.mas_equalTo(cell.contentView);

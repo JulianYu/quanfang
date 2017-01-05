@@ -8,9 +8,10 @@
 
 #import "ProductListViewModel.h"
 #import "ProductsListTrunkView.h"
-
+#import "BusinessProductsListModel.h"
 @interface ProductListViewModel()
 @property( nonatomic, strong) ProductsListTrunkView        * trunkView;
+@property( nonatomic, strong) BusinessProductsListModel        * listModel;
 @end
 
 @implementation ProductListViewModel
@@ -28,6 +29,7 @@
     return self;
 }
 #pragma mark - methods
+
 -(void)setupNavi:(YXLBaseViewController*)viewController{
     [viewController.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     
@@ -45,6 +47,9 @@
     viewController.navigationItem.titleView = textField;
 
 }
+-(void)setProductsData:(ProductsData *)productsData{
+    [self getProductsByCategory:productsData.id WithSort:@"is_hot"];
+}
 #pragma mark - lazy
 -(ProductsListTrunkView *)trunkView{
     if (!_trunkView) {
@@ -53,5 +58,30 @@
     return _trunkView;
 }
 
+#pragma mark - network requests
+-(void)getProductsByCategory:(NSString*)catId WithSort:(NSString*)sort{
+    NSLog(@"%@",catId);
+    NSString *url = [NSString stringWithFormat:@"%@/ApiOther/getProductsByCategory",[ServerConfig sharedServerConfig].url];
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params setValue:catId forKey:@"category_id"];
+    [params setValue:sort forKey:@"sort_by"];
+    [params setValue:@"" forKey:@"keywords"];
+    [params setValue:@"1" forKey:@"page"];
+    [params setValue:@"6" forKey:@"count"];
+    
+    [NetManager requestWithType:HttpRequestTypePost UrlString:url Parameters:params SuccessBlock:^(id response) {
+        STATUS *status = [STATUS mj_objectWithKeyValues:[response objectForKey:@"status"]];
+        if (status.succeed == 1) {
+            self.listModel = [BusinessProductsListModel mj_objectWithKeyValues:response];
+            self.trunkView.model = self.listModel;
+        }
+        else{
+            [YXLBaseViewModel presentFailureHUD:status];
+        }
+    } FailureBlock:^(NSError *error) {
+    } progress:nil];
+
+
+}
 
 @end

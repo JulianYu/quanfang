@@ -20,9 +20,11 @@
     if (!_viewModel) {
         _viewModel = [[ProductsDetailViewModel alloc]initWithViewController:self]
         ;
+        _viewModel.data = self.data;
     }
     return _viewModel;
 }
+
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     

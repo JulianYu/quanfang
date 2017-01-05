@@ -12,5 +12,6 @@
 
 -(void)setUpBannerDataBy:(BusinessBannerCell*)cell;
 
+-(void)getChildCategoryByParentid:(NSString*)parentId CompletionHandle:(void (^)(id model , id error))completionHandle;
 
 @end

@@ -9,5 +9,5 @@
 #import "YXLBaseView.h"
 
 @interface ProductsDetailHeaderView : YXLBaseView
-
+@property( nonatomic, strong) NSMutableArray<UIImageView*>        * imageViewArray;
 @end

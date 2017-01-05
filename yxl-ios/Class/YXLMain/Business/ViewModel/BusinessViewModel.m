@@ -62,12 +62,11 @@
     }];
 }
 -(void)setUpProductsData{
-    [self getChildCategoryByParentidCompletionHandle:^(id model, id error) {
+    [self getChildCategoryByParentid:nil CompletionHandle:^(id model, id error) {
         self.trunkView.model = model;
         [self.trunkView.collectionView reloadData];
     }];
 }
-
 
 #pragma mark - lazy
 -(BusinessTrunkView *)trunkView{
@@ -78,10 +77,16 @@
 }
 #pragma mark - network requests
 
--(void)getChildCategoryByParentidCompletionHandle:(void (^)(id model , id error))completionHandle{
+-(void)getChildCategoryByParentid:(NSString*)parentId CompletionHandle:(void (^)(id model , id error))completionHandle{
     NSString *url = [NSString stringWithFormat:@"%@/ApiOther/getChildCategoryByParentid",[ServerConfig sharedServerConfig].url];
-    NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    
+    NSMutableDictionary *params = nil;
+    if (parentId) {
+        params = [NSMutableDictionary dictionary];
+        [params setValue:parentId forKey:@"cat"];
+    }
+    else{
+        params = nil;
+    }
     [NetManager requestWithType:HttpRequestTypePost UrlString:url Parameters:params SuccessBlock:^(id response) {
         STATUS *status = [STATUS mj_objectWithKeyValues:[response objectForKey:@"status"]];
         if (status.succeed == 1) {

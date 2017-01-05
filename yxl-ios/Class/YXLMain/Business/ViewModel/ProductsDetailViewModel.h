@@ -7,7 +7,8 @@
 //
 
 #import "YXLBaseViewModel.h"
-
+#import "BusinessHomeProductsModel.h"
 @interface ProductsDetailViewModel : YXLBaseViewModel
+@property( nonatomic, strong) Goods        * data;
 -(void)show;
 @end

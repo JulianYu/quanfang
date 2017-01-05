@@ -27,6 +27,7 @@
 		04108B1A537634AD51D332D0 /* Pods_yxl_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7F9367702B647B7973BF59 /* Pods_yxl_ios.framework */; };
 		041241A81DE81BA30028E618 /* yxl_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 041241A61DE81BA30028E618 /* yxl_ios.xcdatamodeld */; };
 		041241AA1DE81BA30028E618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041241A91DE81BA30028E618 /* Assets.xcassets */; };
+		041863571E1E1EF70060F9C3 /* BusinessProductsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 041863561E1E1EF70060F9C3 /* BusinessProductsListModel.m */; };
 		041AA7B71E1638D600BF9CC5 /* MineModifyNicknameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041AA7B61E1638D600BF9CC5 /* MineModifyNicknameView.m */; };
 		041AA7BB1E163E1700BF9CC5 /* MineModifySexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041AA7B91E163E1700BF9CC5 /* MineModifySexViewController.m */; };
 		041AA7BC1E163E1700BF9CC5 /* MineModifySexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041AA7BA1E163E1700BF9CC5 /* MineModifySexViewController.xib */; };
@@ -150,6 +151,7 @@
 		0477EAFE1E1245B50082BFF1 /* MineAddressAddItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0477EAFC1E1245B50082BFF1 /* MineAddressAddItemCell.xib */; };
 		0477EB001E1248160082BFF1 /* Address.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0477EAFF1E1248160082BFF1 /* Address.plist */; };
 		0477EB041E1248500082BFF1 /* AddressPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477EB031E1248500082BFF1 /* AddressPickView.m */; };
+		04829ABB1E1E396F0043974A /* BusinessProductDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04829ABA1E1E396F0043974A /* BusinessProductDetailModel.m */; };
 		0489756E1E19ED67008F8FED /* HomeBuyStockPointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0489756D1E19ED67008F8FED /* HomeBuyStockPointsViewController.m */; };
 		048975711E19EEC3008F8FED /* HomeJoinUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048975701E19EEC3008F8FED /* HomeJoinUsViewController.m */; };
 		048975741E19EF04008F8FED /* HomeDistributePointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048975731E19EF04008F8FED /* HomeDistributePointsViewController.m */; };
@@ -349,6 +351,8 @@
 		041241A71DE81BA30028E618 /* yxl_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = yxl_ios.xcdatamodel; sourceTree = "<group>"; };
 		041241A91DE81BA30028E618 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		041241AE1DE81BA30028E618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041863551E1E1EF70060F9C3 /* BusinessProductsListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessProductsListModel.h; sourceTree = "<group>"; };
+		041863561E1E1EF70060F9C3 /* BusinessProductsListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessProductsListModel.m; sourceTree = "<group>"; };
 		041AA7B51E1638D600BF9CC5 /* MineModifyNicknameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineModifyNicknameView.h; sourceTree = "<group>"; };
 		041AA7B61E1638D600BF9CC5 /* MineModifyNicknameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineModifyNicknameView.m; sourceTree = "<group>"; };
 		041AA7B81E163E1700BF9CC5 /* MineModifySexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineModifySexViewController.h; sourceTree = "<group>"; };
@@ -524,6 +528,8 @@
 		0477EAFF1E1248160082BFF1 /* Address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Address.plist; sourceTree = "<group>"; };
 		0477EB021E1248500082BFF1 /* AddressPickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressPickView.h; sourceTree = "<group>"; };
 		0477EB031E1248500082BFF1 /* AddressPickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressPickView.m; sourceTree = "<group>"; };
+		04829AB91E1E396F0043974A /* BusinessProductDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessProductDetailModel.h; sourceTree = "<group>"; };
+		04829ABA1E1E396F0043974A /* BusinessProductDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessProductDetailModel.m; sourceTree = "<group>"; };
 		0489756C1E19ED67008F8FED /* HomeBuyStockPointsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeBuyStockPointsViewController.h; sourceTree = "<group>"; };
 		0489756D1E19ED67008F8FED /* HomeBuyStockPointsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeBuyStockPointsViewController.m; sourceTree = "<group>"; };
 		0489756F1E19EEC3008F8FED /* HomeJoinUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeJoinUsViewController.h; sourceTree = "<group>"; };
@@ -1480,6 +1486,10 @@
 				043E85921E1BA1D2001C6973 /* BusinessBannerModel.m */,
 				04A386DC1E1BAC8E00202D7A /* BusinessHomeProductsModel.h */,
 				04A386DD1E1BAC8E00202D7A /* BusinessHomeProductsModel.m */,
+				041863551E1E1EF70060F9C3 /* BusinessProductsListModel.h */,
+				041863561E1E1EF70060F9C3 /* BusinessProductsListModel.m */,
+				04829AB91E1E396F0043974A /* BusinessProductDetailModel.h */,
+				04829ABA1E1E396F0043974A /* BusinessProductDetailModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2053,6 +2063,7 @@
 				04C21AE21DFFD7430075BBC7 /* NSObject+MJKeyValue.m in Sources */,
 				04D319C81DFE4300006C8016 /* SVProgressAnimatedView.m in Sources */,
 				04E911DB1DFC023900C84802 /* SDWebImageManager.m in Sources */,
+				041863571E1E1EF70060F9C3 /* BusinessProductsListModel.m in Sources */,
 				04EDF5C21E08CE8D0002D126 /* ProductSellerFirstRowCell.m in Sources */,
 				04D3199D1DFE4024006C8016 /* UIView+Category.m in Sources */,
 				04C21ADF1DFFD7430075BBC7 /* MJPropertyType.m in Sources */,
@@ -2068,6 +2079,7 @@
 				040E34E41E13BED500484EAD /* NSObject+Category.m in Sources */,
 				04B0FC371E0A61D300724656 /* MinePendingPriceRowCell.m in Sources */,
 				04B6CFAA1E1B7E5600A5B854 /* OrderAddressRowCell.m in Sources */,
+				04829ABB1E1E396F0043974A /* BusinessProductDetailModel.m in Sources */,
 				0424ECF41E0E7258006B0C3B /* MinePendingDetailViewController.m in Sources */,
 				04B0FC471E0A782600724656 /* MineCollectionListViewController.m in Sources */,
 				04D318F01DFE376D006C8016 /* AppDelegate.m in Sources */,

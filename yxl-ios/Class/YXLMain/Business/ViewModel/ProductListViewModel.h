@@ -7,7 +7,7 @@
 //
 
 #import "YXLBaseViewModel.h"
-
+#import "BusinessHomeProductsModel.h"
 @interface ProductListViewModel : YXLBaseViewModel
-@property( nonatomic, strong) NSIndexPath        * indexPath;
+@property( nonatomic, strong) ProductsData        * productsData;
 @end

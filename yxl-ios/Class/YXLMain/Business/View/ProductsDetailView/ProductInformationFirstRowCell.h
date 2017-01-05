@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "BusinessProductDetailModel.h"
 @interface ProductInformationFirstRowCell : UITableViewCell
+@property( nonatomic, strong) Data        * data;
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *productNameLabel;
+@property( nonatomic, copy) NSString *sellPrice;
+@property( nonatomic, copy) NSString *marketPrice;
 
 @end

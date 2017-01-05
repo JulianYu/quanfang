@@ -23,7 +23,7 @@ UICollectionViewDelegateFlowLayout
 @property( nonatomic, strong) UIScrollView                  * scrollView;
 @property (nonatomic, strong) UICollectionViewFlowLayout    * flowLayout;
 @property( nonatomic, strong) NSMutableArray<UIButton*>     * btnArray;
-
+@property( nonatomic, strong) NSMutableArray<UICollectionView*>        * collectionViewArray;
 @end
 @implementation ProductsListTrunkView
 -(NSMutableArray<UIButton *> *)btnArray{
@@ -39,6 +39,16 @@ UICollectionViewDelegateFlowLayout
         [self buildUI];
     }
     return self;
+}
+-(NSMutableArray<UICollectionView *> *)collectionViewArray{
+    if (!_collectionViewArray) {
+        _collectionViewArray = [NSMutableArray array];
+    }
+    return _collectionViewArray;
+}
+-(void)setModel:(BusinessProductsListModel *)model{
+    _model = model;
+    [[self.collectionViewArray lastObject] reloadData];
 }
 -(void)buildUI{
     for (int i = 0; i<3; i++) {
@@ -81,7 +91,7 @@ UICollectionViewDelegateFlowLayout
 }
 -(UIScrollView *)scrollView{
     if (!_scrollView) {
-        _scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, BUTTON_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT-BUTTON_HEIGHT)];
+        _scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, BUTTON_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT-BUTTON_HEIGHT-64-10)];
         _scrollView.contentSize = CGSizeMake(3*SCREEN_WIDTH, 0);
         [_scrollView setContentOffset:CGPointMake(2*SCREEN_WIDTH, 0)];
         _scrollView.pagingEnabled = YES;
@@ -97,7 +107,7 @@ UICollectionViewDelegateFlowLayout
             collectionView.showsHorizontalScrollIndicator = NO;
             collectionView.dataSource = self;
             collectionView.delegate = self;
-            
+            [self.collectionViewArray addObject:collectionView];
             [collectionView registerNib:[UINib nibWithNibName:@"ProductItemCollectionViewCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:PRODUCTROW_COLLECTIONVIEWCELL];
         }
     }
@@ -106,7 +116,10 @@ UICollectionViewDelegateFlowLayout
 #pragma mark - ***** UICollectionViewDataSource
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 8;
+    if (self.model.data.count) {
+        return self.model.data.count/2;
+    }
+    return 0;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -118,6 +131,27 @@ UICollectionViewDelegateFlowLayout
 {
     ProductItemCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:PRODUCTROW_COLLECTIONVIEWCELL forIndexPath:indexPath];
     cell.backgroundColor = SUN_GlobalWhiteColor;
+    
+    if (self.model.data.count) {
+        NSString *url = nil;
+        NSString *price = nil;
+        NSString *name = nil;
+        if (indexPath.row == 0) {
+            url = [NSString stringWithFormat:@"%@/%@",[ServerConfig sharedServerConfig].url,[self.model.data objectAtIndex:indexPath.section*2].img];
+            price = [self.model.data objectAtIndex:indexPath.section*2].sell_price;
+            name = [self.model.data objectAtIndex:indexPath.section*2].name;
+        }
+        else{
+            url = [NSString stringWithFormat:@"%@/%@",[ServerConfig sharedServerConfig].url,[self.model.data objectAtIndex:indexPath.section*2+1].img];
+            price = [self.model.data objectAtIndex:indexPath.section*2+1].sell_price;
+            name = [self.model.data objectAtIndex:indexPath.section*2+1].name;
+        }
+        
+        [cell.productImageView sd_setImageWithURL:[NSURL URLWithString:url]];
+        cell.productNameLabel.text = name;
+        cell.productPriceLabel.text = price;
+    }
+    
     return cell;
     
 }

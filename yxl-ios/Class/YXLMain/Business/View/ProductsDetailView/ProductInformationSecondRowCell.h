@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ProductInformationSecondRowCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *sellNumberLabel;
+@property (weak, nonatomic) IBOutlet UILabel *collectNumberLabel;
 
 @end

@@ -11,7 +11,6 @@
 #import "BusinessRightItemCell.h"
 #import "BusinessBannerCell.h"
 #import "BusinessGridListCell.h"
-#import "BusinessProductsListViewController.h"
 #import "BusinessViewController.h"
 #define BANNERROWCELL_IDENTIFIER @"bannercell"
 #define GRIDLISTROWCELL_IDENTIFIER @"gridcell"
@@ -56,7 +55,7 @@ UICollectionViewDelegateFlowLayout
         _collectionView.showsHorizontalScrollIndicator = NO;
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
-        
+        _collectionView.allowsSelection = NO;
         [_collectionView registerClass:[BusinessBannerCell class] forCellWithReuseIdentifier:BANNERROWCELL_IDENTIFIER];
         
         [_collectionView registerClass:[BusinessGridListCell class] forCellWithReuseIdentifier:GRIDLISTROWCELL_IDENTIFIER];
@@ -100,11 +99,7 @@ UICollectionViewDelegateFlowLayout
     
     if (indexPath.row == 0) {
         BusinessLeftItemCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:LEFTROWCELL_IDENTIFIER forIndexPath:indexPath];
-        cell.productNameLabel.text = [self.model.data objectAtIndex:indexPath.section-2].name;
-        
-        NSString *url = [NSString stringWithFormat:@"%@/%@",[ServerConfig sharedServerConfig].url,[[self.model.data objectAtIndex:indexPath.section-2].goods firstObject].img];
-        
-        [cell.productImageView sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:@"yxl_placeholder_image"]];
+        cell.data = [self.model.data objectAtIndex:indexPath.section -2];
         return cell;
     }
     else{
@@ -112,25 +107,10 @@ UICollectionViewDelegateFlowLayout
         if (!self.model.data.count) {
             return cell;
         }
-        NSString *headerUrl = [NSString stringWithFormat:@"%@/%@",[ServerConfig sharedServerConfig].url,[[self.model.data objectAtIndex:indexPath.section-2].goods objectAtIndex:1].img];
-        NSString *footerUrl = [NSString stringWithFormat:@"%@/%@",[ServerConfig sharedServerConfig].url,[[self.model.data objectAtIndex:indexPath.section-2].goods lastObject].img];
-        cell.productHeaderNameLabel.text = [[self.model.data objectAtIndex:indexPath.section-2].goods objectAtIndex:1].name;
-        cell.productFooterNameLabel.text = [[self.model.data objectAtIndex:indexPath.section-2].goods lastObject].name;
-        [cell.productHeaderBtn sd_setBackgroundImageWithURL:[NSURL URLWithString:headerUrl] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"yxl_placeholder_image"]];
-        [cell.productFooterBtn sd_setBackgroundImageWithURL:[NSURL URLWithString:footerUrl] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"yxl_placeholder_image"]];
-        cell.productHeaderPriceLabel.text = [[self.model.data objectAtIndex:indexPath.section-2].goods objectAtIndex:1].sell_price;
-        cell.productFooterPriceLabel.text = [[self.model.data objectAtIndex:indexPath.section-2].goods lastObject].sell_price;
-        
+        cell.headerGoods = [[self.model.data objectAtIndex:indexPath.section-2].goods objectAtIndex:1];
+        cell.footerGoods = [[self.model.data objectAtIndex:indexPath.section-2].goods lastObject];
+                
         return cell;
-    }
-    
-    
-}
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.section >1) {
-        BusinessProductsListViewController *vc = [BusinessProductsListViewController new];
-        vc.indexpath = indexPath;
-        [[self SUN_GetCurrentViewController].navigationController pushViewController:vc animated:YES];
     }
     
 }

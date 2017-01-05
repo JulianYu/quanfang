@@ -12,7 +12,6 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    self.productImageView.backgroundColor = [UIColor randomColor];
 }
 
 @end
